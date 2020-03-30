@@ -1,0 +1,25 @@
+<h1>{{entry.title}}</h1>
+{{entry.ingress}}
+{% if entry.contentBlocks|length %}
+    {% for block in entry.contentBlocks.all() %}
+        {% switch block.type %}
+        {% case "chapter" %}
+            {% set thumb = {
+                mode: 'fit',
+                width: 400,
+                height: 400,
+                quality: 75,
+            } %}
+            {% set chapterImage = block.image.one() %}
+            <div class="chapter__wrapper">
+                {% if chapterImage|length %}
+                    <img src="{{chapterImage.getUrl(thumb)}}" alt="{{chapterImage.title}}">
+                {% endif %}
+                <h2>{{ block.chapterHeadline }}</h2>
+                {{block.chapterBody}}
+            </div>
+        
+        {% endswitch %}
+    {% endfor %} 
+    
+{% endif %}
