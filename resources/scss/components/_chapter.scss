@@ -1,0 +1,39 @@
+.chapter{
+    &__wrapper{
+        font-size: 18px;
+        margin-top: 30px;
+    }
+    &__start{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* width: 940px; */
+    }
+    &__image{
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    &__headline{
+        margin: 0 10px 0 10px;
+        line-height: 40px;
+        font-family: 'Oswald', sans-serif;
+        font-size: 42px;
+        @include ipadOrSmaller {
+            margin: -4px 10px 3px 10px;
+        }
+    }
+    &__subtitle{
+        margin: 0 10px 0 20px;
+        font-family: 'Oswald', sans-serif;
+        font-size: 18px;
+    }
+    &__body{
+        margin: 0 auto;
+        max-width: 720px;
+        @include ipadOrSmaller {
+            margin: 0 10px;
+        }
+    }
+}
+
+

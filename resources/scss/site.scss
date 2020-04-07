@@ -1,3 +1,12 @@
-body {
-    background-color: blue;
-}
+// Main styles
+@import "components/_variables.scss";
+@import "components/_mixins.scss";
+@import "components/_general.scss";
+
+//Spesific styles
+@import "components/_articleImage.scss";
+@import "components/_articleTitle.scss";
+@import "components/_articleBody.scss";
+@import "components/_chapter.scss";
+@import "components/_funfact.scss";
+@import "components/_ingress.scss";

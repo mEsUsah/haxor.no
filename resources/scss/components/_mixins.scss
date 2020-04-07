@@ -1,0 +1,10 @@
+@mixin ipadOrSmaller{
+    @media only screen and (max-width: $ipad) {
+        @content;
+    }
+}
+@mixin phoneOnly{
+    @media only screen and (max-width: $phone) {
+        @content;
+    }
+}
