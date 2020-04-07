@@ -1,0 +1,25 @@
+
+{% set thumb = {
+    mode: 'crop',
+    position: 'center',
+    width: 940,
+    height: 540,
+    quality: 100,
+} %}
+
+{% set chapterImage = block.image.one() %}
+
+<div class="chapter__wrapper">
+    <div class="chapter__start">
+        <div class="chapter__start-block">
+            {% if chapterImage|length %}
+                <img src="{{chapterImage.getUrl(thumb)}}" alt="{{chapterImage.title}}" class="chapter__image">
+            {% endif %}
+            <h2 id="chapter-{{ chapter }}" class="chapter__headline" data-bookmark>{{ block.chapterHeadline }} </h2>
+            <p class="chapter__subtitle">{{ block.subtitle }}</p>
+        </div>
+    </div>
+    <div class="chapter__body">
+        {{block.chapterBody}}
+    </div>
+</div>

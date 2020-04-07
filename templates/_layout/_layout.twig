@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 {% set cashebuster = "1.0.0" %}
+{% set defaultSiteUrl = getenv('DEFAULT_SITE_URL') %}
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Skarshaugs site of wounder</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="resources/css/site.min.css?v={{ cashebuster }}">
+        <title>{{entry.title}}</title>
+        <meta charset="UTF-8" name='viewport' content='initial-scale=1.0, maximum-scale=1.0, user-scalable=1' >
+        <link rel="stylesheet" href="{{ defaultSiteUrl }}/resources/css/site.min.css?v={{ cashebuster }}">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     </head>
     <body>
+        {% block header %}
+            {% include "partials/_header" %}
+        {% endblock header %}
+        
+        {% block body %}
+            <section class="articleBody">
+                {% if entry.title|length %}
+                    <div class="articleTitle">{{entry.title}}</div>
+                {% endif %}
+                {% set layout = entry.getFieldLayout() %}
+                {% for tab in layout.tabs %}
+                    {% if tab.name == "Content" or "Tab 1" %}
+                        {% for field in tab.getFields %}
+                            {% include "_content/" ~ field.handle %}
+                        {% endfor %}
+                    {% endif %}
+                {% endfor %}
+            </section>   
+        {% endblock body %}
 
-        <script src="resources/js/site.min.js?v={{ cashebuster }}" async defer></script>
+        {% block footer %}
+            {% include "partials/_footer" %}
+        {% endblock footer %}
+            
+        <script src="{{ defaultSiteUrl }}/resources/js/site.min.js?v={{ cashebuster }}" async defer></script>
     </body>
 </html>
