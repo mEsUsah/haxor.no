@@ -1,0 +1,13 @@
+{% set thumb = {
+    mode: 'crop',
+    position: 'center-center',
+    width: 1900,
+    height: 600,
+    quality: 100,
+} %}
+
+{% set articleImage = block.image.one() %}
+
+{% if articleImage|length %}
+    <div class="articleImage" style="background-image: url('{{articleImage.getUrl(thumb)}}');" ></div>
+{% endif %}

@@ -28,8 +28,15 @@
         font-size: 18px;
     }
     &__body{
+        &::before{
+            content: "Please move to text block";
+            text-align: center;
+            color: red;
+        }
+        border: 2px dashed red;
         margin: 0 auto;
         max-width: 720px;
+        background-color: rgb(153, 153, 228);
         @include ipadOrSmaller {
             margin: 0 10px;
         }
