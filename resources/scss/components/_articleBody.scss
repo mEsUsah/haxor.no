@@ -3,3 +3,14 @@
     max-width: 1250px;
     margin: 0 auto;
 }
+
+.article__imageBorder{
+    height: 500px;
+    position: absolute;
+    max-width: 1250px;
+    width: 100%;
+    border-bottom: 10px solid #e7e7e7;
+    @include ipadOrSmaller {
+        height: 200px;
+    }
+}

@@ -10,6 +10,7 @@
     font-size: 150px;
     line-height: 135px;
     max-width: 1300px;
+    text-shadow: 0 0 3px #000000;
     @include ipadOrSmaller {
         top: 200px;
         font-size: 50px;

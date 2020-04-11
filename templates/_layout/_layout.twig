@@ -15,9 +15,13 @@
         
         {% block body %}
             <section class="articleBody">
-                {% if entry.title|length %}
-                    <div class="articleTitle">{{entry.title}}</div>
-                {% endif %}
+                <div class="article__header">
+                    {% if entry.title|length %}
+                        <div class="articleTitle">{{entry.title}}</div>
+                        <div class="article__imageBorder"></div>
+                    {% endif %}
+
+                </div>
                 {% set layout = entry.getFieldLayout() %}
                 {% for tab in layout.tabs %}
                     {% if tab.name == "Content" or "Tab 1" %}
