@@ -15,8 +15,12 @@
             {% if chapterImage|length %}
                 <img src="{{chapterImage.getUrl(thumb)}}" alt="{{chapterImage.title}}" class="chapter__image">
             {% endif %}
+
             <h2 id="chapter-{{ chapter }}" class="chapter__headline" data-bookmark>{{ block.chapterHeadline }} </h2>
-            <p class="chapter__subtitle">{{ block.subtitle }}</p>
+            
+            {% if block.subtitle|length %}
+                <p class="chapter__subtitle">{{ block.subtitle }}</p>
+            {% endif %}
         </div>
     </div>
 </div>
