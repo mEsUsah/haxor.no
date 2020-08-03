@@ -1,0 +1,55 @@
+.contentBlocks{
+    &__quote{
+        margin: 0 auto;
+        width: 860px;
+        max-width: calc(100% - 100px);
+        text-align: left;
+        position: relative;
+        padding: 0 40px 0 40px;
+        border: none;
+        background: transparent;
+        font-weight: 600;
+        font-style: italic;
+        font-size: 26px;
+        @include ipadOrSmaller {
+            font-size: 18px;
+            max-width: calc(100% - 50px);
+            padding: 0 0 0 30px;
+        }
+        &::before{
+            content: "\275D";
+            position: absolute;
+            left: -8px;
+            top: -4px;
+            color: #607D8B;
+            font-size: 46px;
+            line-height: 46px;
+            font-weight: normal;
+            font-style: italic;
+        }
+        &::after{
+            content: "\275D";
+            position: absolute;
+            right: 8px;
+            top: -4px;
+            color: #607D8B;
+            font-size: 46px;
+            line-height: 46px;
+            font-weight: normal;
+            font-style: italic;
+            @include ipadOrSmaller {
+                display: none;
+
+            }
+        }
+    }
+    &__text{
+        font-size: 40px;
+        margin: 0 50px;
+        max-width: 100%;
+        @include ipadOrSmaller {
+            margin: 0 10px;
+        }
+    }
+
+}

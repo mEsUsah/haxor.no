@@ -1,0 +1,17 @@
+.ingress{
+    margin: 20px auto;
+    font-size: 40px;
+    font-weight: bold;
+    -webkit-transform: rotate(-0.9deg);
+    transform: rotate(-0.9deg);
+    padding-left: 6px;
+    color: #202f2f;
+    max-width: 1000px;
+    background-color: #d0cdcd;
+    border-radius: 8px;
+    padding: 1px 10px 1px 20px;
+    box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.35);
+    @include ipadOrSmaller {
+        margin: 10px 10px 10px 10px;
+    }
+}

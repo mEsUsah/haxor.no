@@ -5,10 +5,14 @@
     <head>
         <title>{{entry.title}}</title>
         <meta charset="UTF-8" name='viewport' content='initial-scale=1.0, maximum-scale=1.0, user-scalable=1' >
-        <link rel="stylesheet" href="{{ defaultSiteUrl }}/resources/css/site.min.css?v={{ cashebuster }}">
+        {% if currentSite.handle == "skarshaugsNoEbook" %}
+            <link rel="stylesheet" href="{{ defaultSiteUrl }}/resources/css/kindle.min.css?v={{ cashebuster }}">
+        {% else %}
+            <link rel="stylesheet" href="{{ defaultSiteUrl }}/resources/css/site.min.css?v={{ cashebuster }}">
+        {% endif %}
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-    </head>
-    <body>
+    </head >
+    <body
         {% block header %}
             {% include "partials/_header" %}
         {% endblock header %}
