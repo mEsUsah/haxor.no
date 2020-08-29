@@ -50,6 +50,19 @@
         @include ipadOrSmaller {
             margin: 0 10px;
         }
+        pre {
+            background-color: #2d2d2d;
+            font-family: monospace;
+            font-size: 14px;
+            padding: 10px;
+            margin: 10px;
+            color: #e7e7e7;
+            border-radius: 5px;
+            transform: rotate(-0.5deg);
+            border: 2px solid #3F51B5;
+            box-shadow: 2px 2px 14px 0px rgba(0, 0, 0, 0.35);
+            overflow: auto;
+        }
     }
 
 }
