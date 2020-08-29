@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 {% set cashebuster = "1.0.3" %}
-{% set defaultSiteUrl = getenv('DEFAULT_SITE_URL') %}
 <html>
     <head>
         <title>{{entry.title}}</title>
         <meta charset="UTF-8" name='viewport' content='initial-scale=1.0, maximum-scale=1.0, user-scalable=1' >
         {% if currentSite.handle == "skarshaugsNoEbook" %}
-            <link rel="stylesheet" href="{{ defaultSiteUrl }}/resources/css/kindle.min.css?v={{ cashebuster }}">
+            <link rel="stylesheet" href="/resources/css/kindle.min.css?v={{ cashebuster }}">
         {% else %}
-            <link rel="stylesheet" href="{{ defaultSiteUrl }}/resources/css/site.min.css?v={{ cashebuster }}">
+            <link rel="stylesheet" href="/resources/css/site.min.css?v={{ cashebuster }}">
         {% endif %}
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     </head >
@@ -41,6 +40,6 @@
             {% include "partials/_footer" %}
         {% endblock footer %}
             
-        <script src="{{ defaultSiteUrl }}/resources/js/site.min.js?v={{ cashebuster }}" async defer></script>
+        <script src="/resources/js/site.min.js?v={{ cashebuster }}" async defer></script>
     </body>
 </html>
