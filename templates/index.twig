@@ -4,8 +4,18 @@
 <div>
     <ul>
         {% for article in articles %}
-            <li>
-                <a href="{{ article.getUrl() }}"> {{article.title}}</a>
+        <li>
+            <a href="{{ article.getUrl() }}">
+                {% set subjects = article.articleSubject.all() %}
+                {% if subjects|length %}
+                    <span class="articleList__subject--wrapper">
+                        {% for subject in subjects %}
+                        <span class="articleList__subject--{{subject.slug}}">{{subject.slug}}</span>
+                        {% endfor %}
+                    </span>
+                {% endif %}
+                {{article.title}}
+                </a>
             </li>
         {% endfor %}
     </ul>
