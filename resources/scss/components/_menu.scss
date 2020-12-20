@@ -8,6 +8,9 @@ header{
         right: 0;
         top: 100px;
         padding: 10px 20px;
+        @include ipadOrSmaller{
+            display: none;
+        }
         li{
             display: inline-block;
         }

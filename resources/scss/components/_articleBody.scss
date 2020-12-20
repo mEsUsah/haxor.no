@@ -1,7 +1,10 @@
 .articleBody{
     position: relative;
     max-width: 1250px;
-    margin: 0 auto;
+    margin: 20px auto;
+    @include ipadOrSmaller{
+        margin: 0px auto;
+    }
 }
 
 .article__imageBorder{
@@ -13,4 +16,16 @@
     @include ipadOrSmaller {
         height: 200px;
     }
+}
+
+.article__categoryIcon{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.9;
+    right: 10px;
+    top: 10px;
 }
