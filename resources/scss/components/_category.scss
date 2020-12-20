@@ -33,6 +33,10 @@
             background-image: $icon-computer;
             background-size: 70%;
         }
+        &--thoughts{
+            background-image: $icon-thoughts;
+            background-size: 70%;
+        }
     }
     &__color{
         &--linux{
@@ -61,6 +65,9 @@
         }
         &--datamaskiner{
             background-color: #003196;
+        }
+        &--thoughts{
+            background-color: #ca0000;
         }
     }
 }
