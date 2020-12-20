@@ -1,0 +1,12 @@
+.footer{
+    &__wrapper{
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        a{
+            text-decoration: underline;
+            color: rgb(179, 179, 179);
+        }
+    }
+}
