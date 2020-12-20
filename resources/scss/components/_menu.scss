@@ -1,0 +1,35 @@
+header{
+    position: relative;
+}
+.menu{
+    &__wrapper{
+        position: absolute;
+        background-color: gray;
+        right: 0;
+        top: 100px;
+        padding: 10px 20px;
+        li{
+            display: inline-block;
+        }
+        a, span{
+            display: block;
+        }
+    }
+    &__language{
+        height: 30px;
+        width: 45px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        &--no{
+            background-image: $icon-flag-no;
+        }
+        &--en{
+            background-image: $icon-flag-uk;
+        }
+        &--kindle{
+            background-image: $icon-kindle-black;
+            background-size: 90%;
+        }
+    }
+}

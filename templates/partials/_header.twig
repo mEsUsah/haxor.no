@@ -1,4 +1,48 @@
-<p>Andre versjoner av denne siden:</p>
+<header>
+    <div class="header__wrapper">
+        <a href="/" class="header__title">
+            <div class="header__title--icon"></div>
+            <div class="header__title--text">Skarshaug Solutions</div>
+        </a>
+        <div class="header__menu--button">
+            <button class="hamburger hamburger--collapse" type="button" data-menu-button>
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+        </div>
+    </div>
+    <div class="menu__wrapper" data-menu-content>
+        <div class="menu__language--wrapper">
+            <nav>
+                <ul>
+                    {% set sites = craft.app.sites.getAllSites() %}
+                    {% for site in sites %}
+                        <li>
+                            {% if site.handle == "default" %}
+                                {% set siteName = "Norsk" %}
+                                {% set siteClass = "no" %}
+                            {% elseif site.handle == "skarshaugsNoEn"%}
+                                {% set siteName = "English" %}
+                                {% set siteClass = "en" %}
+                            {% elseif site.handle == "skarshaugsNoEbook"%}
+                                {% set siteName = "Norsk E-bok" %}
+                                {% set siteClass = "kindle" %}
+                            {% endif %}
+
+                            {% if site.id != currentSite.id %}
+                                <a href="{{ site.getBaseUrl() }}" class="menu__language menu__language--{{ siteClass }}"></a>
+                            {% else %}
+                                <span class="menu__language menu__language--{{ siteClass }}"></span>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<!-- <p>Andre versjoner av denne siden:</p>
 <nav>
     <ul>
         {% set sites = craft.app.sites.allSites() %}
@@ -13,4 +57,4 @@
             {% endfor %}
         {% endfor %}
     </ul>
-</nav>
+</nav> -->
