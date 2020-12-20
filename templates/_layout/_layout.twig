@@ -23,11 +23,9 @@
                         <div class="articleTitle">{{entry.title}}</div>
                         <div class="article__imageBorder"></div>
                     {% endif %}
-
                 </div>
                 {% set layout = entry.getFieldLayout() %}
                 {% for tab in layout.tabs %}
-                    
                     {% if tab.name == "Content" or tab.name == "Tab 1" %}
                         {% for field in tab.getFields %}
                             {% include "_content/" ~ field.handle %}

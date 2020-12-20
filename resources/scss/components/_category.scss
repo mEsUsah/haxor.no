@@ -1,0 +1,66 @@
+.category{
+    &__icon{
+        background-size: 80%;
+        background-position: center;
+        background-repeat: no-repeat;
+        &--linux{
+            background-image: $icon-linux;
+        }
+        &--python{
+            background-image: $icon-python;
+        }
+        &--arduino{
+            background-image: $icon-arduino;
+        }
+        &--simulator{
+            background-image: $icon-joystick;
+        }
+        &--nettverk{
+            background-image: $icon-network;
+        }
+        &--web{
+            background-image: $icon-web;
+            background-size: 100%;
+        }
+        &--barn{
+            background-image: $icon-teddybear;
+        }
+        &--modifikasjon{
+            background-image: $icon-screwdriver;
+            background-size: 70%;
+        }
+        &--datamaskiner{
+            background-image: $icon-computer;
+            background-size: 70%;
+        }
+    }
+    &__color{
+        &--linux{
+            background-color: #ffc107;
+        }
+        &--python{
+            background-color: #3b77aa;
+        }
+        &--arduino{
+            background-color: #00979c;
+        }
+        &--simulator{
+            background-color: #8f00c7;
+        }
+        &--nettverk{
+            background-color: #e65e04;
+        }
+        &--web{
+            background-color: #2196F3;
+        }
+        &--barn{
+            background-color: #26eaff;
+        }
+        &--modifikasjon{
+            background-color: #4CAF50;
+        }
+        &--datamaskiner{
+            background-color: #003196;
+        }
+    }
+}

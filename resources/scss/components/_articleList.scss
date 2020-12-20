@@ -1,7 +1,118 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,700');
+
 .articleList{
-    &__subject{
-        &--wrapper{
-            background-color: white;
+    &__header{
+        text-align: center;
+        font-family: Raleway;
+        font-weight: 200;
+        color: #34495e;
+    }
+    &__container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        color: white;
+    }
+    &__item{
+        color: white;
+        text-decoration: none;
+        position: relative;
+        float: left;
+        overflow: hidden;
+        margin: 10px 1%;
+        min-width: 220px;
+        max-width: 310px;
+        width: 100%;
+        background: #000000;
+        text-align: center;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+        border-radius: 3px;
+        &--image{
+            max-width: 100%;
+            vertical-align: top;
+            height: 210px;
+            background-position: center;
+            background-size: cover;
+        }
+        i{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border-radius: 50%;
+            font-size: 34px;
+            color: #000000;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            background-color: #ffffff;
+        }
+        a {
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+        }
+        * {
+            transition: all 0.35s ease-in-out;
+            box-sizing: border-box;
+        }
+
+        i {
+            transform: translate(-50%, 80%) scale(0.4);
+            transition: transform 300ms 0ms cubic-bezier(0.175, 0.885, 0.32, 1.175);
+        }
+
+        &:hover {
+            .articleList__item--image {
+                opacity: 0.3;
+                filter: grayscale(100%);
+            }
+            i {
+                transform: translate(-50%, -90%) scale(1);
+                transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.175);
+            }
+            .articleList__item--teaser {
+                opacity: 1;
+            }
+        }
+
+        &--blue{
+            background-color: $color-blue;
+            i {
+                color: $color-blue;
+            }
+        }
+        &--red{
+            background-color: $color-red;
+            i {
+                color: $color-red;
+            }
+        }
+        &--green{
+            background-color: $color-green;
+            i {
+                color:$color-green;
+            }
+        }
+        &--headline {
+            position: absolute;
+            top: 8px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            font-weight: 700;
+            font-family: Raleway;
+        }
+        &--teaser {
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            opacity: 0;
+            font-weight: 300;
+            font-family: Raleway;
         }
     }
 }
