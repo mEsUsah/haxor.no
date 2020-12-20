@@ -1,0 +1,19 @@
+@import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+
+$hamburger-padding-x           : 15px;
+$hamburger-padding-y           : 15px;
+$hamburger-layer-width         : 40px;
+$hamburger-layer-height        : 4px;
+$hamburger-layer-spacing       : 6px;
+$hamburger-layer-color         : rgb(255, 255, 255);
+$hamburger-layer-border-radius : 4px;
+$hamburger-hover-opacity       : 1;
+
+.hamburger{
+    margin: auto 0;
+    padding-right: 10px;
+    font-size: 30px;
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+    background-color: white;
+}
