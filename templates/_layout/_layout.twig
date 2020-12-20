@@ -19,9 +19,18 @@
         {% block body %}
             <section class="articleBody">
                 <div class="article__header">
+                    {% if entry.articleSubject|length %}
+                        {% set theme = entry.articleSubject.one().slug %}
+                    {% else %}
+                        {% set theme = "default" %}
+                    {% endif %}
                     {% if entry.title|length %}
                         <div class="articleTitle">{{entry.title}}</div>
                         <div class="article__imageBorder"></div>
+                        <div class="article__categoryIcon">
+                            <div class="category__icon category__icon--{{ theme }}"></div>
+                        </div>
+                        
                     {% endif %}
                 </div>
                 {% set layout = entry.getFieldLayout() %}
