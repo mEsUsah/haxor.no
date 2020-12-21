@@ -3,8 +3,7 @@
     {% for block in entry.contentBlocks.all() %}
         {% if block.type == "chapter" %}
             {% set chapterNr = chapterNr + 1 %}
-            
         {% endif %}
-        {% include "_contentBlocks/" ~ block.type with {"chapter": chapterNr} %}
+        {% include "_content/_contentBlocks/" ~ block.type with {"chapter": chapterNr} %}
     {% endfor %} 
 {% endif %}
