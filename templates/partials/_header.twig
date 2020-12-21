@@ -40,21 +40,18 @@
                 </ul>
             </nav>
         </div>
+        <div class="menu__content--wrapper">
+            {% set menuItems = globals.menuLink.all() %}
+            <nav>
+                <ul>
+                    {% for menuItem in menuItems %}
+                        <li><a href="{{menuItem.linkEntry.one().getUrl()}}">{{menuItem.linkText}}</a></li>
+                        
+                    {% endfor %}
+                </ul>
+
+            </nav>
+
+        </div>
     </div>
 </header>
-<!-- <p>Andre versjoner av denne siden:</p>
-<nav>
-    <ul>
-        {% set sites = craft.app.sites.allSites() %}
-        {% for site in sites %}
-            {% set querysites = craft.entries().siteId(site.id).all() %}
-            {% for row in querysites %}
-                {% if site.id != currentSite.id and row.id == entry.id %}
-                    <li>
-                        <a href="{{ row.getUrl() }}">{{site.name}} - {{row.title}}</a>
-                    </li>
-                {% endif %}
-            {% endfor %}
-        {% endfor %}
-    </ul>
-</nav> -->
