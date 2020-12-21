@@ -13,20 +13,21 @@
     width: 1000,
     quality: 70,
 } %}
+
 {% set imageMobile = {
-    mode: 'cropped',
+    mode: 'crop',
     width: 500,
     height: 282,
     quality: 70,
 } %}
 {% set imageIpad = {
-    mode: 'cropped',
+    mode: 'crop',
     width: 800,
     height: 542,
     quality: 70,
 } %}
 {% set imageDesktop = {
-    mode: 'cropped',
+    mode: 'crop',
     width: 1000,
     height: 655,
     quality: 70,
@@ -58,11 +59,12 @@
                 <figcaption class="chapter__image--caption">{{block.imageCapt}}</figcaption>
             {% endif %}
         {% endif %}
+        
 
         <h2 id="chapter-{{ chapter }}" class="chapter__headline" data-bookmark>{{ block.chapterHeadline }} </h2>
-        
         {% if block.subtitle|length %}
             <p class="chapter__subtitle">{{ block.subtitle }}</p>
         {% endif %}
+
     </div>
 </div>

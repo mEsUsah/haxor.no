@@ -1,6 +1,6 @@
 .articleBody{
     position: relative;
-    max-width: 1250px;
+    max-width: 1000px;
     margin: 20px auto;
     @include ipadOrSmaller{
         margin: 0px auto;
@@ -8,7 +8,7 @@
 }
 
 .article__imageBorder{
-    height: 500px;
+    height: 498px;
     position: absolute;
     max-width: 1250px;
     width: 100%;
