@@ -1,11 +1,53 @@
 .articleImage{
-    width: 100%;
-    height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    @include ipadOrSmaller {
-        height: 200px;
+    &__wrapper{
+        display: flex;
+        flex-direction: row;;
+        position: relative;
+    }
+    &__image{
+        width: 100%;
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include ipadOrSmaller {
+            height: 200px;
+        }
+    }
+    &__caption{
+        &--desktop{
+            position: absolute;
+            top: 4px;
+            right: -18px;
+            writing-mode: vertical-rl;
+            text-orientation: sideways;
+            font-size: 12px;
+            @include ipadOrSmaller {
+                display: none;
+            }
+            p{
+                margin: 0;
+            }
+            a{
+                color: black;
+                text-decoration: none;
+            }
+        }
+        &--mobile{
+            font-size: 10px;
+            padding: 0 10px;
+            text-align: right;
+            @include desktopOnly {
+                display: none;
+            }
+            p{
+                margin: 0;
+            }
+            a{
+                color: black;
+                text-decoration: none;
+            }
+        }
     }
 
 }

@@ -1,13 +1,26 @@
-{% set thumb = {
-    mode: 'crop',
-    position: 'center-center',
-    width: 1900,
-    height: 600,
-    quality: 100,
+{% set mobile = {
+    mode: 'fit',
+    width: 500,
+    quality: 70,
+} %}
+{% set ipad = {
+    mode: 'fit',
+    width: 800,
+    quality: 70,
+} %}
+{% set desktop = {
+    mode: 'fit',
+    width: 1000,
+    quality: 70,
 } %}
 
 {% set articleImage = block.image.one() %}
 
 {% if articleImage|length %}
-    <div class="articleImage" style="background-image: url('{{articleImage.getUrl(thumb)}}');" ></div>
+    <picture>
+        <source media="(max-width:500px)" srcset="{{ articleImage.getUrl(mobile) }}">
+        <source media="(max-width:800px)" srcset="{{ articleImage.getUrl(ipad) }}">
+        <source media="(min-width:800px)" srcset="{{ articleImage.getUrl(desktop) }}">
+        <img class="articleImage" src="{{ articleImage.getUrl() }}" alt="altText">
+    </picture>
 {% endif %}

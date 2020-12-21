@@ -1,10 +1,17 @@
-
-{% set thumb = {
-    mode: 'crop',
-    position: 'center',
-    width: 940,
-    height: 540,
-    quality: 100,
+{% set mobile = {
+    mode: 'fit',
+    width: 500,
+    quality: 70,
+} %}
+{% set ipad = {
+    mode: 'fit',
+    width: 800,
+    quality: 70,
+} %}
+{% set desktop = {
+    mode: 'fit',
+    width: 1000,
+    quality: 70,
 } %}
 
 {% set chapterImage = block.image.one() %}
@@ -13,7 +20,16 @@
     <div class="chapter__start">
         <div class="chapter__start-block">
             {% if chapterImage|length %}
-                <img src="{{chapterImage.getUrl(thumb)}}" alt="{{chapterImage.title}}" class="chapter__image">
+                <picture>
+                    {% set altText = block.imageAlt|length ? block.imageAlt : "Bilde / Image" %}
+                    <source media="(max-width:500px)" srcset="{{ chapterImage.getUrl(mobile) }}">
+                    <source media="(max-width:800px)" srcset="{{ chapterImage.getUrl(ipad) }}">
+                    <source media="(min-width:800px)" srcset="{{ chapterImage.getUrl(desktop) }}">
+                    <img class="chapter__image" src="{{ chapterImage.getUrl() }}" alt="{{altText}}">
+                    {% if block.imageCapt|length %}
+                        <figcaption class="chapter__image--caption">{{block.imageCapt}}</figcaption>
+                    {% endif %}
+                </picture>
             {% endif %}
 
             <h2 id="chapter-{{ chapter }}" class="chapter__headline" data-bookmark>{{ block.chapterHeadline }} </h2>
