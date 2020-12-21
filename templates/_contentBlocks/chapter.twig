@@ -1,16 +1,34 @@
-{% set mobile = {
+{% set figureMobile = {
     mode: 'fit',
     width: 500,
     quality: 70,
 } %}
-{% set ipad = {
+{% set figureIpad = {
     mode: 'fit',
     width: 800,
     quality: 70,
 } %}
-{% set desktop = {
+{% set figureDesktop = {
     mode: 'fit',
     width: 1000,
+    quality: 70,
+} %}
+{% set imageMobile = {
+    mode: 'cropped',
+    width: 500,
+    height: 282,
+    quality: 70,
+} %}
+{% set imageIpad = {
+    mode: 'cropped',
+    width: 800,
+    height: 542,
+    quality: 70,
+} %}
+{% set imageDesktop = {
+    mode: 'cropped',
+    width: 1000,
+    height: 655,
     quality: 70,
 } %}
 
@@ -18,25 +36,33 @@
 
 <div class="chapter__wrapper">
     <div class="chapter__start">
-        <div class="chapter__start-block">
-            {% if chapterImage|length %}
+        {% if chapterImage|length %}
+            {% if block.imageIsFigure %}
                 <picture>
                     {% set altText = block.imageAlt|length ? block.imageAlt : "Bilde / Image" %}
-                    <source media="(max-width:500px)" srcset="{{ chapterImage.getUrl(mobile) }}">
-                    <source media="(max-width:800px)" srcset="{{ chapterImage.getUrl(ipad) }}">
-                    <source media="(min-width:800px)" srcset="{{ chapterImage.getUrl(desktop) }}">
-                    <img class="chapter__image" src="{{ chapterImage.getUrl() }}" alt="{{altText}}">
-                    {% if block.imageCapt|length %}
-                        <figcaption class="chapter__image--caption">{{block.imageCapt}}</figcaption>
-                    {% endif %}
+                    <source media="(max-width:500px)" srcset="{{ chapterImage.getUrl(figureMobile) }}">
+                    <source media="(max-width:800px)" srcset="{{ chapterImage.getUrl(figureIpad) }}">
+                    <source media="(min-width:800px)" srcset="{{ chapterImage.getUrl(figureDesktop) }}">
+                    <img class="chapter__image--figure" src="{{ chapterImage.getUrl() }}" alt="{{altText}}">
+                </picture>
+            {% else %}
+                <picture>
+                    {% set altText = block.imageAlt|length ? block.imageAlt : "Bilde / Image" %}
+                    <source media="(max-width:500px)" srcset="{{ chapterImage.getUrl(imageMobile) }}">
+                    <source media="(max-width:800px)" srcset="{{ chapterImage.getUrl(imageIpad) }}">
+                    <source media="(min-width:800px)" srcset="{{ chapterImage.getUrl(imageDesktop) }}">
+                    <img class="chapter__image--cropped" src="{{ chapterImage.getUrl() }}" alt="{{altText}}">
                 </picture>
             {% endif %}
-
-            <h2 id="chapter-{{ chapter }}" class="chapter__headline" data-bookmark>{{ block.chapterHeadline }} </h2>
-            
-            {% if block.subtitle|length %}
-                <p class="chapter__subtitle">{{ block.subtitle }}</p>
+            {% if block.imageCapt|length %}
+                <figcaption class="chapter__image--caption">{{block.imageCapt}}</figcaption>
             {% endif %}
-        </div>
+        {% endif %}
+
+        <h2 id="chapter-{{ chapter }}" class="chapter__headline" data-bookmark>{{ block.chapterHeadline }} </h2>
+        
+        {% if block.subtitle|length %}
+            <p class="chapter__subtitle">{{ block.subtitle }}</p>
+        {% endif %}
     </div>
 </div>
