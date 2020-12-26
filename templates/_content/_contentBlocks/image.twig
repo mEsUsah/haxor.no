@@ -1,26 +1,61 @@
-{% set mobile = {
+{% set figureMobile = {
     mode: 'fit',
     width: 500,
     quality: 70,
 } %}
-{% set ipad = {
+{% set figureIpad = {
     mode: 'fit',
     width: 800,
     quality: 70,
 } %}
-{% set desktop = {
+{% set figureDesktop = {
     mode: 'fit',
     width: 1000,
     quality: 70,
 } %}
 
-{% set articleImage = block.image.one() %}
+{% set imageMobile = {
+    mode: 'crop',
+    width: 500,
+    height: 282,
+    quality: 70,
+} %}
+{% set imageIpad = {
+    mode: 'crop',
+    width: 800,
+    height: 542,
+    quality: 70,
+} %}
+{% set imageDesktop = {
+    mode: 'crop',
+    width: 1000,
+    height: 655,
+    quality: 70,
+} %}
 
-{% if articleImage|length %}
-    <picture>
-        <source media="(max-width:500px)" srcset="{{ articleImage.getUrl(mobile) }}">
-        <source media="(max-width:800px)" srcset="{{ articleImage.getUrl(ipad) }}">
-        <source media="(min-width:800px)" srcset="{{ articleImage.getUrl(desktop) }}">
-        <img class="articleImage" src="{{ articleImage.getUrl() }}" alt="altText">
-    </picture>
-{% endif %}
+{% set image = block.image.one() %}
+
+<div class="contentBlocks__image--wrapper">
+        {% if image|length %}
+            {% if block.imageIsFigure %}
+                <picture>
+                    {% set altText = block.imageAlt|length ? block.imageAlt : "Bilde / Image" %}
+                    <source media="(max-width:500px)" srcset="{{ image.getUrl(figureMobile) }}">
+                    <source media="(max-width:800px)" srcset="{{ image.getUrl(figureIpad) }}">
+                    <source media="(min-width:800px)" srcset="{{ image.getUrl(figureDesktop) }}">
+                    <img class="contentBlocks__image--figure" src="{{ image.getUrl() }}" alt="{{altText}}">
+                </picture>
+            {% else %}
+                <picture>
+                    {% set altText = block.imageAlt|length ? block.imageAlt : "Bilde / Image" %}
+                    <source media="(max-width:500px)" srcset="{{ image.getUrl(imageMobile) }}">
+                    <source media="(max-width:800px)" srcset="{{ image.getUrl(imageIpad) }}">
+                    <source media="(min-width:800px)" srcset="{{ image.getUrl(imageDesktop) }}">
+                    <img class="contentBlocks__image--cropped" src="{{ image.getUrl() }}" alt="{{altText}}">
+                </picture>
+            {% endif %}
+            {% if block.imageCapt|length %}
+                <figcaption class="contentBlocks__image--caption {{block.imageIsFigure ? "contentBlocks__image--caption--figure"}}">{{block.imageCapt}}</figcaption>
+            {% endif %}
+        {% endif %}
+</div>

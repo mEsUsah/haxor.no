@@ -80,5 +80,47 @@
         }
     
     }
+    &__image{
+        &--wrapper{
+            margin: 0 auto;
+            width: fit-content;
+            
+        }
+        &--figure{
+            max-width: 100vw;
+            margin: 10px 0;
+            max-height: 400px;
+            box-shadow: 2px 2px 14px 0px rgba(0, 0, 0, 0.35);
+            @include ipadOrSmaller {
+                box-shadow: none;
+            }
+        }
+        &--cropped{
+            max-width: 100%;
+            margin: 10px 0;
+        }
+        &--caption{
+            text-align: right;
+            font-size: 12px;
+            line-height: 12px;
+            margin: 0 10px;
+            @include ipadOrSmaller {
+                font-size: 10px;
+            }
+            &--figure{
+                text-align: center;
+                @include ipadOrSmaller {
+                    text-align: right;
+                }
+            }
+            p{
+                margin: 0;
+            }
+            a{
+                color: black;
+                text-decoration: none;
+            }
+        }
+    }
 
 }
