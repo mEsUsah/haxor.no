@@ -107,9 +107,7 @@
             font-weight: 700;
             font-family: Raleway;
             width: 200px;
-            @include ipadOrSmaller {
-                text-shadow: 0 0 3px #000000;
-            }
+            text-shadow: 0 0 3px #000000;
         }
         &--teaser {
             position: absolute;
