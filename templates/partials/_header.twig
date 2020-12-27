@@ -30,10 +30,12 @@
                                 {% set siteClass = "kindle" %}
                             {% endif %}
 
-                            {% if site.id != currentSite.id %}
-                                <a href="{{ site.getBaseUrl() }}" class="menu__language menu__language--{{ siteClass }}"></a>
-                            {% else %}
-                                <span class="menu__language menu__language--{{ siteClass }}"></span>
+                            {% if site.handle != "skarshaugsNoEbook" %}
+                                {% if site.id != currentSite.id %}
+                                    <a href="{{ site.getBaseUrl() }}" class="menu__language menu__language--{{ siteClass }}"></a>
+                                {% else %}
+                                    <span class="menu__language menu__language--{{ siteClass }}"></span>
+                                {% endif %}
                             {% endif %}
                         </li>
                     {% endfor %}
