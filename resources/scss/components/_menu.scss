@@ -13,8 +13,8 @@ header{
         max-height: 0;
         overflow: hidden;
         transition: 0.25s all;
-        @include ipadOrSmaller{
-            //display: none;
+        @include phoneOnly{
+            width: 100vw;
         }
         &.is-active{
             border-bottom: 1px solid $color-hightlight;
