@@ -71,6 +71,9 @@
             overflow: hidden;
             margin: 10px auto;
             max-width: 700px;
+            @include ipadOrSmaller {
+                margin: 10px;
+            }
 
         }
         &--header{
@@ -79,6 +82,24 @@
             padding: 8px 8px 8px 16px;
         }
     
+    }
+    &__terminalDump{
+        &--wrapper{
+            border: 2px solid black;
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 10px auto;
+            max-width: 700px;
+            @include ipadOrSmaller {
+                margin: 10px;
+            }
+
+        }
+        &--header{
+            background-color: black;
+            color: white;
+            padding: 8px 8px 8px 16px;
+        }
     }
     &__image{
         &--wrapper{

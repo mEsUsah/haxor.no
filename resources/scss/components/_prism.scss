@@ -1,5 +1,5 @@
 /* PrismJS 1.22.0
-https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+arduino+bash+c+csharp+cpp+json+markup-templating+php+powershell+python+scss+sql+twig&plugins=line-numbers+command-line+toolbar+download-button */
+https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+arduino+bash+c+csharp+cpp+editorconfig+json+markup-templating+php+powershell+twig&plugins=line-numbers+command-line+toolbar+download-button */
 /**
  * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
  * Based on https://github.com/chriskempson/tomorrow-theme
@@ -33,13 +33,14 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  /* Code blocks */
  pre[class*="language-"] {
      padding: 1em;
-     margin: 0;
+     margin: .5em 0;
      overflow: auto;
  }
  
  :not(pre) > code[class*="language-"],
  pre[class*="language-"] {
      background: #2d2d2d;
+     margin: 0;
  }
  
  /* Inline code */
@@ -165,12 +166,12 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
          }
  
  .command-line-prompt {
-     border-right: 1px solid #999;
+     //border-right: 1px solid #999;
      display: block;
      float: left;
      font-size: 100%;
      letter-spacing: -1px;
-     margin-right: 1em;
+     //margin-right: 1em;
      pointer-events: none;
  
      -webkit-user-select: none;
@@ -180,18 +181,27 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  }
  
  .command-line-prompt > span:before {
-     color: #999;
+     color: #10d618;
      content: ' ';
      display: block;
-     padding-right: 0.8em;
+     padding-right: 0.6em;
  }
  
  .command-line-prompt > span[data-user]:before {
-     content: "[" attr(data-user) "@" attr(data-host) "] $";
+     //content: "[" attr(data-user) "@" attr(data-host) "] $";
+     content: attr(data-user) "@" attr(data-host) " $";
+     @include ipadOrSmaller {
+        content: "$";
+     }
+
  }
  
  .command-line-prompt > span[data-user="root"]:before {
-     content: "[" attr(data-user) "@" attr(data-host) "] #";
+     //content: "[" attr(data-user) "@" attr(data-host) "] #";
+     content: attr(data-user) "@" attr(data-host) " #";
+     @include ipadOrSmaller {
+        content: "#";
+     }
  }
  
  .command-line-prompt > span[data-prompt]:before {

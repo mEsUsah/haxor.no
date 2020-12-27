@@ -1,0 +1,6 @@
+<div class="contentBlocks__terminalDump--wrapper">
+    <!-- <div class="contentBlocks__terminalDump--header contentBlocks__terminalDump--{{block.terminalLanguage}}">
+        Terminal: {{block.terminalLanguage == "bash" ? "BASH" : "PowerShell"}}
+    </div> -->
+    <pre class="command-line language-{{block.terminalLanguage}}" data-user="{{block.terminalUserName}}" data-host="{{block.terminalHostName}}" {{block.terminalInputOnly == false ? 'data-output="2-100"'}}><code class="language-{{block.terminalLanguage}}">{{block.terminalDump}}</code></pre>
+</div> 
