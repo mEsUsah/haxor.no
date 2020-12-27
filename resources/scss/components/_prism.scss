@@ -189,19 +189,21 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  
  .command-line-prompt > span[data-user]:before {
      //content: "[" attr(data-user) "@" attr(data-host) "] $";
-     content: attr(data-user) "@" attr(data-host) " $";
-     @include ipadOrSmaller {
+     //content: attr(data-user) "@" attr(data-host) " $";
+     content: "$";
+     /* @include ipadOrSmaller {
         content: "$";
-     }
+     } */
 
  }
  
  .command-line-prompt > span[data-user="root"]:before {
      //content: "[" attr(data-user) "@" attr(data-host) "] #";
-     content: attr(data-user) "@" attr(data-host) " #";
-     @include ipadOrSmaller {
+     //content: attr(data-user) "@" attr(data-host) " #";
+     content: "#";
+     /* @include ipadOrSmaller {
         content: "#";
-     }
+     } */
  }
  
  .command-line-prompt > span[data-prompt]:before {
