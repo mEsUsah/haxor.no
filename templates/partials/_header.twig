@@ -5,39 +5,39 @@
             <div class="header__title--text">Skarshaugs Blog</div>
         </a>
         <div class="header__menu--button">
-            <button class="hamburger hamburger--collapse" type="button" data-menu-button>
+            <button class="hamburger hamburger--collapse" type="button" data-menu-button data-button-accordian="hamburger-menu">
                 <span class="hamburger-box">
                   <span class="hamburger-inner"></span>
                 </span>
               </button>
         </div>
     </div>
-    <div class="menu__wrapper" data-menu-content>
+    <div class="menu__wrapper" data-target-accordian="hamburger-menu">
         <div class="menu__language--wrapper">
             <nav>
                 <ul>
                     {% set sites = craft.app.sites.getAllSites() %}
                     {% for site in sites %}
-                        <li>
-                            {% if site.handle == "default" %}
-                                {% set siteName = "Norsk" %}
-                                {% set siteClass = "no" %}
-                            {% elseif site.handle == "skarshaugsNoEn"%}
-                                {% set siteName = "English" %}
-                                {% set siteClass = "en" %}
-                            {% elseif site.handle == "skarshaugsNoEbook"%}
-                                {% set siteName = "Norsk E-bok" %}
-                                {% set siteClass = "kindle" %}
-                            {% endif %}
+                        {% if site.handle != "skarshaugsNoEbook" %}
+                            <li>
+                                {% if site.handle == "default" %}
+                                    {% set siteName = "Norsk" %}
+                                    {% set siteClass = "no" %}
+                                {% elseif site.handle == "skarshaugsNoEn"%}
+                                    {% set siteName = "English" %}
+                                    {% set siteClass = "en" %}
+                                {% elseif site.handle == "skarshaugsNoEbook"%}
+                                    {% set siteName = "Norsk E-bok" %}
+                                    {% set siteClass = "kindle" %}
+                                {% endif %}
 
-                            {% if site.handle != "skarshaugsNoEbook" %}
                                 {% if site.id != currentSite.id %}
                                     <a href="{{ site.getBaseUrl() }}" class="menu__language menu__language--{{ siteClass }}"></a>
                                 {% else %}
                                     <span class="menu__language menu__language--{{ siteClass }}"></span>
                                 {% endif %}
-                            {% endif %}
-                        </li>
+                            </li>
+                        {% endif %}
                     {% endfor %}
                 </ul>
             </nav>

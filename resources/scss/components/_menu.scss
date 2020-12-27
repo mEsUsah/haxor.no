@@ -6,16 +6,29 @@ header{
         position: absolute;
         background-color: gray;
         right: 0;
-        top: 100px;
-        padding: 10px 20px;
+        top: 125px;
+        padding: 0px 20px;
+        z-index: 9;
+
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.25s all;
         @include ipadOrSmaller{
-            display: none;
+            //display: none;
+        }
+        &.is-active{
+            border-bottom: 1px solid $color-hightlight;
+            padding: 20px 20px;
         }
         li{
             display: inline-block;
         }
         a, span{
             display: block;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 20px;
         }
     }
     &__language{
@@ -33,6 +46,11 @@ header{
         &--kindle{
             background-image: $icon-kindle-black;
             background-size: 90%;
+        }
+    }
+    &__content{
+        &--wrapper{
+            margin-top: 10px;
         }
     }
 }
