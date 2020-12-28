@@ -1,0 +1,34 @@
+.header{
+    &__wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: black;
+    }
+    &__title{
+        margin-left: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-decoration: none;
+        
+        &--icon{
+            background-image: $icon-skarshaugs-white;
+            height: 125px;
+            width: 100px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        &--text{
+            font-family: "Regensburg";
+            padding-left: 10px;
+            color: white;
+            font-size: 40px;
+        }
+    }
+    &__menu{
+        &--button{
+            display: none;
+        }
+    }
+}

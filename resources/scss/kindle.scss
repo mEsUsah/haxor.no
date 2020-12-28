@@ -1,13 +1,18 @@
 @import "base/_variables.scss";
 @import "base/_mixins.scss";
-@import "base/_general.scss";
+@import "base/_general_kindle.scss";
 @import "base/_icons.scss";
 
 //Spesific styles
-@import "components/_articleImage.scss";
+@import "components/_articleImage_kindle.scss";
+@import "components/_articleList_kindle.scss";
 @import "components/_articleTitle.scss";
-@import "components/_articleBody.scss";
+@import "components/_articleBody_kindle.scss";
+/* @import "components/_category.scss"; */
 @import "components/_contentBlocks_kindle.scss";
 @import "components/_chapter_kindle.scss";
-@import "components/_infoBox.scss";
+@import "components/_footer_kindle.scss";
+@import "components/_header_kindle.scss";
+@import "components/_infoBox_kindle.scss";
 @import "components/_ingress_kindle.scss";
+@import "components/_menu_kindle.scss";

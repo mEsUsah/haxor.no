@@ -6,10 +6,7 @@
         overflow: visible;
     }
     &__start{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        /* width: 940px; */
+        display: block
     }
     &__image{
         max-width: 100%;
@@ -19,7 +16,7 @@
         margin: 0 10px 0 10px;
         line-height: 60px;
         font-family: 'Oswald', sans-serif;
-        font-size: 60px;
+        font-size: 80px;
         @include ipadOrSmaller {
             margin: -4px 10px 3px 10px;
         }
@@ -27,7 +24,7 @@
     &__subtitle{
         margin: 0 10px 0 20px;
         font-family: 'Oswald', sans-serif;
-        font-size: 18px;
+        font-size: 50px;
     }
     &__body{
         &::before{
