@@ -1,0 +1,16 @@
+enableVersioning: true
+handle: about
+name: About
+propagationMethod: all
+siteSettings:
+  2fc7f7b8-2f9d-43dd-977b-8c7b29763e54:
+    enabledByDefault: true
+    hasUrls: true
+    template: index
+    uriFormat: about
+  d81b7a18-6d93-471a-ba57-99544b0c585b:
+    enabledByDefault: true
+    hasUrls: true
+    template: index
+    uriFormat: about
+type: single

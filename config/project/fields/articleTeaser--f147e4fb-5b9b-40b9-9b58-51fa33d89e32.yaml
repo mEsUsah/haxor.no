@@ -1,0 +1,17 @@
+contentColumnType: string(280)
+fieldGroup: 8475e873-60f6-4868-8ab1-1c7c3b90c98e
+handle: articleTeaser
+instructions: ''
+name: 'Article Teaser'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: 70
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: language
+type: craft\fields\PlainText

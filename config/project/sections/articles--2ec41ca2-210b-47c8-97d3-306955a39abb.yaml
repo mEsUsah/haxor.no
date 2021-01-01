@@ -1,0 +1,21 @@
+enableVersioning: true
+handle: articles
+name: Articles
+propagationMethod: all
+siteSettings:
+  2fc7f7b8-2f9d-43dd-977b-8c7b29763e54:
+    enabledByDefault: false
+    hasUrls: true
+    template: index
+    uriFormat: 'article/{slug}'
+  87380fe3-7806-4c94-93c9-d75509f157cd:
+    enabledByDefault: false
+    hasUrls: true
+    template: index
+    uriFormat: 'article/{slug}'
+  d81b7a18-6d93-471a-ba57-99544b0c585b:
+    enabledByDefault: false
+    hasUrls: true
+    template: index
+    uriFormat: 'artikkel/{slug}'
+type: channel

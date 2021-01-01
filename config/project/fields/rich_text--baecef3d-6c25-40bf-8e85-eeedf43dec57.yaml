@@ -1,0 +1,22 @@
+contentColumnType: text
+fieldGroup: 8475e873-60f6-4868-8ab1-1c7c3b90c98e
+handle: rich_text
+instructions: ''
+name: 'Rich text'
+searchable: true
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  cleanupHtml: true
+  columnType: text
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: ''
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

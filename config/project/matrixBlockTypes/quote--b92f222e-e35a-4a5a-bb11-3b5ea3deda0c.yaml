@@ -1,0 +1,33 @@
+field: c3d8fdbe-5d3a-4a09-a91f-2da6060ece41
+fieldLayouts:
+  cdbb61ca-cfb0-41b0-ae6a-515ad8a5c8ed:
+    tabs:
+      -
+        fields:
+          f96fb1c8-21d9-45ec-bc75-5792dd3b3c5b:
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  f96fb1c8-21d9-45ec-bc75-5792dd3b3c5b:
+    contentColumnType: text
+    fieldGroup: null
+    handle: quote
+    instructions: ''
+    name: Quote
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: quote
+name: Quote
+sortOrder: 4

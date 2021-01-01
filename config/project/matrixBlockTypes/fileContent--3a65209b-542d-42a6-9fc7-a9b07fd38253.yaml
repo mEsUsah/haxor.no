@@ -1,0 +1,272 @@
+field: c3d8fdbe-5d3a-4a09-a91f-2da6060ece41
+fieldLayouts:
+  eb82eaed-4b98-4191-b384-f755ca3fa0a2:
+    tabs:
+      -
+        fields:
+          5dd9f4f3-fb1c-4d81-b3fd-2309b56563f0:
+            required: true
+            sortOrder: 2
+          dc63f038-3a87-428d-9230-20a288f905da:
+            required: true
+            sortOrder: 1
+          ed101e61-62b0-40c5-a8d4-b5d30624f1d2:
+            required: true
+            sortOrder: 3
+          f4121429-712b-4587-839a-e0a1db5d946a:
+            required: false
+            sortOrder: 4
+        name: Content
+        sortOrder: 1
+fields:
+  5dd9f4f3-fb1c-4d81-b3fd-2309b56563f0:
+    contentColumnType: text
+    fieldGroup: null
+    handle: fileName
+    instructions: ''
+    name: Filname
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  dc63f038-3a87-428d-9230-20a288f905da:
+    contentColumnType: string
+    fieldGroup: null
+    handle: fileType
+    instructions: ''
+    name: 'File type'
+    searchable: true
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - None
+            -
+              - value
+              - none
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - 'Markup (html, xml, svg, rss ++)'
+            -
+              - value
+              - markup
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Arduino
+            -
+              - value
+              - arduino
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'BASH + Shell'
+            -
+              - value
+              - bash
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - C
+            -
+              - value
+              - c
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - C-like
+            -
+              - value
+              - clike
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - C++
+            -
+              - value
+              - cpp
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'C# (.NET)'
+            -
+              - value
+              - csharp
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - EditorConfig
+            -
+              - value
+              - editorconfig
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - JavaScript
+            -
+              - value
+              - javascript
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - JSON
+            -
+              - value
+              - json
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Markup templating'
+            -
+              - value
+              - markup-templating
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - PHP
+            -
+              - value
+              - php
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - PowerShell
+            -
+              - value
+              - powershell
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Python
+            -
+              - value
+              - python
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - SQL
+            -
+              - value
+              - sql
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Twig
+            -
+              - value
+              - twig
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  ed101e61-62b0-40c5-a8d4-b5d30624f1d2:
+    contentColumnType: text
+    fieldGroup: null
+    handle: fileContent
+    instructions: ''
+    name: 'File content'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: '1'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  f4121429-712b-4587-839a-e0a1db5d946a:
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: lineNumbers
+    instructions: ''
+    name: 'Line Numbers'
+    searchable: true
+    settings:
+      default: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+handle: fileContent
+name: 'File Content'
+sortOrder: 6

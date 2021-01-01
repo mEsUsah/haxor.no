@@ -1,0 +1,29 @@
+fieldLayouts:
+  7ac5bf04-13ac-47e3-8e9c-423e79a6528b:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 72a349c8-b7c8-4301-81a5-7301f5cc1058
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: baecef3d-6c25-40bf-8e85-eeedf43dec57
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: b4763ae9-35a9-4af6-bd45-59e869963a55
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Content
+        sortOrder: 1
+handle: home
+hasTitleField: true
+name: Home
+section: b25947e8-fbe4-4dbb-a968-90f7659c7d7f
+sortOrder: 1
+titleFormat: '{section.name|raw}'

@@ -1,0 +1,12 @@
+fieldLayouts:
+  0d1b50fc-6bfd-4083-bdb1-ece4686cbec8:
+    tabs:
+      -
+        fields:
+          849ea203-a4f7-42a8-845c-45933a0ee48a:
+            required: false
+            sortOrder: 1
+        name: Gobals
+        sortOrder: 1
+handle: globals
+name: Globals

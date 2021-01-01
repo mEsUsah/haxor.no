@@ -1,0 +1,18 @@
+handle: theme
+name: Tema
+siteSettings:
+  2fc7f7b8-2f9d-43dd-977b-8c7b29763e54:
+    hasUrls: true
+    template: ''
+    uriFormat: 'theme/{slug}'
+  87380fe3-7806-4c94-93c9-d75509f157cd:
+    hasUrls: true
+    template: ''
+    uriFormat: 'tema/{slug}'
+  d81b7a18-6d93-471a-ba57-99544b0c585b:
+    hasUrls: true
+    template: ''
+    uriFormat: 'tema/{slug}'
+structure:
+  maxLevels: null
+  uid: 648740f0-bafd-4679-8cfc-3e0d367aa2b2

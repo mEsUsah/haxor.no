@@ -1,0 +1,30 @@
+dateModified: 1609544130
+email:
+  fromEmail: stanley.skarshaug@gmail.com
+  fromName: craft_test
+  transportType: craft\mail\transportadapters\Sendmail
+graphql:
+  publicToken:
+    enabled: false
+    expiryDate: null
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.2.1
+system:
+  edition: solo
+  live: true
+  name: Skarshaugs.no
+  schemaVersion: 3.5.13
+  timeZone: Europe/Oslo
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: ''
+  photoVolumeUid: null
+  requireEmailVerification: true

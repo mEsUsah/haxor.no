@@ -1,0 +1,38 @@
+field: c3d8fdbe-5d3a-4a09-a91f-2da6060ece41
+fieldLayouts:
+  e805ccd1-3547-4bf0-8b3d-565578a887d1:
+    tabs:
+      -
+        fields:
+          471da32a-34da-4c05-b7c6-e4bc67adca25:
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  471da32a-34da-4c05-b7c6-e4bc67adca25:
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: infoBox
+name: 'Info Box'
+sortOrder: 3

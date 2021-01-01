@@ -1,0 +1,18 @@
+contentColumnType: string
+fieldGroup: 8475e873-60f6-4868-8ab1-1c7c3b90c98e
+handle: linkinternal
+instructions: ''
+name: LinkInternal
+searchable: true
+settings:
+  limit: ''
+  localizeRelations: ''
+  selectionLabel: ''
+  source: null
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: ''
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

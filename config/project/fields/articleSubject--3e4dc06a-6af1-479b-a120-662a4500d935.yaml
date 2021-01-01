@@ -1,0 +1,21 @@
+contentColumnType: string
+fieldGroup: 8475e873-60f6-4868-8ab1-1c7c3b90c98e
+handle: articleSubject
+instructions: ''
+name: 'Artikkel tema'
+searchable: true
+settings:
+  allowLimit: false
+  allowMultipleSources: false
+  branchLimit: '1'
+  limit: null
+  localizeRelations: ''
+  selectionLabel: ''
+  source: 'group:7755a334-0698-4415-ab30-b1fddb17b7a7'
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: ''
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories

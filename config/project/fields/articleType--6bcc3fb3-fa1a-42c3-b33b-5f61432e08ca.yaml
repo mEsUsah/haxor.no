@@ -1,0 +1,21 @@
+contentColumnType: string
+fieldGroup: 8475e873-60f6-4868-8ab1-1c7c3b90c98e
+handle: articleType
+instructions: ''
+name: 'Artikkel type'
+searchable: true
+settings:
+  allowLimit: false
+  allowMultipleSources: false
+  branchLimit: '1'
+  limit: null
+  localizeRelations: ''
+  selectionLabel: ''
+  source: 'group:7648fab9-2bab-43df-adca-9f3d941c929e'
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: ''
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories
