@@ -25,7 +25,8 @@ settings:
   fieldLayout: table
   maxRows: ''
   minRows: ''
-  propagationMethod: all
+  placeholderKey: null
+  propagationMethod: language
   selectionLabel: ''
   staticField: ''
 translationKeyFormat: null
