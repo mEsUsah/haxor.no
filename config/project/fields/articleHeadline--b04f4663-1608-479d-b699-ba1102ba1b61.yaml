@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 4f7986b9-315c-4c92-8575-387ebd59b8ec
+handle: articleHeadline
+instructions: ''
+name: 'Article Headline'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: language
+type: craft\fields\PlainText

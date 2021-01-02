@@ -4,21 +4,37 @@ fieldLayouts:
       -
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
             instructions: null
-            label: Title
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
             type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
           -
-            fieldUid: 72a349c8-b7c8-4301-81a5-7301f5cc1058
+            fieldUid: b04f4663-1608-479d-b699-ba1102ba1b61
+            instructions: null
+            label: null
             required: false
+            tip: null
             type: craft\fieldlayoutelements\CustomField
-          -
-            fieldUid: baecef3d-6c25-40bf-8e85-eeedf43dec57
-            required: false
-            type: craft\fieldlayoutelements\CustomField
-          -
-            fieldUid: b4763ae9-35a9-4af6-bd45-59e869963a55
-            required: false
-            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 handle: home
@@ -27,3 +43,5 @@ name: Home
 section: b25947e8-fbe4-4dbb-a968-90f7659c7d7f
 sortOrder: 1
 titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
