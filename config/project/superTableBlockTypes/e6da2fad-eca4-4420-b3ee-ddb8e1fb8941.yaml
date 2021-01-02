@@ -3,13 +3,25 @@ fieldLayouts:
   c239b9a3-41da-4355-b0af-d72080f50199:
     tabs:
       -
-        fields:
-          f2cc0c2d-6188-407c-b0f2-e9afc9ecdb23:
+        elements:
+          -
+            fieldUid: f598728f-d688-4b98-8aab-cf4447b3af95
+            instructions: null
+            label: null
             required: false
-            sortOrder: 2
-          f598728f-d688-4b98-8aab-cf4447b3af95:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f2cc0c2d-6188-407c-b0f2-e9afc9ecdb23
+            instructions: null
+            label: null
             required: false
-            sortOrder: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
@@ -28,6 +40,7 @@ fields:
       initialRows: '4'
       multiline: ''
       placeholder: ''
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: language
     type: craft\fields\PlainText
@@ -39,13 +52,15 @@ fields:
     name: Entry
     searchable: true
     settings:
+      allowSelfRelations: false
       limit: '1'
-      localizeRelations: ''
+      localizeRelations: false
       selectionLabel: ''
+      showSiteMenu: true
       source: null
       sources: '*'
       targetSiteId: null
-      validateRelatedElements: ''
+      validateRelatedElements: false
       viewMode: null
     translationKeyFormat: null
     translationMethod: site
