@@ -74,7 +74,17 @@
             @include ipadOrSmaller {
                 margin: 10px;
             }
-
+            pre[rel]:not([rel=""]):before {
+                font-family: Gotham Narrow SSm A,Gotham Narrow SSm B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 8px;
+                content: attr(rel);
+                position: absolute;
+                top: 4px;
+                left: 4px;
+                color: #ccc !important;
+            }
         }
         &--header{
             background-color: black;
