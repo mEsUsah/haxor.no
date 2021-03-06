@@ -19,7 +19,7 @@
     "rss": "https://craftcms.com/changelog.rss"
   },
   "require": {
-    "craftcms/cms": "^3.4.11",
+    "craftcms/cms": "3.6.9",
     "vlucas/phpdotenv": "^3.4.0",
     "craftcms/redactor": "2.8.5",
     "verbb/super-table": "2.6.5"
@@ -35,7 +35,7 @@
   "config": {
     "optimize-autoloader": true,
     "platform": {
-      "php": "7.0"
+      "php": "7.4.3"
     }
   },
   "scripts": {

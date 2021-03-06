@@ -1,4 +1,4 @@
-dateModified: 1609631714
+dateModified: 1615072124
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -20,7 +20,7 @@ system:
   edition: solo
   live: true
   name: Skarshaugs.no
-  schemaVersion: 3.5.13
+  schemaVersion: 3.6.6
   timeZone: Europe/Oslo
 users:
   allowPublicRegistration: false
