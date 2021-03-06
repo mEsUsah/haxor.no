@@ -2,13 +2,17 @@
 {% set cashebuster = "1.0.3" %}
 <html>
     <head>
-        <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-5WM4TRN');</script>
-        <!-- End Google Tag Manager -->
+        {% set devMode = craft.app.config.general.devMode %}
+        {% set livePreview = craft.app.request.isPreview %}
+        {% if not devMode and not livePreview %}
+            <!-- Google Tag Manager -->
+            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-5WM4TRN');</script>
+            <!-- End Google Tag Manager -->
+        {% endif %}
         <title>{{entry.title}} | Skarshaugs.no - Blog</title>
         <meta charset="UTF-8" name='viewport' content='initial-scale=1.0, maximum-scale=1.0, user-scalable=1' >
         {% if currentSite.handle == "skarshaugsNoEbook" %}
@@ -19,12 +23,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     </head >
     <body>
-        <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5WM4TRN"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
+        {% if not devMode and not livePreview %}
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5WM4TRN"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        {% endif %}
+        
         {% block header %}
-            {% include "partials/_header" %}
+                {% include "partials/_header" %}
         {% endblock header %}
         <main>
             {% block body %}
