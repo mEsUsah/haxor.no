@@ -5,8 +5,18 @@
         text-align: center;
         padding: 10px;
         a{
-            text-decoration: underline;
-            color: rgb(179, 179, 179);
+            text-decoration: none;
+            color: white;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    &__content{
+        &--credits{
+            font-size: 10px;
+            line-height: 10px;
+            margin: 0;
         }
     }
 }
