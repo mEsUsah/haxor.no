@@ -22,7 +22,7 @@
     "craftcms/cms": "3.6.9",
     "vlucas/phpdotenv": "^3.4.0",
     "craftcms/redactor": "2.8.5",
-    "verbb/super-table": "2.6.5"
+    "verbb/super-table": "2.6.7"
   },
   "require-dev": {
     "yiisoft/yii2-shell": "^2.0.3"
