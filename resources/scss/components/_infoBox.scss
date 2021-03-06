@@ -7,7 +7,6 @@
         color: black;
         border-radius: 6px;
         padding: 1px 20px;
-        transform: rotate(-0.5deg);
         @include ipadOrSmaller {    
             margin: 0 10px;
         }
