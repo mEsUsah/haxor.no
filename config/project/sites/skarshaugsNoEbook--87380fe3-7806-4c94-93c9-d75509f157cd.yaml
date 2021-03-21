@@ -1,8 +1,0 @@
-baseUrl: '@web/ebook'
-handle: skarshaugsNoEbook
-hasUrls: true
-language: nb
-name: Skarshaugs.no/ebook
-primary: false
-siteGroup: 6799dd35-5fb9-4623-b487-3aafaf92ec39
-sortOrder: 3

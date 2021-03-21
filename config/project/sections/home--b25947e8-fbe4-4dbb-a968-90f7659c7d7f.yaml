@@ -8,11 +8,6 @@ siteSettings:
     hasUrls: true
     template: index
     uriFormat: __home__
-  87380fe3-7806-4c94-93c9-d75509f157cd:
-    enabledByDefault: true
-    hasUrls: true
-    template: index
-    uriFormat: __home__
   d81b7a18-6d93-471a-ba57-99544b0c585b:
     enabledByDefault: true
     hasUrls: true

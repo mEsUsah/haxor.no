@@ -32,6 +32,6 @@ fieldLayouts:
 handle: about
 hasTitleField: true
 name: About
-section: 315547ae-9f46-441e-831a-f2979d046b94
+section: 315547ae-9f46-441e-831a-f2979d046b94 # About
 sortOrder: 1
 titleFormat: '{section.name|raw}'

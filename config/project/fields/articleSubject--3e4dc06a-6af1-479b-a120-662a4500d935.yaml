@@ -11,7 +11,7 @@ settings:
   limit: null
   localizeRelations: ''
   selectionLabel: ''
-  source: 'group:7755a334-0698-4415-ab30-b1fddb17b7a7'
+  source: 'group:7755a334-0698-4415-ab30-b1fddb17b7a7' # Tema
   sources: '*'
   targetSiteId: null
   validateRelatedElements: ''

@@ -4,5 +4,5 @@ hasUrls: true
 language: nb
 name: Skarshaugs.no
 primary: true
-siteGroup: 6799dd35-5fb9-4623-b487-3aafaf92ec39
+siteGroup: 6799dd35-5fb9-4623-b487-3aafaf92ec39 # blog
 sortOrder: 1
