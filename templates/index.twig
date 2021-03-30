@@ -11,6 +11,8 @@
             {% include "_sections/_article.twig" %}   
         {% case 'portfolio' %}
             {% include "_sections/_portfolio.twig" %}
+        {% case 'course' %}
+            {% include "_sections/_course.twig" %}
         {% default %}
             {% include "_sections/" ~ entry.section.handle ~ "/_index.twig" %}
     {% endswitch %}

@@ -1,25 +1,49 @@
-field: c3d8fdbe-5d3a-4a09-a91f-2da6060ece41
+field: c3d8fdbe-5d3a-4a09-a91f-2da6060ece41 # ContentBlocks
 fieldLayouts:
   eb82eaed-4b98-4191-b384-f755ca3fa0a2:
     tabs:
       -
-        fields:
-          5dd9f4f3-fb1c-4d81-b3fd-2309b56563f0:
+        elements:
+          -
+            fieldUid: dc63f038-3a87-428d-9230-20a288f905da # File type
+            instructions: null
+            label: null
             required: true
-            sortOrder: 2
-          dc63f038-3a87-428d-9230-20a288f905da:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 5dd9f4f3-fb1c-4d81-b3fd-2309b56563f0 # Filname
+            instructions: null
+            label: null
             required: true
-            sortOrder: 1
-          ed101e61-62b0-40c5-a8d4-b5d30624f1d2:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ed101e61-62b0-40c5-a8d4-b5d30624f1d2 # File content
+            instructions: null
+            label: null
             required: true
-            sortOrder: 3
-          f4121429-712b-4587-839a-e0a1db5d946a:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f4121429-712b-4587-839a-e0a1db5d946a # Line Numbers
+            instructions: null
+            label: null
             required: false
-            sortOrder: 4
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
-  5dd9f4f3-fb1c-4d81-b3fd-2309b56563f0:
+  5dd9f4f3-fb1c-4d81-b3fd-2309b56563f0: # Filname
     contentColumnType: text
     fieldGroup: null
     handle: fileName
@@ -33,11 +57,12 @@ fields:
       columnType: null
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  dc63f038-3a87-428d-9230-20a288f905da:
+  dc63f038-3a87-428d-9230-20a288f905da: # File type
     contentColumnType: string
     fieldGroup: null
     handle: fileType
@@ -237,7 +262,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Dropdown
-  ed101e61-62b0-40c5-a8d4-b5d30624f1d2:
+  ed101e61-62b0-40c5-a8d4-b5d30624f1d2: # File content
     contentColumnType: text
     fieldGroup: null
     handle: fileContent
@@ -251,11 +276,12 @@ fields:
       columnType: null
       initialRows: '4'
       multiline: '1'
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  f4121429-712b-4587-839a-e0a1db5d946a:
+  f4121429-712b-4587-839a-e0a1db5d946a: # Line Numbers
     contentColumnType: boolean
     fieldGroup: null
     handle: lineNumbers
@@ -263,7 +289,9 @@ fields:
     name: 'Line Numbers'
     searchable: true
     settings:
-      default: ''
+      default: false
+      offLabel: null
+      onLabel: null
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Lightswitch

@@ -1,0 +1,23 @@
+contentColumnType: string
+fieldGroup: 26a433d6-c7ff-4f42-8acb-7bcc035fc4d2 # Kurs
+handle: courseTheme
+instructions: ''
+name: 'Kurs tema'
+searchable: false
+settings:
+  allowLimit: false
+  allowMultipleSources: false
+  allowSelfRelations: false
+  branchLimit: '1'
+  limit: null
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: false
+  source: 'group:7755a334-0698-4415-ab30-b1fddb17b7a7' # Tema
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories

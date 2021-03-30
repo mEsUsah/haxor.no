@@ -1,0 +1,44 @@
+fieldLayouts:
+  d1f0de43-8c2c-4598-b872-4a4a29919c29:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: coursePlatform
+name: Kursplatform
+siteSettings:
+  2fc7f7b8-2f9d-43dd-977b-8c7b29763e54: # Skarshaugs.no/en
+    hasUrls: true
+    template: null
+    uriFormat: 'kursplatform/{slug}'
+  d81b7a18-6d93-471a-ba57-99544b0c585b: # Skarshaugs.no
+    hasUrls: true
+    template: null
+    uriFormat: 'kursplatform/{slug}'
+structure:
+  maxLevels: 1
+  uid: 677b1027-87e7-4644-b7f8-d32f4c8199e1

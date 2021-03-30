@@ -1,28 +1,58 @@
-field: c3d8fdbe-5d3a-4a09-a91f-2da6060ece41
+field: c3d8fdbe-5d3a-4a09-a91f-2da6060ece41 # ContentBlocks
 fieldLayouts:
   639bbea6-94c0-45a9-be44-ffc374bd8307:
     tabs:
       -
-        fields:
-          19285c32-e1f8-42c0-97ff-59f16dbb52af:
+        elements:
+          -
+            fieldUid: f73c4dce-8cb4-431f-adb5-a9be1f4059cb # Language
+            instructions: null
+            label: null
             required: false
-            sortOrder: 3
-          3ebdee02-2eb1-48f4-8b4b-4f45f3bfbae9:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 3ebdee02-2eb1-48f4-8b4b-4f45f3bfbae9 # Username
+            instructions: null
+            label: null
             required: false
-            sortOrder: 2
-          925133d6-79dc-4f13-9cbc-3752c2eff691:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 19285c32-e1f8-42c0-97ff-59f16dbb52af # Hostname
+            instructions: null
+            label: null
             required: false
-            sortOrder: 4
-          cabe8fa0-a9ef-4a18-ab9d-4b3b69cd2f3a:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 925133d6-79dc-4f13-9cbc-3752c2eff691 # Terminal Dump
+            instructions: null
+            label: null
             required: false
-            sortOrder: 5
-          f73c4dce-8cb4-431f-adb5-a9be1f4059cb:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: cabe8fa0-a9ef-4a18-ab9d-4b3b69cd2f3a # Terminal Input Only
+            instructions: null
+            label: null
             required: false
-            sortOrder: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
-  19285c32-e1f8-42c0-97ff-59f16dbb52af:
+  19285c32-e1f8-42c0-97ff-59f16dbb52af: # Hostname
     contentColumnType: text
     fieldGroup: null
     handle: terminalHostName
@@ -36,11 +66,12 @@ fields:
       columnType: null
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  3ebdee02-2eb1-48f4-8b4b-4f45f3bfbae9:
+  3ebdee02-2eb1-48f4-8b4b-4f45f3bfbae9: # Username
     contentColumnType: text
     fieldGroup: null
     handle: terminalUserName
@@ -54,11 +85,12 @@ fields:
       columnType: null
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  925133d6-79dc-4f13-9cbc-3752c2eff691:
+  925133d6-79dc-4f13-9cbc-3752c2eff691: # Terminal Dump
     contentColumnType: text
     fieldGroup: null
     handle: terminalDump
@@ -72,11 +104,12 @@ fields:
       columnType: null
       initialRows: '4'
       multiline: '1'
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  cabe8fa0-a9ef-4a18-ab9d-4b3b69cd2f3a:
+  cabe8fa0-a9ef-4a18-ab9d-4b3b69cd2f3a: # Terminal Input Only
     contentColumnType: boolean
     fieldGroup: null
     handle: terminalInputOnly
@@ -84,11 +117,13 @@ fields:
     name: 'Terminal Input Only'
     searchable: true
     settings:
-      default: ''
+      default: false
+      offLabel: null
+      onLabel: null
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Lightswitch
-  f73c4dce-8cb4-431f-adb5-a9be1f4059cb:
+  f73c4dce-8cb4-431f-adb5-a9be1f4059cb: # Language
     contentColumnType: string
     fieldGroup: null
     handle: terminalLanguage

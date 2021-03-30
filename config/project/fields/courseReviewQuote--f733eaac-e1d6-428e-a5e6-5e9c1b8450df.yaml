@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 26a433d6-c7ff-4f42-8acb-7bcc035fc4d2 # Kurs
+handle: courseReviewQuote
+instructions: ''
+name: 'Kurs anmeldelse sitat'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

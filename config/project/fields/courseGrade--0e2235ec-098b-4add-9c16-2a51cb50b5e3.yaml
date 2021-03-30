@@ -1,0 +1,89 @@
+contentColumnType: string
+fieldGroup: 26a433d6-c7ff-4f42-8acb-7bcc035fc4d2 # Kurs
+handle: courseGrade
+instructions: ''
+name: 'Kurs karakter'
+searchable: false
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Bestått
+        -
+          - value
+          - pass
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - A
+        -
+          - value
+          - a
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - B
+        -
+          - value
+          - b
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - C
+        -
+          - value
+          - c
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - D
+        -
+          - value
+          - d
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - E
+        -
+          - value
+          - e
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - F
+        -
+          - value
+          - f
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown
