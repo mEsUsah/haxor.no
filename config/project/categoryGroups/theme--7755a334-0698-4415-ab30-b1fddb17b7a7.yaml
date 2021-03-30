@@ -1,11 +1,11 @@
 handle: theme
 name: Tema
 siteSettings:
-  2fc7f7b8-2f9d-43dd-977b-8c7b29763e54:
+  2fc7f7b8-2f9d-43dd-977b-8c7b29763e54: # Skarshaugs.no/en
     hasUrls: true
     template: ''
     uriFormat: 'theme/{slug}'
-  d81b7a18-6d93-471a-ba57-99544b0c585b:
+  d81b7a18-6d93-471a-ba57-99544b0c585b: # Skarshaugs.no
     hasUrls: true
     template: ''
     uriFormat: 'tema/{slug}'

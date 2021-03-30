@@ -31,15 +31,11 @@ fieldLayouts:
 handle: coursePlatform
 name: Kursplatform
 siteSettings:
-  2fc7f7b8-2f9d-43dd-977b-8c7b29763e54:
+  2fc7f7b8-2f9d-43dd-977b-8c7b29763e54: # Skarshaugs.no/en
     hasUrls: true
     template: null
     uriFormat: 'kursplatform/{slug}'
-  87380fe3-7806-4c94-93c9-d75509f157cd:
-    hasUrls: true
-    template: null
-    uriFormat: 'kursplatform/{slug}'
-  d81b7a18-6d93-471a-ba57-99544b0c585b:
+  d81b7a18-6d93-471a-ba57-99544b0c585b: # Skarshaugs.no
     hasUrls: true
     template: null
     uriFormat: 'kursplatform/{slug}'

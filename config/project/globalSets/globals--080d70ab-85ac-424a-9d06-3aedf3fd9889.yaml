@@ -3,7 +3,7 @@ fieldLayouts:
     tabs:
       -
         fields:
-          849ea203-a4f7-42a8-845c-45933a0ee48a:
+          849ea203-a4f7-42a8-845c-45933a0ee48a: # Menu link
             required: false
             sortOrder: 1
         name: Gobals
