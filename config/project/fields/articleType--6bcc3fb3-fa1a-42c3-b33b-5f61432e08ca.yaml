@@ -11,7 +11,7 @@ settings:
   limit: null
   localizeRelations: ''
   selectionLabel: ''
-  source: 'group:7648fab9-2bab-43df-adca-9f3d941c929e'
+  source: 'group:7648fab9-2bab-43df-adca-9f3d941c929e' # Artikkeltype
   sources: '*'
   targetSiteId: null
   validateRelatedElements: ''
