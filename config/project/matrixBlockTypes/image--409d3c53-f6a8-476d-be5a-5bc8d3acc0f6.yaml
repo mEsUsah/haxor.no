@@ -1,25 +1,49 @@
-field: c3d8fdbe-5d3a-4a09-a91f-2da6060ece41
+field: c3d8fdbe-5d3a-4a09-a91f-2da6060ece41 # ContentBlocks
 fieldLayouts:
   237bf740-80eb-4f66-b362-4f05ec0604b6:
     tabs:
       -
-        fields:
-          5c01d860-2ec5-4205-936e-583524bb8264:
+        elements:
+          -
+            fieldUid: b05c4334-9b2d-4f18-8916-c65a9c521861 # Image
+            instructions: null
+            label: null
             required: true
-            sortOrder: 2
-          6a498afe-8881-4b4d-bd9e-f128e6d2ac6e:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 5c01d860-2ec5-4205-936e-583524bb8264 # Image AltText
+            instructions: null
+            label: null
             required: true
-            sortOrder: 3
-          b05c4334-9b2d-4f18-8916-c65a9c521861:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 6a498afe-8881-4b4d-bd9e-f128e6d2ac6e # Image Caption
+            instructions: null
+            label: null
             required: true
-            sortOrder: 1
-          d6f9cc1f-1608-4ae7-a083-d0924ba71f47:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d6f9cc1f-1608-4ae7-a083-d0924ba71f47 # Image Is Figure
+            instructions: null
+            label: null
             required: false
-            sortOrder: 4
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
-  5c01d860-2ec5-4205-936e-583524bb8264:
+  5c01d860-2ec5-4205-936e-583524bb8264: # Image AltText
     contentColumnType: text
     fieldGroup: null
     handle: imageAlt
@@ -33,11 +57,12 @@ fields:
       columnType: null
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: language
     type: craft\fields\PlainText
-  6a498afe-8881-4b4d-bd9e-f128e6d2ac6e:
+  6a498afe-8881-4b4d-bd9e-f128e6d2ac6e: # Image Caption
     contentColumnType: text
     fieldGroup: null
     handle: imageCapt
@@ -49,18 +74,23 @@ fields:
       availableVolumes: '*'
       cleanupHtml: true
       columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
       purifierConfig: ''
       purifyHtml: '1'
       redactorConfig: ''
       removeEmptyTags: '1'
       removeInlineStyles: '1'
       removeNbsp: '1'
+      showHtmlButtonForNonAdmins: '1'
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
+      uiMode: enlarged
     translationKeyFormat: null
     translationMethod: language
     type: craft\redactor\Field
-  b05c4334-9b2d-4f18-8916-c65a9c521861:
+  b05c4334-9b2d-4f18-8916-c65a9c521861: # Image
     contentColumnType: string
     fieldGroup: null
     handle: image
@@ -68,13 +98,17 @@ fields:
     name: Image
     searchable: true
     settings:
+      allowSelfRelations: false
+      allowUploads: true
       allowedKinds: null
       defaultUploadLocationSource: 'volume:3b363f5e-4ee5-4536-b78c-b514bf1a0c7a'
       defaultUploadLocationSubpath: ''
       limit: '1'
-      localizeRelations: ''
+      localizeRelations: false
+      previewMode: full
       restrictFiles: ''
       selectionLabel: ''
+      showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       singleUploadLocationSource: 'volume:3b363f5e-4ee5-4536-b78c-b514bf1a0c7a'
@@ -83,12 +117,12 @@ fields:
       sources: '*'
       targetSiteId: null
       useSingleFolder: false
-      validateRelatedElements: ''
+      validateRelatedElements: false
       viewMode: large
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  d6f9cc1f-1608-4ae7-a083-d0924ba71f47:
+  d6f9cc1f-1608-4ae7-a083-d0924ba71f47: # Image Is Figure
     contentColumnType: boolean
     fieldGroup: null
     handle: imageIsFigure
@@ -96,7 +130,9 @@ fields:
     name: 'Image Is Figure'
     searchable: true
     settings:
-      default: ''
+      default: false
+      offLabel: null
+      onLabel: null
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Lightswitch

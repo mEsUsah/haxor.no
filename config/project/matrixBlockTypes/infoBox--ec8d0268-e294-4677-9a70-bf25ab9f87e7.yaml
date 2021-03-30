@@ -1,16 +1,22 @@
-field: c3d8fdbe-5d3a-4a09-a91f-2da6060ece41
+field: c3d8fdbe-5d3a-4a09-a91f-2da6060ece41 # ContentBlocks
 fieldLayouts:
   e805ccd1-3547-4bf0-8b3d-565578a887d1:
     tabs:
       -
-        fields:
-          471da32a-34da-4c05-b7c6-e4bc67adca25:
+        elements:
+          -
+            fieldUid: 471da32a-34da-4c05-b7c6-e4bc67adca25 # Text
+            instructions: null
+            label: null
             required: false
-            sortOrder: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
-  471da32a-34da-4c05-b7c6-e4bc67adca25:
+  471da32a-34da-4c05-b7c6-e4bc67adca25: # Text
     contentColumnType: text
     fieldGroup: null
     handle: text
@@ -22,14 +28,19 @@ fields:
       availableVolumes: '*'
       cleanupHtml: true
       columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
       purifierConfig: ''
       purifyHtml: '1'
       redactorConfig: ''
       removeEmptyTags: '1'
       removeInlineStyles: '1'
       removeNbsp: '1'
+      showHtmlButtonForNonAdmins: '1'
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
+      uiMode: enlarged
     translationKeyFormat: null
     translationMethod: none
     type: craft\redactor\Field

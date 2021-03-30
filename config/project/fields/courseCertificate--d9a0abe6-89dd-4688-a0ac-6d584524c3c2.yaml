@@ -1,0 +1,33 @@
+contentColumnType: string
+fieldGroup: 26a433d6-c7ff-4f42-8acb-7bcc035fc4d2 # Kurs
+handle: courseCertificate
+instructions: ''
+name: Kursbevis
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds:
+    - pdf
+  defaultUploadLocationSource: 'volume:dc32cdca-de36-4628-af9c-221eb639a9ab' # PDF's
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: '1'
+  selectionLabel: ''
+  showSiteMenu: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:3b363f5e-4ee5-4536-b78c-b514bf1a0c7a'
+  singleUploadLocationSubpath: ''
+  source: null
+  sources:
+    - 'volume:dc32cdca-de36-4628-af9c-221eb639a9ab' # PDF's
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: large
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

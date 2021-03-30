@@ -24,7 +24,7 @@ fieldLayouts:
             required: false
             type: craft\fieldlayoutelements\CustomField
           -
-            fieldUid: c3d8fdbe-5d3a-4a09-a91f-2da6060ece41
+            fieldUid: c3d8fdbe-5d3a-4a09-a91f-2da6060ece41 # ContentBlocks
             required: false
             type: craft\fieldlayoutelements\CustomField
         name: 'Tab 1'

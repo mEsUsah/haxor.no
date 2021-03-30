@@ -1,16 +1,22 @@
-field: c3d8fdbe-5d3a-4a09-a91f-2da6060ece41
+field: c3d8fdbe-5d3a-4a09-a91f-2da6060ece41 # ContentBlocks
 fieldLayouts:
   cdbb61ca-cfb0-41b0-ae6a-515ad8a5c8ed:
     tabs:
       -
-        fields:
-          f96fb1c8-21d9-45ec-bc75-5792dd3b3c5b:
+        elements:
+          -
+            fieldUid: f96fb1c8-21d9-45ec-bc75-5792dd3b3c5b # Quote
+            instructions: null
+            label: null
             required: false
-            sortOrder: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
-  f96fb1c8-21d9-45ec-bc75-5792dd3b3c5b:
+  f96fb1c8-21d9-45ec-bc75-5792dd3b3c5b: # Quote
     contentColumnType: text
     fieldGroup: null
     handle: quote
@@ -24,7 +30,8 @@ fields:
       columnType: null
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
