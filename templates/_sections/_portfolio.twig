@@ -1,0 +1,11 @@
+<div class="portfolio__container">
+    {% if entry.slug == 'snake' %}
+        <canvas id="gameScreen" height="400" width="400"></canvas>
+        <script src="/resources/portfolio/snake/index.min.js?v=1.01"></script>
+    {% endif %}
+</div>
+<section class="articleBody">
+    
+    {% include "_content/dateUpdated.twig" %}
+    {% include "_content/contentBlocks.twig" %}
+</section>

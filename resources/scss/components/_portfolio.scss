@@ -1,0 +1,11 @@
+.portfolio{
+    &__container{
+        margin: 10px auto 0 auto;
+        width: fit-content;
+        
+        #gameScreen{
+            border: 1px solid black;
+            border-radius: 3px;
+        }
+    }
+}
