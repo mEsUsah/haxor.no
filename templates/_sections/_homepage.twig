@@ -1,4 +1,4 @@
-{% set articles = craft.entries.section("articles").all() %}
+{% set articles = craft.entries.section("articles, portfolio").all() %}
 
     <h1 class="articleList__header">{{entry.articleHeadline}}</h1>
     <div class="articleList__container">
