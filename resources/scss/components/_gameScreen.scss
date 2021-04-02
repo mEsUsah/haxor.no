@@ -1,0 +1,53 @@
+.gameScreen{
+    position: relative;
+    &__noMobile{
+        &--image{
+            display: none;
+            position: absolute;
+            z-index: 1;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            @include ipadOrSmaller{
+                display: block;
+            }
+        }
+        &--blur{
+            display: none;
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            backdrop-filter: blur(4px);
+            @include ipadOrSmaller{
+                display: block;
+            }
+        }
+        &--text{
+            display: none;
+            position: absolute;
+            text-align: center;
+            z-index: 3;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 20px;
+            right: 20px;
+            padding: 10px 5px;
+            color: white;
+            font-size: 20px;
+            background-color: rgba(168, 0, 0, 0.5);
+            border-radius: 10px;
+            @include ipadOrSmaller{
+                display: block;
+            }
+            
+        }
+
+    }
+}

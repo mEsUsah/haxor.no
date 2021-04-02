@@ -1,0 +1,13 @@
+contentColumnType: boolean
+fieldGroup: d74696e2-d999-44f5-aded-f8353552c57b # Portfolio
+handle: noMobile
+instructions: ''
+name: 'Ingen mobil tilpasning'
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: 'Vis overlay på mobil'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

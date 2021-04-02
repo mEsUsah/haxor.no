@@ -1,6 +1,23 @@
 <div class="portfolio__container">
     {% if entry.slug == 'snake' %}
-        <canvas id="gameScreen" height="400" width="400"></canvas>
+        <div class="gameScreen">
+            <canvas id="gameScreen" height="400" width="400"></canvas>
+            {% if entry.noMobile is defined and entry.noMobile %}
+                {% set noMobileImage = entry.articleImage.one() %}
+                {% set imageFocalX = noMobileImage.focalPoint["x"] %}
+                {% set imageFocalY = noMobileImage.focalPoint["y"] %}
+                {% set noMobileCover = {
+                    mode: "crop",
+                    width: 310,
+                    height: 210,
+                    quality: 75,
+                    position: imageFocalX ~ "," ~ imageFocalY,
+                } %}
+                <div class="gameScreen__noMobile--image" style="background-image: url('{{ noMobileImage.getUrl(noMobileCover) }}');"></div>
+                <div class="gameScreen__noMobile--blur"></div>
+                <div class="gameScreen__noMobile--text">Beklager, dette spillet kan ikke spilles på mobil</div>
+            {% endif %}
+        </div>
         <script src="/resources/portfolio/snake/index.min.js?v=1.01"></script>
     {% endif %}
 </div>
