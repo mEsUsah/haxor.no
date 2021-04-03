@@ -1,0 +1,54 @@
+{% if entry is defined %}
+	{% set thumb = {
+		mode: 'crop',
+		width: 200,
+		height: 200,
+		quality: 75,
+		position: 'top-center'
+	} %}
+
+	{# --- TITLE --- #}
+	{% if entry.section.handle is defined and entry.section.handle == 'homepage' %}
+		{% set title = "Home | Skarshaugs.no - Blog"%}
+	{% else %}
+		{% set title = entry.title|trim ~ ' | ' ~ "Skarshaugs.no - Blog" %}
+	{% endif %}
+
+	{% if entry.url is defined %}
+		{% set url = entry.url %}
+	{% endif %}
+
+	{% if craft.app.config.general.devMode %}
+		{% set title = '🚧 ' ~ title %}
+	{% endif %}
+
+	{# --- SEO Desctiption --- #}
+	{% if entry.seoDescription is defined and entry.seoDescription|trim|length %}
+		{% set seoDescription = entry.seoDescription|trim %}
+	{% elseif entry.articleTeaser is defined and entry.articleTeaser|trim|length %}
+		{% set seoDescription = entry.articleTeaser|trim %}
+	{% else %}
+		{% set seoDescription = globals.seoDescription|trim %}
+	{% endif %}
+
+	{# --- SEO Image --- #}
+	{% if entry.seoImage is defined and entry.seoImage|length %}
+		{% set seoImage = entry.seoImage.one.getUrl(thumb) %}
+	{% elseif entry.articleImage is defined and entry.articleImage|length %}
+		{% set seoImage = entry.articleImage.one.getUrl(thumb) %}
+	{% elseif globals.seoImage is defined and globals.seoImage|length %}
+		{% set seoImage = globals.seoImage.one.getUrl(thumb) %}
+	{% endif %}
+{% endif %}
+
+<title>{{title}}</title>
+<meta property="og:title" content="{{title}}"/>
+{% if url is defined and url|length %}
+	<meta property="og:url" content="{{url}}"/>
+{% endif %}
+{% if seoImage is defined and seoImage|length %}
+	<meta property="og:image" content="{{seoImage}}"/>
+{% endif %}
+{% if seoDescription is defined and seoDescription|length %}
+	<meta property="og:description" content="{{seoDescription}}"/>
+{% endif %}
