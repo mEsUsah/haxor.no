@@ -2,6 +2,7 @@
 {% set cashebuster = "1.0.3" %}
 <html>
     <head>
+
         {% set devMode = craft.app.config.general.devMode %}
         {% set livePreview = craft.app.request.isPreview %}
         {% if not devMode and not livePreview %}
@@ -13,7 +14,7 @@
             })(window,document,'script','dataLayer','GTM-5WM4TRN');</script>
             <!-- End Google Tag Manager -->
         {% endif %}
-        <title>{{entry.title}} | Skarshaugs.no - Blog</title>
+        {% include "partials/_seo" %}
         <meta charset="UTF-8" name='viewport' content='initial-scale=1.0, maximum-scale=1.0, user-scalable=1' >
         <link rel="stylesheet" href="/resources/css/site.min.css?v={{ cashebuster }}">
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">

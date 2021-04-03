@@ -2,11 +2,39 @@ fieldLayouts:
   0d1b50fc-6bfd-4083-bdb1-ece4686cbec8:
     tabs:
       -
-        fields:
-          849ea203-a4f7-42a8-845c-45933a0ee48a: # Menu link
+        elements:
+          -
+            fieldUid: 849ea203-a4f7-42a8-845c-45933a0ee48a # Menu link
+            instructions: null
+            label: null
             required: false
-            sortOrder: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Gobals
         sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 7701d10a-74fb-40fb-a7aa-7e184bb97f05 # SEO Image
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c1769912-6758-4fbd-9f12-d37a9fa32253 # SEO Description
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: SEO
+        sortOrder: 2
 handle: globals
 name: Globals
