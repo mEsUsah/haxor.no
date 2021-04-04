@@ -14,6 +14,8 @@
         text-align: center;
         color: white;
         margin-bottom: 38px;
+        max-width: 1000px;
+        margin: 0 auto;
     }
     &__item{
         color: white;
@@ -29,6 +31,7 @@
         text-align: center;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
         border-radius: 3px;
+
         &--image{
             max-width: 100%;
             vertical-align: top;
