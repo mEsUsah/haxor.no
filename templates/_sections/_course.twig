@@ -31,15 +31,24 @@
                     <span class="courseList__item--reviewScoreQuote">"{{course.courseReviewQuote}}"</span>
 
                 </p>
-                {{course.courseReview}}
+                
             </div>
-            <p>
-                <span class="courseList__item--courseGrade courseList__item--courseGrade-{{course.courseGrade}}"></span>
-                {% if course.courseCertificate is defined and course.courseCertificate|length %}
-                    <a href="{{course.courseCertificate.one().getUrl()}}" target="_blank" class="courseList__item--courseDiploma"></a>
-                {% endif %}
-                <span> - {{course.courseCompletedDate|date("j. F Y")}}</span>
-            </p>
+            <div class="courseList__item--expanded" data-target-accordian="{{loop.index0}}">
+                {{course.courseReview}}
+                <p>
+                    <span class="courseList__item--courseGrade courseList__item--courseGrade-{{course.courseGrade}}"></span>
+                    {% if course.courseCertificate is defined and course.courseCertificate|length %}
+                        <a href="{{course.courseCertificate.one().getUrl()}}" target="_blank" class="courseList__item--courseDiploma"></a>
+                    {% endif %}
+                    <span> - {{course.courseCompletedDate|date("j. F Y")}}</span>
+                </p>
+            </div>
+
+            
+            <div class="courseList__item--accordianButton-wrapper" data-button-accordian="{{loop.index0}}">
+                <div class="courseList__item--accordianButton-text">Mer info og anmeldelse</div>
+                <div class="courseList__item--accordianButton-icon"></div>
+            </div>
         </div>
     {% endfor %}
 

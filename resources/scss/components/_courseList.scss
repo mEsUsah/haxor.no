@@ -61,7 +61,7 @@
             //font-style: italic;
             margin-top: 20px;
             p{
-                margin: 0 0 5px 0;
+                margin: 0;
             }
         }
         &--reviewScore{
@@ -175,6 +175,53 @@
             object-fit: cover;
             object-position: center;
             border-radius: 5px;
+        }
+        &--accordianButton-wrapper{
+            color: white;
+            cursor: pointer;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 220px;
+            height: 30px;
+            .courseList__item--accordianButton-text{
+                font-size: 16px;
+                line-height: 16px;
+                padding: 3px 0 5px 10px;
+                font-weight: 600;
+                position: absolute;
+                background-color: #ea5252;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 190px;
+                border-bottom-left-radius: 12px;
+                border-top-left-radius: 12px;
+            }
+            .courseList__item--accordianButton-icon{
+                position: absolute;
+                right: 0;
+                top: 50%;
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                background-color: white;
+                transform: translateY(-50%);
+                border: 2px solid #ea5252;
+                background-image: $icon-plus;
+                background-position: center;
+                background-size: 80%;
+                background-repeat: no-repeat;
+            }
+            &.is-active{
+                .courseList__item--accordianButton-icon{
+                    background-image: $icon-minus;
+                }
+            }
+        }
+        &--expanded{
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.25s;
         }
     }
 }
