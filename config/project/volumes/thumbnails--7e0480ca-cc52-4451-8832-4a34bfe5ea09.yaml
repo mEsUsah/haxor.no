@@ -1,0 +1,40 @@
+fieldLayouts:
+  c0cfb397-da13-4c67-b7cd-8f76b4b1bebd:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\AssetTitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: thumbnails
+hasUrls: true
+name: Thumbnails
+settings:
+  path: uploads/thumbnails
+sortOrder: 3
+titleTranslationKeyFormat: null
+titleTranslationMethod: none
+type: craft\volumes\Local
+url: '@web/uploads/thumbnails'
