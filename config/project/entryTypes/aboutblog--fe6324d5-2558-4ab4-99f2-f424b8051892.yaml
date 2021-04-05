@@ -1,5 +1,5 @@
 fieldLayouts:
-  3d55ce8e-a015-4625-8f52-36c557fd5025:
+  6ab29953-e4cb-451c-b486-5dae986bdd35:
     tabs:
       -
         elements:
@@ -11,7 +11,7 @@ fieldLayouts:
             disabled: false
             id: null
             instructions: null
-            label: Title
+            label: null
             max: null
             min: null
             name: null
@@ -54,15 +54,6 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 84196158-704f-46cd-9cc5-cfe49666f56e # Ingress
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
             fieldUid: c3d8fdbe-5d3a-4a09-a91f-2da6060ece41 # ContentBlocks
             instructions: null
             label: null
@@ -95,11 +86,11 @@ fieldLayouts:
             width: 100
         name: SEO
         sortOrder: 2
-handle: aboutme
+handle: aboutblog
 hasTitleField: true
-name: 'Om meg'
-section: 315547ae-9f46-441e-831a-f2979d046b94 # Om meg
+name: 'Om Bloggen'
+section: 1123b472-8241-4d07-bd52-1eff0c59f1ef # Om Bloggen
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
-titleTranslationMethod: language
+titleTranslationMethod: site
