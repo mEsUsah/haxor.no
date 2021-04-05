@@ -1,0 +1,19 @@
+contentColumnType: smallint(2)
+fieldGroup: 26a433d6-c7ff-4f42-8acb-7bcc035fc4d2 # Kurs
+handle: courseLengthMinutes
+instructions: ''
+name: 'Varighet (Minutter)'
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: '0'
+  max: '59'
+  min: '0'
+  prefix: null
+  previewCurrency: ''
+  previewFormat: decimal
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number
