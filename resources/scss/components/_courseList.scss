@@ -7,6 +7,23 @@
             margin: 0px auto;
         }
     }
+    &__link{
+        margin: 0 auto;
+        width: fit-content;
+        display: block;
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 400;
+        text-shadow: 0 0 3px #000000;
+        background-color: #989898;
+        border-radius: 6px;
+        padding: 0px 5px 4px;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+
+    }
     &__item{
         &--wrapper{
             background-color: #cccccc;
@@ -28,6 +45,9 @@
             }
             @include phoneOnly {    
                 margin: 30px 20px;
+            }
+            &:last-of-type{
+                margin: 40px auto 10px auto;
             }
         }
         &--platform{

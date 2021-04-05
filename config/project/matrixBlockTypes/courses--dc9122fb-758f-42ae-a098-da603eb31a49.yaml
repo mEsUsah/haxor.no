@@ -1,0 +1,89 @@
+field: c3d8fdbe-5d3a-4a09-a91f-2da6060ece41 # ContentBlocks
+fieldLayouts:
+  7e83945a-84c7-442f-a4f6-a62dac941a55:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: a2c9fa7f-4706-4b49-ad49-f09d9a9ebc10 # Courses
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 2efca9b8-ea72-4fc4-9c51-20695e174ce7 # Three newest?
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1c99bad7-a4b3-483e-bf38-82c06d1f19a0 # Link to all courses?
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  1c99bad7-a4b3-483e-bf38-82c06d1f19a0: # Link to all courses?
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: linkToAllCourses
+    instructions: ''
+    name: 'Link to all courses?'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  2efca9b8-ea72-4fc4-9c51-20695e174ce7: # Three newest?
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: threeNewest
+    instructions: ''
+    name: 'Three newest?'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  a2c9fa7f-4706-4b49-ad49-f09d9a9ebc10: # Courses
+    contentColumnType: string
+    fieldGroup: null
+    handle: courses
+    instructions: ''
+    name: Courses
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: ''
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: false
+      source: null
+      sources:
+        - 'section:b3979b7e-2d54-4b6f-89ec-5ef480431d82' # Kurs
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: courses
+name: Courses
+sortOrder: 9
