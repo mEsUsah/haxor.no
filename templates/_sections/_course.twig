@@ -46,7 +46,7 @@
 
             
             <button class="courseList__item--accordianButton-wrapper" data-button-accordian="{{loop.index0}}">
-                <div class="courseList__item--accordianButton-text {{course.courseCertificate|length ? 'courseList__item--accordianButton-textLong'}}">Anmeldelse {{course.courseCertificate|length ? "og kursbevis"}}</div>
+                <div class="courseList__item--accordianButton-text {{course.courseCertificate|length ? 'courseList__item--accordianButton-textLong'}}">Anmeldelse {{course.courseCertificate|length ? "og kursbevis" : "og resultat"}}</div>
                 <div class="courseList__item--accordianButton-icon"></div>
             </button>
         </div>
