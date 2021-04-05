@@ -9,13 +9,20 @@
     }
     &__item{
         &--wrapper{
+            background-color: #cccccc;
+            color: black;
+            display: flex;
+            flex-direction: column;
             position: relative;
             margin: 40px auto;
             max-width: 720px;
-            background-color: #cccccc;
-            color: black;
             border-radius: 6px;
-            padding: 20px 20px;
+            padding: 0px 0px 50px;
+            border: 2px solid #cccccc;
+            @include desktopOnly{
+                padding: 20px 20px;
+                border: none;
+            }
             @include ipadOrSmaller {    
                 margin: 0 10px;
             }
@@ -50,7 +57,10 @@
 
         &--header{
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
+            @include desktopOnly{
+                flex-direction: row;
+            }
             h3{
                 margin: 8px 0;
                 font-size: 21px;
@@ -60,6 +70,10 @@
         &--review{
             //font-style: italic;
             margin-top: 20px;
+            margin-left: 5px;
+            @include desktopOnly{
+                margin-left: none;
+            }
             p{
                 margin: 0;
             }
@@ -126,7 +140,10 @@
             position: relative;
         }
         &--description{
-            margin-left: 20px;
+            margin-left: 5px;
+            @include desktopOnly{
+                margin-left: 20px;
+            }
             h3{
                 margin: 0;
             }
@@ -138,6 +155,7 @@
             }
         }
         &--icon{
+            z-index: 1;
             position: absolute;
             height: 50px;
             width: 50px;
@@ -171,22 +189,31 @@
         }
         &--image{
             height: 150px;
-            width: 230px;
+            width: 100%;
             object-fit: cover;
             object-position: center;
-            border-radius: 5px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            @include desktopOnly{
+                border-radius: 5px;
+                width: 230px;
+            }
         }
         &--accordianButton-wrapper{
             color: white;
             cursor: pointer;
             position: absolute;
-            bottom: 20px;
-            right: 20px;
+            bottom: 10px;
+            right: 10px;
             width: 245px;
             height: 30px;
             border: none;
             background: none;
             outline: none;
+            @include desktopOnly{
+                bottom: 14px;
+                right: 14px;
+            }
             .courseList__item--accordianButton-text{
                 font-size: 16px;
                 line-height: 16px;
@@ -229,6 +256,10 @@
             overflow: hidden;
             max-height: 0;
             transition: max-height 0.25s;
+            margin-left: 5px;
+            @include desktopOnly{
+                margin-left: 0;
+            }
         }
     }
 }
