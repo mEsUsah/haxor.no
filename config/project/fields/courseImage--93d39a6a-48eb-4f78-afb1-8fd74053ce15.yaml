@@ -8,7 +8,7 @@ settings:
   allowSelfRelations: false
   allowUploads: true
   allowedKinds: null
-  defaultUploadLocationSource: 'volume:3b363f5e-4ee5-4536-b78c-b514bf1a0c7a'
+  defaultUploadLocationSource: 'volume:7e0480ca-cc52-4451-8832-4a34bfe5ea09' # Thumbnails
   defaultUploadLocationSubpath: ''
   limit: '1'
   localizeRelations: false
@@ -22,7 +22,7 @@ settings:
   singleUploadLocationSubpath: ''
   source: null
   sources:
-    - 'volume:3b363f5e-4ee5-4536-b78c-b514bf1a0c7a'
+    - 'volume:7e0480ca-cc52-4451-8832-4a34bfe5ea09' # Thumbnails
   targetSiteId: null
   useSingleFolder: false
   validateRelatedElements: false
