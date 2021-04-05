@@ -8,14 +8,14 @@ settings:
   columns:
     __assoc__:
       -
-        - f598728f-d688-4b98-8aab-cf4447b3af95
+        - f598728f-d688-4b98-8aab-cf4447b3af95 # Entry
         -
           __assoc__:
             -
               - width
               - ''
       -
-        - f2cc0c2d-6188-407c-b0f2-e9afc9ecdb23
+        - f2cc0c2d-6188-407c-b0f2-e9afc9ecdb23 # Text
         -
           __assoc__:
             -
@@ -25,7 +25,8 @@ settings:
   fieldLayout: table
   maxRows: ''
   minRows: ''
-  propagationMethod: all
+  placeholderKey: null
+  propagationMethod: language
   selectionLabel: ''
   staticField: ''
 translationKeyFormat: null
