@@ -27,7 +27,7 @@ header{
             display: block;
             color: white;
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 400;
             font-size: 20px;
         }
     }
@@ -37,16 +37,39 @@ header{
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        
         &--no{
             background-image: $icon-flag-no;
         }
         &--en{
             background-image: $icon-flag-uk;
         }
+        &--wrapper{
+            ul{
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: flex-end;
+            }
+            li:nth-child(2){
+                margin-left: 10px;
+            }
+        }
     }
     &__content{
         &--wrapper{
             margin-top: 10px;
+            text-align: right;
+            ul{
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                margin: 10px 0 0 0;
+            }
+            li{
+                margin-left: 0;
+
+            }
         }
     }
 }
