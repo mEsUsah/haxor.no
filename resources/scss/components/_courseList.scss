@@ -7,20 +7,47 @@
             margin: 0px auto;
         }
     }
+    &__link{
+        margin: 0 auto;
+        width: fit-content;
+        display: block;
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 400;
+        text-shadow: 0 0 3px #000000;
+        background-color: #989898;
+        border-radius: 6px;
+        padding: 0px 5px 4px;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+
+    }
     &__item{
         &--wrapper{
+            background-color: #cccccc;
+            color: black;
+            display: flex;
+            flex-direction: column;
             position: relative;
             margin: 40px auto;
             max-width: 720px;
-            background-color: #cccccc;
-            color: black;
             border-radius: 6px;
-            padding: 20px 20px;
+            padding: 0px 0px 50px;
+            border: 2px solid #cccccc;
+            @include desktopOnly{
+                padding: 20px 20px;
+                border: none;
+            }
             @include ipadOrSmaller {    
                 margin: 0 10px;
             }
             @include phoneOnly {    
                 margin: 30px 20px;
+            }
+            &:last-of-type{
+                margin: 40px auto 10px auto;
             }
         }
         &--platform{
@@ -50,7 +77,10 @@
 
         &--header{
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
+            @include desktopOnly{
+                flex-direction: row;
+            }
             h3{
                 margin: 8px 0;
                 font-size: 21px;
@@ -60,8 +90,12 @@
         &--review{
             //font-style: italic;
             margin-top: 20px;
+            margin-left: 5px;
+            @include desktopOnly{
+                margin-left: none;
+            }
             p{
-                margin: 0 0 5px 0;
+                margin: 0;
             }
         }
         &--reviewScore{
@@ -126,7 +160,10 @@
             position: relative;
         }
         &--description{
-            margin-left: 20px;
+            margin-left: 5px;
+            @include desktopOnly{
+                margin-left: 20px;
+            }
             h3{
                 margin: 0;
             }
@@ -138,6 +175,7 @@
             }
         }
         &--icon{
+            z-index: 1;
             position: absolute;
             height: 50px;
             width: 50px;
@@ -171,10 +209,77 @@
         }
         &--image{
             height: 150px;
-            width: 230px;
+            width: 100%;
             object-fit: cover;
             object-position: center;
-            border-radius: 5px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            @include desktopOnly{
+                border-radius: 5px;
+                width: 230px;
+            }
+        }
+        &--accordianButton-wrapper{
+            color: white;
+            cursor: pointer;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 245px;
+            height: 30px;
+            border: none;
+            background: none;
+            outline: none;
+            @include desktopOnly{
+                bottom: 14px;
+                right: 14px;
+            }
+            .courseList__item--accordianButton-text{
+                font-size: 16px;
+                line-height: 16px;
+                padding: 3px 20px 3px 10px;
+                font-weight: 600;
+                position: absolute;
+                background-color: #ea5252;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 181px;
+                right: 20px;
+                border-bottom-left-radius: 12px;
+                border-top-left-radius: 12px;
+                &Long{
+                    width: 193px;
+                }
+            }
+            .courseList__item--accordianButton-icon{
+                position: absolute;
+                right: 0;
+                top: 50%;
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                background-color: white;
+                transform: translateY(-50%);
+                border: 2px solid #ea5252;
+                background-image: $icon-plus;
+                background-position: center;
+                background-size: 80%;
+                background-repeat: no-repeat;
+            }
+            &.is-active{
+                .courseList__item--accordianButton-icon{
+                    background-image: $icon-minus;
+                }
+            }
+        }
+        &--expanded{
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.25s;
+            margin-left: 5px;
+            @include desktopOnly{
+                margin-left: 0;
+            }
         }
     }
 }

@@ -1,0 +1,48 @@
+<div class="courseList__item--wrapper">
+    <div class="courseList__item--icon"></div>
+    <div class="courseList__item--header">
+        <div class="courseList__item--illustration">
+            {% if course.courseTheme|length %}
+                {% set theme = course.courseTheme.one().slug %}
+            {% else %}
+                {% set theme = "default" %}
+            {% endif %}
+            <img class="courseList__item--image" src="{{course.courseImage.one().getUrl()}}" alt="">
+            <div class="courseList__item--categoryIcon">
+                <div class="category__icon category__icon--{{ theme }}"></div>
+            </div>
+            
+        </div>
+        <div class="courseList__item--description">
+            <h3>{{course.title}}</h3>
+            <p><span class="courseList__item--platform courseList__item--platform-{{ course.coursePlatform.one().slug }}"></span> - {{course.courseInstructor}} - {{course.courseLength|date("G:i")}}</p>
+            {{course.courseDescription}}
+        </div>
+    </div>
+    <div class="courseList__item--review">
+        <p>
+            {% if course.courseReviewScore is defined and course.courseReviewScore|length %}
+                <span class="courseList__item--reviewScore courseList__item--reviewScore-{{course.courseReviewScore}}"></span>
+            {% endif %}
+            <span class="courseList__item--reviewScoreQuote">"{{course.courseReviewQuote}}"</span>
+
+        </p>
+        
+    </div>
+    <div class="courseList__item--expanded" data-target-accordian="{{loop.index0}}">
+        {{course.courseReview}}
+        <p>
+            <span class="courseList__item--courseGrade courseList__item--courseGrade-{{course.courseGrade}}"></span>
+            {% if course.courseCertificate is defined and course.courseCertificate|length %}
+                <a href="{{course.courseCertificate.one().getUrl()}}" target="_blank" class="courseList__item--courseDiploma"></a>
+            {% endif %}
+            <span> - {{course.courseCompletedDate|date("j. F Y")}}</span>
+        </p>
+    </div>
+
+    
+    <button class="courseList__item--accordianButton-wrapper" data-button-accordian="{{loop.index0}}">
+        <div class="courseList__item--accordianButton-text {{course.courseCertificate|length ? 'courseList__item--accordianButton-textLong'}}">Anmeldelse {{course.courseCertificate|length ? "og kursbevis" : "og resultat"}}</div>
+        <div class="courseList__item--accordianButton-icon"></div>
+    </button>
+</div>
