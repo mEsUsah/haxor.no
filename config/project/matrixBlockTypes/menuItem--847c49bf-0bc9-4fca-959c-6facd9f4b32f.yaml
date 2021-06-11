@@ -4,13 +4,13 @@ fieldLayouts:
     tabs:
       -
         fields:
-          16c673f1-c879-4707-98ac-84c6e5b5b807:
+          16c673f1-c879-4707-98ac-84c6e5b5b807: # Link
             required: false
             sortOrder: 1
         name: Content
         sortOrder: 1
 fields:
-  16c673f1-c879-4707-98ac-84c6e5b5b807:
+  16c673f1-c879-4707-98ac-84c6e5b5b807: # Link
     contentColumnType: string
     fieldGroup: null
     handle: header_link

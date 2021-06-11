@@ -5,42 +5,6 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: f29cf56f-e024-4426-a529-899246ced721 # Image
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 1079ffac-f516-4c4f-a131-3a26fa26ac15 # Image Is Figure
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 386c4702-8fb5-4d6d-8e99-f43e77541a6d # Image AltText
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 286c04a5-6631-4fb0-a891-256488a130e9 # Image Caption
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
             fieldUid: 6a70457e-a328-490d-8e43-da01bd0fb461 # Chapter Headline
             instructions: null
             label: null
@@ -61,67 +25,6 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  1079ffac-f516-4c4f-a131-3a26fa26ac15: # Image Is Figure
-    contentColumnType: boolean
-    fieldGroup: null
-    handle: imageIsFigure
-    instructions: 'When this is toggled the image will not be cropped to fit'
-    name: 'Image Is Figure'
-    searchable: true
-    settings:
-      default: false
-      offLabel: null
-      onLabel: null
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\Lightswitch
-  286c04a5-6631-4fb0-a891-256488a130e9: # Image Caption
-    contentColumnType: text
-    fieldGroup: null
-    handle: imageCapt
-    instructions: ''
-    name: 'Image Caption'
-    searchable: true
-    settings:
-      availableTransforms: '*'
-      availableVolumes: '*'
-      cleanupHtml: true
-      columnType: text
-      configSelectionMode: choose
-      defaultTransform: ''
-      manualConfig: ''
-      purifierConfig: ''
-      purifyHtml: '1'
-      redactorConfig: ''
-      removeEmptyTags: '1'
-      removeInlineStyles: '1'
-      removeNbsp: '1'
-      showHtmlButtonForNonAdmins: '1'
-      showUnpermittedFiles: false
-      showUnpermittedVolumes: false
-      uiMode: enlarged
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\redactor\Field
-  386c4702-8fb5-4d6d-8e99-f43e77541a6d: # Image AltText
-    contentColumnType: text
-    fieldGroup: null
-    handle: imageAlt
-    instructions: ''
-    name: 'Image AltText'
-    searchable: true
-    settings:
-      byteLimit: null
-      charLimit: null
-      code: ''
-      columnType: null
-      initialRows: '4'
-      multiline: ''
-      placeholder: null
-      uiMode: normal
-    translationKeyFormat: null
-    translationMethod: language
-    type: craft\fields\PlainText
   62b88f4a-25d3-4a89-831f-24f78c24f85b: # Subtitle
     contentColumnType: text
     fieldGroup: null
@@ -160,38 +63,6 @@ fields:
     translationKeyFormat: null
     translationMethod: language
     type: craft\fields\PlainText
-  f29cf56f-e024-4426-a529-899246ced721: # Image
-    contentColumnType: string
-    fieldGroup: null
-    handle: image
-    instructions: ''
-    name: Image
-    searchable: true
-    settings:
-      allowSelfRelations: false
-      allowUploads: true
-      allowedKinds: null
-      defaultUploadLocationSource: 'volume:3b363f5e-4ee5-4536-b78c-b514bf1a0c7a'
-      defaultUploadLocationSubpath: ''
-      limit: '10'
-      localizeRelations: false
-      previewMode: full
-      restrictFiles: ''
-      selectionLabel: ''
-      showSiteMenu: true
-      showUnpermittedFiles: false
-      showUnpermittedVolumes: false
-      singleUploadLocationSource: 'volume:3b363f5e-4ee5-4536-b78c-b514bf1a0c7a'
-      singleUploadLocationSubpath: ''
-      source: null
-      sources: '*'
-      targetSiteId: null
-      useSingleFolder: true
-      validateRelatedElements: false
-      viewMode: large
-    translationKeyFormat: null
-    translationMethod: site
-    type: craft\fields\Assets
 handle: chapter
 name: Chapter
 sortOrder: 1
