@@ -1,4 +1,4 @@
-{% set courses = craft.entries.section("courses").all() %}
+{% set courses = craft.entries.section("courses").orderBy("courseCompletedDate DESC").all() %}
 <h1 class="articleList__header">{{entry.title}}</h1>
 <div class="courseList__container">
     {% for course in courses %}
