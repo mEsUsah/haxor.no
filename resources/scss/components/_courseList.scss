@@ -144,6 +144,18 @@
             &-a{
                 background-image: $icon-grade-a;
             }
+            &-b{
+                background-image: $icon-grade-b;
+            }
+            &-c{
+                background-image: $icon-grade-c;
+            }
+            &-d{
+                background-image: $icon-grade-d;
+            }
+            &-e{
+                background-image: $icon-grade-e;
+            }
         }
         &--courseDiploma{
             background-size: cover;
