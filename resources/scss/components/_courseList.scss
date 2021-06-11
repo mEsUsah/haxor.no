@@ -46,9 +46,6 @@
             @include phoneOnly {    
                 margin: 30px 20px;
             }
-            &:last-of-type{
-                margin: 40px auto 10px auto;
-            }
         }
         &--platform{
             position: relative;
