@@ -42,6 +42,20 @@
             background-image: $icon-thoughts;
             background-size: 70%;
         }
+        &--prosjektledelse{
+            background-image: $icon-user-group;
+            background-size: 70%;
+        }
+        &--security{
+            background-image: $icon-lock;
+            background-size: 69%;
+            background-position-y: 3px;
+        }
+        &--sikkerhet{
+            background-image: $icon-lock;
+            background-size: 69%;
+            background-position-y: 3px;
+        }
     }
     &__color{
         &--linux{
