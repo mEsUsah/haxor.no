@@ -1,6 +1,7 @@
-<div class="chapter__wrapper">
+{% set chapter = chapter|default(null) %}
+<div class="chapter__wrapper" id="ch_{{ chapter }}" data-chapter-target="{{ chapter }}">
     <div class="chapter__start">
-        <h2 id="chapter-{{ chapter }}" class="chapter__headline" data-bookmark>{{ block.chapterHeadline }} </h2>
+        <h2 class="chapter__headline" data-bookmark>{{ block.chapterHeadline }} </h2>
         {% if block.subtitle|length %}
             <p class="chapter__subtitle">{{ block.subtitle }}</p>
         {% endif %}

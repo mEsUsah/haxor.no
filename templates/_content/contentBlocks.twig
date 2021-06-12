@@ -1,9 +1,24 @@
 {% if entry.contentBlocks|length %}
-    {% set chapterNr = 1 %}
-    {% for block in entry.contentBlocks.all() %}
-        {% if block.type == "chapter" %}
-            {% set chapterNr = chapterNr + 1 %}
-        {% endif %}
-        {% include "_content/_contentBlocks/" ~ block.type with {"chapter": chapterNr} %}
-    {% endfor %} 
+    <div class="article__content--wrapper">
+        <div class="article__content--sidebar">
+            <h3>Innhold:</h3>
+            <a href="#" data-chapter-button="0" class="active">Intro</a>
+            {% set chapterNr = 0 %}
+            {% for block in entry.contentBlocks.all() %}
+                {% if block.type == "chapter" %}
+                    {% set chapterNr = chapterNr + 1 %}
+                    <a href="#ch_{{chapterNr}}" data-chapter-button="{{chapterNr}}">{{ block.chapterHeadline }}</a>
+                {% endif %}
+            {% endfor %} 
+        </div>
+        <div class="article__content--main">
+            {% set chapterNr = 0 %}
+            {% for block in entry.contentBlocks.all() %}
+                {% if block.type == "chapter" %}
+                    {% set chapterNr = chapterNr + 1 %}
+                {% endif %}
+                {% include "_content/_contentBlocks/" ~ block.type with {"chapter": chapterNr} %}
+            {% endfor %} 
+        </div>
+    </div>
 {% endif %}
