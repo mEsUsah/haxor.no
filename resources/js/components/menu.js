@@ -14,11 +14,15 @@ export default {
             if (!hamburgerButtonActive && st > lastScrollTop){
                 // downscroll code
                 header.classList.remove("active")
-                sidebar.classList.remove("menuOpen");
+                if(sidebar){
+                    sidebar.classList.remove("menuOpen");
+                }
             } else {
                 // upscroll code
                 header.classList.add("active");
-                sidebar.classList.add("menuOpen");
+                if(sidebar){
+                    sidebar.classList.add("menuOpen");
+                }
             }
             lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
         }, false);
