@@ -24,5 +24,14 @@ export default {
                 }
             });
         });
+        let siteMenu = document.querySelector(".menu__wrapper");
+        let siteHamburgerButton = document.querySelector("[data-menu-button]");
+        chapterButtonsMenu.forEach(button => {
+            button.addEventListener("click", () => {
+                siteMenu.classList.remove("is-active");
+                siteMenu.style = "max-height:0";
+                siteHamburgerButton.classList.remove("is-active");
+            });
+        })
     }
 }
