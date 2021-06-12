@@ -1,5 +1,13 @@
 header{
-    position: relative;
+    position: fixed;
+    top: -145px;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    transition: all 0.2s;
+    &.active{
+        top: 0;
+    }
 }
 .menu{
     &__wrapper{
