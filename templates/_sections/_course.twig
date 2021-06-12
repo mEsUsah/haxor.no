@@ -1,7 +1,9 @@
-{% set courses = craft.entries.section("courses").orderBy("courseCompletedDate DESC").all() %}
-<h1 class="articleList__header">{{entry.title}}</h1>
-<div class="courseList__container">
-    {% for course in courses %}
+<section class="articleBody">
+    {% set courses = craft.entries.section("courses").orderBy("courseCompletedDate DESC").all() %}
+    <h1 class="articleList__header">{{entry.title}}</h1>
+    <div class="courseList__container">
+        {% for course in courses %}
         {% include "_content/parts/_course.twig" %}
-    {% endfor %}
-</div>
+        {% endfor %}
+    </div>
+</section>
