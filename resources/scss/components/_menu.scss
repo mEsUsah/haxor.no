@@ -86,6 +86,9 @@ header{
     }
     &__chapter{
         &--wrapper{
+            @include desktopOnly{
+                display: none;
+            }
             h3{
                 font-family: 'Oswald', sans-serif;
                 color: white;
