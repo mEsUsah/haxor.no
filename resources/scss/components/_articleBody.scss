@@ -19,10 +19,14 @@
         }
         &--main{
             max-width: 720px;
+            width: 100%;
         }
         &--sidebar{
             position: sticky;
             top: 50px;
+            @include ipadOrSmaller {
+                display: none;
+            }
             h3{
                 font-family: 'Oswald', sans-serif;
                 font-size: 22px;
