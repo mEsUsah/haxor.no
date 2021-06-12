@@ -23,6 +23,8 @@ header{
         transition: 0.25s all;
         @include phoneOnly{
             width: 100vw;
+            height: calc(100vh - 145px);
+            
         }
         &.is-active{
             border-bottom: 1px solid $color-hightlight;
