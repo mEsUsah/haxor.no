@@ -13,6 +13,30 @@
         </div>
     </div>
     <div class="menu__wrapper" data-target-accordian="hamburger-menu">
+        {% if entry.contentBlocks|length %}
+            <div class="menu__chapter--wrapper">
+                <nav>
+                    <ul>
+                        <li>
+                            <h3>Innhold:</h3>
+                        </li>
+                        <li>
+                            <a href="#" data-chapter-button-menu="0" class="active">Intro</a>
+                        </li>    
+                        {% set chapterNr = 0 %}
+                        {% for block in entry.contentBlocks.all() %}
+                            {% if block.type == "chapter" %}
+                                {% set chapterNr = chapterNr + 1 %}
+                                <li>
+                                    <a href="#ch_{{chapterNr}}" data-chapter-button-menu="{{chapterNr}}">{{ block.chapterHeadline }}</a>
+                                </li>
+                            {% endif %}
+                        {% endfor %} 
+                    </ul>
+                </nav>
+
+            </div>
+        {% endif %}
         <div class="menu__language--wrapper">
             <nav>
                 <ul>
