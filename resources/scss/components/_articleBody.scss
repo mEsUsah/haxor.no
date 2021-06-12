@@ -24,6 +24,10 @@
         &--sidebar{
             position: sticky;
             top: 50px;
+            transition: 0.25s all;
+            &.menuOpen{
+                top: 175px;
+            }
             @include ipadOrSmaller {
                 display: none;
             }
