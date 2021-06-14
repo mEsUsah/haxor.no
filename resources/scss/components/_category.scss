@@ -56,6 +56,11 @@
             background-size: 69%;
             background-position-y: 3px;
         }
+        &--kjoling{
+            background-image: $icon-cooling;
+            background-size: 69%;
+            background-position-y: 3px;
+        }
     }
     &__color{
         &--linux{
