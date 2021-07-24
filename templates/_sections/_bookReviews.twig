@@ -1,0 +1,9 @@
+<section class="articleBody">
+    {% set books = craft.entries.section("books").orderBy("courseCompletedDate DESC").all() %}
+    <h1 class="articleList__header">{{entry.title}}</h1>
+    <div class="courseList__container">
+        {% for book in books %}
+        {% include "_content/parts/_book.twig" with {"chapter": 1} %}
+        {% endfor %}
+    </div>
+</section>

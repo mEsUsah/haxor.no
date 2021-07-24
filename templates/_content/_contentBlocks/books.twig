@@ -1,0 +1,15 @@
+{% if block.threeNewest %}
+    {% set books = craft.entries.section("books").orderBy("courseCompletedDate DESC").limit(3).all() %}
+{% else %}
+    {% set books = block.books.all() %}
+{% endif %}
+
+<div class="courseList__container">
+    {% for book in books %}
+        {% include "_content/parts/_book.twig" %}
+    {% endfor %}
+
+    {% if block.linkToAllCourses %}
+        <a href="{{craft.entries().section('bookReviews').one().getUrl()}}" class="courseList__link">Oversikt over alle bøker jeg har lest og anmeldt</a>
+    {% endif %}
+</div>

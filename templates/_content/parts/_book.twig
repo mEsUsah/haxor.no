@@ -1,0 +1,44 @@
+<div class="courseList__item--wrapper">
+    <div class="bookList__item--icon"></div>
+    <div class="courseList__item--header">
+        <div class="courseList__item--illustration">
+            {% if book.courseTheme|length %}
+                {% set theme = book.courseTheme.one().slug %}
+            {% else %}
+                {% set theme = "default" %}
+            {% endif %}
+            <img class="bookList__item--image" src="{{book.bookImage.one().getUrl()}}" alt="">
+            <div class="courseList__item--categoryIcon">
+                <div class="category__icon category__icon--{{ theme }}"></div>
+            </div>
+            
+        </div>
+        <div class="courseList__item--description">
+            <h3>{{book.title}}</h3>
+            <p>{{book.writer}} - {{book.numberOfPages}} sider</p>
+            {{book.courseDescription}}
+        </div>
+    </div>
+    <div class="courseList__item--review">
+        <p>
+            {% if book.courseReviewScore is defined and book.courseReviewScore|length %}
+                <span class="courseList__item--reviewScore courseList__item--reviewScore-{{book.courseReviewScore}}"></span>
+            {% endif %}
+            <span class="courseList__item--reviewScoreQuote">"{{book.courseReviewQuote}}"</span>
+
+        </p>
+        
+    </div>
+    <div class="courseList__item--expanded" data-target-accordian="{{chapter}}-{{loop.index0}}">
+        {{book.courseReview}}
+        <p>
+            <span>{{entry.dateUpdated|date("j. F Y")}}</span>
+        </p>
+    </div>
+
+    
+    <button class="courseList__item--accordianButton-wrapper" data-button-accordian="{{chapter}}-{{loop.index0}}">
+        <div class="courseList__item--accordianButton-text courseList__item--accordianButton-textShort">Anmeldelse</div>
+        <div class="courseList__item--accordianButton-icon"></div>
+    </button>
+</div>
