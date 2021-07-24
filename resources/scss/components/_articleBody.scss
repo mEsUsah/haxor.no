@@ -1,9 +1,9 @@
 .articleBody{
     position: relative;
     max-width: 1000px;
-    margin: 145px auto;
+    margin: 145px auto 30px auto;
     @include ipadOrSmaller{
-        margin: 125px auto 0 auto;
+        margin: 125px auto 70px auto;
     }
 }
 
