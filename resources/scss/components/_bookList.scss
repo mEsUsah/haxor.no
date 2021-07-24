@@ -1,5 +1,13 @@
 .bookList{    
     &__item{
+        &--illustration{
+            position: relative;
+            width: fit-content;
+            margin: 0 auto;
+            &Wrapper{
+                width: min-content;
+            }
+        }
         &--icon{
             z-index: 1;
             position: absolute;
@@ -21,8 +29,27 @@
                 width: 30px;
             }
         }
+        &--categoryIcon{
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            z-index: 1;
+            background-color: white;
+            border-radius: 50%;
+            opacity: 0.9;
+            right: 5px;
+            top: 5px;
+            //border: 2px solid #cccccc;
+            @include phoneOnly {
+                top: 11px;
+            }
+
+        }
         &--image{
             height: 190px;
+            @include phoneOnly {  
+                margin-top: 6px;
+            }
         }
     }
 }

@@ -1,15 +1,17 @@
 <div class="courseList__item--wrapper">
     <div class="bookList__item--icon"></div>
     <div class="courseList__item--header">
-        <div class="courseList__item--illustration">
+        <div class="bookList__item--illustration">
             {% if book.courseTheme|length %}
                 {% set theme = book.courseTheme.one().slug %}
             {% else %}
                 {% set theme = "default" %}
             {% endif %}
-            <img class="bookList__item--image" src="{{book.bookImage.one().getUrl()}}" alt="">
-            <div class="courseList__item--categoryIcon">
-                <div class="category__icon category__icon--{{ theme }}"></div>
+            <div class="bookList__item--illustrationWrapper">
+                <img class="bookList__item--image" src="{{book.bookImage.one().getUrl()}}" alt="">
+                <div class="bookList__item--categoryIcon">
+                    <div class="category__icon category__icon--{{ theme }}"></div>
+                </div>
             </div>
             
         </div>
