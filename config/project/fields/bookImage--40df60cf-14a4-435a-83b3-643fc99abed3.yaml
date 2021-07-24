@@ -1,0 +1,32 @@
+contentColumnType: string
+fieldGroup: 829f4a1b-8625-4a30-aa3e-81905d8fd3a3 # Book
+handle: bookImage
+instructions: ''
+name: 'Book Image'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds: null
+  defaultUploadLocationSource: 'volume:7e0480ca-cc52-4451-8832-4a34bfe5ea09' # Thumbnails
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: ''
+  selectionLabel: ''
+  showSiteMenu: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:3b363f5e-4ee5-4536-b78c-b514bf1a0c7a'
+  singleUploadLocationSubpath: ''
+  source: null
+  sources:
+    - 'volume:7e0480ca-cc52-4451-8832-4a34bfe5ea09' # Thumbnails
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: large
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

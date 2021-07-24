@@ -1,0 +1,19 @@
+contentColumnType: integer(10)
+fieldGroup: 829f4a1b-8625-4a30-aa3e-81905d8fd3a3 # Book
+handle: numberOfPages
+instructions: ''
+name: 'Number of Pages'
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: null
+  max: null
+  min: '0'
+  prefix: null
+  previewCurrency: ''
+  previewFormat: decimal
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

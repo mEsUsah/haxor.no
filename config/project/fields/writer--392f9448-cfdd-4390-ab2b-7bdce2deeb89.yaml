@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 829f4a1b-8625-4a30-aa3e-81905d8fd3a3 # Book
+handle: writer
+instructions: ''
+name: Writer
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

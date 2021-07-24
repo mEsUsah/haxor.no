@@ -1,0 +1,89 @@
+field: c3d8fdbe-5d3a-4a09-a91f-2da6060ece41 # ContentBlocks
+fieldLayouts:
+  48fac4d8-f125-4fba-a9ef-29a072d8f257:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: e75f8e08-e499-444e-b646-97309e1abb2b # Books
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9b49d5b9-d21a-4e64-b799-37fe5db4ada8 # Three newest?
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: af5a6f2d-4fdf-4cfe-b5e8-900a1ae088c5 # Link to all courses?
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  9b49d5b9-d21a-4e64-b799-37fe5db4ada8: # Three newest?
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: threeNewest
+    instructions: ''
+    name: 'Three newest?'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  af5a6f2d-4fdf-4cfe-b5e8-900a1ae088c5: # Link to all courses?
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: linkToAllCourses
+    instructions: ''
+    name: 'Link to all courses?'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  e75f8e08-e499-444e-b646-97309e1abb2b: # Books
+    contentColumnType: string
+    fieldGroup: null
+    handle: books
+    instructions: ''
+    name: Books
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: ''
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: false
+      source: null
+      sources:
+        - 'section:c4023ed4-c787-4f58-bb1f-1d51b48518c2' # Books
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: books
+name: Books
+sortOrder: 10
