@@ -1,7 +1,7 @@
 enableVersioning: true
 handle: articles
 name: Articles
-propagationMethod: all
+propagationMethod: custom
 siteSettings:
   2fc7f7b8-2f9d-43dd-977b-8c7b29763e54: # Skarshaugs.no/en
     enabledByDefault: false
