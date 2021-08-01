@@ -1,5 +1,5 @@
 <section class="articleBody">
-    {% set books = craft.entries.section("books").orderBy("courseCompletedDate DESC").all() %}
+    {% set books = craft.entries.section("books").orderBy("postDate  DESC").all() %}
     <h1 class="articleList__header">{{entry.title}}</h1>
     <div class="courseList__container">
         {% for book in books %}

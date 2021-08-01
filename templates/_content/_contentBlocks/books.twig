@@ -1,5 +1,5 @@
 {% if block.threeNewest %}
-    {% set books = craft.entries.section("books").orderBy("courseCompletedDate DESC").limit(3).all() %}
+    {% set books = craft.entries.section("books").orderBy("postDate  DESC").limit(3).all() %}
 {% else %}
     {% set books = block.books.all() %}
 {% endif %}
