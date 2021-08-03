@@ -52,12 +52,12 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  19285c32-e1f8-42c0-97ff-59f16dbb52af: # Hostname
+  3ebdee02-2eb1-48f4-8b4b-4f45f3bfbae9: # Username
     contentColumnType: text
     fieldGroup: null
-    handle: terminalHostName
+    handle: terminalUserName
     instructions: ''
-    name: Hostname
+    name: Username
     searchable: true
     settings:
       byteLimit: null
@@ -71,12 +71,12 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  3ebdee02-2eb1-48f4-8b4b-4f45f3bfbae9: # Username
+  19285c32-e1f8-42c0-97ff-59f16dbb52af: # Hostname
     contentColumnType: text
     fieldGroup: null
-    handle: terminalUserName
+    handle: terminalHostName
     instructions: ''
-    name: Username
+    name: Hostname
     searchable: true
     settings:
       byteLimit: null

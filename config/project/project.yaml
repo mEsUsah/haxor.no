@@ -1,4 +1,4 @@
-dateModified: 1628014920
+dateModified: 1628018533
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -7,6 +7,114 @@ graphql:
   publicToken:
     enabled: false
     expiryDate: null
+meta:
+  __names__:
+    0e2235ec-098b-4add-9c16-2a51cb50b5e3: 'Kurs karakter' # Kurs karakter
+    1c99bad7-a4b3-483e-bf38-82c06d1f19a0: 'Link to all courses?' # Link to all courses?
+    2a432754-f936-45a8-9d69-52319c6a114e: SEO # SEO
+    2ec41ca2-210b-47c8-97d3-306955a39abb: Articles # Articles
+    2efca9b8-ea72-4fc4-9c51-20695e174ce7: 'Three newest?' # Three newest?
+    2fc7f7b8-2f9d-43dd-977b-8c7b29763e54: haxor.no/en # haxor.no/en
+    3a65209b-542d-42a6-9fc7-a9b07fd38253: 'File Content' # File Content
+    3d5543fa-7b96-4f00-baff-e330b237625b: 'Ingen mobil tilpasning' # Ingen mobil tilpasning
+    3e4dc06a-6af1-479b-a120-662a4500d935: 'Artikkel tema' # Artikkel tema
+    3ebdee02-2eb1-48f4-8b4b-4f45f3bfbae9: Username # Username
+    4a837336-d09a-492d-aa97-3c29b176ecc7: 'Kurs platform' # Kurs platform
+    4f7986b9-315c-4c92-8575-387ebd59b8ec: Homepage # Homepage
+    5c01d860-2ec5-4205-936e-583524bb8264: 'Image AltText' # Image AltText
+    5dd9f4f3-fb1c-4d81-b3fd-2309b56563f0: Filname # Filname
+    6a498afe-8881-4b4d-bd9e-f128e6d2ac6e: 'Image Caption' # Image Caption
+    6a70457e-a328-490d-8e43-da01bd0fb461: 'Chapter Headline' # Chapter Headline
+    6bcc3fb3-fa1a-42c3-b33b-5f61432e08ca: 'Artikkel type' # Artikkel type
+    6d60bb4f-9586-4f12-8115-a411b6544a6e: 'Book Reviews' # Book Reviews
+    6ed30be3-319a-4469-a458-a70309e3e179: 'Kurs anmeldelse' # Kurs anmeldelse
+    6f1a1285-4249-4f2a-9773-1b8a2cb33fd9: Kursplatform # Kursplatform
+    6f5f5cbf-7ead-4f94-9ed2-42c81ae3a3d3: 'Kurs anmeldelse score' # Kurs anmeldelse score
+    7dbe180d-e397-494f-bea8-61f7b3f5bf4d: 'Book Reviews' # Book Reviews
+    7e0480ca-cc52-4451-8832-4a34bfe5ea09: Thumbnails # Thumbnails
+    9b49d5b9-d21a-4e64-b799-37fe5db4ada8: 'Three newest?' # Three newest?
+    12c8b9da-5b5a-4bd7-a51e-4116181081ad: 'Kurs beskrivelse' # Kurs beskrivelse
+    15cb9ee9-280a-4a76-9b2f-d31dff2fb525: 'Number of Pages' # Number of Pages
+    16c673f1-c879-4707-98ac-84c6e5b5b807: Link # Link
+    18efdf32-1b23-42db-a0ed-70252bb134fb: 'Terminal Dump' # Terminal Dump
+    26a433d6-c7ff-4f42-8acb-7bcc035fc4d2: Kurs # Kurs
+    40df60cf-14a4-435a-83b3-643fc99abed3: 'Book Image' # Book Image
+    44f8fa56-23f3-4d1e-8231-4e7f46c9af46: 'Fullført dato' # Fullført dato
+    52f10b73-e1ae-4ada-8d03-81ceafab228c: Guides # Guides
+    57a8d48f-2781-4975-b7ff-b3b5efd7c470: Text # Text
+    62b88f4a-25d3-4a89-831f-24f78c24f85b: Subtitle # Subtitle
+    72a349c8-b7c8-4301-81a5-7301f5cc1058: 'Article Image' # Article Image
+    080d70ab-85ac-424a-9d06-3aedf3fd9889: Globals # Globals
+    93d39a6a-48eb-4f78-afb1-8fd74053ce15: 'Kurs bilde' # Kurs bilde
+    120a0c87-a4cf-4fb4-8e36-2533818e113a: Chapter # Chapter
+    286c04a5-6631-4fb0-a891-256488a130e9: 'Image Caption' # Image Caption
+    386c4702-8fb5-4d6d-8e99-f43e77541a6d: 'Image AltText' # Image AltText
+    392f9448-cfdd-4390-ab2b-7bdce2deeb89: Writer # Writer
+    409d3c53-f6a8-476d-be5a-5bc8d3acc0f6: Image # Image
+    471da32a-34da-4c05-b7c6-e4bc67adca25: Text # Text
+    515bc6fb-894b-442b-8af3-6666bef0300f: Kurs # Kurs
+    572f6109-c32e-4df3-8c66-7e5bba2756ea: Text # Text
+    704a8478-65c0-4619-87e8-0b570ccd42f4: Publisher # Publisher
+    829f4a1b-8625-4a30-aa3e-81905d8fd3a3: Book # Book
+    847c49bf-0bc9-4fca-959c-6facd9f4b32f: 'menu item' # menu item
+    849ea203-a4f7-42a8-845c-45933a0ee48a: 'Menu link' # Menu link
+    1079ffac-f516-4c4f-a131-3a26fa26ac15: 'Image Is Figure' # Image Is Figure
+    1123b472-8241-4d07-bd52-1eff0c59f1ef: 'Om Bloggen' # Om Bloggen
+    6799dd35-5fb9-4623-b487-3aafaf92ec39: blog # blog
+    7648fab9-2bab-43df-adca-9f3d941c929e: Artikkeltype # Artikkeltype
+    7701d10a-74fb-40fb-a7aa-7e184bb97f05: 'SEO Image' # SEO Image
+    7755a334-0698-4415-ab30-b1fddb17b7a7: Tema # Tema
+    8475e873-60f6-4868-8ab1-1c7c3b90c98e: Common # Common
+    9096bb19-2f4d-4b40-91f7-7f0d84ee7b01: 'Varighet (Timer)' # Varighet (Timer)
+    19285c32-e1f8-42c0-97ff-59f16dbb52af: Hostname # Hostname
+    190326da-4559-4d36-aae0-20b00fa6318f: Books # Books
+    315547ae-9f46-441e-831a-f2979d046b94: 'Om meg' # Om meg
+    433733b6-53ef-4e88-b871-7518468484e7: Portfolio # Portfolio
+    588083f4-9c65-4945-9298-df03cd87f06e: 'Om meg' # Om meg
+    925133d6-79dc-4f13-9cbc-3752c2eff691: 'Terminal Dump' # Terminal Dump
+    84196158-704f-46cd-9cc5-cfe49666f56e: Ingress # Ingress
+    a2c9fa7f-4706-4b49-ad49-f09d9a9ebc10: Courses # Courses
+    ac49e4c4-d11a-4bbe-9a08-04c06268ba93: 'Varighet (Minutter)' # Varighet (Minutter)
+    af5a6f2d-4fdf-4cfe-b5e8-900a1ae088c5: 'Link to all courses?' # Link to all courses?
+    b0f70f0a-25fa-4376-b9fa-e4508bca7a85: Gobals # Gobals
+    b04f4663-1608-479d-b699-ba1102ba1b61: 'Article Headline' # Article Headline
+    b05c4334-9b2d-4f18-8916-c65a9c521861: Image # Image
+    b92f222e-e35a-4a5a-bb11-3b5ea3deda0c: Quote # Quote
+    b3979b7e-2d54-4b6f-89ec-5ef480431d82: Kurs # Kurs
+    b4763ae9-35a9-4af6-bd45-59e869963a55: LinkInternal # LinkInternal
+    b25947e8-fbe4-4dbb-a968-90f7659c7d7f: Home # Home
+    baecef3d-6c25-40bf-8e85-eeedf43dec57: 'Rich text' # Rich text
+    baf14ed6-b329-41e7-b9b5-4ff5d8ed2cdf: 'Article Image Caption' # Article Image Caption
+    c2cadeae-b406-4376-a7bb-822c8d077ca2: 'Kurs tema' # Kurs tema
+    c3d8fdbe-5d3a-4a09-a91f-2da6060ece41: ContentBlocks # ContentBlocks
+    c418c358-5082-4c2e-bc17-cb8c9175b592: Instruktør # Instruktør
+    c4023ed4-c787-4f58-bb1f-1d51b48518c2: Books # Books
+    c1769912-6758-4fbd-9f12-d37a9fa32253: 'SEO Description' # SEO Description
+    cabe8fa0-a9ef-4a18-ab9d-4b3b69cd2f3a: 'Terminal Input Only' # Terminal Input Only
+    ce283fd6-8942-4408-99bf-17efbab5a118: Books # Books
+    ce584302-17fd-4162-bcf6-181321d11f07: Portfolio # Portfolio
+    d2ea4108-edc5-4f74-9794-214619a9f0c8: 'Mine kurs' # Mine kurs
+    d6f9cc1f-1608-4ae7-a083-d0924ba71f47: 'Image Is Figure' # Image Is Figure
+    d9a0abe6-89dd-4688-a0ac-6d584524c3c2: Kursbevis # Kursbevis
+    d81b7a18-6d93-471a-ba57-99544b0c585b: haxor.no # haxor.no
+    d74696e2-d999-44f5-aded-f8353552c57b: Portfolio # Portfolio
+    dc32cdca-de36-4628-af9c-221eb639a9ab: 'PDF''s' # PDF's
+    dc63f038-3a87-428d-9230-20a288f905da: 'File type' # File type
+    dc9122fb-758f-42ae-a098-da603eb31a49: Courses # Courses
+    e75f8e08-e499-444e-b646-97309e1abb2b: Books # Books
+    ea9728b1-b326-481a-810f-1735e2b682cc: TryHackMe # TryHackMe
+    ec8d0268-e294-4677-9a70-bf25ab9f87e7: 'Info Box' # Info Box
+    ed01c0d7-346e-4af2-b76f-825ac0da9e30: 'Mine kurs' # Mine kurs
+    ed101e61-62b0-40c5-a8d4-b5d30624f1d2: 'File content' # File content
+    f2cc0c2d-6188-407c-b0f2-e9afc9ecdb23: Text # Text
+    f29cf56f-e024-4426-a529-899246ced721: Image # Image
+    f73c4dce-8cb4-431f-adb5-a9be1f4059cb: Language # Language
+    f96fb1c8-21d9-45ec-bc75-5792dd3b3c5b: Quote # Quote
+    f147e4fb-5b9b-40b9-9b58-51fa33d89e32: 'Article Teaser' # Article Teaser
+    f733eaac-e1d6-428e-a5e6-5e9c1b8450df: 'Kurs anmeldelse sitat' # Kurs anmeldelse sitat
+    f598728f-d688-4b98-8aab-cf4447b3af95: Entry # Entry
+    f4121429-712b-4587-839a-e0a1db5d946a: 'Line Numbers' # Line Numbers
+    fe6324d5-2558-4ab4-99f2-f424b8051892: 'Om Bloggen' # Om Bloggen
 plugins:
   redactor:
     edition: standard
@@ -21,7 +129,7 @@ system:
   live: true
   name: haxor.no
   retryDuration: null
-  schemaVersion: 3.6.6
+  schemaVersion: 3.7.7
   timeZone: Europe/Oslo
 users:
   allowPublicRegistration: false
