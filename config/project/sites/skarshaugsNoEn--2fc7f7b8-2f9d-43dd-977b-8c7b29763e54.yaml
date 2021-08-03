@@ -1,8 +1,9 @@
 baseUrl: '@web/en'
+enabled: true
 handle: skarshaugsNoEn
 hasUrls: true
 language: en
-name: Skarshaugs.no/en
+name: haxor.no/en
 primary: false
 siteGroup: 6799dd35-5fb9-4623-b487-3aafaf92ec39 # blog
 sortOrder: 2

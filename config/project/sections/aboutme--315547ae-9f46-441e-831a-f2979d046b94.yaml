@@ -3,12 +3,12 @@ handle: aboutme
 name: 'Om meg'
 propagationMethod: all
 siteSettings:
-  2fc7f7b8-2f9d-43dd-977b-8c7b29763e54: # Skarshaugs.no/en
+  2fc7f7b8-2f9d-43dd-977b-8c7b29763e54: # haxor.no/en
     enabledByDefault: true
     hasUrls: true
     template: index
     uriFormat: about-me
-  d81b7a18-6d93-471a-ba57-99544b0c585b: # Skarshaugs.no
+  d81b7a18-6d93-471a-ba57-99544b0c585b: # haxor.no
     enabledByDefault: true
     hasUrls: true
     template: index
