@@ -9,9 +9,9 @@
 
 	{# --- TITLE --- #}
 	{% if entry.section.handle is defined and entry.section.handle == 'homepage' %}
-		{% set title = "Home | Skarshaugs.no - Blog"%}
+		{% set title = "Home | haxor.no"%}
 	{% else %}
-		{% set title = entry.title|trim ~ ' | ' ~ "Skarshaugs.no - Blog" %}
+		{% set title = entry.title|trim ~ ' | ' ~ "haxor.no" %}
 	{% endif %}
 
 	{% if entry.url is defined %}
