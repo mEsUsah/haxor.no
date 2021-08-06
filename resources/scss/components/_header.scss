@@ -15,8 +15,16 @@
         &--icon{
             background-image: $icon-skarshaugs-white;
             height: 125px;
-            width: 100px;
+            width: 75px;
+            margin-right: 10px;
             background-position: center;
+            background-repeat: no-repeat;
+        }
+        &--iconText{
+            background-image: $icon-haxor_no-white;
+            height: 125px;
+            width: 180px;
+            background-position: 0 47px;
             background-repeat: no-repeat;
         }
         &--text{
