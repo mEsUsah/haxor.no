@@ -1,0 +1,157 @@
+field: c3d8fdbe-5d3a-4a09-a91f-2da6060ece41 # ContentBlocks
+fieldLayouts:
+  8e3130ee-c8d8-46a1-a367-1f0bbda49305:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 7dca122d-a470-466a-ae07-51758b1fc449 # Chart Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9dbc0bea-5f8c-4a42-a060-58a1e9baf36f # Chart Subtitle
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d67ba21e-e565-441c-aafd-bee2a9f4d3f7 # Data
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  7dca122d-a470-466a-ae07-51758b1fc449: # Chart Title
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: chartTitle
+    instructions: ''
+    name: 'Chart Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  9dbc0bea-5f8c-4a42-a060-58a1e9baf36f: # Chart Subtitle
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: chartSubtitle
+    instructions: 'Explain what the data represent'
+    name: 'Chart Subtitle'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  d67ba21e-e565-441c-aafd-bee2a9f4d3f7: # Data
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: data
+    instructions: ''
+    name: Data
+    searchable: false
+    settings:
+      addRowLabel: 'Add a row'
+      columnType: text
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Label
+                -
+                  - handle
+                  - label
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Lowest
+                -
+                  - handle
+                  - lowest
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - number
+          -
+            - col3
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Highest
+                -
+                  - handle
+                  - highest
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - number
+      defaults:
+        -
+          __assoc__:
+            -
+              - col1
+              - ''
+            -
+              - col2
+              - ''
+            -
+              - col3
+              - ''
+      maxRows: ''
+      minRows: '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+handle: chartBarStacked
+name: 'Chart - Bar (Stacked)'
+sortOrder: 12

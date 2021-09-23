@@ -1,4 +1,4 @@
-dateModified: 1628018533
+dateModified: 1632425143
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -12,6 +12,7 @@ meta:
     0e2235ec-098b-4add-9c16-2a51cb50b5e3: 'Kurs karakter' # Kurs karakter
     1c99bad7-a4b3-483e-bf38-82c06d1f19a0: 'Link to all courses?' # Link to all courses?
     2a432754-f936-45a8-9d69-52319c6a114e: SEO # SEO
+    2caebe53-52a0-4509-b4f6-865b55837d5f: 'Chart - Bar (Stacked)' # Chart - Bar (Stacked)
     2ec41ca2-210b-47c8-97d3-306955a39abb: Articles # Articles
     2efca9b8-ea72-4fc4-9c51-20695e174ce7: 'Three newest?' # Three newest?
     2fc7f7b8-2f9d-43dd-977b-8c7b29763e54: haxor.no/en # haxor.no/en
@@ -31,8 +32,10 @@ meta:
     6f1a1285-4249-4f2a-9773-1b8a2cb33fd9: Kursplatform # Kursplatform
     6f5f5cbf-7ead-4f94-9ed2-42c81ae3a3d3: 'Kurs anmeldelse score' # Kurs anmeldelse score
     7dbe180d-e397-494f-bea8-61f7b3f5bf4d: 'Book Reviews' # Book Reviews
+    7dca122d-a470-466a-ae07-51758b1fc449: 'Chart Title' # Chart Title
     7e0480ca-cc52-4451-8832-4a34bfe5ea09: Thumbnails # Thumbnails
     9b49d5b9-d21a-4e64-b799-37fe5db4ada8: 'Three newest?' # Three newest?
+    9dbc0bea-5f8c-4a42-a060-58a1e9baf36f: 'Chart Subtitle' # Chart Subtitle
     12c8b9da-5b5a-4bd7-a51e-4116181081ad: 'Kurs beskrivelse' # Kurs beskrivelse
     15cb9ee9-280a-4a76-9b2f-d31dff2fb525: 'Number of Pages' # Number of Pages
     16c673f1-c879-4707-98ac-84c6e5b5b807: Link # Link
@@ -40,6 +43,7 @@ meta:
     26a433d6-c7ff-4f42-8acb-7bcc035fc4d2: Kurs # Kurs
     40df60cf-14a4-435a-83b3-643fc99abed3: 'Book Image' # Book Image
     44f8fa56-23f3-4d1e-8231-4e7f46c9af46: 'Fullført dato' # Fullført dato
+    049ddb67-9315-429c-9494-0cf452f8cb73: Stack # Stack
     52f10b73-e1ae-4ada-8d03-81ceafab228c: Guides # Guides
     57a8d48f-2781-4975-b7ff-b3b5efd7c470: Text # Text
     62b88f4a-25d3-4a89-831f-24f78c24f85b: Subtitle # Subtitle
@@ -89,6 +93,7 @@ meta:
     c3d8fdbe-5d3a-4a09-a91f-2da6060ece41: ContentBlocks # ContentBlocks
     c418c358-5082-4c2e-bc17-cb8c9175b592: Instruktør # Instruktør
     c4023ed4-c787-4f58-bb1f-1d51b48518c2: Books # Books
+    c28731d1-d362-458e-8210-a901f3f0e4ab: 'Chart Headline' # Chart Headline
     c1769912-6758-4fbd-9f12-d37a9fa32253: 'SEO Description' # SEO Description
     cabe8fa0-a9ef-4a18-ab9d-4b3b69cd2f3a: 'Terminal Input Only' # Terminal Input Only
     ce283fd6-8942-4408-99bf-17efbab5a118: Books # Books
@@ -96,6 +101,7 @@ meta:
     d2ea4108-edc5-4f74-9794-214619a9f0c8: 'Mine kurs' # Mine kurs
     d6f9cc1f-1608-4ae7-a083-d0924ba71f47: 'Image Is Figure' # Image Is Figure
     d9a0abe6-89dd-4688-a0ac-6d584524c3c2: Kursbevis # Kursbevis
+    d67ba21e-e565-441c-aafd-bee2a9f4d3f7: Data # Data
     d81b7a18-6d93-471a-ba57-99544b0c585b: haxor.no # haxor.no
     d74696e2-d999-44f5-aded-f8353552c57b: Portfolio # Portfolio
     dc32cdca-de36-4628-af9c-221eb639a9ab: 'PDF''s' # PDF's
@@ -107,6 +113,7 @@ meta:
     ed01c0d7-346e-4af2-b76f-825ac0da9e30: 'Mine kurs' # Mine kurs
     ed101e61-62b0-40c5-a8d4-b5d30624f1d2: 'File content' # File content
     f2cc0c2d-6188-407c-b0f2-e9afc9ecdb23: Text # Text
+    f8f50449-6440-4878-a1c7-8da852defe91: 'Chart - Line' # Chart - Line
     f29cf56f-e024-4426-a529-899246ced721: Image # Image
     f73c4dce-8cb4-431f-adb5-a9be1f4059cb: Language # Language
     f96fb1c8-21d9-45ec-bc75-5792dd3b3c5b: Quote # Quote

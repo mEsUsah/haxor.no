@@ -17,6 +17,7 @@ fieldLayouts:
         sortOrder: 1
 fields:
   57a8d48f-2781-4975-b7ff-b3b5efd7c470: # Text
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: text

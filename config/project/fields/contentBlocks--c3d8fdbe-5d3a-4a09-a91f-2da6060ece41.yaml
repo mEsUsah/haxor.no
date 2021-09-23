@@ -1,3 +1,4 @@
+columnSuffix: null
 contentColumnType: string
 fieldGroup: 8475e873-60f6-4868-8ab1-1c7c3b90c98e # Common
 handle: contentBlocks
@@ -8,6 +9,7 @@ settings:
   contentTable: '{{%matrixcontent_contentblocks}}'
   maxBlocks: ''
   minBlocks: ''
+  propagationKeyFormat: null
   propagationMethod: none
 translationKeyFormat: null
 translationMethod: site

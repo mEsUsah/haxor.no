@@ -26,6 +26,7 @@ fieldLayouts:
         sortOrder: 1
 fields:
   6a70457e-a328-490d-8e43-da01bd0fb461: # Chapter Headline
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: chapterHeadline
@@ -45,6 +46,7 @@ fields:
     translationMethod: language
     type: craft\fields\PlainText
   62b88f4a-25d3-4a89-831f-24f78c24f85b: # Subtitle
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: subtitle
