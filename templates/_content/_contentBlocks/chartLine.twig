@@ -1,0 +1,6 @@
+{% set chartNr = chartNr|default(null) %}
+
+<h1>{{ block.chartHeadline }}</h1>
+<div data-chart="{{ chartNr }}" data-chart-type="line">
+  <canvas id="chart_{{ chartNr }}" with="100%"></canvas>
+</div>
