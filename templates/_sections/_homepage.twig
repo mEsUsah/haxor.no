@@ -1,6 +1,11 @@
-{% set articles = craft.entries.site(["default", "skarshaugsNoEn"]).section("articles, portfolio").all() %}
-    <div class="articleList__container">
-        {% for article in articles %}
-            {% include "_content/parts/_article.twig" %}
-        {% endfor %}
-    </div>
+{% if currentSite.handle == "default" %}
+    {% set articles = craft.entries.site(["default", "skarshaugsNoEn"]).section("articles, portfolio").all() %}
+{% else %}
+    {% set articles = craft.entries.site(["skarshaugsNoEn"]).section("articles, portfolio").all() %}
+{% endif %}
+
+<div class="articleList__container">
+    {% for article in articles %}
+        {% include "_content/parts/_article.twig" %}
+    {% endfor %}
+</div>
