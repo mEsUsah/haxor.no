@@ -40,16 +40,31 @@
             background-size: cover;            
         }
         i{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            border-radius: 50%;
-            font-size: 34px;
-            color: #000000;
-            width: 60px;
-            height: 60px;
-            line-height: 60px;
-            background-color: #ffffff;
+            &.category__icon{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                border-radius: 50%;
+                font-size: 34px;
+                color: #000000;
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+                background-color: #ffffff;
+            }
+            
+            &.flag__icon--flagNo{
+                position: absolute;
+                top: 72%;
+                left: 50%;
+                border-radius: 50%;
+                background-image: $icon-flag-no;
+                height: 22px;
+                width: 22px;
+                background-size: 35px 26px;
+                background-position: -7px -3px;
+                border: 1px solid white;
+            }
         }
         a {
             left: 0;
@@ -64,9 +79,21 @@
             box-sizing: border-box;
         }
 
-        i {
-            transform: translate(-50%, 80%) scale(0.4);
-            transition: transform 300ms 0ms cubic-bezier(0.175, 0.885, 0.32, 1.175);
+        i{
+            &.entry__category {
+                &--single{
+                    transform: translate(-50%, 80%) scale(0.4);
+                    transition: transform 300ms 0ms cubic-bezier(0.175, 0.885, 0.32, 1.175);
+                }
+                &--oneOfTwo{
+                    transform: translate(calc(-50% - 15px), 89%);
+                    transition: transform 300ms 0ms cubic-bezier(0.175, 0.885, 0.32, 1.175);
+                }
+                &--twoOfTwo{
+                    transform: translate(calc(-50% + 15px), 80%) scale(0.4);
+                    transition: transform 300ms 0ms cubic-bezier(0.175, 0.885, 0.32, 1.175);
+                }
+            }
         }
 
         &:hover {
@@ -75,9 +102,21 @@
                     opacity: 0.3;
                     filter: grayscale(100%);
                 }
-                i {
-                    transform: translate(-50%, -90%) scale(1);
-                    transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.175);
+                i.entry__category {
+                    &--single{
+                        transform: translate(-50%, -90%) scale(1);
+                        transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.175);
+                    }
+                    &--oneOfTwo{
+
+                        transform: translate(-170%, -455%);
+                        transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.175) position 300ms cubic-bezier(0.175, 0.885, 0.32, 1.175);
+                    }
+                    &--twoOfTwo{
+
+                        transform: translate(-50%, -90%) scale(1);
+                        transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.175) position 300ms cubic-bezier(0.175, 0.885, 0.32, 1.175);
+                    }
                 }
                 .articleList__item--teaser {
                     opacity: 1;
