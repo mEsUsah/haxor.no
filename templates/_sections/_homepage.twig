@@ -1,4 +1,4 @@
-{% set articles = craft.entries.section("articles, portfolio").all() %}
+{% set articles = craft.entries.site(["default", "skarshaugsNoEn"]).section("articles, portfolio").all() %}
     <div class="articleList__container">
         {% for article in articles %}
             {% set articleImage = article.articleImage.one() %}
@@ -26,7 +26,6 @@
                 {% if article.articleTeaser|length %}
                     <div class="articleList__item--teaser">{{article.articleTeaser}}</div>
                 {% endif %}
-                
             </a>
         {% endfor %}
     </div>
