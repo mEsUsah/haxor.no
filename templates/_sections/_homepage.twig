@@ -1,11 +1,64 @@
-{% if currentSite.handle == "default" %}
-    {% set articles = craft.entries.site(["default", "skarshaugsNoEn"]).section("articles, portfolio").all() %}
-{% else %}
-    {% set articles = craft.entries.site(["skarshaugsNoEn"]).section("articles, portfolio").all() %}
-{% endif %}
+<section class="articleBody">
+    <div class="articleList__search">
+        {% if currentSite.handle == "default" %}
+            {% set serchUrl = "/" %}
+        {% else %}
+            {% set serchUrl = "/en" %}
+        {% endif %}
+        
+        <form action="{{ url(serchUrl) }}">
+            <input type="search" name="q" aria-label="Søk" placeholder="Search" value="{{ craft.app.request.getParam('q')|length ? craft.app.request.getParam('q') }}">
+            <button type="submit">Go</button>
+        </form>
+    </div>
+    {% if craft.app.request.getParam('q') %}
+        {% if currentSite.handle == "default" %}
+            <h1 class="articleList__header">Søkeresultat</h1>
+        {% else %}
+            <h1 class="articleList__header">Search Results</h1>
+        {% endif %}
 
-<div class="articleList__container">
-    {% for article in articles %}
-        {% include "_content/parts/_article.twig" %}
-    {% endfor %}
-</div>
+        {% set searchQuery = craft.app.request.getParam('q') %}
+        
+        {% if currentSite.handle == "default" %}
+            {% set serchUrl = "/" %}
+            {% set articles = craft.entries().search(searchQuery).site(["default", "skarshaugsNoEn"]).section("articles, portfolio").orderBy('score').all() %}
+        {% else %}
+            {% set serchUrl = "/en" %}
+            {% set articles = craft.entries().search(searchQuery).site(["skarshaugsNoEn"]).section("articles, portfolio").orderBy('score').all() %}
+        {% endif %}
+
+        {% if articles|length %}
+            {% if currentSite.handle == "default" %}
+                <p class="articleList__subtitle">{{ articles|length }} treff på: "{{ searchQuery }}"</p>
+            {% else %}
+                <p class="articleList__subtitle">{{ articles|length }} results: on "{{ searchQuery }}"</p>
+            {% endif %}
+
+            <div class="articleList__container">
+                {% for article in articles %}
+                    {% include "_content/parts/_article.twig" %}
+                {% endfor %}
+            </div>
+        {% else %}
+            {% if currentSite.handle == "default" %}
+                <p class="articleList__subtitle">Beklager, ingen treff på "{{ searchQuery }}"</p>
+            {% else %}
+                <p class="articleList__subtitle">Your search for “{{ searchQuery }}” didn’t return any results.</p>
+            {% endif %}
+        {% endif %}
+    {% else %}
+        <div class="articleList__container">
+            {% if currentSite.handle == "default" %}
+                {% set articles = craft.entries.site(["default", "skarshaugsNoEn"]).section("articles, portfolio").all() %}
+            {% else %}
+                {% set articles = craft.entries.site(["skarshaugsNoEn"]).section("articles, portfolio").all() %}
+            {% endif %}
+
+            {% for article in articles %}
+                {% include "_content/parts/_article.twig" %}
+            {% endfor %}
+        </div>
+        
+    {% endif %}
+</section>

@@ -7,6 +7,13 @@
         font-weight: 200;
         color: #34495e;
     }
+    &__subtitle{
+        text-align: center;
+        font-family: Raleway;
+        font-weight: 600;
+        color: #34495e;
+        margin-top: -22px;
+    }
     &__container{
         display: flex;
         justify-content: center;
@@ -15,7 +22,7 @@
         color: white;
         margin-bottom: 38px;
         max-width: 1000px;
-        margin: 125px auto 0 auto;
+        margin: 0 auto;
     }
     &__item{
         color: white;
@@ -52,7 +59,7 @@
                 line-height: 60px;
                 background-color: #ffffff;
             }
-            
+
             &.flag__icon--flagNo{
                 position: absolute;
                 top: 72%;
@@ -168,6 +175,50 @@
                 border-radius: 4px;
                 width: 200px;
                 text-shadow: 0 0 3px #000000;
+            }
+        }
+    }
+    &__search{
+        @include ipadOrSmaller{
+            margin-top: 134px;
+        }
+        form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            input{
+                width: calc(100% - 74px);
+                font-size: 16px;
+                line-height: 20px;
+                padding: 6px 10px;
+                border: 2px solid black;
+                border-right: none;
+                border-bottom-left-radius: 3px;
+                border-top-left-radius: 3px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+                
+                @include ipadOrSmaller{
+                    width: calc(100% - 64px);
+                }
+                &:focus-visible{
+                    outline: none;
+                }
+            }
+            button{
+                font-size: 16px;
+                line-height: 20px;
+                padding: 6px 10px;
+                border: 2px solid black;
+                background-color: black;
+                color: white;
+                cursor: pointer;
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+                &:focus-visible{
+                    outline: none;
+                }
             }
         }
     }
