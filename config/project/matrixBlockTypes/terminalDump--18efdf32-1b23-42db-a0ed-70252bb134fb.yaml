@@ -53,6 +53,7 @@ fieldLayouts:
         sortOrder: 1
 fields:
   3ebdee02-2eb1-48f4-8b4b-4f45f3bfbae9: # Username
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: terminalUserName
@@ -72,6 +73,7 @@ fields:
     translationMethod: none
     type: craft\fields\PlainText
   19285c32-e1f8-42c0-97ff-59f16dbb52af: # Hostname
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: terminalHostName
@@ -91,6 +93,7 @@ fields:
     translationMethod: none
     type: craft\fields\PlainText
   925133d6-79dc-4f13-9cbc-3752c2eff691: # Terminal Dump
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: terminalDump
@@ -110,6 +113,7 @@ fields:
     translationMethod: none
     type: craft\fields\PlainText
   cabe8fa0-a9ef-4a18-ab9d-4b3b69cd2f3a: # Terminal Input Only
+    columnSuffix: null
     contentColumnType: boolean
     fieldGroup: null
     handle: terminalInputOnly
@@ -124,6 +128,7 @@ fields:
     translationMethod: none
     type: craft\fields\Lightswitch
   f73c4dce-8cb4-431f-adb5-a9be1f4059cb: # Language
+    columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: terminalLanguage

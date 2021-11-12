@@ -44,6 +44,7 @@ fieldLayouts:
         sortOrder: 1
 fields:
   5c01d860-2ec5-4205-936e-583524bb8264: # Image AltText
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: imageAlt
@@ -63,6 +64,7 @@ fields:
     translationMethod: language
     type: craft\fields\PlainText
   6a498afe-8881-4b4d-bd9e-f128e6d2ac6e: # Image Caption
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: imageCapt
@@ -91,6 +93,7 @@ fields:
     translationMethod: language
     type: craft\redactor\Field
   b05c4334-9b2d-4f18-8916-c65a9c521861: # Image
+    columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: image
@@ -123,6 +126,7 @@ fields:
     translationMethod: site
     type: craft\fields\Assets
   d6f9cc1f-1608-4ae7-a083-d0924ba71f47: # Image Is Figure
+    columnSuffix: null
     contentColumnType: boolean
     fieldGroup: null
     handle: imageIsFigure

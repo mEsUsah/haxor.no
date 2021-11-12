@@ -44,6 +44,7 @@ fieldLayouts:
         sortOrder: 1
 fields:
   5dd9f4f3-fb1c-4d81-b3fd-2309b56563f0: # Filname
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: fileName
@@ -63,6 +64,7 @@ fields:
     translationMethod: none
     type: craft\fields\PlainText
   dc63f038-3a87-428d-9230-20a288f905da: # File type
+    columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: fileType
@@ -263,6 +265,7 @@ fields:
     translationMethod: none
     type: craft\fields\Dropdown
   ed101e61-62b0-40c5-a8d4-b5d30624f1d2: # File content
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: fileContent
@@ -282,6 +285,7 @@ fields:
     translationMethod: none
     type: craft\fields\PlainText
   f4121429-712b-4587-839a-e0a1db5d946a: # Line Numbers
+    columnSuffix: null
     contentColumnType: boolean
     fieldGroup: null
     handle: lineNumbers

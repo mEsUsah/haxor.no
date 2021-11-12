@@ -35,6 +35,7 @@ fieldLayouts:
         sortOrder: 1
 fields:
   9b49d5b9-d21a-4e64-b799-37fe5db4ada8: # Three newest?
+    columnSuffix: null
     contentColumnType: boolean
     fieldGroup: null
     handle: threeNewest
@@ -49,6 +50,7 @@ fields:
     translationMethod: none
     type: craft\fields\Lightswitch
   af5a6f2d-4fdf-4cfe-b5e8-900a1ae088c5: # Link to all courses?
+    columnSuffix: null
     contentColumnType: boolean
     fieldGroup: null
     handle: linkToAllCourses
@@ -63,6 +65,7 @@ fields:
     translationMethod: none
     type: craft\fields\Lightswitch
   e75f8e08-e499-444e-b646-97309e1abb2b: # Books
+    columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: books

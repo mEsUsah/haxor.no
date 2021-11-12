@@ -1,11 +1,11 @@
 field: c3d8fdbe-5d3a-4a09-a91f-2da6060ece41 # ContentBlocks
 fieldLayouts:
-  cdbb61ca-cfb0-41b0-ae6a-515ad8a5c8ed:
+  2a00fe97-518d-4d8e-b26d-bb1eb355016b:
     tabs:
       -
         elements:
           -
-            fieldUid: f96fb1c8-21d9-45ec-bc75-5792dd3b3c5b # Quote
+            fieldUid: c28731d1-d362-458e-8210-a901f3f0e4ab # Chart Headline
             instructions: null
             label: null
             required: false
@@ -16,14 +16,14 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  f96fb1c8-21d9-45ec-bc75-5792dd3b3c5b: # Quote
+  c28731d1-d362-458e-8210-a901f3f0e4ab: # Chart Headline
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
-    handle: quote
+    handle: chartHeadline
     instructions: ''
-    name: Quote
-    searchable: true
+    name: 'Chart Headline'
+    searchable: false
     settings:
       byteLimit: null
       charLimit: null
@@ -36,6 +36,6 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-handle: quote
-name: Quote
-sortOrder: 4
+handle: chartLine
+name: 'Chart - Line'
+sortOrder: 11
