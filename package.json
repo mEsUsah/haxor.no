@@ -30,5 +30,8 @@
     "webpack-cli": "^3.3.11",
     "webpack-fix-style-only-entries": "^0.2.1",
     "webpack-import-glob": "^2.0.0"
+  },
+  "dependencies": {
+    "chart.js": "^3.5.1"
   }
 }

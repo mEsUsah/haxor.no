@@ -1,0 +1,30 @@
+{% set articleImage = article.articleImage.one() %}
+{% set imageFocalX = articleImage.focalPoint["x"] %}
+{% set imageFocalY = articleImage.focalPoint["y"] %}
+{% set articleListThumb = {
+    mode: "crop",
+    width: 310,
+    height: 210,
+    quality: 75,
+    position: imageFocalX ~ "," ~ imageFocalY,
+} %}
+
+{% if article.articleSubject|length %}
+    {% set theme = article.articleSubject.one().slug %}
+{% else %}
+    {% set theme = "default" %}
+{% endif %}
+
+<a href="{{ article.getUrl() }}" class="articleList__item category__color--{{theme}}">
+    <div class="articleList__item--image" style="background-image: url('{{ articleImage.getUrl(articleListThumb) }}');"></div>
+    <div class="articleList__item--headline">{{article.title}}</div>
+    <i class="category__icon category__icon--{{ theme }} {{article.site.handle == "default" ? "entry__category--twoOfTwo" : "entry__category--single"}}" ></i>
+
+    {% if article.articleTeaser|length %}
+        <div class="articleList__item--teaser">{{article.articleTeaser}}</div>
+    {% endif %}
+    {% if article.site.handle == "default" %}
+        <i class="flag__icon--flagNo entry__category--oneOfTwo"></i>
+    {% endif %}
+    
+</a>

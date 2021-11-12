@@ -1,0 +1,8 @@
+{% set chartNr = chartNr|default(null) %}
+{% set chartData = block.data %}
+
+<div class="contentBlocks__chart">
+  <div data-chart="{{ chartNr }}" data-chart-type="bar-stacked" data-chart-title="{{ block.chartTitle }}" data-chart-subtitle="{{ block.chartSubtitle }}"  data-chart-content="{{ chartData|json_encode }}"> 
+    <canvas id="chart_{{ chartNr }}"></canvas>
+  </div>
+</div>
