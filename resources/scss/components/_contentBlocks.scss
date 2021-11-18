@@ -49,6 +49,7 @@
         max-width: 720px;
         @include ipadOrSmaller {
             margin: 0 10px;
+            overflow-wrap: anywhere;
         }
         pre {
             background-color: #2d2d2d;
