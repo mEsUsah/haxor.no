@@ -14,6 +14,19 @@
         </div>
     </div>
     <div class="menu__wrapper" data-target-accordian="hamburger-menu">
+        <div class="menu__search">
+            {% if currentSite.handle == "default" %}
+                {% set serchUrl = "/" %}
+            {% else %}
+                {% set serchUrl = "/en" %}
+            {% endif %}
+
+            <form action="{{ url(serchUrl) }}">
+                <input type="search" name="q" aria-label="Søk" placeholder="{{ 'Search'|t }}" value="{{ craft.app.request.getParam('q')|length ? craft.app.request.getParam('q') }}">
+                <button type="submit">Go</button>
+            </form>
+        </div>
+
         {% if entry.contentBlocks|length %}
             <div class="menu__chapter--wrapper">
                 <nav>
