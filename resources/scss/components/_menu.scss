@@ -22,13 +22,13 @@ header{
         overflow: hidden;
         transition: 0.25s all;
         @include phoneOnly{
-            width: 100vw;
+            width: calc(100vw - 20px);
             height: calc(100vh - 145px);
             
         }
         &.is-active{
             border-bottom: 1px solid $color-hightlight;
-            padding: 20px 10px;
+            padding: 10px;
         }
         li{
             display: inline-block;
