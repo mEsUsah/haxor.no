@@ -9,9 +9,9 @@ export default {
         window.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
             //let activeMenu = this._hamburger.classList.contains("is-active");
             let hamburgerButtonActive = hamburgerButton.classList.contains("is-active");
-        
+
             let st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
-            if (!hamburgerButtonActive && st > lastScrollTop){
+            if (!hamburgerButtonActive && window.pageYOffset > 100 && st > lastScrollTop){
                 // downscroll code
                 header.classList.remove("active")
                 if(sidebar){
