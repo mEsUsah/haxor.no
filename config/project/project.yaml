@@ -1,4 +1,4 @@
-dateModified: 1640528508
+dateModified: 1640530167
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -9,12 +9,14 @@ graphql:
     expiryDate: null
 meta:
   __names__:
+    0d67b800-888b-4a29-9351-b7da5f3b7cdb: Subtitle # Subtitle
     0e2235ec-098b-4add-9c16-2a51cb50b5e3: 'Kurs karakter' # Kurs karakter
     1c99bad7-a4b3-483e-bf38-82c06d1f19a0: 'Link to all courses?' # Link to all courses?
     2a432754-f936-45a8-9d69-52319c6a114e: SEO # SEO
     2caebe53-52a0-4509-b4f6-865b55837d5f: 'Chart - Bar (Stacked)' # Chart - Bar (Stacked)
     2ec41ca2-210b-47c8-97d3-306955a39abb: Articles # Articles
     2efca9b8-ea72-4fc4-9c51-20695e174ce7: 'Three newest?' # Three newest?
+    2f773f4a-97cc-41d5-9fb6-2016426d4da5: Text # Text
     2fc7f7b8-2f9d-43dd-977b-8c7b29763e54: haxor.no/en # haxor.no/en
     3a65209b-542d-42a6-9fc7-a9b07fd38253: 'File Content' # File Content
     3d5543fa-7b96-4f00-baff-e330b237625b: 'Ingen mobil tilpasning' # Ingen mobil tilpasning
@@ -36,9 +38,11 @@ meta:
     7dca122d-a470-466a-ae07-51758b1fc449: 'Chart Title' # Chart Title
     7e0480ca-cc52-4451-8832-4a34bfe5ea09: Thumbnails # Thumbnails
     9b49d5b9-d21a-4e64-b799-37fe5db4ada8: 'Three newest?' # Three newest?
+    9bfb520d-0d98-4906-9d30-74ca1c638982: Text # Text
     9dbc0bea-5f8c-4a42-a060-58a1e9baf36f: 'Chart Subtitle' # Chart Subtitle
     12c8b9da-5b5a-4bd7-a51e-4116181081ad: 'Kurs beskrivelse' # Kurs beskrivelse
     12f99a24-9d48-4fdd-8f1e-fec6cabf9cca: Lessons # Lessons
+    14fc49ec-a2e2-4953-a06d-e4c93142cc99: Chapter # Chapter
     15cb9ee9-280a-4a76-9b2f-d31dff2fb525: 'Number of Pages' # Number of Pages
     16c673f1-c879-4707-98ac-84c6e5b5b807: Link # Link
     18efdf32-1b23-42db-a0ed-70252bb134fb: 'Terminal Dump' # Terminal Dump
@@ -65,6 +69,8 @@ meta:
     829f4a1b-8625-4a30-aa3e-81905d8fd3a3: Book # Book
     847c49bf-0bc9-4fca-959c-6facd9f4b32f: 'menu item' # menu item
     849ea203-a4f7-42a8-845c-45933a0ee48a: 'Menu link' # Menu link
+    922f9488-fac0-4f97-88a1-f12f6b41c77d: 'Image Caption' # Image Caption
+    952b5bbe-a4d3-4785-9315-9c1a8b0b6dc1: 'Image Is Figure' # Image Is Figure
     1079ffac-f516-4c4f-a131-3a26fa26ac15: 'Image Is Figure' # Image Is Figure
     1123b472-8241-4d07-bd52-1eff0c59f1ef: 'Om Bloggen' # Om Bloggen
     6065c97a-7a32-4386-aee2-8b5f5933bed8: haxor.no/kids # haxor.no/kids
@@ -74,6 +80,7 @@ meta:
     7755a334-0698-4415-ab30-b1fddb17b7a7: Tema # Tema
     8475e873-60f6-4868-8ab1-1c7c3b90c98e: Common # Common
     9096bb19-2f4d-4b40-91f7-7f0d84ee7b01: 'Varighet (Timer)' # Varighet (Timer)
+    9352e030-3a6d-4f5f-add4-74e01d270e43: 'Info Box' # Info Box
     19285c32-e1f8-42c0-97ff-59f16dbb52af: Hostname # Hostname
     190326da-4559-4d36-aae0-20b00fa6318f: Books # Books
     315547ae-9f46-441e-831a-f2979d046b94: 'Om meg' # Om meg
@@ -82,11 +89,16 @@ meta:
     925133d6-79dc-4f13-9cbc-3752c2eff691: 'Terminal Dump' # Terminal Dump
     84196158-704f-46cd-9cc5-cfe49666f56e: Ingress # Ingress
     a2c9fa7f-4706-4b49-ad49-f09d9a9ebc10: Courses # Courses
+    a227fe85-29a0-403f-b510-659257b8c521: Text # Text
     ac49e4c4-d11a-4bbe-9a08-04c06268ba93: 'Varighet (Minutter)' # Varighet (Minutter)
+    ac148d8c-048e-40df-921a-e1f850f675b1: Image # Image
+    acdcb75a-569c-4ec7-b2ab-9de3e91d8604: Lessons # Lessons
     af5a6f2d-4fdf-4cfe-b5e8-900a1ae088c5: 'Link to all courses?' # Link to all courses?
     b0f70f0a-25fa-4376-b9fa-e4508bca7a85: Gobals # Gobals
     b04f4663-1608-479d-b699-ba1102ba1b61: 'Article Headline' # Article Headline
     b05c4334-9b2d-4f18-8916-c65a9c521861: Image # Image
+    b5a5e8a4-7781-466d-b7c8-b084e1de354e: 'Chapter Headline' # Chapter Headline
+    b7b92d43-ba38-4a42-8cdb-d7b4989964bc: 'Image AltText' # Image AltText
     b92f222e-e35a-4a5a-bb11-3b5ea3deda0c: Quote # Quote
     b3979b7e-2d54-4b6f-89ec-5ef480431d82: Kurs # Kurs
     b4763ae9-35a9-4af6-bd45-59e869963a55: LinkInternal # LinkInternal
@@ -113,7 +125,9 @@ meta:
     dc9122fb-758f-42ae-a098-da603eb31a49: Courses # Courses
     e75f8e08-e499-444e-b646-97309e1abb2b: Books # Books
     ea9728b1-b326-481a-810f-1735e2b682cc: TryHackMe # TryHackMe
+    eac3ade5-8f69-4ee2-b1df-4cc1b1e1b9b7: Image # Image
     ec8d0268-e294-4677-9a70-bf25ab9f87e7: 'Info Box' # Info Box
+    ec9f430a-d961-4e4c-ab37-d8de33b78cbe: 'Lesson Blocks' # Lesson Blocks
     ed01c0d7-346e-4af2-b76f-825ac0da9e30: 'Mine kurs' # Mine kurs
     ed101e61-62b0-40c5-a8d4-b5d30624f1d2: 'File content' # File content
     f2cc0c2d-6188-407c-b0f2-e9afc9ecdb23: Text # Text

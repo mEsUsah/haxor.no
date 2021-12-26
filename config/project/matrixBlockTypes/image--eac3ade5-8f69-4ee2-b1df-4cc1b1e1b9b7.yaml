@@ -1,0 +1,146 @@
+field: ec9f430a-d961-4e4c-ab37-d8de33b78cbe # Lesson Blocks
+fieldLayouts:
+  b1d88c81-94f1-4548-802e-eefa5b51957b:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: ac148d8c-048e-40df-921a-e1f850f675b1 # Image
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b7b92d43-ba38-4a42-8cdb-d7b4989964bc # Image AltText
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 922f9488-fac0-4f97-88a1-f12f6b41c77d # Image Caption
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 952b5bbe-a4d3-4785-9315-9c1a8b0b6dc1 # Image Is Figure
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  922f9488-fac0-4f97-88a1-f12f6b41c77d: # Image Caption
+    columnSuffix: pzlkoxxg
+    contentColumnType: text
+    fieldGroup: null
+    handle: imageCapt
+    instructions: ''
+    name: 'Image Caption'
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\redactor\Field
+  952b5bbe-a4d3-4785-9315-9c1a8b0b6dc1: # Image Is Figure
+    columnSuffix: poaeenii
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: imageIsFigure
+    instructions: ''
+    name: 'Image Is Figure'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  ac148d8c-048e-40df-921a-e1f850f675b1: # Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: ''
+    name: Image
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:3b363f5e-4ee5-4536-b78c-b514bf1a0c7a'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:3b363f5e-4ee5-4536-b78c-b514bf1a0c7a'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:3b363f5e-4ee5-4536-b78c-b514bf1a0c7a'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  b7b92d43-ba38-4a42-8cdb-d7b4989964bc: # Image AltText
+    columnSuffix: pulrcrlb
+    contentColumnType: text
+    fieldGroup: null
+    handle: imageAlt
+    instructions: ''
+    name: 'Image AltText'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: image
+name: Image
+sortOrder: 4
