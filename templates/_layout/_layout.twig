@@ -30,7 +30,12 @@
         {% endif %}
         
         {% block header %}
+            {% if currentSite.handle == "haxorNoKids" %}
+                {% include "partials/_headerKids" %}
+            {% else %}
                 {% include "partials/_header" %}
+            {% endif %}
+
         {% endblock header %}
         <main>
             {% block body %}

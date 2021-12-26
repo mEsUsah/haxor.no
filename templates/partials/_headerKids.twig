@@ -48,35 +48,8 @@
                         {% endfor %} 
                     </ul>
                 </nav>
-
             </div>
         {% endif %}
-        <div class="menu__language--wrapper">
-            <nav>
-                <ul>
-                    {% set sites = craft.app.sites.getAllSites() %}
-                    {% for site in sites %}
-                        {% if site.handle != "skarshaugsNoEbook" %}
-                            <li>
-                                {% if site.handle == "default" %}
-                                    {% set siteName = "Norsk" %}
-                                    {% set siteClass = "no" %}
-                                {% elseif site.handle == "skarshaugsNoEn"%}
-                                    {% set siteName = "English" %}
-                                    {% set siteClass = "en" %}
-                                {% endif %}
-
-                                {% if site.id != currentSite.id %}
-                                    <a href="{{ site.getBaseUrl() }}" class="menu__language menu__language--{{ siteClass }}"></a>
-                                {% else %}
-                                    <span class="menu__language menu__language--{{ siteClass }}"></span>
-                                {% endif %}
-                            </li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
-            </nav>
-        </div>
         <div class="menu__content--wrapper">
             {% set menuItems = globals.menuLink.all() %}
             <nav>
@@ -85,7 +58,7 @@
                         {% for menuItem in menuItems %}
                             <li><a href="{{menuItem.linkEntry.one().getUrl()}}">{{menuItem.linkText}}</a></li>
                         {% endfor %}
-                    {% endif %}  
+                    {% endif %}
                 </ul>
 
             </nav>
