@@ -19,6 +19,7 @@
         </div>
         <div class="article__content--main">
             {% set chapterNr = 0 %}
+            {% set chapterTaskNr = 0 %}
             {% set chartNr = 0 %}
             {% for block in contentBlocks.all() %}
                 {% if block.type == "chapter" %}
@@ -27,8 +28,12 @@
                 {% if block.type == "chartLine" or block.type == "chartBarStacked" %}
                     {% set chartNr = chartNr + 1 %}
                 {% endif %}
+                {% if block.type == "taskDone" %}
+                    {% set chapterTaskNr = chapterTaskNr + 1 %}
+                {% endif %}
                 {% include "_content/_contentBlocks/" ~ block.type with {
                     "chapter": chapterNr,
+                    "chapterTask": chapterTaskNr,
                     "chart": chartNr
                 } %}
             {% endfor %} 

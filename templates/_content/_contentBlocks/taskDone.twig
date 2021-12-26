@@ -1,0 +1,9 @@
+{% set chapter = chapter|default(null) %}
+{% set chapterTask = chapterTask|default(null) %}
+{% set entryId = entry.id %}
+
+<div class="contentBlocks__taskDone--wrapper" data-lesson-task-id="{{ entryId }}_{{ chapter }}_{{ chapterTask }}">
+    <div class="contentBlocks__taskDone--text">{{ block.taskText }}</div>
+    <button class="contentBlocks__taskDone--button">{{"Completed"|t}}</button>
+    <div class="lessonTask__icon"></div>
+</div>

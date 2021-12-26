@@ -174,5 +174,50 @@
     &__chart{
         margin-bottom: 36px;
     }
+    &__taskDone{
+        &--wrapper{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #cccccc;
+            font-size: 16px;
+            margin: 40px auto;
+            max-width: 720px;
+            padding-left: 20px;
+            border-radius: 6px;
+            border: 2px solid #cccccc;
+            transition: border-color .15s ease-in-out;
+            &.complete{
+                border-color: $color-green;
+                .lessonTask__icon{
+                    border-color: $color-green;
+                }
+                .contentBlocks__taskDone--button{
+                    background-color: $color-green;
+                    color: white;
+                    
+                    
+                }
+            }
+        }
+        &--button{
+            background-color: white;
+            color: $color-success;
+            border-radius: 6px;
+            border: 2px solid $color-green;
+            font-size: 18px;
+            padding: 10px 20px;
+            height: 100%;
+            margin: 5px;
+            transition: color .15s ease-in-out, background-color .15s;
+            &:hover{
+                background-color: $color-green;
+                color: white;
+            }
+        }
+
+    }
 
 }

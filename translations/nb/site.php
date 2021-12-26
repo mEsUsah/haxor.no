@@ -6,4 +6,5 @@ return [
     'Search Results' => 'Søkeresultat',
     'results on' => 'treff på',
     'Search' => 'Søk',
+    'Completed' => 'Fullført',
 ];
