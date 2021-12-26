@@ -1,4 +1,4 @@
-dateModified: 1632651222
+dateModified: 1640524668
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -22,6 +22,7 @@ meta:
     3ebdee02-2eb1-48f4-8b4b-4f45f3bfbae9: Username # Username
     4a837336-d09a-492d-aa97-3c29b176ecc7: 'Kurs platform' # Kurs platform
     4f7986b9-315c-4c92-8575-387ebd59b8ec: Homepage # Homepage
+    4f37163b-36dc-4861-9f4e-fdc2b58e9f71: course # course
     5c01d860-2ec5-4205-936e-583524bb8264: 'Image AltText' # Image AltText
     5dd9f4f3-fb1c-4d81-b3fd-2309b56563f0: Filname # Filname
     6a498afe-8881-4b4d-bd9e-f128e6d2ac6e: 'Image Caption' # Image Caption
@@ -64,6 +65,7 @@ meta:
     849ea203-a4f7-42a8-845c-45933a0ee48a: 'Menu link' # Menu link
     1079ffac-f516-4c4f-a131-3a26fa26ac15: 'Image Is Figure' # Image Is Figure
     1123b472-8241-4d07-bd52-1eff0c59f1ef: 'Om Bloggen' # Om Bloggen
+    6065c97a-7a32-4386-aee2-8b5f5933bed8: haxor.no/kids # haxor.no/kids
     6799dd35-5fb9-4623-b487-3aafaf92ec39: blog # blog
     7648fab9-2bab-43df-adca-9f3d941c929e: Artikkeltype # Artikkeltype
     7701d10a-74fb-40fb-a7aa-7e184bb97f05: 'SEO Image' # SEO Image

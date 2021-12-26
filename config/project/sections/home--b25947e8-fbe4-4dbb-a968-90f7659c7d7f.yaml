@@ -1,9 +1,15 @@
+defaultPlacement: end
 enableVersioning: true
 handle: home
 name: Home
 propagationMethod: all
 siteSettings:
   2fc7f7b8-2f9d-43dd-977b-8c7b29763e54: # haxor.no/en
+    enabledByDefault: true
+    hasUrls: true
+    template: index
+    uriFormat: __home__
+  6065c97a-7a32-4386-aee2-8b5f5933bed8: # haxor.no/kids
     enabledByDefault: true
     hasUrls: true
     template: index
