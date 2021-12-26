@@ -26,7 +26,7 @@ fieldLayouts:
         sortOrder: 1
 fields:
   0d67b800-888b-4a29-9351-b7da5f3b7cdb: # Subtitle
-    columnSuffix: qloaszsd
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: subtitle
@@ -46,7 +46,7 @@ fields:
     translationMethod: none
     type: craft\fields\PlainText
   b5a5e8a4-7781-466d-b7c8-b084e1de354e: # Chapter Headline
-    columnSuffix: hbwwaydc
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: chapterHeadline

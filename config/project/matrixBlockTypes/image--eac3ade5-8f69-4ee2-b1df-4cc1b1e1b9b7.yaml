@@ -44,7 +44,7 @@ fieldLayouts:
         sortOrder: 1
 fields:
   922f9488-fac0-4f97-88a1-f12f6b41c77d: # Image Caption
-    columnSuffix: pzlkoxxg
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: imageCapt
@@ -73,7 +73,7 @@ fields:
     translationMethod: language
     type: craft\redactor\Field
   952b5bbe-a4d3-4785-9315-9c1a8b0b6dc1: # Image Is Figure
-    columnSuffix: poaeenii
+    columnSuffix: null
     contentColumnType: boolean
     fieldGroup: null
     handle: imageIsFigure
@@ -122,7 +122,7 @@ fields:
     translationMethod: site
     type: craft\fields\Assets
   b7b92d43-ba38-4a42-8cdb-d7b4989964bc: # Image AltText
-    columnSuffix: pulrcrlb
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: imageAlt

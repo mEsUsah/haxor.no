@@ -1,11 +1,11 @@
 field: ec9f430a-d961-4e4c-ab37-d8de33b78cbe # Lesson Blocks
 fieldLayouts:
-  5c45fdfa-cab4-43ab-908b-106c76c81ad8:
+  744c3232-cab0-4672-889e-25efe2cb6cc8:
     tabs:
       -
         elements:
           -
-            fieldUid: 9bfb520d-0d98-4906-9d30-74ca1c638982 # Text
+            fieldUid: 023232ef-4d79-4571-896b-9146438b66bb # Task text
             instructions: null
             label: null
             required: false
@@ -16,13 +16,13 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  9bfb520d-0d98-4906-9d30-74ca1c638982: # Text
-    columnSuffix: null
+  023232ef-4d79-4571-896b-9146438b66bb: # Task text
+    columnSuffix: fgmzmcco
     contentColumnType: text
     fieldGroup: null
-    handle: text
+    handle: taskText
     instructions: ''
-    name: Text
+    name: 'Task text'
     searchable: false
     settings:
       byteLimit: null
@@ -34,8 +34,8 @@ fields:
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: language
     type: craft\fields\PlainText
-handle: infoBox
-name: 'Info Box'
-sortOrder: 3
+handle: taskDone
+name: 'Task Done'
+sortOrder: 5

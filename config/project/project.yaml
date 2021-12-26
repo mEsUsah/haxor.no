@@ -1,4 +1,4 @@
-dateModified: 1640530167
+dateModified: 1640544394
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -82,6 +82,7 @@ meta:
     9096bb19-2f4d-4b40-91f7-7f0d84ee7b01: 'Varighet (Timer)' # Varighet (Timer)
     9352e030-3a6d-4f5f-add4-74e01d270e43: 'Info Box' # Info Box
     19285c32-e1f8-42c0-97ff-59f16dbb52af: Hostname # Hostname
+    023232ef-4d79-4571-896b-9146438b66bb: 'Task text' # Task text
     190326da-4559-4d36-aae0-20b00fa6318f: Books # Books
     315547ae-9f46-441e-831a-f2979d046b94: 'Om meg' # Om meg
     433733b6-53ef-4e88-b871-7518468484e7: Portfolio # Portfolio
@@ -90,6 +91,7 @@ meta:
     84196158-704f-46cd-9cc5-cfe49666f56e: Ingress # Ingress
     a2c9fa7f-4706-4b49-ad49-f09d9a9ebc10: Courses # Courses
     a227fe85-29a0-403f-b510-659257b8c521: Text # Text
+    a568129a-e9d4-406e-bafe-4dae8e4b19e8: 'Task Done' # Task Done
     ac49e4c4-d11a-4bbe-9a08-04c06268ba93: 'Varighet (Minutter)' # Varighet (Minutter)
     ac148d8c-048e-40df-921a-e1f850f675b1: Image # Image
     acdcb75a-569c-4ec7-b2ab-9de3e91d8604: Lessons # Lessons

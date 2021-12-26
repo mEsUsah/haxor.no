@@ -17,7 +17,7 @@ fieldLayouts:
         sortOrder: 1
 fields:
   2f773f4a-97cc-41d5-9fb6-2016426d4da5: # Text
-    columnSuffix: nytdyhka
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: text
