@@ -1,4 +1,4 @@
-dateModified: 1640528299
+dateModified: 1640528508
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -38,7 +38,7 @@ meta:
     9b49d5b9-d21a-4e64-b799-37fe5db4ada8: 'Three newest?' # Three newest?
     9dbc0bea-5f8c-4a42-a060-58a1e9baf36f: 'Chart Subtitle' # Chart Subtitle
     12c8b9da-5b5a-4bd7-a51e-4116181081ad: 'Kurs beskrivelse' # Kurs beskrivelse
-    12f99a24-9d48-4fdd-8f1e-fec6cabf9cca: Lesson # Lesson
+    12f99a24-9d48-4fdd-8f1e-fec6cabf9cca: Lessons # Lessons
     15cb9ee9-280a-4a76-9b2f-d31dff2fb525: 'Number of Pages' # Number of Pages
     16c673f1-c879-4707-98ac-84c6e5b5b807: Link # Link
     18efdf32-1b23-42db-a0ed-70252bb134fb: 'Terminal Dump' # Terminal Dump
