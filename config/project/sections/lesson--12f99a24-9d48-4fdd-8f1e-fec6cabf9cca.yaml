@@ -1,0 +1,22 @@
+defaultPlacement: end
+enableVersioning: true
+handle: lesson
+name: Lesson
+propagationMethod: custom
+siteSettings:
+  2fc7f7b8-2f9d-43dd-977b-8c7b29763e54: # haxor.no/en
+    enabledByDefault: false
+    hasUrls: true
+    template: index
+    uriFormat: 'lesson/{slug}'
+  6065c97a-7a32-4386-aee2-8b5f5933bed8: # haxor.no/kids
+    enabledByDefault: false
+    hasUrls: true
+    template: index
+    uriFormat: 'leksjon/{slug}'
+  d81b7a18-6d93-471a-ba57-99544b0c585b: # haxor.no
+    enabledByDefault: false
+    hasUrls: true
+    template: index
+    uriFormat: 'leksjon/{slug}'
+type: channel
