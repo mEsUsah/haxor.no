@@ -30,6 +30,9 @@
         &--barn{
             background-image: $icon-teddybear;
         }
+        &--microbit{
+            background-image: $icon-microbit;
+        }
         &--modifikasjon{
             background-image: $icon-screwdriver;
             background-size: 70%;
@@ -92,6 +95,9 @@
         }
         &--thoughts{
             background-color: #ca0000;
+        }
+        &--microbit{
+            background-color: #99c2f7;
         }
     }
 }
