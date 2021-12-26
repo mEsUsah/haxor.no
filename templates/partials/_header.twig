@@ -64,6 +64,9 @@
                                 {% elseif site.handle == "skarshaugsNoEn"%}
                                     {% set siteName = "English" %}
                                     {% set siteClass = "en" %}
+                                {% elseif site.handle == "haxorNoKids" %}
+                                    {% set siteName = "Kids" %}
+                                    {% set siteClass = "kids" %}
                                 {% endif %}
 
                                 {% if site.id != currentSite.id %}
