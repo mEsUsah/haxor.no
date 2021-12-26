@@ -21,7 +21,7 @@
         {% else %}
             {% set serchUrl = "/en" %}
         {% endif %}
-        {% set articles = craft.entries().search(searchQuery).site(["default", "skarshaugsNoEn"]).section("articles, portfolio").orderBy('score').all() %}
+        {% set articles = craft.entries().search(searchQuery).site(["default", "haxorNoEn"]).section("articles, portfolio").orderBy('score').all() %}
 
         {% if articles|length %}
             <p class="articleList__subtitle">{{ articles|length }} {{ 'results on'|t }}: "{{ searchQuery }}"</p>
@@ -40,7 +40,7 @@
         {% endif %}
     {% else %}
         <div class="articleList__container">
-            {% set articles = craft.entries.site(["default", "skarshaugsNoEn"]).section("articles, portfolio").all() %}
+            {% set articles = craft.entries.site(["default", "haxorNoEn"]).section("articles, portfolio").all() %}
             {% for article in articles %}
                 {% include "_content/parts/_article.twig" %}
             {% endfor %}

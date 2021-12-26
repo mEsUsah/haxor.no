@@ -1,6 +1,6 @@
 baseUrl: '@web/en'
 enabled: true
-handle: skarshaugsNoEn
+handle: haxorNoEn
 hasUrls: true
 language: en
 name: haxor.no/en
