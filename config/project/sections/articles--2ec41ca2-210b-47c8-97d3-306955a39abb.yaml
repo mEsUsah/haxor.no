@@ -1,3 +1,4 @@
+defaultPlacement: end
 enableVersioning: true
 handle: articles
 name: Articles
@@ -8,6 +9,11 @@ siteSettings:
     hasUrls: true
     template: index
     uriFormat: 'article/{slug}'
+  6065c97a-7a32-4386-aee2-8b5f5933bed8: # haxor.no/kids
+    enabledByDefault: false
+    hasUrls: true
+    template: index
+    uriFormat: 'artikkel/{slug}'
   d81b7a18-6d93-471a-ba57-99544b0c585b: # haxor.no
     enabledByDefault: false
     hasUrls: true
