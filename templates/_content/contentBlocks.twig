@@ -6,7 +6,7 @@
 
 {% if contentBlocks|length %}
     <div class="article__content--wrapper">
-        <div class="article__content--sidebar">
+        <div class="article__content--sidebar {{ entry.sectionId == 10 ? "lesson" }}">
             <h3>{{ 'Content'|t }}:</h3>
             <a href="#" data-chapter-button="0" class="active">Intro</a>
             {% set chapterNr = 0 %}
@@ -15,7 +15,13 @@
                     {% set chapterNr = chapterNr + 1 %}
                     <a href="#ch_{{chapterNr}}" data-chapter-button="{{chapterNr}}">{{ block.chapterHeadline }}</a>
                 {% endif %}
-            {% endfor %} 
+            {% endfor %}
+            {% if entry.sectionId == 10 %}
+                <div class="lesson__progress--wrapper">
+                    <div class="lesson__progress--bar"></div>
+                </div>
+            {% endif %}
+            
         </div>
         <div class="article__content--main">
             {% set chapterNr = 0 %}

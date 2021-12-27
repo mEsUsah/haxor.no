@@ -1,3 +1,25 @@
+.lesson{
+    &__progress{
+        &--wrapper{
+            width: 6px;
+            height: 100%;
+            border: 2px solid black;
+            border-radius: 3px;
+            position: absolute;
+            top: 0;
+            left: -12px;
+            
+        }
+        &--bar{
+            background-color: $color-green;
+            height: 40%;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}
+
 .lessonTask{
     &__icon{
         position: absolute;
