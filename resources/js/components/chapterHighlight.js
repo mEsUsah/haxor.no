@@ -19,7 +19,7 @@ export default {
                             element.classList.remove("active");
                         });
                         chapterButton.classList.add("active");
-                        chapterButtonMenu.classList.add("active");
+                        //chapterButtonMenu.classList.add("active");
                     }
                 }
             });
