@@ -2,6 +2,7 @@ export default {
     _lessonTaskDoneButtons  : document.querySelectorAll(".contentBlocks__taskDone--button"),
     _lessonTaskDoneWrapper  : document.querySelectorAll(".contentBlocks__taskDone--wrapper"),
     _lessonProgress         : document.querySelector("[data-lesson-progress]"),
+    _chapters               : document.querySelectorAll("[data-chapter-target]"),
     _lessonID               : "",
     _nrOfTasksInLesson      : 0,
 	init() {
@@ -53,8 +54,6 @@ export default {
             // Sett lesson progress bar
             progressBar.style.height = ((nrOfTasksCompleted / nrOfTasksInLesson) * 100) + "%";
         }
-        updateLessonProgress(this._lessonID, this._nrOfTasksInLesson, this._lessonProgress);
-
 
         function updateChapterProgress(lessonID,chapterID){
             // Get all COMPLETED tasks in chapter
@@ -74,9 +73,19 @@ export default {
             const chapterProgress = (nrOfTasksCompleted / numberOfTasksInChapter) * 100 + "%";
             chapterProgressbar.style.height = chapterProgress;
         }
+    
+        // Update lesson progress bar when page loads
+        updateLessonProgress(this._lessonID, this._nrOfTasksInLesson, this._lessonProgress);
 
-        // console.log(localstorageLessonStatus[this._lessonID]);
-        // console.log(Object.keys(localstorageLessonStatus[this._lessonID][1]).length);
+        // Upadate lesson chapter progress bar when page loads
+        if(this._chapters){
+            this._chapters.forEach((chapter, key) => {
+                const chapterID = chapter.getAttribute("data-chapter-target");
+                if (chapterID > 0){ //skip chapter 0 (Intro)
+                    updateChapterProgress(this._lessonID, chapterID);
+                }
+            })
+        }
 
         if(this._lessonTaskDoneButtons){
             this._lessonTaskDoneButtons.forEach((element) => {
