@@ -1,4 +1,4 @@
-dateModified: 1640544394
+dateModified: 1640633322
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -143,6 +143,10 @@ meta:
     f4121429-712b-4587-839a-e0a1db5d946a: 'Line Numbers' # Line Numbers
     fe6324d5-2558-4ab4-99f2-f424b8051892: 'Om Bloggen' # Om Bloggen
 plugins:
+  haxor:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   redactor:
     edition: standard
     enabled: true

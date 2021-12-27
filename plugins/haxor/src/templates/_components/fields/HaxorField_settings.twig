@@ -1,0 +1,26 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * haxor plugin for Craft CMS
+ *
+ * HaxorField Field Settings
+ *
+ * @author    Stanley Skarshaug
+ * @copyright Copyright (c) 2021 Stanley Skarshaug
+ * @link      haxor.no
+ * @package   Haxor
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("skarshaugsolutions\\haxor\\assetbundles\\haxor\\HaxorAsset") %}
+
+{{ forms.textField({
+    label: 'Some Attribute',
+    instructions: 'Enter some attribute here.',
+    id: 'someAttribute',
+    name: 'someAttribute',
+    value: field['someAttribute']})
+}}

@@ -22,7 +22,8 @@
     "craftcms/cms": "^3.7.7",
     "vlucas/phpdotenv": "^3.4.0",
     "craftcms/redactor": "2.8.8",
-    "verbb/super-table": "2.6.8"
+    "verbb/super-table": "2.6.8",
+    "skarshaugsolutions/haxor": "^1.0.0"
   },
   "require-dev": {
     "yiisoft/yii2-shell": "^2.0.3"
@@ -35,7 +36,7 @@
   "config": {
     "optimize-autoloader": true,
     "platform": {
-      "php": "7.4.3"
+      "php": "8.0.12"
     }
   },
   "scripts": {
@@ -48,5 +49,11 @@
       "@composer dump-autoload -o",
       "@php craft setup/welcome"
     ]
-  }
+  },
+  "repositories" : [
+		{
+			"type" : "path",
+			"url" : "plugins/haxor/"
+		}
+	]
 }
