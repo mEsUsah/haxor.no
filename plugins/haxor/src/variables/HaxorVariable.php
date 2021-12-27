@@ -45,14 +45,6 @@ class HaxorVariable
      * @param null $optional
      * @return string
      */
-    public function exampleVariable($optional = null)
-    {
-        $result = "And away we go to the Twig template...";
-        if ($optional) {
-            $result = "I'm feeling optional today...";
-        }
-        return $result;
-    }
 
     public function getLessonTaskAmount($entry){
         $nrOfTasks = 0;
@@ -72,5 +64,59 @@ class HaxorVariable
         }
 
         return $nrOfTasks;
+    }
+
+    public function getLessonTasks($entry)
+    {
+        if($entry->lessonBlocks){
+            $lessonBlocks = $entry->lessonBlocks->all();
+            
+            // Build array of chapters and tasks in lesson
+            $lesson = [];
+            $chapterIndex = 0;
+            $taskIndex = 0;
+            foreach($lessonBlocks as $lessonBlock){
+                $handle = $lessonBlock->getType()->handle;
+                if($handle === "chapter"){
+                    $chapterIndex++;
+                    $taskIndex = 0;
+                    $lesson[$chapterIndex] = [];
+                }
+                if($handle === "taskDone"){
+                    $taskIndex++;
+                    $lesson[$chapterIndex][$taskIndex] = $lessonBlock->fieldValues["taskText"];
+                }
+                if($handle === "sendInAnswer"){
+                    $taskIndex++;
+                    $lesson[$chapterIndex][$taskIndex]["q"] = $lessonBlock->fieldValues["question"];
+                    $lesson[$chapterIndex][$taskIndex]["a"] = $lessonBlock->fieldValues["answer"];
+                }
+            }
+    
+            // Debug: Print lesson array
+            // echo "<pre>";
+            // print_r($lesson);
+            // echo "</pre>";
+    
+            return $lesson;
+        } else {
+            // Entry does not contain lessonBlocks
+            return false;
+        }
+    }
+
+    public function getLessonTaskAnswer($entry, $chapter, $task)
+    {    
+        $lesson = $this->getLessonTasks($entry);
+
+        if(isset($lesson[$chapter][$task]["a"])){
+            // Debug: Print task answer
+            // echo "<pre>";
+            // print_r($lesson[$chapter][$task]["a"]);
+            // echo "</pre>";
+            return $lesson[$chapter][$task]["a"];
+        } else {
+            return false;
+        }
     }
 }
