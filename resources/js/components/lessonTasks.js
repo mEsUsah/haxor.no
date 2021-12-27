@@ -1,7 +1,9 @@
 export default {
     _lessonTaskDoneButtons  : document.querySelectorAll(".contentBlocks__taskDone--button"),
     _lessonTaskDoneWrapper  : document.querySelectorAll(".contentBlocks__taskDone--wrapper"),
+    _lessonProgress         : document.querySelector("[data-lesson-progress]"),
     _lessonID               : "",
+    _nrOfTasksInLesson      : 0,
 	init() {
         let localstorageLessonStatus = JSON.parse(localStorage.getItem("lessonStatus"));
         if(localstorageLessonStatus === null){
@@ -29,27 +31,30 @@ export default {
                 // Add complete class to each completed task
                 if(localstorageLessonStatus[lessonID][chapterID][taskID] == true){
                     element.classList.add("complete");
-                } 
+                }
+                
+                // Update nr tasks
+                this._nrOfTasksInLesson++;
             })
         }
 
-        // Get all COMPLETED tasks in lesson
-        let nrOfTasksCompleted = 0;
-        for(const [chapter, tasks] of Object.entries(localstorageLessonStatus[this._lessonID])){
-            console.log(chapter, tasks);
-            for(const [task, completed] of Object.entries(tasks)){
-                if (completed) {
-                    nrOfTasksCompleted++;
+        function updateLessonProgress(lessonID, nrOfTasksInLesson, progressBar){
+            // Get all COMPLETED tasks in lesson
+            let nrOfTasksCompleted = 0;
+            for(const [chapter, tasks] of Object.entries(localstorageLessonStatus[lessonID])){
+                //console.log(chapter, tasks);
+                for(const [task, completed] of Object.entries(tasks)){
+                    if (completed) {
+                        nrOfTasksCompleted++;
+                    }
                 }
             }
+
+            // Sett lesson progress bar
+            progressBar.style.height = ((nrOfTasksCompleted / nrOfTasksInLesson) * 100) + "%";
         }
-        console.log(nrOfTasksCompleted);
-
-        // Get amount of task in lesson
-        console.log(this._lessonTaskDoneWrapper.length);
-
-        // Print progress
-        console.log(nrOfTasksCompleted + " / " + this._lessonTaskDoneWrapper.length);
+        updateLessonProgress(this._lessonID, this._nrOfTasksInLesson, this._lessonProgress);
+        
 
 
         // console.log(localstorageLessonStatus[this._lessonID]);
@@ -68,6 +73,9 @@ export default {
                     // Update lesson status object and localstorage
                     localstorageLessonStatus[lessonID][chapterID][taskID] = true;                    
                     localStorage.setItem("lessonStatus", JSON.stringify(localstorageLessonStatus));
+
+                    // Update lesson progress bar
+                    updateLessonProgress(this._lessonID, this._nrOfTasksInLesson, this._lessonProgress);
                 })
             })
         }
