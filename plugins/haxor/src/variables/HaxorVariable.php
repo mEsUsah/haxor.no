@@ -119,4 +119,17 @@ class HaxorVariable
             return false;
         }
     }
+
+    public function getLessonTaskAnswerObfuscated($entry, $chapter, $task){
+        $lesson = $this->getLessonTasks($entry);
+
+        if(isset($lesson[$chapter][$task]["a"])){
+            $answer = $lesson[$chapter][$task]["a"];
+            
+            //Obfuscates anything but whitspace characters
+            return preg_replace("/\S/", "*", $answer); 
+        } else {
+            return false;
+        }
+    }
 }
