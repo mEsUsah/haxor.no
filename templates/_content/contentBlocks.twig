@@ -30,6 +30,7 @@
             {% for block in contentBlocks.all() %}
                 {% if block.type == "chapter" %}
                     {% set chapterNr = chapterNr + 1 %}
+                    {% set chapterTaskNr = 0 %}
                 {% endif %}
                 {% if block.type == "chartLine" or block.type == "chartBarStacked" %}
                     {% set chartNr = chartNr + 1 %}
