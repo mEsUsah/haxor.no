@@ -4,12 +4,7 @@
     <div class="chapter__start">
         <h2 class="chapter__headline" data-bookmark>{{ block.chapterHeadline }} </h2>
         {% if block.subtitle|length or chapterTaskNr >= 0  %}
-            <p class="chapter__subtitle">
-                {% if chapterTaskNr >= 0 %}
-                    <span class="chapter__progress--completed">0</span> / <span class="chapter__progress--total">0</span>: 
-                {% endif %}
-                {{ block.subtitle }}
-            </p>
+            <p class="chapter__subtitle">{{ block.subtitle }}</p>
         {% endif %}
         {% if chapterTaskNr >= 0 %} {# Check if this article is a lesson #}
             <div class="chapter__progress--wrapper">
