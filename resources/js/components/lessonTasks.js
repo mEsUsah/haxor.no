@@ -32,7 +32,7 @@ export default {
                 if(localstorageLessonStatus[lessonID][chapterID][taskID] == true){
                     element.classList.add("complete");
                 }
-                
+
                 // Update nr tasks
                 this._nrOfTasksInLesson++;
             })
@@ -54,8 +54,26 @@ export default {
             progressBar.style.height = ((nrOfTasksCompleted / nrOfTasksInLesson) * 100) + "%";
         }
         updateLessonProgress(this._lessonID, this._nrOfTasksInLesson, this._lessonProgress);
-        
 
+
+        function updateChapterProgress(lessonID,chapterID){
+            // Get all COMPLETED tasks in chapter
+            let nrOfTasksCompleted = 0;
+            for(const [task, completed] of Object.entries(localstorageLessonStatus[lessonID][chapterID])){
+                if (completed) {
+                    nrOfTasksCompleted++;
+                }
+            }
+
+            // Get number of tasks in chapter
+            const querystring = "[data-lesson-id='" + lessonID + "'][data-lesson-ch='" + chapterID + "']";
+            let numberOfTasksInChapter = document.querySelectorAll(querystring).length;
+            
+            // Set chapter progress bar
+            const chapterProgressbar = document.querySelector("[data-chapter-target='" + chapterID + "'] .chapter__progress--bar");
+            const chapterProgress = (nrOfTasksCompleted / numberOfTasksInChapter) * 100 + "%";
+            chapterProgressbar.style.height = chapterProgress;
+        }
 
         // console.log(localstorageLessonStatus[this._lessonID]);
         // console.log(Object.keys(localstorageLessonStatus[this._lessonID][1]).length);
@@ -76,6 +94,7 @@ export default {
 
                     // Update lesson progress bar
                     updateLessonProgress(this._lessonID, this._nrOfTasksInLesson, this._lessonProgress);
+                    updateChapterProgress(lessonID, chapterID);
                 })
             })
         }
