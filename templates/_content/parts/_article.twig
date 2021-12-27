@@ -15,7 +15,7 @@
     {% set theme = "default" %}
 {% endif %}
 
-<a href="{{ article.getUrl() }}" class="articleList__item category__color--{{theme}}" data-lesson-id="{{article.id}}">
+<a href="{{ article.getUrl() }}" class="articleList__item category__color--{{theme}}" >
     <div class="articleList__item--image" style="background-image: url('{{ articleImage.getUrl(articleListThumb) }}');"></div>
     <div class="articleList__item--headline">{{article.title}}</div>
     <i class="category__icon category__icon--{{ theme }} {{article.site.handle == "default" or article.site.handle == "haxorNoKids"  ? "entry__category--twoOfTwo" : "entry__category--single"}}" ></i>
@@ -23,14 +23,14 @@
     {% if article.articleTeaser|length %}
         <div class="articleList__item--teaser">{{article.articleTeaser}}</div>
     {% endif %}
-    
+
     {% if article.site.handle == "default" or article.site.handle == "haxorNoKids" %}
         <i class="flag__icon--flagNo entry__category--oneOfTwo"></i>
     {% endif %}
 
     {% if article.sectionId == 10 %}
         <div class="articleList__item--progress-wrapper">
-            <div class="articleList__item--progress-bar" data-lesson-progress></div>
+            <div class="articleList__item--progress-bar" data-lesson-module-id="{{article.id}}" data-lesson-module-tasks="{{ craft.haxor.getLessonTaskAmount(article.id) }}"></div>
         </div>
     {% endif %}
 </a>

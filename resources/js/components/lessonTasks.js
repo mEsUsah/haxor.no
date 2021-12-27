@@ -3,6 +3,8 @@ export default {
     _lessonTaskDoneWrapper  : document.querySelectorAll(".contentBlocks__taskDone--wrapper"),
     _lessonProgress         : document.querySelector("[data-lesson-progress]"),
     _chapters               : document.querySelectorAll("[data-chapter-target]"),
+    _lessonModuleId         : document.querySelectorAll("[data-lesson-module-id]"),
+    _lessonModuleTasks      : document.querySelectorAll("[data-lesson-module-tasks]"),
     _lessonID               : "",
     _nrOfTasksInLesson      : 0,
 	init() {
@@ -10,6 +12,33 @@ export default {
         let localstorageLessonStatus = JSON.parse(localStorage.getItem("lessonStatus"));
         if(localstorageLessonStatus === null){
             localstorageLessonStatus = {};
+        }
+
+        function getLessonTasksCompleted(lessonID){
+            // Get all COMPLETED tasks in lesson
+            let nrOfTasksCompleted = 0;
+            for(const [chapter, tasks] of Object.entries(localstorageLessonStatus[lessonID])){
+                for(const [task, completed] of Object.entries(tasks)){
+                    if (completed) {
+                        nrOfTasksCompleted++;
+                    }
+                }
+            }
+            return nrOfTasksCompleted;
+        }
+
+        // Code to be executed in lesson module listing
+        if(this._lessonModuleId.length && this._lessonModuleTasks.length){
+            this._lessonModuleId.forEach((lesson) => {
+                const lessonID =    lesson.getAttribute("data-lesson-module-id");
+                const lessonTasks = lesson.getAttribute("data-lesson-module-tasks");
+                if(localstorageLessonStatus[lessonID]){
+                    const nrOfTasksCompleted = getLessonTasksCompleted(lessonID);
+                    const lessonProgressPercentage = (nrOfTasksCompleted / lessonTasks) * 100;
+                    // Sett lesson progress bar
+                    lesson.style.height = lessonProgressPercentage + "%";
+                }
+            })
         }
 
         // Code to be executed inside a lesson module
@@ -41,18 +70,11 @@ export default {
                     this._nrOfTasksInLesson++;
                 })
             }
+
+            
     
             function updateLessonProgress(lessonID, nrOfTasksInLesson, progressBar){
-                // Get all COMPLETED tasks in lesson
-                let nrOfTasksCompleted = 0;
-                for(const [chapter, tasks] of Object.entries(localstorageLessonStatus[lessonID])){
-                    for(const [task, completed] of Object.entries(tasks)){
-                        if (completed) {
-                            nrOfTasksCompleted++;
-                        }
-                    }
-                }
-    
+                const nrOfTasksCompleted = getLessonTasksCompleted(lessonID);
                 // Sett lesson progress bar
                 progressBar.style.height = ((nrOfTasksCompleted / nrOfTasksInLesson) * 100) + "%";
             }
