@@ -30,7 +30,7 @@
 
     {% if article.sectionId == 10 %}
         <div class="articleList__item--progress-wrapper">
-            <div class="articleList__item--progress-bar" data-lesson-module-id="{{article.id}}" data-lesson-module-tasks="{{ craft.haxor.getLessonTaskAmount(article.id) }}"></div>
+            <div class="articleList__item--progress-bar" data-lesson-module-id="{{article.id}}" data-lesson-module-tasks="{{ craft.haxor.getLessonTaskAmount(article) }}"></div>
         </div>
     {% endif %}
 </a>

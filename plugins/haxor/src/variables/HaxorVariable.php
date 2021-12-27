@@ -54,13 +54,9 @@ class HaxorVariable
         return $result;
     }
 
-    public function getLessonTaskAmount($entryId){
+    public function getLessonTaskAmount($entry){
         $nrOfTasks = 0;
-        
-        $entry = \craft\elements\Entry::find()
-            ->id($entryId)
-            ->one();
-        
+          
         // return -1 if entry is not a lesson
         if ($entry->sectionId != 10){
             return -1;
