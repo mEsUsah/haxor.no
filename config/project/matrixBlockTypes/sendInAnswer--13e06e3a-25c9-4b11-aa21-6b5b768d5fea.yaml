@@ -1,0 +1,70 @@
+field: ec9f430a-d961-4e4c-ab37-d8de33b78cbe # Lesson Blocks
+fieldLayouts:
+  b5f4b836-5044-4a92-bb2e-904863abd7ff:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 268e169b-dff4-4e90-ad5a-8618c54e799e # Question
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 5084e704-59ac-4ed3-bc26-1b3b96710a82 # Answer
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  268e169b-dff4-4e90-ad5a-8618c54e799e: # Question
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: question
+    instructions: ''
+    name: Question
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  5084e704-59ac-4ed3-bc26-1b3b96710a82: # Answer
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: answer
+    instructions: ''
+    name: Answer
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: sendInAnswer
+name: 'Send in answer'
+sortOrder: 6

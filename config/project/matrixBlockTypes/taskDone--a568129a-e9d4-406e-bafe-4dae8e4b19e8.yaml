@@ -17,7 +17,7 @@ fieldLayouts:
         sortOrder: 1
 fields:
   023232ef-4d79-4571-896b-9146438b66bb: # Task text
-    columnSuffix: fgmzmcco
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: taskText
