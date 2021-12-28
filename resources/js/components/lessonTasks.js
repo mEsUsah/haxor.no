@@ -1,6 +1,6 @@
 export default {
-    _lessonTaskDoneButtons  : document.querySelectorAll(".contentBlocks__taskDone--button"),
-    _lessonTaskDoneWrapper  : document.querySelectorAll(".contentBlocks__taskDone--wrapper"),
+    _lessonTaskDoneButtons  : document.querySelectorAll(".contentBlocks__task--button"),
+    _lessonTaskDoneWrapper  : document.querySelectorAll(".contentBlocks__task--wrapper"),
     _lessonProgress         : document.querySelector("[data-lesson-progress]"),
     _chapters               : document.querySelectorAll("[data-chapter-target]"),
     _lessonModuleId         : document.querySelectorAll("[data-lesson-module-id]"),

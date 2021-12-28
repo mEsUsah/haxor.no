@@ -2,18 +2,16 @@
 {% set chapterTask = chapterTask|default(null) %}
 {% set entryId = entry.id %}
 
-<div class="contentBlocks__taskDone--wrapper" data-lesson-id="{{ entryId }}" data-lesson-ch="{{ chapter }}" data-lesson-t="{{ chapterTask }}">
+<div class="contentBlocks__task--wrapper" data-lesson-id="{{ entryId }}" data-lesson-ch="{{ chapter }}" data-lesson-t="{{ chapterTask }}">
     <form method="get" action="{{ currentSite.baseUrl }}actions/haxor/lessons/check-answer">
-        <label for="a">
-            {{ block.question }}
-            <div>
-                <input type="text" name="a" id="a" placeholder="{{ craft.haxor.getLessonTaskAnswerObfuscated(entry, chapter, chapterTask) }}">
-                <input type="hidden" name="le" value="{{ entryId }}">
-                <input type="hidden" name="ch" value="{{ chapter }}">
-                <input type="hidden" name="t" value="{{ chapterTask }}">
-                <button class="contentBlocks__taskDone--button">{{"Submit"|t}}</button>
-            </div>
-        </label>
+        <div class="contentBlocks__task--content">
+            <label for="a">{{ block.question }}</label>
+            <input type="text" name="a" id="a" placeholder="{{ craft.haxor.getLessonTaskAnswerObfuscated(entry, chapter, chapterTask) }}">
+            <input type="hidden" name="le" value="{{ entryId }}">
+            <input type="hidden" name="ch" value="{{ chapter }}">
+            <input type="hidden" name="t" value="{{ chapterTask }}">
+        </div>
+        <button class="contentBlocks__task--button">{{"Submit"|t}}</button>
     </form>
     <div class="lessonTask__icon"></div>
 </div>
