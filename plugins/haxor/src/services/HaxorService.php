@@ -43,10 +43,85 @@ class HaxorService extends Component
      *
      * @return mixed
      */
-    public function exampleService()
-    {
-        $result = 'something';
 
-        return $result;
+    public function getLessonTaskAmount($entry)
+    {
+        $nrOfTasks = 0;
+          
+        // return -1 if entry is not a lesson
+        if ($entry->sectionId != 10){
+            return -1;
+        }
+        
+        // Summarize nr of tasks
+        $lessonBlocks = $entry->lessonBlocks->all();
+        foreach($lessonBlocks as $lessonBlock){
+            $handle = $lessonBlock->getType()->handle;
+            if($handle === "taskDone"){
+                $nrOfTasks++;
+            }
+        }
+
+        return $nrOfTasks;
+    }
+
+    public function getLessonTasks($entry)
+    {           
+        if($entry->lessonBlocks){
+            
+            $lessonBlocks = $entry->lessonBlocks->all();
+            
+            // Build array of chapters and tasks in lesson
+            $lesson = [];
+            $chapterIndex = 0;
+            $taskIndex = 0;
+            foreach($lessonBlocks as $lessonBlock){
+                $handle = $lessonBlock->getType()->handle;
+                if($handle === "chapter"){
+                    $chapterIndex++;
+                    $taskIndex = 0;
+                    $lesson[$chapterIndex] = [];
+                }
+                if($handle === "taskDone"){
+                    $taskIndex++;
+                    $lesson[$chapterIndex][$taskIndex] = $lessonBlock->fieldValues["taskText"];
+                }
+                if($handle === "sendInAnswer"){
+                    $taskIndex++;
+                    $lesson[$chapterIndex][$taskIndex]["q"] = $lessonBlock->fieldValues["question"];
+                    $lesson[$chapterIndex][$taskIndex]["a"] = $lessonBlock->fieldValues["answer"];
+                }
+            }     
+
+            return $lesson;
+        } else {
+            // Entry does not contain lessonBlocks
+            return false;
+        }
+    }
+
+    public function getLessonTaskAnswer($entry, $chapter, $task)
+    {    
+        $lesson = $this->getLessonTasks($entry);
+
+        if(isset($lesson[$chapter][$task]["a"])){
+            return $lesson[$chapter][$task]["a"];
+        } else {
+            return false;
+        }
+    }
+
+    public function getLessonTaskAnswerObfuscated($entry, $chapter, $task)
+    {
+        $lesson = $this->getLessonTasks($entry);
+
+        if(isset($lesson[$chapter][$task]["a"])){
+            $answer = $lesson[$chapter][$task]["a"];
+            
+            //Obfuscates anything but whitspace characters
+            return preg_replace("/\S/", "*", $answer); 
+        } else {
+            return false;
+        }
     }
 }
