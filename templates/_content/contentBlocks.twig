@@ -35,7 +35,7 @@
                 {% if block.type == "chartLine" or block.type == "chartBarStacked" %}
                     {% set chartNr = chartNr + 1 %}
                 {% endif %}
-                {% if block.type == "taskDone" %}
+                {% if block.type == "taskDone" or block.type == "sendInAnswer" %}
                     {% set chapterTaskNr = chapterTaskNr + 1 %}
                 {% endif %}
                 {% include "_content/_contentBlocks/" ~ block.type with {
