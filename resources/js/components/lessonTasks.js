@@ -1,5 +1,6 @@
 export default {
-    _lessonTaskDoneButtons  : document.querySelectorAll(".contentBlocks__task--button"),
+    _lessonTaskDoneButtons  : document.querySelectorAll("[data-lesson-task-done]"),
+    _lessonTaskAnswerButtons: document.querySelectorAll("[data-lesson-task-answer-button]"),
     _lessonTaskDoneWrapper  : document.querySelectorAll(".contentBlocks__task--wrapper"),
     _lessonProgress         : document.querySelector("[data-lesson-progress]"),
     _chapters               : document.querySelectorAll("[data-chapter-target]"),
@@ -71,9 +72,13 @@ export default {
                 })
             }
 
+            let nrOfTasksInLesson = this._nrOfTasksInLesson; 
+            let progressBar = this._lessonProgress;
+
+
             
     
-            function updateLessonProgress(lessonID, nrOfTasksInLesson, progressBar){
+            function updateLessonProgress(lessonID,  ){
                 const nrOfTasksCompleted = getLessonTasksCompleted(lessonID);
                 // Sett lesson progress bar
                 progressBar.style.height = ((nrOfTasksCompleted / nrOfTasksInLesson) * 100) + "%";
@@ -111,6 +116,7 @@ export default {
                 })
             }
     
+            // Lesson task done buttons
             if(this._lessonTaskDoneButtons){
                 this._lessonTaskDoneButtons.forEach((element) => {
                     element.addEventListener("click", () => {
@@ -126,8 +132,42 @@ export default {
                         localStorage.setItem("lessonStatus", JSON.stringify(localstorageLessonStatus));
     
                         // Update lesson progress bar
-                        updateLessonProgress(this._lessonID, this._nrOfTasksInLesson, this._lessonProgress);
+                        updateLessonProgress(lessonID);
                         updateChapterProgress(lessonID, chapterID);
+                    })
+                })
+            }
+            // Lesson task answer buttons
+            if(this._lessonTaskAnswerButtons){
+                this._lessonTaskAnswerButtons.forEach((element) => {
+                    element.addEventListener("click", () => {
+                        const taskWrapper =     element.parentNode.parentNode;
+                        const lessonID =        taskWrapper.getAttribute("data-lesson-id");
+                        const chapterID =       taskWrapper.getAttribute("data-lesson-ch");
+                        const taskID =          taskWrapper.getAttribute("data-lesson-t");
+                        const controllerUrl =   taskWrapper.querySelector("form").getAttribute("action");
+                        const taskAnswer = taskWrapper.querySelector("[data-lesson-task-answer]").value;
+
+                        const ajaxUrl = encodeURI(controllerUrl + "?le=" + lessonID + "&ch=" + chapterID + "&t=" + taskID + "&a=" + taskAnswer);
+
+                        const xhttp = new XMLHttpRequest();
+                        xhttp.onload = function() {
+                            if(this.status == 200 && this.responseText == "correct"){
+                                // Add complete class to parent node
+                                taskWrapper.classList.add("complete");
+                            
+                                // Update lesson status object and localstorage
+                                localstorageLessonStatus[lessonID][chapterID][taskID] = true;                    
+                                localStorage.setItem("lessonStatus", JSON.stringify(localstorageLessonStatus));
+            
+                                // Update lesson progress bar
+                                updateLessonProgress(lessonID);
+                                updateChapterProgress(lessonID, chapterID);
+                            }
+                        }
+                        xhttp.open("GET", ajaxUrl);
+                        xhttp.send();
+    
                     })
                 })
             }
