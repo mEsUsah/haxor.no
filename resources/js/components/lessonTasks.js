@@ -145,7 +145,7 @@ export default {
                         const lessonID =        taskWrapper.getAttribute("data-lesson-id");
                         const chapterID =       taskWrapper.getAttribute("data-lesson-ch");
                         const taskID =          taskWrapper.getAttribute("data-lesson-t");
-                        const controllerUrl =   taskWrapper.querySelector("form").getAttribute("action");
+                        const controllerUrl =   taskWrapper.querySelector("form").getAttribute("baseUrl") + "actions/haxor/lessons/check-answer";
                         const taskAnswer = taskWrapper.querySelector("[data-lesson-task-answer]").value;
 
                         const ajaxUrl = encodeURI(controllerUrl + "?le=" + lessonID + "&ch=" + chapterID + "&t=" + taskID + "&a=" + taskAnswer);
@@ -163,6 +163,9 @@ export default {
                                 // Update lesson progress bar
                                 updateLessonProgress(lessonID);
                                 updateChapterProgress(lessonID, chapterID);
+                            } else {
+                                element.classList.add("wrong");
+                                setTimeout(() => element.classList.remove("wrong"), 1000);
                             }
                         }
                         xhttp.open("GET", ajaxUrl);

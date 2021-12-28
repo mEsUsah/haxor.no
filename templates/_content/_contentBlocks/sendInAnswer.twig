@@ -3,7 +3,7 @@
 {% set entryId = entry.id %}
 
 <div class="contentBlocks__task--wrapper" data-lesson-id="{{ entryId }}" data-lesson-ch="{{ chapter }}" data-lesson-t="{{ chapterTask }}">
-    <form method="get" action="{{ currentSite.baseUrl }}actions/haxor/lessons/check-answer">
+    <form method="get" baseUrl="{{ currentSite.baseUrl }}" onsubmit="return false;">
         <div class="contentBlocks__task--content">
             <label for="a">{{ block.question }}</label>
             <input type="text" name="a" placeholder="{{ craft.haxor.getLessonTaskAnswerObfuscated(entry, chapter, chapterTask) }}" data-lesson-task-answer>
