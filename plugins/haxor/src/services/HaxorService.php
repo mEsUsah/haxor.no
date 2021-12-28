@@ -14,6 +14,7 @@ use skarshaugsolutions\haxor\Haxor;
 
 use Craft;
 use craft\base\Component;
+use craft\elements\Entry;
 
 /**
  * HaxorService Service
@@ -43,6 +44,11 @@ class HaxorService extends Component
      *
      * @return mixed
      */
+
+    public function getEntryById($entryID)
+    {
+        return Entry::find()->id($entryID)->one();
+    }
 
     public function getLessonTaskAmount($entry)
     {
