@@ -282,16 +282,15 @@
                     position: absolute;
                     top: -2px;
                     left: -2px;
-                    height: 100%;
-                    width: 100%;
-                    content: "";
+                    content: "! ! !";
                     background-color: $color-red !important;
                     border-color: $color-red;
                     color: white;
                     border: 2px solid $color-red;
                     font-size: 18px;
                     border-radius: 6px;
-                    margin: auto 0;
+                    padding: 10px 20px;
+                    width: 76px;
                 }
             }
         }
