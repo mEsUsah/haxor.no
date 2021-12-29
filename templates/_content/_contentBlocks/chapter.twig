@@ -1,12 +1,14 @@
 {% set chapter = chapter|default(null) %}
 {% set chapterTaskNr = chapterTaskNr|default(null) %}
-<div class="chapter__wrapper" id="ch_{{ chapter }}" data-chapter-target="{{ chapter }}">
+{% set tasksInChapter = craft.haxor.getLessonChapterTaskAmount(entry, chapter) %}
+
+<div class="chapter__wrapper {{ tasksInChapter > 0 ? "chapter__wrapper--lesson" }}" data-chapter-target="{{ chapter }}">
     <div class="chapter__start">
         <h2 class="chapter__headline" data-bookmark>{{ block.chapterHeadline }} </h2>
         {% if block.subtitle|length or chapterTaskNr >= 0  %}
             <p class="chapter__subtitle">{{ block.subtitle }}</p>
         {% endif %}
-        {% if chapterTaskNr >= 0 %} {# Check if this article is a lesson #}
+        {% if tasksInChapter > 0 %} {# Check if this article is a lesson #}
             <div class="chapter__progress--wrapper">
                 <div class="chapter__progress--bar"></div>
             </div>

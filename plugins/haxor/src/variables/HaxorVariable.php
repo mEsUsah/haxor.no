@@ -51,6 +51,11 @@ class HaxorVariable
         return Haxor::$plugin->haxorService->getLessonTaskAmount($entry);
     }
 
+    public function getLessonChapterTaskAmount($entry, $chapter)
+    {
+        return Haxor::$plugin->haxorService->getLessonChapterTaskAmount($entry,$chapter);
+    }
+
     public function getLessonTasks($entry)
     {
         return Haxor::$plugin->haxorService->getLessonTasks($entry);

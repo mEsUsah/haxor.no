@@ -70,6 +70,31 @@ class HaxorService extends Component
 
         return $nrOfTasks;
     }
+    
+    public function getLessonChapterTaskAmount($entry, $chapter)
+    {
+        $nrOfTasks = 0;
+        $chapterIndex = 0;
+          
+        // return -1 if entry is not a lesson
+        if ($entry->sectionId != 10){
+            return -1;
+        }
+        
+        // Summarize nr of tasks in selected chapter
+        $lessonBlocks = $entry->lessonBlocks->all();
+        foreach($lessonBlocks as $lessonBlock){
+            $handle = $lessonBlock->getType()->handle;
+            if($handle === "chapter"){
+                $chapterIndex++;
+            }
+            if($handle === "taskDone" && $chapterIndex == $chapter){
+                $nrOfTasks++;
+            }
+        }
+
+        return $nrOfTasks;
+    }
 
     public function getLessonTasks($entry)
     {           
