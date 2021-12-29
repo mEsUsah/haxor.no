@@ -150,7 +150,7 @@ class HaxorService extends Component
             $answer = $lesson[$chapter][$task]["a"];
             
             //Obfuscates anything but whitspace characters
-            return preg_replace("/\S/", "*", $answer); 
+            return preg_replace("/[0-9a-zA-Z]/", "∗", $answer); 
         } else {
             return false;
         }
