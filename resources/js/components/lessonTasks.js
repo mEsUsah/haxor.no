@@ -9,7 +9,17 @@ export default {
     _lessonID               : "",
     _nrOfTasksInLesson      : 0,
 	init() {
-        // Grt lessonStatus object from localstorage
+        // Get site language
+        const siteLanguage = document.querySelector("[data-site-language]").getAttribute("data-site-language");
+        let taskCompleteText = "";
+        if(siteLanguage == "nb") {
+            taskCompleteText = "Fullført";
+        }
+        if(siteLanguage == "en") {
+            taskCompleteText = "Completed";
+        }
+        
+        // Get lessonStatus object from localstorage
         let localstorageLessonStatus = JSON.parse(localStorage.getItem("lessonStatus"));
         if(localstorageLessonStatus === null){
             localstorageLessonStatus = {};
@@ -26,6 +36,17 @@ export default {
                 }
             }
             return nrOfTasksCompleted;
+        }
+
+        function updateButtonText(element){
+            let sendInAnswerButton = element.querySelector("[data-lesson-task-answer-button]");
+            let taskDoneButton = element.querySelector("[data-lesson-task-done]");
+            if(sendInAnswerButton){
+                sendInAnswerButton.innerHTML = taskCompleteText;
+            }
+            if(taskDoneButton){
+                taskDoneButton.innerHTML = taskCompleteText;
+            }
         }
 
         // Code to be executed in lesson module listing
@@ -65,6 +86,7 @@ export default {
                     // Add complete class to each completed task
                     if(localstorageLessonStatus[lessonID][chapterID][taskID] == true){
                         element.classList.add("complete");
+                        updateButtonText(element);
                     }
     
                     // Update nr tasks
@@ -125,8 +147,8 @@ export default {
                         const taskID =    element.parentNode.getAttribute("data-lesson-t");
                         
                         if(!element.parentNode.classList.contains("complete")){
-                            // Add complete class to parent node
                             element.parentNode.classList.add("complete");
+                            updateButtonText(element.parentNode);
                         
                             // Update lesson status object and localstorage
                             localstorageLessonStatus[lessonID][chapterID][taskID] = true;                    
@@ -158,6 +180,7 @@ export default {
                                 if(this.status == 200 && this.responseText == "correct"){
                                     // Add complete class to parent node
                                     taskWrapper.classList.add("complete");
+                                    updateButtonText(taskWrapper);
                                 
                                     // Update lesson status object and localstorage
                                     localstorageLessonStatus[lessonID][chapterID][taskID] = true;                    
