@@ -43,7 +43,7 @@
             {% if currentSite.handle == "haxorNoKids" %}
                 {% set articles = craft.entries.site(["haxorNoKids"]).section("articles, lesson").all() %}
             {% else %}
-                {% set articles = craft.entries.site(["default", "haxorNoEn","haxorNoKids"]).section("articles, portfolio, lesson").all() %}
+                {% set articles = craft.entries.site(["default", "haxorNoEn"]).section("articles, portfolio, lesson").all() %}
             {% endif %}
             
             {% for article in articles %}
