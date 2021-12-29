@@ -63,7 +63,7 @@ class HaxorService extends Component
         $lessonBlocks = $entry->lessonBlocks->all();
         foreach($lessonBlocks as $lessonBlock){
             $handle = $lessonBlock->getType()->handle;
-            if($handle === "taskDone"){
+            if($handle === "taskDone"|| $handle === "sendInAnswer"){
                 $nrOfTasks++;
             }
         }
@@ -88,7 +88,7 @@ class HaxorService extends Component
             if($handle === "chapter"){
                 $chapterIndex++;
             }
-            if($handle === "taskDone" && $chapterIndex == $chapter){
+            if(($handle === "taskDone" || $handle === "sendInAnswer") && $chapterIndex == $chapter){
                 $nrOfTasks++;
             }
         }
