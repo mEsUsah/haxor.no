@@ -123,17 +123,19 @@ export default {
                         const lessonID =  element.parentNode.getAttribute("data-lesson-id");
                         const chapterID = element.parentNode.getAttribute("data-lesson-ch");
                         const taskID =    element.parentNode.getAttribute("data-lesson-t");
-    
-                        // Add complete class to parent node
-                        element.parentNode.classList.add("complete");
-                    
-                        // Update lesson status object and localstorage
-                        localstorageLessonStatus[lessonID][chapterID][taskID] = true;                    
-                        localStorage.setItem("lessonStatus", JSON.stringify(localstorageLessonStatus));
-    
-                        // Update lesson progress bar
-                        updateLessonProgress(lessonID);
-                        updateChapterProgress(lessonID, chapterID);
+                        
+                        if(!element.parentNode.classList.contains("complete")){
+                            // Add complete class to parent node
+                            element.parentNode.classList.add("complete");
+                        
+                            // Update lesson status object and localstorage
+                            localstorageLessonStatus[lessonID][chapterID][taskID] = true;                    
+                            localStorage.setItem("lessonStatus", JSON.stringify(localstorageLessonStatus));
+        
+                            // Update lesson progress bar
+                            updateLessonProgress(lessonID);
+                            updateChapterProgress(lessonID, chapterID);
+                        }
                     })
                 })
             }
@@ -150,27 +152,28 @@ export default {
 
                         const ajaxUrl = encodeURI(controllerUrl + "?le=" + lessonID + "&ch=" + chapterID + "&t=" + taskID + "&a=" + taskAnswer);
 
-                        const xhttp = new XMLHttpRequest();
-                        xhttp.onload = function() {
-                            if(this.status == 200 && this.responseText == "correct"){
-                                // Add complete class to parent node
-                                taskWrapper.classList.add("complete");
-                            
-                                // Update lesson status object and localstorage
-                                localstorageLessonStatus[lessonID][chapterID][taskID] = true;                    
-                                localStorage.setItem("lessonStatus", JSON.stringify(localstorageLessonStatus));
-            
-                                // Update lesson progress bar
-                                updateLessonProgress(lessonID);
-                                updateChapterProgress(lessonID, chapterID);
-                            } else {
-                                element.classList.add("wrong");
-                                setTimeout(() => element.classList.remove("wrong"), 1000);
+                        if(!taskWrapper.classList.contains("complete")){
+                            const xhttp = new XMLHttpRequest();
+                            xhttp.onload = function() {
+                                if(this.status == 200 && this.responseText == "correct"){
+                                    // Add complete class to parent node
+                                    taskWrapper.classList.add("complete");
+                                
+                                    // Update lesson status object and localstorage
+                                    localstorageLessonStatus[lessonID][chapterID][taskID] = true;                    
+                                    localStorage.setItem("lessonStatus", JSON.stringify(localstorageLessonStatus));
+                
+                                    // Update lesson progress bar
+                                    updateLessonProgress(lessonID);
+                                    updateChapterProgress(lessonID, chapterID);
+                                } else {
+                                    element.classList.add("wrong");
+                                    setTimeout(() => element.classList.remove("wrong"), 1000);
+                                }
                             }
+                            xhttp.open("GET", ajaxUrl);
+                            xhttp.send();
                         }
-                        xhttp.open("GET", ajaxUrl);
-                        xhttp.send();
-    
                     })
                 })
             }
