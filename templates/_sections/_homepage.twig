@@ -47,7 +47,7 @@
             {% endif %}
             
             {% for article in articles %}
-                {% include "_content/parts/_article.twig" %}
+                {% include "_content/parts/_article.twig" with {article: article} %}
             {% endfor %}
         </div>
         
