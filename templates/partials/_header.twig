@@ -27,7 +27,14 @@
             </form>
         </div>
 
-        {% if entry.contentBlocks|length %}
+        {% if entry.contentBlocks or entry.lessonBlocks %}
+            {% if entry.contentBlocks and entry.contentBlocks|length %}
+                {% set contentBlocks = entry.contentBlocks %}
+            {% endif %}
+            {% if entry.lessonBlocks and entry.lessonBlocks|length %}
+                {% set contentBlocks = entry.lessonBlocks %}
+            {% endif %}
+            
             <div class="menu__chapter--wrapper">
                 <nav>
                     <ul>
@@ -38,7 +45,7 @@
                             <a href="#" data-chapter-button-menu="0" class="active">Intro</a>
                         </li>    
                         {% set chapterNr = 0 %}
-                        {% for block in entry.contentBlocks.all() %}
+                        {% for block in contentBlocks %}
                             {% if block.type == "chapter" %}
                                 {% set chapterNr = chapterNr + 1 %}
                                 <li>
