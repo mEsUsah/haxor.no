@@ -39,7 +39,7 @@
         transform: translateX(-50%) translateY(-50%);
         background-image: $icon-info;
         background-position: center;
-        background-size: 60%;
+        background-size: 20%;
         background-repeat: no-repeat;
         @include phoneOnly {    
             height: 30px;
