@@ -41,9 +41,9 @@
     {% else %}
         <div class="articleList__container">
             {% if currentSite.handle == "haxorNoKids" %}
-                {% set articles = craft.entries.site(["haxorNoKids"]).section("articles, lesson").all() %}
+                {% set articles = craft.entries.site(["haxorNoKids"]).section("lesson").all() %}
             {% else %}
-                {% set articles = craft.entries.site(["default", "haxorNoEn"]).section("articles, portfolio, lesson").all() %}
+                {% set articles = craft.entries.site(["default", "haxorNoEn","haxorNoKids"]).section("articles, portfolio").all() %}
             {% endif %}
             
             {% for article in articles %}
