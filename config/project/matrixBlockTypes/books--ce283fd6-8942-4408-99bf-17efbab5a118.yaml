@@ -89,4 +89,4 @@ fields:
     type: craft\fields\Entries
 handle: books
 name: Books
-sortOrder: 10
+sortOrder: 11

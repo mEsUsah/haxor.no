@@ -89,4 +89,4 @@ fields:
     type: craft\fields\Entries
 handle: courses
 name: Courses
-sortOrder: 9
+sortOrder: 10

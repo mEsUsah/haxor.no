@@ -301,4 +301,4 @@ fields:
     type: craft\fields\Lightswitch
 handle: fileContent
 name: 'File Content'
-sortOrder: 6
+sortOrder: 8

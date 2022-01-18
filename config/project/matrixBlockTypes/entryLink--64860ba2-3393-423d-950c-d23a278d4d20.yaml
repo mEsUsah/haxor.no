@@ -110,4 +110,4 @@ fields:
     type: craft\fields\PlainText
 handle: entryLink
 name: Entry
-sortOrder: 13
+sortOrder: 6

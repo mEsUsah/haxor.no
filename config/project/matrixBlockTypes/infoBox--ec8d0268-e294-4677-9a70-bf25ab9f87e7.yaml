@@ -47,4 +47,4 @@ fields:
     type: craft\redactor\Field
 handle: infoBox
 name: 'Info Box'
-sortOrder: 3
+sortOrder: 4

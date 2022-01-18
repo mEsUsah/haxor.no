@@ -142,4 +142,4 @@ fields:
     type: craft\fields\Lightswitch
 handle: image
 name: Image
-sortOrder: 5
+sortOrder: 3
