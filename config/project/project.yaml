@@ -1,4 +1,4 @@
-dateModified: 1640640104
+dateModified: 1642531643
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -55,6 +55,7 @@ meta:
     52f10b73-e1ae-4ada-8d03-81ceafab228c: Guides # Guides
     57a8d48f-2781-4975-b7ff-b3b5efd7c470: Text # Text
     62b88f4a-25d3-4a89-831f-24f78c24f85b: Subtitle # Subtitle
+    71ac9a76-cabc-44c7-8470-bae1c0d43ed0: Entry # Entry
     72a349c8-b7c8-4301-81a5-7301f5cc1058: 'Article Image' # Article Image
     080d70ab-85ac-424a-9d06-3aedf3fd9889: Globals # Globals
     93d39a6a-48eb-4f78-afb1-8fd74053ce15: 'Kurs bilde' # Kurs bilde
@@ -86,6 +87,7 @@ meta:
     9352e030-3a6d-4f5f-add4-74e01d270e43: 'Info Box' # Info Box
     19285c32-e1f8-42c0-97ff-59f16dbb52af: Hostname # Hostname
     023232ef-4d79-4571-896b-9146438b66bb: 'Task text' # Task text
+    64860ba2-3393-423d-950c-d23a278d4d20: Entry # Entry
     190326da-4559-4d36-aae0-20b00fa6318f: Books # Books
     315547ae-9f46-441e-831a-f2979d046b94: 'Om meg' # Om meg
     433733b6-53ef-4e88-b871-7518468484e7: Portfolio # Portfolio
@@ -93,6 +95,7 @@ meta:
     925133d6-79dc-4f13-9cbc-3752c2eff691: 'Terminal Dump' # Terminal Dump
     84196158-704f-46cd-9cc5-cfe49666f56e: Ingress # Ingress
     a2c9fa7f-4706-4b49-ad49-f09d9a9ebc10: Courses # Courses
+    a52f4dfc-42fb-4bda-a12e-0595eab603d7: Text # Text
     a227fe85-29a0-403f-b510-659257b8c521: Text # Text
     a568129a-e9d4-406e-bafe-4dae8e4b19e8: 'Task Done' # Task Done
     ac49e4c4-d11a-4bbe-9a08-04c06268ba93: 'Varighet (Minutter)' # Varighet (Minutter)
@@ -122,6 +125,7 @@ meta:
     d2ea4108-edc5-4f74-9794-214619a9f0c8: 'Mine kurs' # Mine kurs
     d6f9cc1f-1608-4ae7-a083-d0924ba71f47: 'Image Is Figure' # Image Is Figure
     d9a0abe6-89dd-4688-a0ac-6d584524c3c2: Kursbevis # Kursbevis
+    d47dbda4-bf10-41c3-b21c-76becadcfa97: Headline # Headline
     d67ba21e-e565-441c-aafd-bee2a9f4d3f7: Data # Data
     d81b7a18-6d93-471a-ba57-99544b0c585b: haxor.no # haxor.no
     d74696e2-d999-44f5-aded-f8353552c57b: Portfolio # Portfolio
