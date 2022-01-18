@@ -1,0 +1,45 @@
+.entryLink{
+    &__wrapper{
+        position: relative;
+        margin: 40px auto;
+        max-width: 720px;
+        background-color: #cccccc;
+        color: black;
+        border-radius: 6px;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        @include ipadOrSmaller {    
+            margin: 0 10px;
+            flex-direction: column;
+        }
+        @include phoneOnly {    
+            margin: 30px 20px;
+            flex-direction: column;
+        }
+    }
+    &__text{
+        width: 100%;
+        max-width: 340px;
+        margin-left: 20px;
+    }
+    &__icon{
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        background-color: white;
+        border: 2px solid #cccccc;
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+        transform: translateX(-50%) translateY(-50%);
+        background-image: $icon-link;
+        background-position: center;
+        background-size: 55%;
+        background-repeat: no-repeat;
+        @include phoneOnly {    
+            height: 30px;
+            width: 30px;
+        }
+    }
+}

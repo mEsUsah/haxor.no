@@ -1,0 +1,14 @@
+{% set article = block.selectedEntry.one() %}
+
+<div class="entryLink__wrapper">
+    {% include "_content/parts/_article.twig" with {article: article, modifier: "entryLink"} %}
+    <div class="entryLink__text">
+        {% if block.headline and block.headline|length %}
+            <h3>{{ block.headline }}</h3>
+        {% endif %}
+        {% if block.text and block.text|length %}
+            {{ block.text }}
+        {% endif %}
+    </div>
+    <div class="entryLink__icon"></div>
+</div>
