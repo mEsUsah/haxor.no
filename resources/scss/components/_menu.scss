@@ -123,6 +123,8 @@ header{
                 display: flex;
                 flex-direction: column;
                 text-align: right;
+                border-bottom: 3px solid black;
+                padding-bottom: 10px;
             }
             li{
                 display: flex;
