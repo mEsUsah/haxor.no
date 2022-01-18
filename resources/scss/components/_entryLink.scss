@@ -16,12 +16,23 @@
         @include phoneOnly {    
             margin: 30px 20px;
             flex-direction: column;
+            align-items: center;
         }
     }
     &__text{
         width: 100%;
         max-width: 340px;
-        margin-left: 20px;
+        margin: 0 0 0 20px;
+        h3{
+            margin: 0;
+        }
+        p{
+            margin: 0;
+        }
+        @include ipadOrSmaller {    
+            margin: 16px 0 0 0;
+            max-width: 310px;
+        }
     }
     &__icon{
         position: absolute;
