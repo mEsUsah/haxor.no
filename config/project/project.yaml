@@ -1,4 +1,4 @@
-dateModified: 1645348539
+dateModified: 1645366063
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -12,6 +12,7 @@ meta:
     0d67b800-888b-4a29-9351-b7da5f3b7cdb: Subtitle # Subtitle
     0e2235ec-098b-4add-9c16-2a51cb50b5e3: 'Kurs karakter' # Kurs karakter
     1c99bad7-a4b3-483e-bf38-82c06d1f19a0: 'Link to all courses?' # Link to all courses?
+    1e364dce-0242-4cfe-8565-03b39ef5bea6: Certificates # Certificates
     2a432754-f936-45a8-9d69-52319c6a114e: SEO # SEO
     2caebe53-52a0-4509-b4f6-865b55837d5f: 'Chart - Bar (Stacked)' # Chart - Bar (Stacked)
     2ec41ca2-210b-47c8-97d3-306955a39abb: Articles # Articles
@@ -25,6 +26,7 @@ meta:
     4a837336-d09a-492d-aa97-3c29b176ecc7: 'Kurs platform' # Kurs platform
     4f7986b9-315c-4c92-8575-387ebd59b8ec: Homepage # Homepage
     4f37163b-36dc-4861-9f4e-fdc2b58e9f71: course # course
+    4fa3f654-1283-406b-9656-22b48a6c818e: 'Kursbevis link' # Kursbevis link
     5c01d860-2ec5-4205-936e-583524bb8264: 'Image AltText' # Image AltText
     5dd9f4f3-fb1c-4d81-b3fd-2309b56563f0: Filname # Filname
     6a498afe-8881-4b4d-bd9e-f128e6d2ac6e: 'Image Caption' # Image Caption
@@ -34,12 +36,14 @@ meta:
     6ed30be3-319a-4469-a458-a70309e3e179: 'Kurs anmeldelse' # Kurs anmeldelse
     6f1a1285-4249-4f2a-9773-1b8a2cb33fd9: Kursplatform # Kursplatform
     6f5f5cbf-7ead-4f94-9ed2-42c81ae3a3d3: 'Kurs anmeldelse score' # Kurs anmeldelse score
+    7d9ff56a-e0ad-49f6-810e-0b4601084749: Certificate # Certificate
     7dbe180d-e397-494f-bea8-61f7b3f5bf4d: 'Book Reviews' # Book Reviews
     7dca122d-a470-466a-ae07-51758b1fc449: 'Chart Title' # Chart Title
     7e0480ca-cc52-4451-8832-4a34bfe5ea09: Thumbnails # Thumbnails
     9b49d5b9-d21a-4e64-b799-37fe5db4ada8: 'Three newest?' # Three newest?
     9bfb520d-0d98-4906-9d30-74ca1c638982: Text # Text
     9dbc0bea-5f8c-4a42-a060-58a1e9baf36f: 'Chart Subtitle' # Chart Subtitle
+    9dfaa653-4e36-4b09-a7a7-e25e81bafdf7: Certificates # Certificates
     12c8b9da-5b5a-4bd7-a51e-4116181081ad: 'Kurs beskrivelse' # Kurs beskrivelse
     12f99a24-9d48-4fdd-8f1e-fec6cabf9cca: Lessons # Lessons
     13e06e3a-25c9-4b11-aa21-6b5b768d5fea: 'Send in answer' # Send in answer
@@ -95,6 +99,7 @@ meta:
     925133d6-79dc-4f13-9cbc-3752c2eff691: 'Terminal Dump' # Terminal Dump
     84196158-704f-46cd-9cc5-cfe49666f56e: Ingress # Ingress
     a2c9fa7f-4706-4b49-ad49-f09d9a9ebc10: Courses # Courses
+    a6bd78d7-41d8-4db7-8a28-70f5638e4b88: 'Link to all certifications?' # Link to all certifications?
     a52f4dfc-42fb-4bda-a12e-0595eab603d7: Text # Text
     a227fe85-29a0-403f-b510-659257b8c521: Text # Text
     a568129a-e9d4-406e-bafe-4dae8e4b19e8: 'Task Done' # Task Done
@@ -138,6 +143,7 @@ meta:
     ec8d0268-e294-4677-9a70-bf25ab9f87e7: 'Info Box' # Info Box
     ec9f430a-d961-4e4c-ab37-d8de33b78cbe: 'Lesson Blocks' # Lesson Blocks
     ed01c0d7-346e-4af2-b76f-825ac0da9e30: 'Mine kurs' # Mine kurs
+    ed90e740-711b-4901-9c4f-56ea797d242e: Default # Default
     ed101e61-62b0-40c5-a8d4-b5d30624f1d2: 'File content' # File content
     f2cc0c2d-6188-407c-b0f2-e9afc9ecdb23: Text # Text
     f8f50449-6440-4878-a1c7-8da852defe91: 'Chart - Line' # Chart - Line

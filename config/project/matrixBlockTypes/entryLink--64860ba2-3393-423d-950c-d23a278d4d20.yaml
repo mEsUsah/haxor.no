@@ -47,12 +47,9 @@ fields:
       limit: '1'
       localizeRelations: false
       selectionLabel: ''
-      showSiteMenu: false
+      showSiteMenu: true
       source: null
-      sources:
-        - 'section:2ec41ca2-210b-47c8-97d3-306955a39abb' # Articles
-        - 'section:12f99a24-9d48-4fdd-8f1e-fec6cabf9cca' # Lessons
-        - 'section:433733b6-53ef-4e88-b871-7518468484e7' # Portfolio
+      sources: '*'
       targetSiteId: null
       validateRelatedElements: false
       viewMode: null

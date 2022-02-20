@@ -1,0 +1,15 @@
+columnSuffix: mujwcccw
+contentColumnType: string(255)
+fieldGroup: 26a433d6-c7ff-4f42-8acb-7bcc035fc4d2 # Kurs
+handle: courseCertificateUrl
+instructions: ''
+name: 'Kursbevis link'
+searchable: false
+settings:
+  maxLength: '255'
+  placeholder: null
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

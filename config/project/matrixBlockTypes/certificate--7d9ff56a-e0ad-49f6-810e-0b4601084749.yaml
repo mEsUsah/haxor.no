@@ -1,0 +1,44 @@
+field: c3d8fdbe-5d3a-4a09-a91f-2da6060ece41 # ContentBlocks
+fieldLayouts:
+  89894aaf-856c-44f5-bbec-28684d44d4c5:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 9dfaa653-4e36-4b09-a7a7-e25e81bafdf7 # Certificates
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  9dfaa653-4e36-4b09-a7a7-e25e81bafdf7: # Certificates
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: certificates
+    instructions: ''
+    name: Certificates
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: ''
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: false
+      source: null
+      sources:
+        - 'section:1e364dce-0242-4cfe-8565-03b39ef5bea6' # Certificates
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: certificate
+name: Certificate
+sortOrder: 12

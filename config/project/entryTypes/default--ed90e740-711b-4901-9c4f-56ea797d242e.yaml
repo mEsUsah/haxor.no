@@ -1,0 +1,123 @@
+fieldLayouts:
+  853f38b5-43c9-41ee-8b87-9981eccc8003:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 93d39a6a-48eb-4f78-afb1-8fd74053ce15 # Kurs bilde
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 12c8b9da-5b5a-4bd7-a51e-4116181081ad # Kurs beskrivelse
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f733eaac-e1d6-428e-a5e6-5e9c1b8450df # Kurs anmeldelse sitat
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 6ed30be3-319a-4469-a458-a70309e3e179 # Kurs anmeldelse
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: c2cadeae-b406-4376-a7bb-822c8d077ca2 # Kurs tema
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 44f8fa56-23f3-4d1e-8231-4e7f46c9af46 # Fullført dato
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9096bb19-2f4d-4b40-91f7-7f0d84ee7b01 # Varighet (Timer)
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ac49e4c4-d11a-4bbe-9a08-04c06268ba93 # Varighet (Minutter)
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 4fa3f654-1283-406b-9656-22b48a6c818e # Kursbevis link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Metadata
+        sortOrder: 2
+handle: default
+hasTitleField: true
+name: Default
+section: 1e364dce-0242-4cfe-8565-03b39ef5bea6 # Certificates
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

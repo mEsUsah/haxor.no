@@ -38,4 +38,4 @@ fields:
     type: craft\fields\PlainText
 handle: chartLine
 name: 'Chart - Line'
-sortOrder: 12
+sortOrder: 13

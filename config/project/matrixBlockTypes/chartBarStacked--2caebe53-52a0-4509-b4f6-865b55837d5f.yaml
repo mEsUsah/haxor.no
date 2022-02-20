@@ -154,4 +154,4 @@ fields:
     type: craft\fields\Table
 handle: chartBarStacked
 name: 'Chart - Bar (Stacked)'
-sortOrder: 13
+sortOrder: 14
