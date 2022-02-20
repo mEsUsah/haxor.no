@@ -1,0 +1,43 @@
+<div class="courseList__item--wrapper">
+    <div class="certList__item--icon"></div>
+    <div class="courseList__item--header">
+        <div class="courseList__item--illustration">
+            {% if certificate.courseTheme|length %}
+                {% set theme = certificate.courseTheme.one().slug %}
+            {% else %}
+                {% set theme = "default" %}
+            {% endif %}
+            <img class="courseList__item--image" src="{{certificate.courseImage.one().getUrl()}}" alt="">
+            <div class="courseList__item--categoryIcon">
+                <div class="category__icon category__icon--{{ theme }}"></div>
+            </div>
+            
+        </div>
+        <div class="courseList__item--description">
+            <h3>{{certificate.title}}</h3>
+            <p></span>{{certificate.courseLengthHours >= 0 ? certificate.courseLengthHours ~ "t"}}</p>
+            {{certificate.courseDescription}}
+        </div>
+    </div>
+    <div class="courseList__item--review">
+        <p>
+            <span class="courseList__item--reviewScoreQuote">"{{certificate.courseReviewQuote}}"</span>
+        </p>
+        
+    </div>
+    <div class="courseList__item--expanded" data-target-accordian="{{chapter}}-{{loop.index0}}">
+        {{certificate.courseReview}}
+        <p>
+            {% if certificate.courseCertificateUrl is defined and certificate.courseCertificateUrl|length %}
+                <a href="{{certificate.courseCertificateUrl}}" target="_blank" class="courseList__item--courseDiploma"></a>
+            {% endif %}
+            <span> - {{certificate.courseCompletedDate|date("j. F Y")}}</span>
+        </p>
+    </div>
+
+    
+    <button class="courseList__item--accordianButton-wrapper" data-button-accordian="{{chapter}}-{{loop.index0}}">
+        <div class="courseList__item--accordianButton-text {{certificate.courseCertificateUrl|length ? 'courseList__item--accordianButton-textLong'}}">Beskrivelse {{certificate.courseCertificateUrl|length ? "og sertifikat"}}</div>
+        <div class="courseList__item--accordianButton-icon"></div>
+    </button>
+</div>

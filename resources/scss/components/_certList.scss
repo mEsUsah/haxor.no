@@ -1,0 +1,24 @@
+.certList{    
+    &__item{
+        &--icon{
+            z-index: 1;
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            background-color: white;
+            border: 2px solid #cccccc;
+            border-radius: 50%;
+            top: 0;
+            left: 0;
+            transform: translateX(-50%) translateY(-50%);
+            background-image: $icon-diploma;
+            background-position: center 50%;
+            background-size: 60%;
+            background-repeat: no-repeat;
+            @include phoneOnly {    
+                height: 30px;
+                width: 30px;
+            }
+        }
+    }
+}
