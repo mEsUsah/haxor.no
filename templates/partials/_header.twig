@@ -32,7 +32,7 @@
                 {% set contentBlocks = entry.contentBlocks %}
             {% endif %}
             {% if entry.lessonBlocks and entry.lessonBlocks|length %}
-                {% set contentBlocks = entry.lessonBlocks %}
+                {% set contentBlocks = entry.lessonBlocks.all() %}
             {% endif %}
             
             <div class="menu__chapter--wrapper">
