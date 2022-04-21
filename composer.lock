@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cacf59f39dbe88de0d5b4466b7e62c0f",
+    "content-hash": "f3b630ceb585fd70eff4b3eef398b0fd",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -721,52 +721,6 @@
             "time": "2022-04-06T18:24:35+00:00"
         },
         {
-            "name": "craftcms/html-field",
-            "version": "1.0.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/craftcms/html-field.git",
-                "reference": "fd3d400643fccbe27583102f581640f465987a06"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/html-field/zipball/fd3d400643fccbe27583102f581640f465987a06",
-                "reference": "fd3d400643fccbe27583102f581640f465987a06",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^3.6.0"
-            },
-            "require-dev": {
-                "craftcms/phpstan": "dev-main"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "craft\\htmlfield\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Pixel & Tonic",
-                    "homepage": "https://pixelandtonic.com/"
-                }
-            ],
-            "description": "Base class for Craft CMS field types with HTML values.",
-            "support": {
-                "docs": "https://github.com/craftcms/html-field/blob/main/README.md",
-                "email": "support@craftcms.com",
-                "issues": "https://github.com/craftcms/html-field/issues?state=open",
-                "rss": "https://github.com/craftcms/html-field/commits/main.atom",
-                "source": "https://github.com/craftcms/html-field"
-            },
-            "time": "2022-03-10T14:39:24+00:00"
-        },
-        {
             "name": "craftcms/oauth2-craftid",
             "version": "1.0.0.1",
             "source": {
@@ -876,25 +830,20 @@
         },
         {
             "name": "craftcms/redactor",
-            "version": "2.10.6",
+            "version": "2.8.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/redactor.git",
-                "reference": "3ae12028303dc5ef95ccdd6b47a9307510080011"
+                "reference": "c0272678a9d9bdc3990b36079e42667acdcd7016"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/redactor/zipball/3ae12028303dc5ef95ccdd6b47a9307510080011",
-                "reference": "3ae12028303dc5ef95ccdd6b47a9307510080011",
+                "url": "https://api.github.com/repos/craftcms/redactor/zipball/c0272678a9d9bdc3990b36079e42667acdcd7016",
+                "reference": "c0272678a9d9bdc3990b36079e42667acdcd7016",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.6.0",
-                "craftcms/html-field": "^1.0.5"
-            },
-            "require-dev": {
-                "craftcms/ecs": "dev-main",
-                "craftcms/phpstan": "dev-main"
+                "craftcms/cms": "^3.5.0"
             },
             "type": "craft-plugin",
             "extra": {
@@ -932,7 +881,7 @@
                 "rss": "https://github.com/craftcms/redactor/commits/v2.atom",
                 "source": "https://github.com/craftcms/redactor"
             },
-            "time": "2022-04-07T23:15:08+00:00"
+            "time": "2021-08-02T08:18:53+00:00"
         },
         {
             "name": "craftcms/server-check",
@@ -3119,11 +3068,11 @@
         },
         {
             "name": "skarshaugsolutions/haxor",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "dist": {
                 "type": "path",
                 "url": "plugins/haxor",
-                "reference": "044a7450d8122a58d2bb7c84229a77f9df3b135c"
+                "reference": "ef608d9af2f1dd5d05135952874d518662aeaedc"
             },
             "require": {
                 "craftcms/cms": "^3.0.0"
@@ -3135,11 +3084,11 @@
             },
             "type": "craft-plugin",
             "extra": {
-                "name": "haxor",
+                "name": "Haxor.no",
                 "handle": "haxor",
                 "developer": "Stanley Skarshaug",
-                "developerUrl": "haxor.no",
-                "documentationUrl": "https://github.com/mEsUsah/haxor/blob/master/README.md",
+                "developerUrl": "https://www.haxor.no",
+                "documentationUrl": "https://github.com/mEsUsah/haxor.no/blob/master/plugins/haxor/README.md",
                 "changelogUrl": "https://raw.githubusercontent.com/mEsUsah/haxor/master/CHANGELOG.md",
                 "components": {
                     "haxorService": "skarshaugsolutions\\haxor\\services\\HaxorService"
@@ -3169,7 +3118,7 @@
                 "haxor"
             ],
             "support": {
-                "docs": "https://github.com/mEsUsah/haxor/blob/master/README.md",
+                "docs": "https://github.com/mEsUsah/haxor.no/blob/master/plugins/haxor/README.md",
                 "issues": "https://github.com/mEsUsah/haxor/issues"
             },
             "transport-options": {
@@ -4759,20 +4708,20 @@
         },
         {
             "name": "verbb/super-table",
-            "version": "2.7.1",
+            "version": "2.6.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/verbb/super-table.git",
-                "reference": "aeb50ce534e2a5200c50e69a3d591c12d182a572"
+                "reference": "a26d89e46c6a85a77177fdd3ec600a7e9d20efb5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/super-table/zipball/aeb50ce534e2a5200c50e69a3d591c12d182a572",
-                "reference": "aeb50ce534e2a5200c50e69a3d591c12d182a572",
+                "url": "https://api.github.com/repos/verbb/super-table/zipball/a26d89e46c6a85a77177fdd3ec600a7e9d20efb5",
+                "reference": "a26d89e46c6a85a77177fdd3ec600a7e9d20efb5",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.7.0",
+                "craftcms/cms": "^3.5.0",
                 "verbb/base": "^1.0.2"
             },
             "type": "craft-plugin",
@@ -4820,7 +4769,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-12-30T23:52:31+00:00"
+            "time": "2021-05-19T06:48:18+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

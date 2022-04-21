@@ -2,7 +2,7 @@
     "name": "skarshaugsolutions/haxor",
     "description": "Plugin for haxor.no",
     "type": "craft-plugin",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "keywords": [
         "craft",
         "cms",
@@ -11,7 +11,7 @@
         "haxor"
     ],
     "support": {
-        "docs": "https://github.com/mEsUsah/haxor/blob/master/README.md",
+        "docs": "https://github.com/mEsUsah/haxor.no/blob/master/plugins/haxor/README.md",
         "issues": "https://github.com/mEsUsah/haxor/issues"
     },
     "license": "MIT",
@@ -35,11 +35,11 @@
         }
     },
     "extra": {
-        "name": "haxor",
+        "name": "Haxor.no",
         "handle": "haxor",
         "developer": "Stanley Skarshaug",
-        "developerUrl": "haxor.no",
-        "documentationUrl": "https://github.com/mEsUsah/haxor/blob/master/README.md",
+        "developerUrl": "https://www.haxor.no",
+        "documentationUrl": "https://github.com/mEsUsah/haxor.no/blob/master/plugins/haxor/README.md",
         "changelogUrl": "https://raw.githubusercontent.com/mEsUsah/haxor/master/CHANGELOG.md",
         "components": {
             "haxorService": "skarshaugsolutions\\haxor\\services\\HaxorService"

@@ -1,4 +1,4 @@
-# haxor plugin for Craft CMS 3.x
+# Haxor.no plugin for Craft CMS 3.x
 
 Plugin for haxor.no
 
@@ -18,26 +18,8 @@ To install the plugin, follow these instructions.
 
 2. Then tell Composer to load the plugin:
 
-        composer require mEsUsah/haxor
+        composer require skarshaugsolutions/haxor
 
-3. In the Control Panel, go to Settings → Plugins and click the “Install” button for haxor.
+3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Haxor.no
 
-## haxor Overview
-
--Insert text here-
-
-## Configuring haxor
-
--Insert text here-
-
-## Using haxor
-
--Insert text here-
-
-## haxor Roadmap
-
-Some things to do, and ideas for potential features:
-
-* Release it
-
-Brought to you by [Stanley Skarshaug](haxor.no)
+Brought to you by [Stanley Skarshaug](https://www.haxor.no)
