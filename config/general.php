@@ -41,7 +41,7 @@ return [
     ],
 
     // Production environment settings
-    'prod' => [
+    'production' => [
         'allowAdminChanges' => false,
     ],
 ];
