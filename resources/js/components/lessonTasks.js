@@ -8,6 +8,7 @@ export default {
     _lessonModuleTasks      : document.querySelectorAll("[data-lesson-module-tasks]"),
     _lessonID               : "",
     _nrOfTasksInLesson      : 0,
+
 	init() {
         // Get site language
         const siteLanguage = document.querySelector("[data-site-language]").getAttribute("data-site-language");
@@ -96,10 +97,7 @@ export default {
 
             let nrOfTasksInLesson = this._nrOfTasksInLesson; 
             let progressBar = this._lessonProgress;
-
-
             
-    
             function updateLessonProgress(lessonID,  ){
                 const nrOfTasksCompleted = getLessonTasksCompleted(lessonID);
                 // Sett lesson progress bar
