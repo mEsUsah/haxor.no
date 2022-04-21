@@ -123,7 +123,7 @@
                 left: 0;
                 width: 100%;
                 transition: height 0.5s;
-                background-color: $color-green;
+                background-color: $color-success;
             }
         }
 
@@ -156,21 +156,21 @@
         }
 
         &--blue{
-            background-color: $color-blue;
+            background-color: $color-accent-dark;
             i {
-                color: $color-blue;
+                color: $color-accent-dark;
             }
         }
         &--red{
-            background-color: $color-red;
+            background-color: $color-danger;
             i {
-                color: $color-red;
+                color: $color-danger;
             }
         }
         &--green{
-            background-color: $color-green;
+            background-color: $color-success;
             i {
-                color:$color-green;
+                color:$color-success;
             }
         }
         &--headline {
