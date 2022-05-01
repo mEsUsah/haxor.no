@@ -1,4 +1,4 @@
-dateModified: 1645366063
+dateModified: 1651435470
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -40,6 +40,7 @@ meta:
     7dbe180d-e397-494f-bea8-61f7b3f5bf4d: 'Book Reviews' # Book Reviews
     7dca122d-a470-466a-ae07-51758b1fc449: 'Chart Title' # Chart Title
     7e0480ca-cc52-4451-8832-4a34bfe5ea09: Thumbnails # Thumbnails
+    7ed843f8-2709-4ad0-b32d-e234ed22f289: Color # Color
     9b49d5b9-d21a-4e64-b799-37fe5db4ada8: 'Three newest?' # Three newest?
     9bfb520d-0d98-4906-9d30-74ca1c638982: Text # Text
     9dbc0bea-5f8c-4a42-a060-58a1e9baf36f: 'Chart Subtitle' # Chart Subtitle
