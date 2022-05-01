@@ -108,22 +108,45 @@
     
     }
     &__terminalDump{
-        &--wrapper{
-            border: 2px solid black;
             border-radius: 5px;
             overflow: hidden;
             margin: 10px auto;
             max-width: 700px;
+            position: relative;
+            &::before{
+                content: attr(data-terminal-info);
+                position: absolute;
+                z-index: 2;
+                left: 5px;
+                font-size: 12px;
+            }
             @include ipadOrSmaller {
                 margin: 10px;
             }
-
-        }
-        &--header{
-            background-color: black;
-            color: white;
-            padding: 8px 8px 8px 16px;
-        }
+            &--default{
+                border: 2px solid black;
+                &::before{
+                    content: none;
+                }
+            }
+            &--attacker{
+                border: 4px solid $color-danger;
+                &::before{
+                    color: $color-danger;
+                }
+            }
+            &--victim{
+                border: 4px solid $color-accent;
+                &::before{
+                    color: $color-accent;
+                }
+            }
+            &--neutral{
+                border: 4px solid $color-success;
+                &::before{
+                    color: $color-success;
+                }
+            }
     }
     &__image{
         &--wrapper{
