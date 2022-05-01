@@ -3,7 +3,7 @@
     <h1 class="articleList__header">{{entry.title}}</h1>
     <div class="courseList__container">
         {% for book in books %}
-        {% include "_content/parts/_book.twig" with {"chapter": 1} %}
+        {% include "_content/_parts/_book.twig" with {"chapter": 1} %}
         {% endfor %}
     </div>
 </section>
