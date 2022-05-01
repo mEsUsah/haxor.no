@@ -212,7 +212,7 @@ fields:
               - BASH
             -
               - value
-              - bash
+              - BASH
             -
               - default
               - '1'
@@ -223,7 +223,7 @@ fields:
               - PowerShell
             -
               - value
-              - powershell
+              - PowerShell
             -
               - default
               - ''

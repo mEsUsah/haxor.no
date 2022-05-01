@@ -12,7 +12,16 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
-            width: 100
+            width: 25
+          -
+            fieldUid: d6f9cc1f-1608-4ae7-a083-d0924ba71f47 # Image Is Figure
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 25
           -
             fieldUid: 5c01d860-2ec5-4205-936e-583524bb8264 # Image AltText
             instructions: null
@@ -27,15 +36,6 @@ fieldLayouts:
             instructions: null
             label: null
             required: true
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: d6f9cc1f-1608-4ae7-a083-d0924ba71f47 # Image Is Figure
-            instructions: null
-            label: null
-            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null

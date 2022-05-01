@@ -1,4 +1,4 @@
-dateModified: 1651435470
+dateModified: 1651439988
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -91,6 +91,7 @@ meta:
     9096bb19-2f4d-4b40-91f7-7f0d84ee7b01: 'Varighet (Timer)' # Varighet (Timer)
     9352e030-3a6d-4f5f-add4-74e01d270e43: 'Info Box' # Info Box
     19285c32-e1f8-42c0-97ff-59f16dbb52af: Hostname # Hostname
+    20919efd-3398-44c3-83c8-d9ee3cdcdf33: 'Terminal Prompt' # Terminal Prompt
     023232ef-4d79-4571-896b-9146438b66bb: 'Task text' # Task text
     64860ba2-3393-423d-950c-d23a278d4d20: Entry # Entry
     190326da-4559-4d36-aae0-20b00fa6318f: Books # Books
