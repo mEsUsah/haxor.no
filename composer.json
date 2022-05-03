@@ -21,8 +21,8 @@
   "require": {
     "craftcms/cms": "^3.7.7",
     "vlucas/phpdotenv": "^3.4.0",
-    "craftcms/redactor": "2.8.8",
-    "verbb/super-table": "2.6.8",
+    "craftcms/redactor": "2.10.7",
+    "verbb/super-table": "2.7.1",
     "skarshaugsolutions/haxor": "^1.0.0"
   },
   "require-dev": {
