@@ -1,0 +1,11 @@
+{% extends "_layout/_layout" %}
+
+{% block body %}
+    <section class="error__wrapper">
+        <img src="/resources/svg/haxor_crash.svg" alt="crashed ship" class="error__icon">
+        <h1>Whoops!</h1>
+        {% if statusCode is defined %}
+            <p>{{ statusCode }}</p>
+        {% endif %}
+    </section>
+{% endblock body %}
