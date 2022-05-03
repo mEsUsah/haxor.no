@@ -14,4 +14,15 @@
             max-width: 60%;
         }
     }
+    &__code{
+        font-size: 60px;
+        margin: 0;
+        line-height: 16px;
+        font-weight: 600;
+        font-family: monospace;
+        border: 3px dashed $color-danger;
+        color: $color-danger;
+        padding: 18px 7px;
+        transform: rotate(2deg) translateY(-24%);
+    }
 }
