@@ -39,6 +39,8 @@
 	{% elseif globals.seoImage is defined and globals.seoImage|length %}
 		{% set seoImage = globals.seoImage.one.getUrl(thumb) %}
 	{% endif %}
+{% else %}
+	{% set title = "haxor.no" %}
 {% endif %}
 
 <title>{{title}}</title>
