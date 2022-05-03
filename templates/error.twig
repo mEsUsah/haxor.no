@@ -5,7 +5,7 @@
         <img src="/resources/svg/haxor_crash.svg" alt="crashed ship" class="error__icon">
         <h1>Whoops!</h1>
         {% if statusCode is defined %}
-            <p>{{ statusCode }}</p>
+            <p class="error__code">{{ statusCode }}</p>
         {% endif %}
     </section>
 {% endblock body %}
