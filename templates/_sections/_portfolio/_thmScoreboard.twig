@@ -38,10 +38,11 @@
                 {% endif %}
         {% endif %}
     </div>
+    {% set tryHackMeScoreboard = craft.haxor.getTryHackMeScoreboard(["no","se","dk","fi","is"]) %}
     {% include "_content/teaser.twig" %}
-    {% include "_content/dateUpdated.twig" %}
+    {% include "_content/dateUpdated.twig" with {cachebust: tryHackMeScoreboard.updated } %}
     {% include "_content/contentBlocks.twig" with { 
         includedContentType: "thmScoreboard",
-        includedContent: ["no"]
+        includedContent: tryHackMeScoreboard.scoreboard
     } %}
 </section> 
