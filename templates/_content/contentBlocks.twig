@@ -5,12 +5,20 @@
 {% endif %}
 {% set includedContent = includedContent|default(null) %}
 {% set includedContentType = includedContentType|default(null) %}
+{% set firstChapter = "Intro" %}
+{% if includedContent|length and includedContentType|length %}
+    {% switch includedContentType %}
+        {% case "thmScoreboard" %}
+            {% set firstChapter = "Leaderboard" %}
+    {% endswitch %}
+{% endif %}
+
 
 {% if contentBlocks|length %}
     <div class="article__content--wrapper">
         <div class="article__content--sidebar {{ entry.sectionId == 10 ? "lesson" }}">
             <h3>{{ 'Content'|t }}:</h3>
-            <a href="#" data-chapter-button="0" class="active">Intro</a>
+            <a href="#" data-chapter-button="0" class="active">{{ firstChapter }}</a>
             {% set chapterNr = 0 %}
             {% for block in contentBlocks.all() %}
                 {% if block.type == "chapter" %}
