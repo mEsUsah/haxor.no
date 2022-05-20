@@ -1,5 +1,5 @@
 fieldLayouts:
-  1d176733-cb18-487e-8c86-00e2f07d680d:
+  ee591619-fbbb-4425-afe0-4244c79767c2:
     tabs:
       -
         elements:
@@ -27,7 +27,16 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 3d5543fa-7b96-4f00-baff-e330b237625b # Ingen mobil tilpasning
+            fieldUid: 72a349c8-b7c8-4301-81a5-7301f5cc1058 # Article Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: baf14ed6-b329-41e7-b9b5-4ff5d8ed2cdf # Article Image Caption
             instructions: null
             label: null
             required: false
@@ -45,15 +54,6 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 72a349c8-b7c8-4301-81a5-7301f5cc1058 # Article Image
-            instructions: ''
-            label: ''
-            required: '1'
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
             fieldUid: c3d8fdbe-5d3a-4a09-a91f-2da6060ece41 # ContentBlocks
             instructions: null
             label: null
@@ -64,28 +64,6 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
-      -
-        elements:
-          -
-            fieldUid: 3e4dc06a-6af1-479b-a120-662a4500d935 # Artikkel tema
-            instructions: ''
-            label: ''
-            required: '1'
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 6bcc3fb3-fa1a-42c3-b33b-5f61432e08ca # Artikkel type
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-        name: Metadata
-        sortOrder: 2
       -
         elements:
           -
@@ -107,12 +85,25 @@ fieldLayouts:
             warning: null
             width: 100
         name: SEO
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 3e4dc06a-6af1-479b-a120-662a4500d935 # Artikkel tema
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Metadata
         sortOrder: 3
-handle: portfolio
+handle: thmScoreboard
 hasTitleField: true
-name: Portfolio
+name: 'THM scoreboard'
 section: 433733b6-53ef-4e88-b871-7518468484e7 # Portfolio
-sortOrder: 1
+sortOrder: 2
 titleFormat: null
 titleTranslationKeyFormat: null
-titleTranslationMethod: none
+titleTranslationMethod: site
