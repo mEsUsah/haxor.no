@@ -1,4 +1,4 @@
-dateModified: 1651439988
+dateModified: 1653054178
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -93,6 +93,7 @@ meta:
     19285c32-e1f8-42c0-97ff-59f16dbb52af: Hostname # Hostname
     20919efd-3398-44c3-83c8-d9ee3cdcdf33: 'Terminal Prompt' # Terminal Prompt
     023232ef-4d79-4571-896b-9146438b66bb: 'Task text' # Task text
+    040290e0-e763-4e3c-8e18-5610e6e0864f: 'THM scoreboard' # THM scoreboard
     64860ba2-3393-423d-950c-d23a278d4d20: Entry # Entry
     190326da-4559-4d36-aae0-20b00fa6318f: Books # Books
     315547ae-9f46-441e-831a-f2979d046b94: 'Om meg' # Om meg
@@ -128,7 +129,7 @@ meta:
     c1769912-6758-4fbd-9f12-d37a9fa32253: 'SEO Description' # SEO Description
     cabe8fa0-a9ef-4a18-ab9d-4b3b69cd2f3a: 'Terminal Input Only' # Terminal Input Only
     ce283fd6-8942-4408-99bf-17efbab5a118: Books # Books
-    ce584302-17fd-4162-bcf6-181321d11f07: Portfolio # Portfolio
+    ce584302-17fd-4162-bcf6-181321d11f07: 'JS Game' # JS Game
     d2ea4108-edc5-4f74-9794-214619a9f0c8: 'Mine kurs' # Mine kurs
     d6f9cc1f-1608-4ae7-a083-d0924ba71f47: 'Image Is Figure' # Image Is Figure
     d9a0abe6-89dd-4688-a0ac-6d584524c3c2: Kursbevis # Kursbevis

@@ -3,6 +3,7 @@
 {% else %} {# Everything else #}
     {% set contentBlocks = entry.contentBlocks %}
 {% endif %}
+{% set includedContent = includedContent|default(null) %}
 
 {% if contentBlocks|length %}
     <div class="article__content--wrapper">
@@ -27,6 +28,8 @@
             {% set chapterNr = 0 %}
             {% set chapterTaskNr = 0 %}
             {% set chartNr = 0 %}
+            {% if includedContent is defined and includedContent|length %}{% endif %}
+                {{ includedContent }}
             {% for block in contentBlocks.all() %}
                 {% if block.type == "chapter" %}
                     {% set chapterNr = chapterNr + 1 %}

@@ -14,7 +14,7 @@
         {% case 'lesson' %}
             {% include "_sections/_article.twig" %}   
         {% case 'portfolio' %}
-            {% include "_sections/_portfolio.twig" %}
+            {% include "_sections/_portfolio/_" ~ entry.type.handle ~ ".twig" %}
         {% case 'course' %}
             {% include "_sections/_course.twig" %}
         {% case 'bookReviews' %}
