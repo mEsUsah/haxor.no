@@ -1,0 +1,79 @@
+.thmScoreboard{
+    &__table{
+        margin-top: 18px;
+        width: 100%;
+        border-collapse: collapse;
+        thead{
+            th{
+                text-align: left;
+            }
+        }
+        tbody{
+            tr{
+                border-radius: 8px;
+                padding-left: 10px;
+                &:hover{
+                    background-color: #cccccc;
+                    border-radius: 8px;
+                }
+                th{
+                    font-weight: 600;
+                    text-align: left;
+                    border-top-left-radius: 8px;
+                    border-bottom-left-radius: 8px;
+                    padding-left: 10px;
+                }
+                td{
+                    vertical-align: middle;
+                    height: 40px;
+                    padding: 2px;
+                    &:last-child{
+                        border-top-right-radius: 8px;
+                        border-bottom-right-radius: 8px;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: inherit;
+                        &:hover{
+                            text-shadow: 0 0 1px #000000;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__avatar{
+        height: 40px;
+        width: 40px;
+        object-fit: cover;
+        background-color:  #212c42;
+        border-radius: 8px;
+        margin-right: 18px;
+        vertical-align: middle;
+    }
+    &__flag{
+        height: 30px;
+        width: 45px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: inline-block;
+        &--no{
+            background-image: $icon-flag-no;
+        }
+        &--se{
+            background-image: $icon-flag-se;
+        }
+        &--dk{
+            background-image: $icon-flag-dk;
+        }
+        &--fi{
+            background-image: $icon-flag-fi;
+        }
+        &--is{
+            background-image: $icon-flag-is;
+        }
+    }
+}
