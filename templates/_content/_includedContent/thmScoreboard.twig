@@ -14,7 +14,7 @@
             <tbody>
             {% for thmUser in includedContent %}
                 <tr id="{{ thmUser.username }}">
-                    <th>{{ loop.index }}</th>
+                    <th>{{ loop.index }}</th> 
                     <td>
                         <img src="{{ thmUser.avatar }}" alt="{{ thmUser.username }}s avatar" class="thmScoreboard__avatar" > 
                         <span><a href="https://tryhackme.com/p/{{ thmUser.username }}">{{ thmUser.username }}</a></span>
