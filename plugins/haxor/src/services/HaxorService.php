@@ -31,6 +31,10 @@ use craft\elements\Entry;
  */
 class HaxorService extends Component
 {
+    // Private Properties
+    // =========================================================================
+    private $thmCacheDuration = 3600;
+    
     // Public Methods
     // =========================================================================
 
@@ -154,5 +158,50 @@ class HaxorService extends Component
         } else {
             return false;
         }
+    }
+
+    public function getTryHackMeScoreboard($locations)
+    {
+        $cacheKey = md5("getTryHackMeScoreboard");
+        $cachedData = Craft::$app->cache->get($cacheKey);
+        if ($cachedData != null ) {
+            return $cachedData;
+        }
+        
+        $returnArray = [
+            "updated" => date("c"),
+            "contries" => array(),
+            "scoreboard" => array()
+        ];
+
+        foreach ($locations as $location) {
+            array_push($returnArray["contries"], $location);
+
+            $url = "https://tryhackme.com/api/leaderboards?country=" . $location;
+            $_h = curl_init();
+            curl_setopt($_h, CURLOPT_HEADER, false);
+            curl_setopt($_h, CURLOPT_RETURNTRANSFER, 1);
+            curl_setopt($_h, CURLOPT_HTTPGET, 1);
+            curl_setopt($_h, CURLOPT_URL, $url );
+            curl_setopt($_h, CURLOPT_DNS_USE_GLOBAL_CACHE, false );
+            curl_setopt($_h, CURLOPT_DNS_CACHE_TIMEOUT, 2 );
+
+            $result = json_decode(curl_exec($_h), true);
+            $ranks = $result["ranks"];
+
+            foreach ($ranks as $rank){
+                array_push($returnArray["scoreboard"], $rank);
+            }
+        }
+
+        usort($returnArray["scoreboard"], function ($item1, $item2) {
+            return $item2['points'] <=> $item1['points'];
+        });
+        
+        if(sizeof($returnArray["scoreboard"]) >= 100){
+            $returnArray["scoreboard"] = array_slice($returnArray["scoreboard"],0,100,true);
+        }
+        Craft::$app->cache->set($cacheKey, $returnArray, $this->thmCacheDuration);
+        return $returnArray;
     }
 }

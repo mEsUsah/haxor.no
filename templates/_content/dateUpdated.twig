@@ -1,4 +1,9 @@
+{% set cachebust = cachebust|default(null) %}
 <div class="article__published--wrapper">
     <div class="article__published--icon"></div>
-    <span class="article__published--text">{{ 'Updated'|t }} {{entry.dateUpdated|date("j. F Y")}} </span>
+    {% if cachebust and cachebust|length %}
+        <span class="article__published--text">{{ 'Updated'|t }} {{ cachebust|date("j. F Y") ~ " kl. " ~ cachebust|date("h:i")}} </span>
+    {% else %}
+        <span class="article__published--text">{{ 'Updated'|t }} {{entry.dateUpdated|date("j. F Y")}} </span>
+    {% endif %}
 </div>

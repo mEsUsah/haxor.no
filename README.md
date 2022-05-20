@@ -18,3 +18,9 @@ Incons by Iconpharm
 - Lauched December 2020
 - Launched free zero-login norwegian micro:bit lessons for kids, December 2021
 - Open sourced project, April 2022
+
+# TODO:
+- Track error pages
+- GDPR compliance
+- Correct error page CSS
+- Fix BEM errors

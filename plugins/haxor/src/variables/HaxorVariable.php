@@ -71,5 +71,8 @@ class HaxorVariable
         return Haxor::$plugin->haxorService->getLessonTaskAnswerObfuscated($entry, $chapter, $task);
     }
 
-    
+    public function getTryHackMeScoreboard($locations)
+    {
+        return Haxor::$plugin->haxorService->getTryHackMeScoreboard($locations);
+    }
 }
