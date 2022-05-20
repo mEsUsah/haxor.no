@@ -8,20 +8,18 @@
                     <th>Username</th>
                     <th>Country</th>
                     <th>Points</th>
-                    <th></th>
                 </tr>
             </thead>
             <tbody>
             {% for thmUser in includedContent %}
-                <tr id="{{ thmUser.username }}">
+                <tr>
                     <th>{{ loop.index }}</th>
                     <td>
-                        <img src="{{ thmUser.avatar }}" alt="{{ thmUser.username }}s avatar" class="thmScoreboard__avatar" > 
+                        <img src="{{ thmUser.avatar }}" alt="{{ thmUser.username }}s avatar" class="thmScoreboard__avatar"> 
                         <span><a href="https://tryhackme.com/p/{{ thmUser.username }}">{{ thmUser.username }}</a></span>
                     </td>
                     <td><span class="thmScoreboard__flag thmScoreboard__flag--{{ thmUser.country }}"></span></td>
                     <td>{{ thmUser.points|number_format(0,""," ") }}</td>
-                    <td><a href="#{{ thmUser.username }}" class="thmScoreboard__userLink"></a></td>
                 </tr> 
             {% endfor %}
         </tbody>

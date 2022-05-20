@@ -12,33 +12,9 @@
             tr{
                 border-radius: 8px;
                 padding-left: 10px;
-                transition: background-color 0.25s;
-                
                 &:hover{
                     background-color: #cccccc;
-                    .thmScoreboard__userLink{
-                        opacity: 1;
-                    }
-                }
-                &:target{
-                    td,th{
-                        background-color: #2d2d2d;
-                        color: white;
-                        a:hover{
-                            text-shadow: 0 0 2px white;
-                            color: white;
-                        }
-                        .thmScoreboard__userLink{
-                            background-image: $icon-link-white;
-                            &:hover{
-                                background-color: transparent;
-                                border-color: white;
-                            }
-                        }
-                        .thmScoreboard__avatar{
-                            border-color: white;
-                        }
-                    }
+                    border-radius: 8px;
                 }
                 th{
                     font-weight: 600;
@@ -46,14 +22,11 @@
                     border-top-left-radius: 8px;
                     border-bottom-left-radius: 8px;
                     padding-left: 10px;
-
                 }
                 td{
                     vertical-align: middle;
                     height: 40px;
                     padding: 2px;
-
-                    
                     &:last-child{
                         border-top-right-radius: 8px;
                         border-bottom-right-radius: 8px;
@@ -72,14 +45,12 @@
     }
 
     &__avatar{
-        height: 36px;
-        width: 36px;
-        
+        height: 40px;
+        width: 40px;
         object-fit: cover;
         background-color:  #212c42;
-        border: 1px solid transparent;
         border-radius: 8px;
-        margin: 4px 18px 4px 0;
+        margin-right: 18px;
         vertical-align: middle;
     }
     &__flag{
@@ -103,27 +74,6 @@
         }
         &--is{
             background-image: $icon-flag-is;
-        }
-    }
-    &__userLink{
-        background-image: $icon-link;
-        background-repeat: no-repeat;
-        background-size: 18px 18px;
-        background-position: center;
-        background-color: none;
-        width: 20px;
-        height: 20px;
-        display: block;
-        text-align: right;
-        float: right;
-        margin-right: 10px;
-        opacity: 0;
-        transition: all 0.15s;
-        padding: 2px;
-        border-radius: 6px;
-        border: 1px solid transparent;
-        &:hover{
-            border-color: black;
         }
     }
 }
