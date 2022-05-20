@@ -40,5 +40,8 @@
     </div>
     {% include "_content/teaser.twig" %}
     {% include "_content/dateUpdated.twig" %}
-    {% include "_content/contentBlocks.twig" with { includedContent: craft.haxor.getTryHackMeScoreboard("no") } %}
+    {% include "_content/contentBlocks.twig" with { 
+        includedContentType: "thmScoreboard",
+        includedContent: ["no"]
+    } %}
 </section> 

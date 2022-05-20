@@ -4,6 +4,7 @@
     {% set contentBlocks = entry.contentBlocks %}
 {% endif %}
 {% set includedContent = includedContent|default(null) %}
+{% set includedContentType = includedContentType|default(null) %}
 
 {% if contentBlocks|length %}
     <div class="article__content--wrapper">
@@ -25,11 +26,13 @@
             
         </div>
         <div class="article__content--main">
+            {% if includedContent|length and includedContentType|length %}
+                {% include "_content/_includedContent/"~ includedContentType ~".twig" with {includedContent: includedContent} %}         
+            {% endif %}
+
             {% set chapterNr = 0 %}
             {% set chapterTaskNr = 0 %}
-            {% set chartNr = 0 %}
-            {% if includedContent is defined and includedContent|length %}{% endif %}
-                {{ includedContent }}
+            {% set chartNr = 0 %}    
             {% for block in contentBlocks.all() %}
                 {% if block.type == "chapter" %}
                     {% set chapterNr = chapterNr + 1 %}

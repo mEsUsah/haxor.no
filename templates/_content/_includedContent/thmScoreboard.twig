@@ -1,0 +1,6 @@
+{% set includedContent = includedContent|default(null) %}
+{% if includedContent|length %}
+    <pre>
+        {{ dump(craft.haxor.getTryHackMeScoreboard(includedContent)) }}
+    </pre>
+{% endif %}
