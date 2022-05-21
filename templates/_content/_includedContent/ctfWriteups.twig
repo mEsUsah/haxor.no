@@ -1,0 +1,34 @@
+{% set writeups = craft.entries.site(["haxorNoEn"]).section("ctfWriteup").all() %}
+{% set ctfImageThumb = {
+    mode: 'crop',
+    position: imageFocalX ~ "," ~ imageFocalY,
+    width: 50,
+    height: 50,
+    quality: 90,
+} %}
+
+<table class="ctfWriteups__table">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Room</th>
+            <th></th>
+            <th>Points</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for writeup in writeups %}
+        <tr>
+            <td><span class="ctfWriteups__platform ctfWriteups__platform--{{ writeup.ctfPlatform.one().slug }}"></span></td>
+            <td class="ctfWriteups__metadata">
+                <img src="{{ writeup.ctfImage.one().getUrl(ctfImageThumb) }}" class="ctfWriteups__image ctfWriteups__image--{{ writeup.ctfDifficulty }}"> 
+                <span class="ctfWriteups__difficulty ctfWriteups__difficulty--{{ writeup.ctfDifficulty }}">{{ writeup.ctfDifficulty|capitalize }}</span>
+            </td>
+            <td>
+                <span><a href="{{ writeup.getUrl() }}">{{ writeup.title }}</a></span>
+            </td>
+            <td>{{ writeup.ctfPoints }}</td>
+        </tr> 
+    {% endfor %}
+    </tbody>
+</table>

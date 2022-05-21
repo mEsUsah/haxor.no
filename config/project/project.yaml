@@ -1,4 +1,4 @@
-dateModified: 1653127365
+dateModified: 1653135761
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -20,6 +20,7 @@ meta:
     2f773f4a-97cc-41d5-9fb6-2016426d4da5: Text # Text
     2fc7f7b8-2f9d-43dd-977b-8c7b29763e54: haxor.no/en # haxor.no/en
     3a65209b-542d-42a6-9fc7-a9b07fd38253: 'File Content' # File Content
+    3bbcac38-b6d8-4918-9863-bcff6b8f60d2: 'CTF Platform' # CTF Platform
     3d5543fa-7b96-4f00-baff-e330b237625b: 'Not mobile friendly' # Not mobile friendly
     3e4dc06a-6af1-479b-a120-662a4500d935: 'Artikkel tema' # Artikkel tema
     3ebdee02-2eb1-48f4-8b4b-4f45f3bfbae9: Username # Username
@@ -29,6 +30,7 @@ meta:
     4fa3f654-1283-406b-9656-22b48a6c818e: 'Course Certificate URL' # Course Certificate URL
     5c01d860-2ec5-4205-936e-583524bb8264: 'Image AltText' # Image AltText
     5dd9f4f3-fb1c-4d81-b3fd-2309b56563f0: Filname # Filname
+    5f92318f-a48c-4fb9-9b08-f04c9a691e87: 'CTF Writeup' # CTF Writeup
     6a498afe-8881-4b4d-bd9e-f128e6d2ac6e: 'Image Caption' # Image Caption
     6a70457e-a328-490d-8e43-da01bd0fb461: 'Chapter Headline' # Chapter Headline
     6bcc3fb3-fa1a-42c3-b33b-5f61432e08ca: 'Artikkel type' # Artikkel type
@@ -41,6 +43,7 @@ meta:
     7dca122d-a470-466a-ae07-51758b1fc449: 'Chart Title' # Chart Title
     7e0480ca-cc52-4451-8832-4a34bfe5ea09: Thumbnails # Thumbnails
     7ed843f8-2709-4ad0-b32d-e234ed22f289: Color # Color
+    8c4f446d-dc3c-443f-b043-fb2a3c5e2aff: 'CTF Points' # CTF Points
     9b49d5b9-d21a-4e64-b799-37fe5db4ada8: 'Three newest?' # Three newest?
     9bfb520d-0d98-4906-9d30-74ca1c638982: Text # Text
     9dbc0bea-5f8c-4a42-a060-58a1e9baf36f: 'Chart Subtitle' # Chart Subtitle
@@ -82,6 +85,7 @@ meta:
     1079ffac-f516-4c4f-a131-3a26fa26ac15: 'Image Is Figure' # Image Is Figure
     1123b472-8241-4d07-bd52-1eff0c59f1ef: 'About Blog' # About Blog
     5084e704-59ac-4ed3-bc26-1b3b96710a82: Answer # Answer
+    5551a1b5-fa8d-41d6-b7c3-af16e2ea9981: 'CTF Writeups' # CTF Writeups
     6065c97a-7a32-4386-aee2-8b5f5933bed8: haxor.no/kids # haxor.no/kids
     6799dd35-5fb9-4623-b487-3aafaf92ec39: blog # blog
     7648fab9-2bab-43df-adca-9f3d941c929e: Artikkeltype # Artikkeltype
@@ -95,17 +99,20 @@ meta:
     023232ef-4d79-4571-896b-9146438b66bb: 'Task text' # Task text
     040290e0-e763-4e3c-8e18-5610e6e0864f: 'THM scoreboard' # THM scoreboard
     64860ba2-3393-423d-950c-d23a278d4d20: Entry # Entry
+    88680ae0-eeb1-4709-b620-2e2a9f91b4a6: Default # Default
     190326da-4559-4d36-aae0-20b00fa6318f: Books # Books
     315547ae-9f46-441e-831a-f2979d046b94: 'About Me' # About Me
     433733b6-53ef-4e88-b871-7518468484e7: Portfolio # Portfolio
     588083f4-9c65-4945-9298-df03cd87f06e: 'About Me' # About Me
     925133d6-79dc-4f13-9cbc-3752c2eff691: 'Terminal Dump' # Terminal Dump
+    82658716-4746-4ec3-9c32-b565286277bc: 'CTF Difficulty' # CTF Difficulty
     84196158-704f-46cd-9cc5-cfe49666f56e: Intro # Intro
     a2c9fa7f-4706-4b49-ad49-f09d9a9ebc10: Courses # Courses
     a6bd78d7-41d8-4db7-8a28-70f5638e4b88: 'Link to all certifications?' # Link to all certifications?
     a52f4dfc-42fb-4bda-a12e-0595eab603d7: Text # Text
     a227fe85-29a0-403f-b510-659257b8c521: Text # Text
     a568129a-e9d4-406e-bafe-4dae8e4b19e8: 'Task Done' # Task Done
+    aad6c628-7e5f-4c95-9383-e39426be72f7: 'CTF Image' # CTF Image
     ac49e4c4-d11a-4bbe-9a08-04c06268ba93: 'Course Length (min)' # Course Length (min)
     ac148d8c-048e-40df-921a-e1f850f675b1: Image # Image
     acdcb75a-569c-4ec7-b2ab-9de3e91d8604: Lessons # Lessons
@@ -114,6 +121,7 @@ meta:
     b04f4663-1608-479d-b699-ba1102ba1b61: 'Article Headline' # Article Headline
     b05c4334-9b2d-4f18-8916-c65a9c521861: Image # Image
     b5a5e8a4-7781-466d-b7c8-b084e1de354e: 'Chapter Headline' # Chapter Headline
+    b5a3273e-575f-489d-a09a-c407248dc831: 'CTF Writeups' # CTF Writeups
     b7b92d43-ba38-4a42-8cdb-d7b4989964bc: 'Image AltText' # Image AltText
     b92f222e-e35a-4a5a-bb11-3b5ea3deda0c: Quote # Quote
     b3979b7e-2d54-4b6f-89ec-5ef480431d82: Courses # Courses
@@ -123,6 +131,7 @@ meta:
     baf14ed6-b329-41e7-b9b5-4ff5d8ed2cdf: 'Article Image Caption' # Article Image Caption
     c2cadeae-b406-4376-a7bb-822c8d077ca2: 'Course Theme' # Course Theme
     c3d8fdbe-5d3a-4a09-a91f-2da6060ece41: ContentBlocks # ContentBlocks
+    c6f23113-dc98-46d8-8a58-8837396917aa: 'CTF Platfom' # CTF Platfom
     c418c358-5082-4c2e-bc17-cb8c9175b592: Instructor # Instructor
     c4023ed4-c787-4f58-bb1f-1d51b48518c2: Books # Books
     c28731d1-d362-458e-8210-a901f3f0e4ab: 'Chart Headline' # Chart Headline
@@ -136,6 +145,7 @@ meta:
     d47dbda4-bf10-41c3-b21c-76becadcfa97: Headline # Headline
     d67ba21e-e565-441c-aafd-bee2a9f4d3f7: Data # Data
     d81b7a18-6d93-471a-ba57-99544b0c585b: haxor.no # haxor.no
+    d871d9c2-8428-4d67-bd62-062ff0fb8e4f: CTF # CTF
     d74696e2-d999-44f5-aded-f8353552c57b: Portfolio # Portfolio
     dc32cdca-de36-4628-af9c-221eb639a9ab: 'PDF''s' # PDF's
     dc63f038-3a87-428d-9230-20a288f905da: 'File type' # File type

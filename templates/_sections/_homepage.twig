@@ -21,7 +21,7 @@
         {% else %}
             {% set serchUrl = "/en" %}
         {% endif %}
-        {% set articles = craft.entries().search(searchQuery).site(["default", "haxorNoEn", "haxorNoKids"]).section("articles, portfolio, lesson").orderBy('score').all() %}
+        {% set articles = craft.entries().search(searchQuery).site(["default", "haxorNoEn", "haxorNoKids"]).section("articles, portfolio, lesson, ctfWriteups").orderBy('score').all() %}
 
         {% if articles|length %}
             <p class="articleList__subtitle">{{ articles|length }} {{ 'results on'|t }}: "{{ searchQuery }}"</p>
@@ -43,7 +43,7 @@
             {% if currentSite.handle == "haxorNoKids" %}
                 {% set articles = craft.entries.site(["haxorNoKids"]).section("lesson").all() %}
             {% else %}
-                {% set articles = craft.entries.site(["default", "haxorNoEn","haxorNoKids"]).section("articles, portfolio").all() %}
+                {% set articles = craft.entries.site(["default", "haxorNoEn","haxorNoKids"]).section("articles, portfolio, ctfWriteups").all() %}
             {% endif %}
             
             {% for article in articles %}

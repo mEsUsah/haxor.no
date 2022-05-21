@@ -1,0 +1,132 @@
+.ctfWriteup{
+    &__image{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        border: 6px solid white;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        background-position: center;
+        background-size: cover;
+        transform: translateX(-50%) translateY(-50%);
+        background-repeat: no-repeat;
+        @include ipadOrSmaller {
+            height: 100px;
+            width: 100px;
+            top: 50%;
+            border: 4px solid white;
+        }
+        &--info{
+            border-color: white;
+        }
+        &--veryeasy{
+            border-color: $color-accent;
+        }
+        &--easy{
+            border-color: $color-success;
+        }
+        &--medium{
+            border-color: $color-warning;
+        }
+        &--hard{
+            border-color: $color-danger;
+        }
+        &--insane{
+            border-color: $color-insane;
+        }
+    }
+    &__platform{
+        position: absolute;
+        left: 50%;
+        top: 10%;
+        transform: translateX(-50%) translateY(-50%);
+        height: 70px;
+        background-repeat: no-repeat;
+        background-position: center;
+        @include ipadOrSmaller {
+            height: 35px;
+            top: 11%;
+        }
+
+        &--thm{
+            background-image: $icon-tryhackme-white;
+            width: 200px;
+        }
+        &--htb{
+            background-image: $icon-hackthebox-white;
+            width: 150px;
+        }
+    }
+    &__metadata{
+        position: absolute;
+        z-index: 1;
+        border-radius: 25px;
+        opacity: 0.9;
+        left: 10px;
+        top: 10px;
+        color: white;
+        font-size: 12px;
+        font-weight: 600;
+        p{
+            margin: 0;
+        }
+    }
+    &__difficulty{
+        font-weight: 600;
+        background-color: white;
+        width: fit-content;
+        padding: 1px 7px 1px 16px;
+        border-radius: 12px;
+        margin-top: 4px !important;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+            
+            left: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &--info{
+            color: black;
+            &::before{
+                background-color: black;
+            }
+        }
+        &--veryeasy{
+            color: $color-accent;
+            &::before{
+                background-color: $color-accent;
+            }
+        }
+        &--easy{
+            color: $color-success;
+            &::before{
+                background-color: $color-success;
+            }
+        }
+        &--medium{
+            color: $color-warning;
+            &::before{
+                background-color: $color-warning;
+            }
+        }
+        &--hard{
+            color: $color-danger;
+            &::before{
+                background-color: $color-danger;
+            }
+        }
+        &--insane{
+            color: $color-insane;
+            &::before{
+                background-color: $color-insane;
+            }
+        }
+    }
+}

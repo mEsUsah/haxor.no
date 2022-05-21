@@ -1,0 +1,57 @@
+<section class="articleBody">
+    <div class="article__header">
+        {% if entry.articleSubject|length %}
+            {% set theme = entry.articleSubject.one().slug %}
+        {% else %}
+            {% set theme = "default" %}
+        {% endif %}
+
+        {% set image = entry.ctfPlatform.one().articleImage.one() %}
+
+        {% set imageFocalX = image.focalPoint["x"] %}
+        {% set imageFocalY = image.focalPoint["y"] %}
+
+        {% set imageOptions = {
+            mode: 'crop',
+            position: imageFocalX ~ "," ~ imageFocalY,
+            width: 1000,
+            height: 600,
+            quality: 100,
+        } %}
+
+        {% set ctfImageOptions = {
+            mode: 'crop',
+            position: imageFocalX ~ "," ~ imageFocalY,
+            width: 200,
+            height: 200,
+            quality: 90,
+        } %}
+
+        {% if image|length %}
+            <div class="articleImage__wrapper">
+                <div class="articleImage__image" style="background-image: url('{{image.getUrl(imageOptions)}}');" ></div>
+                {% if entry.title|length %}<div class="articleTitle">{{entry.title}}</div>
+                    <div class="article__imageBorder"></div>
+                    <div class="article__categoryIcon">
+                        <div class="category__icon category__icon--{{ theme }}"></div>
+                    </div>
+                    <div class="ctfWriteup__platform ctfWriteup__platform--{{ entry.ctfPlatform.one().slug }}"></div>
+                    <div class="ctfWriteup__image ctfWriteup__image--{{ entry.ctfDifficulty }}" style="background-image: url('{{entry.ctfImage.one().getUrl(ctfImageOptions)}}');"></div>
+                    <div class="ctfWriteup__metadata">
+                        <p>{{ entry.ctfPoints }} Points</p>
+                        <p class="ctfWriteup__difficulty ctfWriteup__difficulty--{{ entry.ctfDifficulty }}">{{ entry.ctfDifficulty|capitalize }}</p>
+                    </div>
+                {% endif %}
+                {% if entry.ctfPlatform.one().articleImageCaption|length %}
+                    <figcaption class="articleImage__caption--desktop">{{entry.ctfPlatform.one().articleImageCaption}}</figcaption>
+                {% endif %}
+            </div>
+            {% if entry.ctfPlatform.one().articleImageCaption|length %}
+                <figcaption class="articleImage__caption--mobile">{{entry.ctfPlatform.one().articleImageCaption}}</figcaption>
+            {% endif %}
+        {% endif %}
+    </div>
+    {% include "_content/teaser.twig" %}
+    {% include "_content/dateUpdated.twig" %}
+    {% include "_content/contentBlocks.twig" %}
+</section> 
