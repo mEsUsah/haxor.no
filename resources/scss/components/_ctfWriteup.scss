@@ -42,7 +42,6 @@
         top: 10%;
         transform: translateX(-50%) translateY(-50%);
         height: 70px;
-        width: 200px;
         background-repeat: no-repeat;
         background-position: center;
         @include ipadOrSmaller {
@@ -52,6 +51,11 @@
 
         &--thm{
             background-image: $icon-tryhackme-white;
+            width: 200px;
+        }
+        &--htb{
+            background-image: $icon-hackthebox-white;
+            width: 150px;
         }
     }
     &__metadata{
