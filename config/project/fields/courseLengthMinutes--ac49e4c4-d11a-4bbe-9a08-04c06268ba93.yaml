@@ -1,14 +1,15 @@
+columnSuffix: null
 contentColumnType: smallint(2)
-fieldGroup: 26a433d6-c7ff-4f42-8acb-7bcc035fc4d2 # Kurs
+fieldGroup: 26a433d6-c7ff-4f42-8acb-7bcc035fc4d2 # Course
 handle: courseLengthMinutes
 instructions: ''
-name: 'Varighet (Minutter)'
+name: 'Course Length (min)'
 searchable: false
 settings:
   decimals: 0
-  defaultValue: '0'
-  max: '59'
-  min: '0'
+  defaultValue: 0
+  max: 59
+  min: 0
   prefix: null
   previewCurrency: ''
   previewFormat: decimal

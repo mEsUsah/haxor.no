@@ -80,7 +80,7 @@ fields:
       showSiteMenu: false
       source: null
       sources:
-        - 'section:b3979b7e-2d54-4b6f-89ec-5ef480431d82' # Kurs
+        - 'section:b3979b7e-2d54-4b6f-89ec-5ef480431d82' # Courses
       targetSiteId: null
       validateRelatedElements: false
       viewMode: null

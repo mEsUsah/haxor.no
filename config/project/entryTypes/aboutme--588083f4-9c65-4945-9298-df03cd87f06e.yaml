@@ -54,7 +54,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 84196158-704f-46cd-9cc5-cfe49666f56e # Ingress
+            fieldUid: 84196158-704f-46cd-9cc5-cfe49666f56e # Intro
             instructions: null
             label: null
             required: false
@@ -97,8 +97,8 @@ fieldLayouts:
         sortOrder: 2
 handle: aboutme
 hasTitleField: true
-name: 'Om meg'
-section: 315547ae-9f46-441e-831a-f2979d046b94 # Om meg
+name: 'About Me'
+section: 315547ae-9f46-441e-831a-f2979d046b94 # About Me
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

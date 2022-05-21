@@ -1,13 +1,13 @@
+columnSuffix: null
 contentColumnType: text
-fieldGroup: 26a433d6-c7ff-4f42-8acb-7bcc035fc4d2 # Kurs
+fieldGroup: 26a433d6-c7ff-4f42-8acb-7bcc035fc4d2 # Course
 handle: courseDescription
 instructions: ''
-name: 'Kurs beskrivelse'
+name: 'Course Description'
 searchable: false
 settings:
   availableTransforms: '*'
   availableVolumes: '*'
-  cleanupHtml: true
   columnType: text
   configSelectionMode: choose
   defaultTransform: ''
