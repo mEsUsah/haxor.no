@@ -4,10 +4,10 @@
         <table class="thmScoreboard__table">
             <thead>
                 <tr>
-                    <th>Rank</th>
+                    <th></th>
                     <th>Username</th>
-                    <th>Country</th>
-                    <th>Points</th>
+                    <th></th>
+                    <th class="thmScoreboard__score">Points</th>
                     <th></th>
                 </tr>
             </thead>
@@ -20,7 +20,7 @@
                         <span><a href="https://tryhackme.com/p/{{ thmUser.username }}">{{ thmUser.username }}</a></span>
                     </td>
                     <td><span class="thmScoreboard__flag thmScoreboard__flag--{{ thmUser.country }}"></span></td>
-                    <td>{{ thmUser.points|number_format(0,""," ") }}</td>
+                    <td><span class="thmScoreboard__score">{{ thmUser.points|number_format(0,""," ") }}</span></td>
                     <td><a href="#{{ thmUser.username }}" class="thmScoreboard__userLink"></a></td>
                 </tr> 
             {% endfor %}

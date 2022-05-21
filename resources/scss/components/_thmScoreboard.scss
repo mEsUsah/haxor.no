@@ -3,6 +3,11 @@
         margin-top: 18px;
         width: 100%;
         border-collapse: collapse;
+        @include ipadOrSmaller {
+            margin: 0 10px;
+            max-width: calc(100vw - 20px);
+            font-size: 12px;
+        }
         thead{
             th{
                 text-align: left;
@@ -46,6 +51,7 @@
                     border-top-left-radius: 8px;
                     border-bottom-left-radius: 8px;
                     padding-left: 10px;
+                    width: 10px;
 
                 }
                 td{
@@ -74,13 +80,15 @@
     &__avatar{
         height: 36px;
         width: 36px;
-        
         object-fit: cover;
         background-color:  #212c42;
         border: 1px solid transparent;
         border-radius: 8px;
         margin: 4px 18px 4px 0;
         vertical-align: middle;
+        @include ipadOrSmaller {
+            margin: 4px 4px 4px 0;
+        }
     }
     &__flag{
         height: 24px;
@@ -124,6 +132,12 @@
         border: 1px solid transparent;
         &:hover{
             border-color: black;
+        }
+    }
+    &__score{
+        white-space: nowrap;
+        @include ipadOrSmaller {
+            padding-left: 10px;
         }
     }
 }
