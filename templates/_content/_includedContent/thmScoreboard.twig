@@ -17,7 +17,7 @@
                     <th>{{ loop.index }}</th> 
                     <td>
                         <img src="{{ thmUser.avatar }}" alt="{{ thmUser.username }}s avatar" class="thmScoreboard__avatar"> 
-                        <span><a href="https://tryhackme.com/p/{{ thmUser.username }}">{{ thmUser.username }}</a></span>
+                        <span><a href="https://tryhackme.com/p/{{ thmUser.username }}" {{ thmUser.username == "mEsUsah" ? 'class="thmScoreboard__me"'}}>{{ thmUser.username }}</a></span>
                     </td>
                     <td><span class="thmScoreboard__flag thmScoreboard__flag--{{ thmUser.country }}"></span></td>
                     <td><span class="thmScoreboard__score">{{ thmUser.points|number_format(0,""," ") }}</span></td>

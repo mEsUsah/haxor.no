@@ -140,4 +140,39 @@
             padding-left: 10px;
         }
     }
+    &__me{
+        position: relative;
+        &:after{
+            content: "";
+            position: absolute;
+            background-image: $icon-arrow-red;
+            width: 35px;
+            height: 26px;
+            bottom: 20px;
+            left: 43px;
+            background-repeat: no-repeat;
+
+            @include ipadOrSmaller {
+                width: 35px;
+                height: 26px;
+                bottom: 14px;
+                left: 5px;
+            }
+        }
+        &::before{
+            content: "This is me!";
+            position: absolute;
+            color: #ea5252;
+            width: 200px;
+            bottom: 35px;
+            left: 78px;
+            font-weight: 600;
+            text-shadow: none;
+            @include ipadOrSmaller {
+                left: 42px;
+                bottom: 31px;
+            }
+
+        }
+    }
 }
