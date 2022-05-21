@@ -6,10 +6,12 @@
 {% set includedContent = includedContent|default(null) %}
 {% set includedContentType = includedContentType|default(null) %}
 {% set firstChapter = "Intro" %}
-{% if includedContent|length and includedContentType|length %}
+{% if includedContentType|length %}
     {% switch includedContentType %}
         {% case "thmScoreboard" %}
             {% set firstChapter = "Leaderboard" %}
+        {% case "ctfWriteups" %}
+            {% set firstChapter = "Writeups" %}
     {% endswitch %}
 {% endif %}
 
@@ -34,8 +36,8 @@
             
         </div>
         <div class="article__content--main">
-            {% if includedContent|length and includedContentType|length %}
-                {% include "_content/_includedContent/"~ includedContentType ~".twig" with {includedContent: includedContent} %}         
+            {% if includedContentType|length %}
+                {% include "_content/_includedContent/"~ includedContentType ~".twig" with {includedContent: includedContent|length ? includedContent : null} %}         
             {% endif %}
 
             {% set chapterNr = 0 %}
