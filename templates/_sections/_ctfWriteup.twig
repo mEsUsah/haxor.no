@@ -27,8 +27,6 @@
             quality: 90,
         } %}
 
-
-        
         {% if image|length %}
             <div class="articleImage__wrapper">
                 <div class="articleImage__image" style="background-image: url('{{image.getUrl(imageOptions)}}');" ></div>
@@ -37,7 +35,8 @@
                     <div class="article__categoryIcon">
                         <div class="category__icon category__icon--{{ theme }}"></div>
                     </div>
-                    <div class="ctfWriteup__image" style="background-image: url('{{entry.ctfImage.one().getUrl(ctfImageOptions)}}');"></div>
+                    <div class="ctfWriteup__platform ctfWriteup__platform--{{ entry.ctfPlatform.one().slug }}"></div>
+                    <div class="ctfWriteup__image ctfWriteup__image--{{ entry.ctfDifficulty }}" style="background-image: url('{{entry.ctfImage.one().getUrl(ctfImageOptions)}}');"></div>
                 {% endif %}
                 {% if entry.ctfPlatform.one().articleImageCaption|length %}
                     <figcaption class="articleImage__caption--desktop">{{entry.ctfPlatform.one().articleImageCaption}}</figcaption>
