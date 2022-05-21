@@ -13,11 +13,7 @@
     padding: 10px 20px;
     font-family: 'Oswald', sans-serif;
     @include ipadOrSmaller {
-        padding: 5px 10px;
-        text-align: center;
-    }
-    @include phoneOnly {
-        margin: 10px 10px;
+        margin: 10px auto;
         padding: 5px 10px;
         text-align: center;
     }
