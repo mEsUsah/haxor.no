@@ -1,0 +1,20 @@
+columnSuffix: baxtmxqs
+contentColumnType: integer(10)
+fieldGroup: d871d9c2-8428-4d67-bd62-062ff0fb8e4f # CTF
+handle: ctfPoints
+instructions: ''
+name: 'CTF Points'
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: 0
+  max: null
+  min: 0
+  prefix: null
+  previewCurrency: ''
+  previewFormat: none
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

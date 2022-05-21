@@ -1,0 +1,79 @@
+columnSuffix: vsuljzdb
+contentColumnType: string
+fieldGroup: d871d9c2-8428-4d67-bd62-062ff0fb8e4f # CTF
+handle: ctfDifficulty
+instructions: ''
+name: 'CTF Difficulty'
+searchable: false
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Info
+        -
+          - value
+          - info
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Very Easy'
+        -
+          - value
+          - veryeasy
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Easy
+        -
+          - value
+          - easy
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Medium
+        -
+          - value
+          - medium
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Hard
+        -
+          - value
+          - hard
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Insane
+        -
+          - value
+          - insane
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown
