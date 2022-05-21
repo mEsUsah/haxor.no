@@ -37,6 +37,10 @@
                     </div>
                     <div class="ctfWriteup__platform ctfWriteup__platform--{{ entry.ctfPlatform.one().slug }}"></div>
                     <div class="ctfWriteup__image ctfWriteup__image--{{ entry.ctfDifficulty }}" style="background-image: url('{{entry.ctfImage.one().getUrl(ctfImageOptions)}}');"></div>
+                    <div class="ctfWriteup__metadata">
+                        <p>{{ entry.ctfPoints }} Points</p>
+                        <p class="ctfWriteup__difficulty ctfWriteup__difficulty--{{ entry.ctfDifficulty }}">{{ entry.ctfDifficulty|capitalize }}</p>
+                    </div>
                 {% endif %}
                 {% if entry.ctfPlatform.one().articleImageCaption|length %}
                     <figcaption class="articleImage__caption--desktop">{{entry.ctfPlatform.one().articleImageCaption}}</figcaption>

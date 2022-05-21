@@ -54,4 +54,75 @@
             background-image: $icon-tryhackme-white;
         }
     }
+    &__metadata{
+        position: absolute;
+        z-index: 1;
+        border-radius: 25px;
+        opacity: 0.9;
+        left: 10px;
+        top: 10px;
+        color: white;
+        font-size: 12px;
+        font-weight: 600;
+        p{
+            margin: 0;
+        }
+    }
+    &__difficulty{
+        font-weight: 600;
+        background-color: white;
+        width: fit-content;
+        padding: 1px 7px 1px 16px;
+        border-radius: 12px;
+        margin-top: 4px !important;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+            
+            left: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &--info{
+            color: black;
+            &::before{
+                background-color: black;
+            }
+        }
+        &--veryeasy{
+            color: $color-accent;
+            &::before{
+                background-color: $color-accent;
+            }
+        }
+        &--easy{
+            color: $color-success;
+            &::before{
+                background-color: $color-success;
+            }
+        }
+        &--medium{
+            color: $color-warning;
+            &::before{
+                background-color: $color-warning;
+            }
+        }
+        &--hard{
+            color: $color-danger;
+            &::before{
+                background-color: $color-danger;
+            }
+        }
+        &--insane{
+            color: $color-insane;
+            &::before{
+                background-color: $color-insane;
+            }
+        }
+    }
 }
