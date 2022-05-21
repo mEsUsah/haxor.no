@@ -2,6 +2,8 @@
     &__container{
         margin: 135px auto -125px auto;
         width: fit-content;
+        width: 100%;
+        max-width: 1000px;
         
         #gameScreen{
             border-radius: 3px;

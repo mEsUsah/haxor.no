@@ -1,0 +1,48 @@
+<div class="prefix2subnetting__container">
+    <div class="prefix2subnetting__options">
+        <div class="prefix2subnetting__optionbox">
+            <h2>Difficulty selector</h2>
+            <div>
+                <input type="radio" name="prefix2netmask__level" id="prefix2netmask__level--1" value="3" >
+                <label for="prefix2netmask__level--1">Level 1 (Class C Networks)</label>
+            </div>
+            <div>
+                <input type="radio" name="prefix2netmask__level" id="prefix2netmask__level--2" value="2">
+                <label for="prefix2netmask__level--2">Level 2 (Class B Networks)</label>
+            </div>
+            <div>
+                <input type="radio" name="prefix2netmask__level" id="prefix2netmask__level--3" value="1">
+                <label for="prefix2netmask__level--3">Level 3 (Class A Networks)</label>
+            </div>
+            <div>
+                <input type="radio" name="prefix2netmask__level" id="prefix2netmask__level--3" value="0" checked>
+                <label for="prefix2netmask__level--3">Random</label>
+            </div>
+        </div>
+        <div class="prefix2subnetting__optionbox">
+            <h2>Direction selector</h2>
+            <div>
+                <input type="radio" name="prefix2netmask__direction" id="prefix2netmask__direction--0" value="0" checked>
+                <label for="prefix2netmask__direction--0">Prefix → network mask</label>
+            </div>
+            <div>
+                <input type="radio" name="prefix2netmask__direction" id="prefix2netmask__direction--1" value="1" >
+                <label for="prefix2netmask__direction--1">Network mask → prefix</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="prefix2subnetting__task">
+        <div id="prefix2netmask__notications">
+            <span id="prefix2netmask__notications--score">0</span> / <span id="prefix2netmask__notications--attempts">0</span>
+        </div>
+        <pre id="prefix2netmask__address"></pre>
+    </div>
+    
+    <div class="prefix2subnetting__answer">
+        <input type="text" name="" id="prefix2netmask__input">
+        <button id="prefix2netmask__checkbutton">Check!</button>
+    </div>
+</div>
+
+<script src="/resources/portfolio/prefix2netmask/index.js?v=1.0.0"></script>
