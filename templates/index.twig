@@ -19,6 +19,10 @@
             {% include "_sections/_course.twig" %}
         {% case 'bookReviews' %}
             {% include "_sections/_bookReviews.twig" %}
+        {% case 'bookReviews' %}
+            {% include "_sections/_bookReviews.twig" %}
+        {% case 'ctfWriteup' %}
+            {% include "_sections/_ctfWriteup.twig" %}
         {% default %}
             {% include "_sections/" ~ entry.section.handle ~ "/_index.twig" %}
     {% endswitch %}
