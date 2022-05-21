@@ -1,4 +1,4 @@
-dateModified: 1653131751
+dateModified: 1653135761
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -85,6 +85,7 @@ meta:
     1079ffac-f516-4c4f-a131-3a26fa26ac15: 'Image Is Figure' # Image Is Figure
     1123b472-8241-4d07-bd52-1eff0c59f1ef: 'About Blog' # About Blog
     5084e704-59ac-4ed3-bc26-1b3b96710a82: Answer # Answer
+    5551a1b5-fa8d-41d6-b7c3-af16e2ea9981: 'CTF Writeups' # CTF Writeups
     6065c97a-7a32-4386-aee2-8b5f5933bed8: haxor.no/kids # haxor.no/kids
     6799dd35-5fb9-4623-b487-3aafaf92ec39: blog # blog
     7648fab9-2bab-43df-adca-9f3d941c929e: Artikkeltype # Artikkeltype
@@ -120,6 +121,7 @@ meta:
     b04f4663-1608-479d-b699-ba1102ba1b61: 'Article Headline' # Article Headline
     b05c4334-9b2d-4f18-8916-c65a9c521861: Image # Image
     b5a5e8a4-7781-466d-b7c8-b084e1de354e: 'Chapter Headline' # Chapter Headline
+    b5a3273e-575f-489d-a09a-c407248dc831: 'CTF Writeups' # CTF Writeups
     b7b92d43-ba38-4a42-8cdb-d7b4989964bc: 'Image AltText' # Image AltText
     b92f222e-e35a-4a5a-bb11-3b5ea3deda0c: Quote # Quote
     b3979b7e-2d54-4b6f-89ec-5ef480431d82: Courses # Courses
