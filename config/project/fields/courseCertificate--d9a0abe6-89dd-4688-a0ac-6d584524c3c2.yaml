@@ -1,8 +1,9 @@
+columnSuffix: null
 contentColumnType: string
-fieldGroup: 26a433d6-c7ff-4f42-8acb-7bcc035fc4d2 # Kurs
+fieldGroup: 26a433d6-c7ff-4f42-8acb-7bcc035fc4d2 # Course
 handle: courseCertificate
 instructions: ''
-name: Kursbevis
+name: 'Course Certificate'
 searchable: false
 settings:
   allowSelfRelations: false

@@ -1,6 +1,7 @@
+defaultPlacement: end
 enableVersioning: true
 handle: course
-name: 'Mine kurs'
+name: 'My courses'
 propagationMethod: all
 siteSettings:
   2fc7f7b8-2f9d-43dd-977b-8c7b29763e54: # haxor.no/en

@@ -1,8 +1,9 @@
+columnSuffix: null
 contentColumnType: boolean
 fieldGroup: d74696e2-d999-44f5-aded-f8353552c57b # Portfolio
 handle: noMobile
 instructions: ''
-name: 'Ingen mobil tilpasning'
+name: 'Not mobile friendly'
 searchable: false
 settings:
   default: false

@@ -27,7 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 3d5543fa-7b96-4f00-baff-e330b237625b # Ingen mobil tilpasning
+            fieldUid: 3d5543fa-7b96-4f00-baff-e330b237625b # Not mobile friendly
             instructions: null
             label: null
             required: false

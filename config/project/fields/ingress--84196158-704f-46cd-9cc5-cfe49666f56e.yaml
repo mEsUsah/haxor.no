@@ -1,22 +1,27 @@
+columnSuffix: null
 contentColumnType: text
 fieldGroup: 8475e873-60f6-4868-8ab1-1c7c3b90c98e # Common
 handle: ingress
 instructions: ''
-name: Ingress
+name: Intro
 searchable: true
 settings:
   availableTransforms: '*'
   availableVolumes: ''
-  cleanupHtml: true
   columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
   purifierConfig: ''
   purifyHtml: '1'
   redactorConfig: Simple.json
   removeEmptyTags: '1'
   removeInlineStyles: '1'
   removeNbsp: '1'
+  showHtmlButtonForNonAdmins: '1'
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
+  uiMode: enlarged
 translationKeyFormat: null
 translationMethod: none
 type: craft\redactor\Field

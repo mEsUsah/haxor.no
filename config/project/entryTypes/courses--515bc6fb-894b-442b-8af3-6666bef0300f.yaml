@@ -27,7 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 93d39a6a-48eb-4f78-afb1-8fd74053ce15 # Kurs bilde
+            fieldUid: 93d39a6a-48eb-4f78-afb1-8fd74053ce15 # Course Image
             instructions: ''
             label: ''
             required: '1'
@@ -36,7 +36,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: c418c358-5082-4c2e-bc17-cb8c9175b592 # Instruktør
+            fieldUid: c418c358-5082-4c2e-bc17-cb8c9175b592 # Instructor
             instructions: ''
             label: ''
             required: '1'
@@ -45,7 +45,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 12c8b9da-5b5a-4bd7-a51e-4116181081ad # Kurs beskrivelse
+            fieldUid: 12c8b9da-5b5a-4bd7-a51e-4116181081ad # Course Description
             instructions: ''
             label: ''
             required: '1'
@@ -54,7 +54,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 6f5f5cbf-7ead-4f94-9ed2-42c81ae3a3d3 # Kurs anmeldelse score
+            fieldUid: 6f5f5cbf-7ead-4f94-9ed2-42c81ae3a3d3 # Course Review Score
             instructions: null
             label: null
             required: false
@@ -63,7 +63,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: f733eaac-e1d6-428e-a5e6-5e9c1b8450df # Kurs anmeldelse sitat
+            fieldUid: f733eaac-e1d6-428e-a5e6-5e9c1b8450df # Course Review Quote
             instructions: ''
             label: ''
             required: '1'
@@ -72,7 +72,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 6ed30be3-319a-4469-a458-a70309e3e179 # Kurs anmeldelse
+            fieldUid: 6ed30be3-319a-4469-a458-a70309e3e179 # Course Review
             instructions: ''
             label: ''
             required: '1'
@@ -85,7 +85,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 4a837336-d09a-492d-aa97-3c29b176ecc7 # Kurs platform
+            fieldUid: 4a837336-d09a-492d-aa97-3c29b176ecc7 # Course Platform
             instructions: null
             label: null
             required: false
@@ -94,7 +94,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 0e2235ec-098b-4add-9c16-2a51cb50b5e3 # Kurs karakter
+            fieldUid: 0e2235ec-098b-4add-9c16-2a51cb50b5e3 # Course Grade
             instructions: ''
             label: ''
             required: '1'
@@ -103,7 +103,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: c2cadeae-b406-4376-a7bb-822c8d077ca2 # Kurs tema
+            fieldUid: c2cadeae-b406-4376-a7bb-822c8d077ca2 # Course Theme
             instructions: ''
             label: ''
             required: '1'
@@ -112,7 +112,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 44f8fa56-23f3-4d1e-8231-4e7f46c9af46 # Fullført dato
+            fieldUid: 44f8fa56-23f3-4d1e-8231-4e7f46c9af46 # Copletion Date
             instructions: ''
             label: ''
             required: '1'
@@ -121,7 +121,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 9096bb19-2f4d-4b40-91f7-7f0d84ee7b01 # Varighet (Timer)
+            fieldUid: 9096bb19-2f4d-4b40-91f7-7f0d84ee7b01 # Course Length (hours)
             instructions: null
             label: null
             required: false
@@ -130,7 +130,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: ac49e4c4-d11a-4bbe-9a08-04c06268ba93 # Varighet (Minutter)
+            fieldUid: ac49e4c4-d11a-4bbe-9a08-04c06268ba93 # Course Length (min)
             instructions: null
             label: null
             required: false
@@ -139,7 +139,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: d9a0abe6-89dd-4688-a0ac-6d584524c3c2 # Kursbevis
+            fieldUid: d9a0abe6-89dd-4688-a0ac-6d584524c3c2 # Course Certificate
             instructions: null
             label: null
             required: false
@@ -152,7 +152,7 @@ fieldLayouts:
 handle: courses
 hasTitleField: true
 name: Kurs
-section: b3979b7e-2d54-4b6f-89ec-5ef480431d82 # Kurs
+section: b3979b7e-2d54-4b6f-89ec-5ef480431d82 # Courses
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

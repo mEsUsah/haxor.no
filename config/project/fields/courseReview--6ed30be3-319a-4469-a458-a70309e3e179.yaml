@@ -1,13 +1,13 @@
+columnSuffix: null
 contentColumnType: text
-fieldGroup: 26a433d6-c7ff-4f42-8acb-7bcc035fc4d2 # Kurs
+fieldGroup: 26a433d6-c7ff-4f42-8acb-7bcc035fc4d2 # Course
 handle: courseReview
 instructions: ''
-name: 'Kurs anmeldelse'
+name: 'Course Review'
 searchable: false
 settings:
   availableTransforms: '*'
   availableVolumes: '*'
-  cleanupHtml: true
   columnType: text
   configSelectionMode: choose
   defaultTransform: ''
