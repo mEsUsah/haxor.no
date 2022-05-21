@@ -19,10 +19,10 @@
     "rss": "https://craftcms.com/changelog.rss"
   },
   "require": {
-    "craftcms/cms": "^3.7.7",
+    "craftcms/cms": "3.7.43",
     "vlucas/phpdotenv": "^3.4.0",
-    "craftcms/redactor": "2.10.7",
-    "verbb/super-table": "2.7.1",
+    "craftcms/redactor": "2.10.8",
+    "verbb/super-table": "2.7.2",
     "skarshaugsolutions/haxor": "^1.0.0"
   },
   "require-dev": {
