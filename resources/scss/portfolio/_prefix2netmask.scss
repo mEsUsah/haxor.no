@@ -1,8 +1,8 @@
 .prefix2subnetting{   
     &__container{
-        max-width: 1000px;
         width: 100%;
-        padding-bottom: 1px;
+        border-radius: 8px;
+        background-color: #cccccc;
     }
 
     &__options{
@@ -40,9 +40,9 @@
     &__answer{
         width: fit-content;
         margin: 0 auto;
-        @include ipadOrSmaller {
-            margin-bottom: 20px;
-        }
+        margin-bottom: 20px;
+        // @include ipadOrSmaller {
+        // }
     }
 }
 
