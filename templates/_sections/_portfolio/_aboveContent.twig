@@ -1,8 +1,10 @@
-<div class="portfolio__container portfolio__container--above-full">
-    {% include "_content/_includedContent/" ~ entry.slug ~ ".twig" with {
-        noMobile: entry.noMobile,
-        noMobileImage: entry.articleImage.one()
-    } %}
+<div class="portfolio__container">
+    <div class="portfolio__wrapper">
+        {% include "_content/_includedContent/" ~ entry.slug ~ ".twig" with {
+            noMobile: entry.noMobile,
+            noMobileImage: entry.articleImage.one()
+        } %}
+    </div>
 </div>
 <section class="articleBody">
     {% include "_content/teaser.twig" %}
