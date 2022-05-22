@@ -35,13 +35,31 @@
     &__task{
         width: fit-content;
         max-width: 100%;
+        display: flex;
+        flex-direction: row;
         pre{
             background-color: #3c3f50; 
             padding: 10px; 
             border-radius: 4px;
             color: white;
+            margin-right: 6px;
         }
     }
+
+    &__hint{
+        background-color: $color-danger !important;
+        color: white;
+        padding: 10px; 
+        width: fit-content; 
+        border-radius: 4px;
+        opacity: 0;
+        transition: all 0.2s;
+        &.active{
+            opacity: 1;
+            background-color: $color-danger;
+        }
+    }
+
     &__answer{
         margin-bottom: 14px;
         width: 100%;
