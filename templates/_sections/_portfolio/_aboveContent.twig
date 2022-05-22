@@ -1,5 +1,9 @@
-<div class="portfolio__container">
-    <div class="portfolio__wrapper">
+<div class="portfolio__container {{ entry.selfcontained ? "portfolio__container--selfcontained" }}">
+    <div class="portfolio__wrapper {{ entry.selfcontained ? "portfolio__wrapper--selfcontained" }}">
+        {% if not entry.selfcontained %}
+            <div class="portfolio__title">{{ entry.title }}</div>
+            <div class="portfolio__titleBorder"></div>
+        {% endif %}
         {% include "_content/_includedContent/" ~ entry.slug ~ ".twig" with {
             noMobile: entry.noMobile,
             noMobileImage: entry.articleImage.one()
