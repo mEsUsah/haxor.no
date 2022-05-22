@@ -1,4 +1,4 @@
-dateModified: 1653166852
+dateModified: 1653221557
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -165,6 +165,7 @@ meta:
     f96fb1c8-21d9-45ec-bc75-5792dd3b3c5b: Quote # Quote
     f147e4fb-5b9b-40b9-9b58-51fa33d89e32: 'Article Teaser' # Article Teaser
     f733eaac-e1d6-428e-a5e6-5e9c1b8450df: 'Course Review Quote' # Course Review Quote
+    f9145c5e-c78a-4a33-950f-a91359723426: Selfcontained # Selfcontained
     f598728f-d688-4b98-8aab-cf4447b3af95: Entry # Entry
     f4121429-712b-4587-839a-e0a1db5d946a: 'Line Numbers' # Line Numbers
     fe6324d5-2558-4ab4-99f2-f424b8051892: 'About Blog' # About Blog

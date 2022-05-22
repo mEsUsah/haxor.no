@@ -7,6 +7,11 @@
         @include ipadOrSmaller {
             margin: 135px auto -105px auto;
         }
+        &--selfcontained{
+            @include ipadOrSmaller {
+                margin: 125px auto -105px auto;
+            }
+        }
         
         #gameScreen{
             border-radius: 3px;
@@ -25,6 +30,12 @@
         padding-bottom: 100px;
         @include ipadOrSmaller {
             padding-bottom: 40px;
+        }
+        &--selfcontained{
+            padding: 0;
+            background-color: unset;
+            margin: 0;
+            padding-bottom: 0;
         }
     }
     &__title{
