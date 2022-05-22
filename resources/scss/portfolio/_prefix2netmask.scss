@@ -23,7 +23,11 @@
         padding: 20px;
         margin: 5px;
         h2{
+            font-family: 'Oswald', sans-serif;
             margin: 0;
+        }
+        label{
+            font-size: 14px;
         }
     }
 
@@ -41,8 +45,6 @@
         width: fit-content;
         margin: 0 auto;
         margin-bottom: 20px;
-        // @include ipadOrSmaller {
-        // }
     }
 }
 
