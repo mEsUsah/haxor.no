@@ -11,6 +11,7 @@
         background-size: cover;
         transform: translateX(-50%) translateY(-50%);
         background-repeat: no-repeat;
+        background-color: white;
         @include ipadOrSmaller {
             height: 100px;
             width: 100px;
