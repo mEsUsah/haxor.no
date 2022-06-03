@@ -36,6 +36,8 @@
 		{% set seoImage = entry.seoImage.one.getUrl(thumb) %}
 	{% elseif entry.articleImage is defined and entry.articleImage|length %}
 		{% set seoImage = entry.articleImage.one.getUrl(thumb) %}
+	{% elseif entry.ctfPlatform is defined and entry.ctfPlatform|length %}
+		{% set seoImage = entry.ctfPlatform.one().articleImage.one().getUrl(thumb) %}
 	{% elseif globals.seoImage is defined and globals.seoImage|length %}
 		{% set seoImage = globals.seoImage.one.getUrl(thumb) %}
 	{% endif %}
