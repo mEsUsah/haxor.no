@@ -4,6 +4,7 @@ const MiniCssExtractPlugin 	 = require('mini-css-extract-plugin');
 const BrowserSyncPlugin    	 = require('browser-sync-webpack-plugin');
 const RemoveStylesJSFiles  	 = require('webpack-fix-style-only-entries');
 const TimestampWebpackPlugin = require('timestamp-webpack-plugin');
+const webpack 				 = require('webpack');
 
 function scanDir(pattern) {
 	let sources = {};
@@ -137,6 +138,10 @@ module.exports = (env, argv) => {
 			new TimestampWebpackPlugin({
 				path: paths.dist,
 				filename: 'timestamp.json'
+			}),
+			new webpack.DefinePlugin({
+				__VUE_OPTIONS_API__: true,
+                __VUE_PROD_DEVTOOLS__: true,
 			})
 		]
 	};
