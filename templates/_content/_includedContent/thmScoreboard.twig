@@ -17,7 +17,7 @@
                     <span><a :href="'https://tryhackme.com/p/' + score.username"  :class="{thmScoreboard__me: myAccount(score)}">[[ score.username ]]</a></span>
                 </td>
                 <td><span :class="'thmScoreboard__flag thmScoreboard__flag--' + score.country"></span></td>
-                <td><span class="thmScoreboard__score">[[ score.points.toLocaleString() ]]</span></td>
+                <td><span class="thmScoreboard__score">[[ makeReadableScore(score.points) ]]</span></td>
                 <td><a :href="'#' + score.username" class="thmScoreboard__userLink"></a></td>
             </tr>
         </tbody>
