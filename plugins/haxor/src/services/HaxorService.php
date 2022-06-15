@@ -198,9 +198,9 @@ class HaxorService extends Component
             return $item2['points'] <=> $item1['points'];
         });
         
-        if(sizeof($returnArray["scoreboard"]) >= 100){
-            $returnArray["scoreboard"] = array_slice($returnArray["scoreboard"],0,100,true);
-        }
+        // if(sizeof($returnArray["scoreboard"]) >= 100){
+        //     $returnArray["scoreboard"] = array_slice($returnArray["scoreboard"],0,100,true);
+        // }
         Craft::$app->cache->set($cacheKey, $returnArray, $this->thmCacheDuration);
         return $returnArray;
     }
