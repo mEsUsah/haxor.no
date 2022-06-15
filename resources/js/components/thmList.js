@@ -39,7 +39,6 @@ export default {
                 },
                 makeReadableScore(score){
                     let scoreString = score.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
-                    console.log(scoreString);
                     return scoreString;
                 }
             },
