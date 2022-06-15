@@ -1,30 +1,25 @@
-{% set includedContent = includedContent|default(null) %}
-{% if includedContent|length %}
-    {% if includedContent and includedContent|length %}
-        <table class="thmScoreboard__table">
-            <thead>
-                <tr>
-                    <th></th>
-                    <th>Username</th>
-                    <th></th>
-                    <th class="thmScoreboard__score">Points</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-            {% for thmUser in includedContent %}
-                <tr id="{{ thmUser.username }}">
-                    <th>{{ loop.index }}</th> 
-                    <td>
-                        <img src="{{ thmUser.avatar }}" alt="{{ thmUser.username }}s avatar" class="thmScoreboard__avatar"> 
-                        <span><a href="https://tryhackme.com/p/{{ thmUser.username }}" {{ thmUser.username == "mEsUsah" ? 'class="thmScoreboard__me"'}}>{{ thmUser.username }}</a></span>
-                    </td>
-                    <td><span class="thmScoreboard__flag thmScoreboard__flag--{{ thmUser.country }}"></span></td>
-                    <td><span class="thmScoreboard__score">{{ thmUser.points|number_format(0,""," ") }}</span></td>
-                    <td><a href="#{{ thmUser.username }}" class="thmScoreboard__userLink"></a></td>
-                </tr> 
-            {% endfor %}
+<div data-thm-vue>
+    <table class="thmScoreboard__table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Username</th>
+                <th></th>
+                <th class="thmScoreboard__score">Points</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="score, index in scoreboard" :id="score.username">
+                <th>[[index+1]]</th>
+                <td>
+                    <img :src="score.avatar" alt="$[[score.username]]s avatar" class="thmScoreboard__avatar"> 
+                    <span><a :href="'https://tryhackme.com/p/' + score.username"  :class="{thmScoreboard__me: myAccount(score)}">[[ score.username ]]</a></span>
+                </td>
+                <td><span :class="'thmScoreboard__flag thmScoreboard__flag--' + score.country"></span></td>
+                <td><span class="thmScoreboard__score">[[ score.points.toLocaleString() ]]</span></td>
+                <td><a :href="'#' + score.username" class="thmScoreboard__userLink"></a></td>
+            </tr>
         </tbody>
     </table>
-    {% endif %}
-{% endif %}
+</div>
