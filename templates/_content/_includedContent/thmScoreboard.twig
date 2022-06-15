@@ -1,10 +1,10 @@
 <div data-thm-vue>
-    <form>
-        <div v-for="country in countries">
-            <input type="checkbox" 
-                :id="'thmScoreboard__country--' + country" 
-                :value="country" v-model="checkedCountries">
-            <label :for="'thmScoreboard__country--' + country">[[ country ]]</label>
+    <form class="thmScoreboard__filters">
+        <div v-for="country in countries" class="thmScoreboard__filterCountry">
+                <input type="checkbox" 
+                    :id="'thmScoreboard__country--' + country" 
+                    :value="country" v-model="checkedCountries">
+                <label :for="'thmScoreboard__country--' + country"><span :class="'thmScoreboard__flag thmScoreboard__flag--' + country"></span></label>
         </div>
     </form>
 

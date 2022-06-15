@@ -1,4 +1,23 @@
 .thmScoreboard{
+    &__filters{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 5px;
+        padding: 0 10px;
+        margin-top: 18px;
+        background-color: #cccccc;
+        height: 50px;
+    }
+    &__filterCountry{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        label{
+            height: 24px;
+        }
+    }
     &__table{
         margin-top: 18px;
         width: 100%;
