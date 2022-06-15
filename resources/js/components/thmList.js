@@ -12,10 +12,9 @@ export default {
             delimiters: ['[[', ']]'],
             data() {
                 return {
-                    displayData: [],
-                    scoreboard: null,
+                    scoreboard: [],
                     countries: null,
-                    testingTesting: "hello"
+                    checkedCountries: null
                 }
             },
             mounted() {
@@ -25,14 +24,15 @@ export default {
                     .then(response => {
                         this.scoreboard = response.data.scoreboard;
                         this.countries = response.data.contries;
+                        this.checkedCountries = response.data.contries;
                     })
                     .catch(e => {
                         console.log(e);
                     })
             },
             methods: {
-                myAccount(row){
-                    if(row.username == "mEsUsah") {
+                myAccount(username){
+                    if(username == "mEsUsah") {
                         return true;
                     }
                     return false;
@@ -43,7 +43,17 @@ export default {
                 }
             },
             computed: {
-
+                filterCountries(){
+                    let filteredScores = [];
+                    this.scoreboard.forEach(score => {
+                        this.checkedCountries.forEach(country => {
+                            if (country == score.country){
+                                filteredScores.push(score);
+                            }
+                        });
+                    });
+                    return filteredScores.slice(0,100);
+                }
             },
         });
 

@@ -1,4 +1,13 @@
 <div data-thm-vue>
+    <form>
+        <div v-for="country in countries">
+            <input type="checkbox" 
+                :id="'thmScoreboard__country--' + country" 
+                :value="country" v-model="checkedCountries">
+            <label :for="'thmScoreboard__country--' + country">[[ country ]]</label>
+        </div>
+    </form>
+
     <table class="thmScoreboard__table">
         <thead>
             <tr>
@@ -10,11 +19,13 @@
             </tr>
         </thead>
         <tbody>
-            <tr v-for="score, index in scoreboard" :id="score.username">
+            <tr v-for="score, index in filterCountries" :id="score.username">
                 <th>[[index+1]]</th>
                 <td>
-                    <img :src="score.avatar" alt="$[[score.username]]s avatar" class="thmScoreboard__avatar"> 
-                    <span><a :href="'https://tryhackme.com/p/' + score.username"  :class="{thmScoreboard__me: myAccount(score)}">[[ score.username ]]</a></span>
+                    <img :src="score.avatar" 
+                        alt="$[[score.username]]s avatar" 
+                        class="thmScoreboard__avatar"> 
+                    <span><a :href="'https://tryhackme.com/p/' + score.username"  :class="{thmScoreboard__me: myAccount(score.username)}">[[ score.username ]]</a></span>
                 </td>
                 <td><span :class="'thmScoreboard__flag thmScoreboard__flag--' + score.country"></span></td>
                 <td><span class="thmScoreboard__score">[[ makeReadableScore(score.points) ]]</span></td>
