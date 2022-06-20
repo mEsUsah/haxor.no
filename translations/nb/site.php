@@ -10,6 +10,7 @@ return [
     'Complete'          => 'Fullfør',
     'Submit'            => 'Send inn',
     'Review'            => 'Anmeldelse',
+    'Description'       => 'Beskrivelse',
     'and certificate'   => 'og kursbevis',
     'and result'        => 'og resultat'
 ];
