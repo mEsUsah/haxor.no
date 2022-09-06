@@ -2,7 +2,7 @@
     "name": "skarshaugsolutions/haxor",
     "description": "Plugin for haxor.no",
     "type": "craft-plugin",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "keywords": [
         "craft",
         "cms",
@@ -22,7 +22,7 @@
         }
     ],
     "require": {
-        "craftcms/cms": "^3.0.0"
+        "craftcms/cms": "^4.0.0"
     },
     "require-dev": {
       "craftcms/cms": "^3.2.0",
