@@ -1,8 +1,30 @@
-dateModified: 1653221557
+dateModified: 1662492398
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  images:
+    hasUrls: true
+    name: Images
+    settings:
+      path: uploads/images
+    type: craft\fs\Local
+    url: '@web/uploads/images'
+  pdf:
+    hasUrls: true
+    name: 'PDF''s'
+    settings:
+      path: uploads/pdf
+    type: craft\fs\Local
+    url: '@web/uploads/pdf'
+  thumbnails:
+    hasUrls: true
+    name: Thumbnails
+    settings:
+      path: uploads/thumbnails
+    type: craft\fs\Local
+    url: '@web/uploads/thumbnails'
 graphql:
   publicToken:
     enabled: false
@@ -20,6 +42,7 @@ meta:
     2f773f4a-97cc-41d5-9fb6-2016426d4da5: Text # Text
     2fc7f7b8-2f9d-43dd-977b-8c7b29763e54: haxor.no/en # haxor.no/en
     3a65209b-542d-42a6-9fc7-a9b07fd38253: 'File Content' # File Content
+    3b363f5e-4ee5-4536-b78c-b514bf1a0c7a: Images
     3bbcac38-b6d8-4918-9863-bcff6b8f60d2: 'CTF Platform' # CTF Platform
     3d5543fa-7b96-4f00-baff-e330b237625b: 'Not mobile friendly' # Not mobile friendly
     3e4dc06a-6af1-479b-a120-662a4500d935: 'Artikkel tema' # Artikkel tema
@@ -181,16 +204,17 @@ plugins:
   super-table:
     edition: standard
     enabled: true
-    schemaVersion: 2.2.1
+    schemaVersion: 3.0.0
 system:
   edition: solo
   live: true
   name: haxor.no
   retryDuration: null
-  schemaVersion: 3.7.33
+  schemaVersion: 4.0.0.9
   timeZone: Europe/Oslo
 users:
   allowPublicRegistration: false
+  deactivateByDefault: false
   defaultGroup: null
   photoSubpath: ''
   photoVolumeUid: null

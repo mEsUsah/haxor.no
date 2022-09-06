@@ -23,18 +23,16 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\AssetTitleField
+            type: craft\fieldlayoutelements\assets\AssetTitleField
             warning: null
             width: 100
         name: Content
         sortOrder: 1
+fs: pdf
 handle: pdf
 hasUrls: true
 name: 'PDF''s'
-settings:
-  path: uploads/pdf
 sortOrder: 2
 titleTranslationKeyFormat: null
 titleTranslationMethod: none
-type: craft\volumes\Local
 url: '@web/uploads/pdf'
