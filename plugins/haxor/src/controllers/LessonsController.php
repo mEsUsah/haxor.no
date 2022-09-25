@@ -46,7 +46,7 @@ class LessonsController extends Controller
      *         The actions must be in 'kebab-case'
      * @access protected
      */
-    protected $allowAnonymous = ['index', 'do-something','check-answer'];
+    protected array|int|bool $allowAnonymous = ['index', 'do-something','check-answer'];
 
     // Public Methods
     // =========================================================================
