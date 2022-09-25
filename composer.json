@@ -19,10 +19,10 @@
         "rss": "https://craftcms.com/changelog.rss"
     },
     "require": {
-        "craftcms/cms": "^4.0.0",
+        "craftcms/cms": "4.2.5.1",
         "vlucas/phpdotenv": "^3.4.0",
         "craftcms/redactor": "3.0.2",
-        "verbb/super-table": "3.0.0",
+        "verbb/super-table": "3.0.1",
         "skarshaugsolutions/haxor": "^1.0.0"
     },
     "require-dev": {
@@ -39,7 +39,8 @@
             "php": "8.0.12"
         },
         "allow-plugins": {
-            "craftcms/plugin-installer": true
+            "craftcms/plugin-installer": true,
+            "yiisoft/yii2-composer": true
         }
     },
     "scripts": {
