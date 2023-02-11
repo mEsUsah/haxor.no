@@ -1,4 +1,4 @@
-dateModified: 1662492398
+dateModified: 1676136313
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -42,14 +42,13 @@ meta:
     2f773f4a-97cc-41d5-9fb6-2016426d4da5: Text # Text
     2fc7f7b8-2f9d-43dd-977b-8c7b29763e54: haxor.no/en # haxor.no/en
     3a65209b-542d-42a6-9fc7-a9b07fd38253: 'File Content' # File Content
-    3b363f5e-4ee5-4536-b78c-b514bf1a0c7a: Images
+    3b363f5e-4ee5-4536-b78c-b514bf1a0c7a: Images # Images
     3bbcac38-b6d8-4918-9863-bcff6b8f60d2: 'CTF Platform' # CTF Platform
     3d5543fa-7b96-4f00-baff-e330b237625b: 'Not mobile friendly' # Not mobile friendly
     3e4dc06a-6af1-479b-a120-662a4500d935: 'Artikkel tema' # Artikkel tema
     3ebdee02-2eb1-48f4-8b4b-4f45f3bfbae9: Username # Username
     4a837336-d09a-492d-aa97-3c29b176ecc7: 'Course Platform' # Course Platform
     4f7986b9-315c-4c92-8575-387ebd59b8ec: Homepage # Homepage
-    4f37163b-36dc-4861-9f4e-fdc2b58e9f71: course # course
     4fa3f654-1283-406b-9656-22b48a6c818e: 'Course Certificate URL' # Course Certificate URL
     5c01d860-2ec5-4205-936e-583524bb8264: 'Image AltText' # Image AltText
     5dd9f4f3-fb1c-4d81-b3fd-2309b56563f0: Filname # Filname
@@ -109,7 +108,6 @@ meta:
     1123b472-8241-4d07-bd52-1eff0c59f1ef: 'About Blog' # About Blog
     5084e704-59ac-4ed3-bc26-1b3b96710a82: Answer # Answer
     5551a1b5-fa8d-41d6-b7c3-af16e2ea9981: 'CTF Writeups' # CTF Writeups
-    6065c97a-7a32-4386-aee2-8b5f5933bed8: haxor.no/kids # haxor.no/kids
     6799dd35-5fb9-4623-b487-3aafaf92ec39: blog # blog
     7536d724-07df-42bd-b0fe-a872ad23ac5a: 'Above Content' # Above Content
     7648fab9-2bab-43df-adca-9f3d941c929e: Artikkeltype # Artikkeltype
@@ -167,7 +165,7 @@ meta:
     d9a0abe6-89dd-4688-a0ac-6d584524c3c2: 'Course Certificate' # Course Certificate
     d47dbda4-bf10-41c3-b21c-76becadcfa97: Headline # Headline
     d67ba21e-e565-441c-aafd-bee2a9f4d3f7: Data # Data
-    d81b7a18-6d93-471a-ba57-99544b0c585b: haxor.no # haxor.no
+    d81b7a18-6d93-471a-ba57-99544b0c585b: haxor.no/no # haxor.no/no
     d871d9c2-8428-4d67-bd62-062ff0fb8e4f: CTF # CTF
     d74696e2-d999-44f5-aded-f8353552c57b: Portfolio # Portfolio
     dc32cdca-de36-4628-af9c-221eb639a9ab: 'PDF''s' # PDF's

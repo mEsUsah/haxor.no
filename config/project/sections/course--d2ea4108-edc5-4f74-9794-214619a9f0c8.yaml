@@ -9,7 +9,7 @@ siteSettings:
     hasUrls: true
     template: index
     uriFormat: kurs
-  d81b7a18-6d93-471a-ba57-99544b0c585b: # haxor.no
+  d81b7a18-6d93-471a-ba57-99544b0c585b: # haxor.no/no
     enabledByDefault: true
     hasUrls: true
     template: index

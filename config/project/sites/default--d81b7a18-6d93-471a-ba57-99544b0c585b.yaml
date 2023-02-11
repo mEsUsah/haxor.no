@@ -1,9 +1,9 @@
 baseUrl: '@web'
-enabled: true
+enabled: '1'
 handle: default
 hasUrls: true
 language: nb
-name: haxor.no
-primary: true
+name: haxor.no/no
+primary: false
 siteGroup: 6799dd35-5fb9-4623-b487-3aafaf92ec39 # blog
 sortOrder: 1

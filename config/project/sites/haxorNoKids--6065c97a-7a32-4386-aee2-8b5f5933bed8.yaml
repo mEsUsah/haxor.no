@@ -1,9 +1,0 @@
-baseUrl: '@web/kids'
-enabled: true
-handle: haxorNoKids
-hasUrls: true
-language: nb
-name: haxor.no/kids
-primary: false
-siteGroup: 4f37163b-36dc-4861-9f4e-fdc2b58e9f71 # course
-sortOrder: 3

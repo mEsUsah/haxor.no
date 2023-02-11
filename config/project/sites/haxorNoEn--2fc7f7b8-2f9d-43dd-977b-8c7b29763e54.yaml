@@ -4,6 +4,6 @@ handle: haxorNoEn
 hasUrls: true
 language: en
 name: haxor.no/en
-primary: false
+primary: true
 siteGroup: 6799dd35-5fb9-4623-b487-3aafaf92ec39 # blog
 sortOrder: 2

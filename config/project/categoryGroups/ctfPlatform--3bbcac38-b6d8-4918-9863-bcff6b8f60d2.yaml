@@ -54,11 +54,7 @@ siteSettings:
     hasUrls: true
     template: null
     uriFormat: 'ctf-platform/{slug}'
-  6065c97a-7a32-4386-aee2-8b5f5933bed8: # haxor.no/kids
-    hasUrls: true
-    template: null
-    uriFormat: 'ctf-platform/{slug}'
-  d81b7a18-6d93-471a-ba57-99544b0c585b: # haxor.no
+  d81b7a18-6d93-471a-ba57-99544b0c585b: # haxor.no/no
     hasUrls: true
     template: null
     uriFormat: 'ctf-platform/{slug}'

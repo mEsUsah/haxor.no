@@ -6,7 +6,7 @@ name: 'Article Image'
 searchable: true
 settings:
   allowedKinds: null
-  defaultUploadLocationSource: 'volume:3b363f5e-4ee5-4536-b78c-b514bf1a0c7a'
+  defaultUploadLocationSource: 'volume:3b363f5e-4ee5-4536-b78c-b514bf1a0c7a' # Images
   defaultUploadLocationSubpath: ''
   limit: '1'
   localizeRelations: ''
@@ -14,11 +14,11 @@ settings:
   selectionLabel: ''
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  singleUploadLocationSource: 'volume:3b363f5e-4ee5-4536-b78c-b514bf1a0c7a'
+  singleUploadLocationSource: 'volume:3b363f5e-4ee5-4536-b78c-b514bf1a0c7a' # Images
   singleUploadLocationSubpath: ''
   source: null
   sources:
-    - 'volume:3b363f5e-4ee5-4536-b78c-b514bf1a0c7a'
+    - 'volume:3b363f5e-4ee5-4536-b78c-b514bf1a0c7a' # Images
   targetSiteId: null
   useSingleFolder: false
   validateRelatedElements: ''
