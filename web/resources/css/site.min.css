@@ -1387,6 +1387,8 @@ main {
 }
 .courseList__item--accordianButton-wrapper .courseList__item--accordianButton-textLong {
   width: 193px;
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
 }
 .courseList__item--accordianButton-wrapper .courseList__item--accordianButton-textShort {
   width: 97px;
