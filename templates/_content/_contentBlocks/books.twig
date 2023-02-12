@@ -10,6 +10,8 @@
     {% endfor %}
 
     {% if block.linkToAllCourses %}
-        <a href="{{craft.entries().section('bookReviews').one().getUrl()}}" class="courseList__link">Oversikt over alle bøker jeg har lest og anmeldt</a>
+        <a href="{{craft.entries().section('bookReviews').one().getUrl()}}" class="courseList__link">
+            {{ 'List of all books I have reviewed'|t }}
+        </a>
     {% endif %}
 </div>
