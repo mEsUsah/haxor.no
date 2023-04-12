@@ -2,7 +2,8 @@ const mix = require('laravel-mix');
 require('laravel-mix-polyfill');
 
 mix.sass('resources/scss/site.scss', 'web/resources/css/site.min.css');
-mix.js('resources/js/site.js', 'web/resources/js/site.min.js');
+mix.js('resources/js/site.js', 'web/resources/js/site.js');
+mix.minify('web/resources/js/site.js');
     // .polyfill({
     //     enabled: true,
     //     useBuiltIns: "usage",
