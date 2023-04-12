@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "mix watch",
-    "prod": "mix"
+    "prod": "NODE_ENV=production mix"
   },
   "devDependencies": {
     "@popperjs/core": "^2.10.2",
