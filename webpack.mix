@@ -3,6 +3,13 @@ require('laravel-mix-polyfill');
 
 mix.sass('resources/scss/site.scss', 'web/resources/css/site.min.css');
 mix.js('resources/js/site.js', 'web/resources/js/site.min.js');
+
+mix.options({
+  terser: {
+    extractComments: false,
+  }
+});
+
 //mix.minify('web/resources/js/site.js');
     // .polyfill({
     //     enabled: true,
