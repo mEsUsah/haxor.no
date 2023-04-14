@@ -22,7 +22,7 @@
 		{% set title = '🚧 ' ~ title %}
 	{% endif %}
 
-	{# --- SEO Desctiption --- #}
+	{# --- SEO Description --- #}
 	{% if entry.seoDescription is defined and entry.seoDescription|trim|length %}
 		{% set seoDescription = entry.seoDescription|trim %}
 	{% elseif entry.articleTeaser is defined and entry.articleTeaser|trim|length %}
@@ -55,4 +55,5 @@
 {% endif %}
 {% if seoDescription is defined and seoDescription|length %}
 	<meta property="og:description" content="{{seoDescription}}"/>
+	<meta name="description" content="{{seoDescription}}">
 {% endif %}
