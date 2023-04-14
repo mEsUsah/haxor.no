@@ -1,33 +1,29 @@
 <!DOCTYPE html>
-{% set cashebuster = "2.4.5" %}
+{% set cashebuster = "2.4.6" %}
+{% set devMode = craft.app.config.general.devMode %}
+{% set livePreview = craft.app.request.isPreview %}
+{% set gtmId = 'GTM-5WM4TRN' %}
+
 <html lang="{{currentSite.language }}">
     <head>
-        
-        {% set devMode = craft.app.config.general.devMode %}
-        {% set livePreview = craft.app.request.isPreview %}
-        {% if not devMode and not livePreview %}
-            <!-- Google Tag Manager -->
-            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-5WM4TRN');</script>
-            <!-- End Google Tag Manager -->
-        {% endif %}
+        <meta charset="UTF-8" name='viewport' content='initial-scale=1.0, maximum-scale=5.0, user-scalable=yes' >
+        {% include "_partials/_analyticsHead" with {
+            devMode: devMode,
+            livePreview: livePreview,
+            gtmId: gtmId
+        } %}
         {% include "_partials/_seo" %}
         {% include "_partials/_favicon" %}
-        <meta charset="UTF-8" name='viewport' content='initial-scale=1.0, maximum-scale=5.0, user-scalable=yes' >
         <link rel="stylesheet" href="/resources/css/site.min.css?v={{ cashebuster }}">
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-        <script data-ad-client="ca-pub-8036419881721643" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     </head >
+
     <body data-site-language="{{ currentSite.language }}">
-        {% if not devMode and not livePreview %}
-            <!-- Google Tag Manager (noscript) -->
-            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5WM4TRN"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-            <!-- End Google Tag Manager (noscript) -->
-        {% endif %}
+        {% include "_partials/_analyticsHead" with {
+            devMode: devMode,
+            livePreview: livePreview,
+            gtmId: gtmId
+        } %}
         
         {% block header %}
             {% include "_partials/_header" %}
@@ -35,7 +31,6 @@
         
         <main>
             {% block body %}
-                
             {% endblock body %}
         </main>
         {% block footer %}
