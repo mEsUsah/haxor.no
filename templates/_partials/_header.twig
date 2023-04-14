@@ -1,6 +1,6 @@
 <header data-header class="active">
     <div class="header__wrapper">
-        <a href="/" class="header__title">
+        <a href="/" class="header__title" aria-label="Go to frontpage">
             <div class="header__title--icon"></div>
             <div class="header__title--iconText"></div>
             {# <div class="header__title--text">Haxor.no</div> #}
@@ -78,7 +78,7 @@
                                 {% endif %}
 
                                 {% if site.id != currentSite.id %}
-                                    <a href="{{ site.getBaseUrl() }}" class="menu__language menu__language--{{ siteClass }}"></a>
+                                    <a href="{{ site.getBaseUrl() }}" class="menu__language menu__language--{{ siteClass }}" aria-label="{{siteName}}"></a>
                                 {% else %}
                                     <span class="menu__language menu__language--{{ siteClass }}"></span>
                                 {% endif %}
