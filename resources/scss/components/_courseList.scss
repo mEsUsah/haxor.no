@@ -54,7 +54,8 @@
             background-size: contain;
             background-repeat: no-repeat;
             display: inline-block;
-            &-linkedin{
+
+            &-linkedinlearning{
                 background-image: $icon-linkedinLearning;
                 width: 90px;
                 top: 5px;
@@ -80,6 +81,11 @@
                 width: 70px;
                 top: 8px;
                 height: 39px;
+            }
+            &-openedg{
+                background-image: $icon-openedg;
+                width: 80px;
+                top: 5px;
             }
             
         }
