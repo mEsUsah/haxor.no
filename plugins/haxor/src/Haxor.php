@@ -10,9 +10,12 @@
 
 namespace skarshaugsolutions\haxor;
 
-use skarshaugsolutions\haxor\services\HaxorService as HaxorServiceService;
+use skarshaugsolutions\haxor\services\HaxorService;
+use skarshaugsolutions\haxor\services\ArticlesService;
+use skarshaugsolutions\haxor\services\LessonsService;
+use skarshaugsolutions\haxor\services\ThmService;
 use skarshaugsolutions\haxor\variables\HaxorVariable;
-use skarshaugsolutions\haxor\fields\HaxorField as HaxorFieldField;
+use skarshaugsolutions\haxor\fields\HaxorField;
 
 use Craft;
 use craft\base\Plugin;
@@ -41,7 +44,6 @@ use yii\base\Event;
  * @package   Haxor
  * @since     1.0.0
  *
- * @property  HaxorServiceService $haxorService
  */
 class Haxor extends Plugin
 {
@@ -99,6 +101,14 @@ class Haxor extends Plugin
         parent::init();
         self::$plugin = $this;
 
+        // Register our services
+        $this->setComponents([
+            'haxorService' => HaxorService::class,
+            'lessons' => LessonsService::class,
+            'articles' => ArticlesService::class,
+            'thm' => ThmService::class,
+        ]);
+
         // Add in our console commands
         if (Craft::$app instanceof ConsoleApplication) {
             $this->controllerNamespace = 'skarshaugsolutions\haxor\console\controllers';
@@ -127,7 +137,7 @@ class Haxor extends Plugin
             Fields::class,
             Fields::EVENT_REGISTER_FIELD_TYPES,
             function (RegisterComponentTypesEvent $event) {
-                $event->types[] = HaxorFieldField::class;
+                $event->types[] = HaxorField::class;
             }
         );
 

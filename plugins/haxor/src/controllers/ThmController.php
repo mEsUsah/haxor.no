@@ -57,9 +57,10 @@ class ThmController extends Controller
      *
      * @return mixed
      */
+
     public function actionIndex()
     {
         $locations = ["no","se","dk","fi","is"];
-        return $this->asJson(Haxor::$plugin->haxorService->getTryHackMeScoreboard($locations));
+        return $this->asJson(Haxor::getInstance()->thm->getScoreboard($locations));
     }
 }

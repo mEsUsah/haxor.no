@@ -48,31 +48,31 @@ class HaxorVariable
 
     public function getLessonTaskAmount($entry)
     {
-        return Haxor::$plugin->haxorService->getLessonTaskAmount($entry);
+        return Haxor::getInstance()->lessons->getLessonTaskAmount($entry);
     }
 
     public function getLessonChapterTaskAmount($entry, $chapter)
     {
-        return Haxor::$plugin->haxorService->getLessonChapterTaskAmount($entry,$chapter);
+        return Haxor::getInstance()->lessons->getLessonChapterTaskAmount($entry,$chapter);
     }
 
     public function getLessonTasks($entry)
     {
-        return Haxor::$plugin->haxorService->getLessonTasks($entry);
+        return Haxor::getInstance()->lessons->getLessonTasks($entry);
     }
 
     public function getLessonTaskAnswer($entry, $chapter, $task)
     {    
-        return Haxor::$plugin->haxorService->getLessonTaskAnswer($entry, $chapter, $task);
+        return Haxor::getInstance()->lessons->getLessonTaskAnswer($entry, $chapter, $task);
     }
 
     public function getLessonTaskAnswerObfuscated($entry, $chapter, $task)
     {
-        return Haxor::$plugin->haxorService->getLessonTaskAnswerObfuscated($entry, $chapter, $task);
+        return Haxor::getInstance()->lessons->getLessonTaskAnswerObfuscated($entry, $chapter, $task);
     }
 
     public function getTryHackMeScoreboard($locations)
     {
-        return Haxor::$plugin->haxorService->getTryHackMeScoreboard($locations);
+        return Haxor::getInstance()->thm->getScoreboard($locations);
     }
 }

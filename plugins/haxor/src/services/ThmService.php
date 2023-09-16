@@ -14,7 +14,6 @@ use skarshaugsolutions\haxor\Haxor;
 
 use Craft;
 use craft\base\Component;
-use craft\elements\Entry;
 
 /**
  * HaxorService Service
@@ -29,7 +28,7 @@ use craft\elements\Entry;
  * @package   Haxor
  * @since     1.0.0
  */
-class HaxorService extends Component
+class ThmService extends Component
 {
     // Private Properties
     // =========================================================================
@@ -44,12 +43,12 @@ class HaxorService extends Component
      *
      * From any other plugin file, call it like this:
      *
-     *     Haxor::getInstance()->haxor->getTryHackMeScoreboard($locations)
+     *     Haxor::getInstance()->thm->getScoreboard($locations)
      *
      * @return mixed
      */
 
-    public function getTryHackMeScoreboard($locations)
+    public function getScoreboard($locations)
     {
         $cacheKey = md5("getTryHackMeScoreboard");
         $cachedData = Craft::$app->cache->get($cacheKey);

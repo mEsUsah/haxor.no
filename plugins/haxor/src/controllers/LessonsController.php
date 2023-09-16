@@ -14,6 +14,7 @@ use skarshaugsolutions\haxor\Haxor;
 
 use Craft;
 use craft\web\Controller;
+use craft\elements\Entry;
 
 /**
  * Default Controller
@@ -77,15 +78,18 @@ class LessonsController extends Controller
         $taskID =  Craft::$app->request->getQueryParam("t");
         $answer = strtolower(Craft::$app->request->getQueryParam("a"));
         
-        if(isset($lessonID) && isset($chapterID) && isset($taskID) && isset($answer)){
-            $entry = Haxor::$plugin->haxorService->getEntryById($lessonID);
+        if(isset($lessonID) && isset($chapterID) && isset($taskID) && isset($answer))
+        {
+            $entry = Entry::find()->id($lessonID)->one();
             if(!$entry){
                 return false;
             }
-            $correctAnswer = strtolower(Haxor::$plugin->haxorService->getLessonTaskAnswer($entry, $chapterID, $taskID));
+
+            $correctAnswer = strtolower(Haxor::getInstance()->lessons->getLessonTaskAnswer($entry, $chapterID, $taskID));
             if(!$correctAnswer){
                 return false;
             }
+            
             if($answer == $correctAnswer){
                 return "correct";
             } else {

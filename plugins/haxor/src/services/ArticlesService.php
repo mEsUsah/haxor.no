@@ -44,15 +44,10 @@ class ArticlesService extends Component
      *
      * From any other plugin file, call it like this:
      *
-     *     Haxor::$plugin->haxorService->exampleService()
+     *     Haxor::getInstance()->articles->getAll()
      *
      * @return mixed
      */
-
-    public function getEntryById($entryID)
-    {
-        return Entry::find()->id($entryID)->one();
-    }
 
     public function getAll()
     {
