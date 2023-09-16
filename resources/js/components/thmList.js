@@ -14,7 +14,8 @@ export default {
                 return {
                     scoreboard: [],
                     countries: [],
-                    checkedCountries: null
+                    checkedCountries: null,
+                    loaded: false,
                 }
             },
             mounted() {
@@ -37,6 +38,7 @@ export default {
                         this.scoreboard = response.data.scoreboard;
                         this.countries = response.data.contries;
                         this.checkedCountries = response.data.contries;
+                        this.loaded = true;
                     })
                     .catch(e => {
                         console.log(e);

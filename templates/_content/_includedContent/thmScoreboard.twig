@@ -1,36 +1,42 @@
 <div data-thm-vue>
-    <form class="thmScoreboard__filters">
-        <div v-for="country in countries" class="thmScoreboard__filterCountry">
+    <section v-if="loaded">
+        <form class="thmScoreboard__filters">
+            <div v-for="country in countries" class="thmScoreboard__filterCountry">
                 <input type="checkbox" 
                     :id="'thmScoreboard__country--' + country" 
                     :value="country" v-model="checkedCountries">
                 <label :for="'thmScoreboard__country--' + country"><span :class="'thmScoreboard__flag thmScoreboard__flag--' + country"></span></label>
+            </div>
+        </form>
+        <table class="thmScoreboard__table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Username</th>
+                    <th></th>
+                    <th class="thmScoreboard__score">Points</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="score, index in filterCountries" :id="score.username">
+                    <th>[[index+1]]</th>
+                    <td>
+                        <img :src="score.avatar" 
+                            alt="$[[score.username]]s avatar" 
+                            class="thmScoreboard__avatar"> 
+                        <span><a :href="'https://tryhackme.com/p/' + score.username"  :class="{thmScoreboard__me: myAccount(score.username)}">[[ score.username ]]</a></span>
+                    </td>
+                    <td><span :class="'thmScoreboard__flag thmScoreboard__flag--' + score.country"></span></td>
+                    <td><span class="thmScoreboard__score">[[ makeReadableScore(score.points) ]]</span></td>
+                    <td><a :href="'#' + score.username" class="thmScoreboard__userLink"></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section v-else>
+        <div class="thmScoreboard__loading">
+            <div class="thmScoreboard__loading-spinner"></div>
         </div>
-    </form>
-
-    <table class="thmScoreboard__table">
-        <thead>
-            <tr>
-                <th></th>
-                <th>Username</th>
-                <th></th>
-                <th class="thmScoreboard__score">Points</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr v-for="score, index in filterCountries" :id="score.username">
-                <th>[[index+1]]</th>
-                <td>
-                    <img :src="score.avatar" 
-                        alt="$[[score.username]]s avatar" 
-                        class="thmScoreboard__avatar"> 
-                    <span><a :href="'https://tryhackme.com/p/' + score.username"  :class="{thmScoreboard__me: myAccount(score.username)}">[[ score.username ]]</a></span>
-                </td>
-                <td><span :class="'thmScoreboard__flag thmScoreboard__flag--' + score.country"></span></td>
-                <td><span class="thmScoreboard__score">[[ makeReadableScore(score.points) ]]</span></td>
-                <td><a :href="'#' + score.username" class="thmScoreboard__userLink"></a></td>
-            </tr>
-        </tbody>
-    </table>
+    </section>
 </div>

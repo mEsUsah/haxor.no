@@ -194,4 +194,22 @@
 
         }
     }
+    &__loading{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+        margin: 50px 0;
+
+        &-spinner{
+            height: 100px;
+            width: 100px;
+            animation: spin 1s linear infinite;
+            background: url("/resources/svg/refresh.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
 }
