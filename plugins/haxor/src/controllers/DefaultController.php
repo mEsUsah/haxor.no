@@ -1,6 +1,6 @@
 <?php
 /**
- * haxor plugin for Craft CMS 3.x
+ * haxor plugin for Craft CMS 4.x
  *
  * Plugin for haxor.no
  *
