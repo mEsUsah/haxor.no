@@ -44,12 +44,12 @@ class LessonsService extends Component
      *
      * From any other plugin file, call it like this:
      *
-     *      Haxor::getInstance()->lessons->getLessonTaskAmount($entry)
+     *      Haxor::getInstance()->lessons->getEntryTaskN($entry)
      *
      * @return mixed
      */
 
-    public function getLessonTaskAmount($entry)
+    public function getEntryTaskN($entry)
     {
         $nrOfTasks = 0;
         
@@ -70,7 +70,7 @@ class LessonsService extends Component
         return $nrOfTasks;
     }
     
-    public function getLessonChapterTaskAmount($entry, $chapter)
+    public function getChapterTaskN($entry, $chapter)
     {
         $nrOfTasks = 0;
         $chapterIndex = 0;
@@ -130,7 +130,7 @@ class LessonsService extends Component
         }
     }
 
-    public function getLessonTaskAnswer($entry, $chapter, $task)
+    public function getTaskAnswer($entry, $chapter, $task)
     {    
         $lesson = $this->getLessonTasks($entry);
 
@@ -141,7 +141,7 @@ class LessonsService extends Component
         }
     }
 
-    public function getLessonTaskAnswerObfuscated($entry, $chapter, $task)
+    public function getTaskAnswerObfuscated($entry, $chapter, $task)
     {
         $lesson = $this->getLessonTasks($entry);
 

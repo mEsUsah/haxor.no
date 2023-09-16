@@ -15,6 +15,7 @@ use skarshaugsolutions\haxor\services\ArticlesService;
 use skarshaugsolutions\haxor\services\LessonsService;
 use skarshaugsolutions\haxor\services\ThmService;
 use skarshaugsolutions\haxor\variables\HaxorVariable;
+use skarshaugsolutions\haxor\variables\LessonVariable;
 use skarshaugsolutions\haxor\fields\HaxorField;
 
 use Craft;
@@ -149,6 +150,7 @@ class Haxor extends Plugin
                 /** @var CraftVariable $variable */
                 $variable = $event->sender;
                 $variable->set('haxor', HaxorVariable::class);
+                $variable->set('haxorLesson', LessonVariable::class);
             }
         );
 

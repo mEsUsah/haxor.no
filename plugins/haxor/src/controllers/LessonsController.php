@@ -85,7 +85,7 @@ class LessonsController extends Controller
                 return false;
             }
 
-            $correctAnswer = strtolower(Haxor::getInstance()->lessons->getLessonTaskAnswer($entry, $chapterID, $taskID));
+            $correctAnswer = strtolower(Haxor::getInstance()->lessons->getTaskAnswer($entry, $chapterID, $taskID));
             if(!$correctAnswer){
                 return false;
             }

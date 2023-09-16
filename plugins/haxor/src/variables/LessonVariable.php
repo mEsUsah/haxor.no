@@ -26,7 +26,7 @@ use Craft;
  * @package   Haxor
  * @since     1.0.0
  */
-class HaxorVariable
+class LessonVariable
 {
     // Public Methods
     // =========================================================================
@@ -36,19 +36,38 @@ class HaxorVariable
      * You can have as many variable functions as you want.  From any Twig template,
      * call it like this:
      *
-     *     {{ craft.haxor.exampleVariable }}
+     *     {{ craft.haxorLesson.exampleVariable }}
      *
      * Or, if your variable requires parameters from Twig:
      *
-     *     {{ craft.haxor.exampleVariable(twigValue) }}
+     *     {{ craft.haxorLesson.exampleVariable(twigValue) }}
      *
      * @param null $optional
      * @return string
      */
 
-
-    public function getTryHackMeScoreboard($locations)
+    public function getEntryTaskN($entry)
     {
-        return Haxor::getInstance()->thm->getScoreboard($locations);
+        return Haxor::getInstance()->lessons->getEntryTaskN($entry);
+    }
+
+    public function getChapterTaskN($entry, $chapter)
+    {
+        return Haxor::getInstance()->lessons->getChapterTaskN($entry,$chapter);
+    }
+
+    public function getLessonTasks($entry)
+    {
+        return Haxor::getInstance()->lessons->getLessonTasks($entry);
+    }
+
+    public function getTaskAnswer($entry, $chapter, $task)
+    {    
+        return Haxor::getInstance()->lessons->getTaskAnswer($entry, $chapter, $task);
+    }
+
+    public function getTaskAnswerObfuscated($entry, $chapter, $task)
+    {
+        return Haxor::getInstance()->lessons->getTaskAnswerObfuscated($entry, $chapter, $task);
     }
 }

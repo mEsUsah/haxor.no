@@ -1,6 +1,6 @@
 {% set chapter = chapter|default(null) %}
 {% set chapterTaskNr = chapterTaskNr|default(null) %}
-{% set tasksInChapter = craft.haxor.getLessonChapterTaskAmount(entry, chapter) %}
+{% set tasksInChapter = craft.haxorLesson.getChapterTaskN(entry, chapter) %}
 
 <div class="chapter__wrapper {{ tasksInChapter > 0 ? "chapter__wrapper--lesson" }}" data-chapter-target="{{ chapter }}" id="ch_{{ chapter }}">
     <div class="chapter__start">

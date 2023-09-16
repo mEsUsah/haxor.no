@@ -46,7 +46,7 @@ class ArticlesController extends Controller
      *         The actions must be in 'kebab-case'
      * @access protected
      */
-    protected array|int|bool $allowAnonymous = ['index'];
+    protected array|int|bool $allowAnonymous = ['all'];
 
     // Public Methods
     // =========================================================================

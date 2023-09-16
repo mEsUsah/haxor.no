@@ -6,7 +6,7 @@
     <form method="get" baseUrl="{{ currentSite.baseUrl }}" onsubmit="return false;">
         <div class="contentBlocks__task--content">
             <label for="a">{{ block.question }}</label>
-            <input type="text" name="a" placeholder="{{ craft.haxor.getLessonTaskAnswerObfuscated(entry, chapter, chapterTask) }}" data-lesson-task-answer>
+            <input type="text" name="a" placeholder="{{ craft.haxorLesson.getTaskAnswerObfuscated(entry, chapter, chapterTask) }}" data-lesson-task-answer>
         </div>
     </form>
     <div class="contentBlocks__task--buttons">
