@@ -1,6 +1,6 @@
 <?php
 /**
- * haxor plugin for Craft CMS 3.x
+ * haxor plugin for Craft CMS 4.x
  *
  * Plugin for haxor.no
  *
@@ -41,6 +41,7 @@ class HaxorVariable
      * Or, if your variable requires parameters from Twig:
      *
      *     {{ craft.haxor.exampleVariable(twigValue) }}
+     *     {{ craft.haxor.getTryHackMeScoreboard($locations) }}
      *
      * @param null $optional
      * @return string

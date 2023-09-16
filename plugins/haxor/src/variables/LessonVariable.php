@@ -1,6 +1,6 @@
 <?php
 /**
- * haxor plugin for Craft CMS 3.x
+ * haxor plugin for Craft CMS 4.x
  *
  * Plugin for haxor.no
  *
@@ -41,6 +41,7 @@ class LessonVariable
      * Or, if your variable requires parameters from Twig:
      *
      *     {{ craft.haxorLesson.exampleVariable(twigValue) }}
+     *     {{ craft.haxorLesson.getEntryTaskN($entry) }}
      *
      * @param null $optional
      * @return string
