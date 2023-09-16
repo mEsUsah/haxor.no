@@ -13,22 +13,12 @@ export default {
             data() {
                 return {
                     scoreboard: [],
-                    countries: null,
+                    countries: [],
                     checkedCountries: null
                 }
             },
             mounted() {
-                // Get THM scoreboard data
-                console.log("mounted");
-                axios.get("/actions/haxor/thm")
-                    .then(response => {
-                        this.scoreboard = response.data.scoreboard;
-                        this.countries = response.data.contries;
-                        this.checkedCountries = response.data.contries;
-                    })
-                    .catch(e => {
-                        console.log(e);
-                    })
+                this.getScoreboard();
             },
             methods: {
                 myAccount(username){
@@ -40,6 +30,17 @@ export default {
                 makeReadableScore(score){
                     let scoreString = score.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
                     return scoreString;
+                },
+                getScoreboard(){
+                    axios.get("/actions/haxor/thm")
+                    .then(response => {
+                        this.scoreboard = response.data.scoreboard;
+                        this.countries = response.data.contries;
+                        this.checkedCountries = response.data.contries;
+                    })
+                    .catch(e => {
+                        console.log(e);
+                    })
                 }
             },
             computed: {

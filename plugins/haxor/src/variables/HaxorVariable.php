@@ -48,8 +48,8 @@ class HaxorVariable
      */
 
 
-    public function getTryHackMeScoreboard($locations)
+    public function getScoreBoardUpdate()
     {
-        return Haxor::getInstance()->thm->getScoreboard($locations);
+        return Haxor::getInstance()->thm->getScoreBoardUpdate();
     }
 }

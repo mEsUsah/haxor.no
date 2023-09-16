@@ -48,6 +48,16 @@ class ThmService extends Component
      * @return mixed
      */
 
+    public function getScoreBoardUpdate()
+    {
+        $cacheKey = md5("getTryHackMeScoreboardUpdated");
+        $updatedTime = Craft::$app->cache->get($cacheKey);
+        if ($updatedTime != null ) {
+            return $updatedTime;
+        }
+        return null;
+    }
+
     public function getScoreboard($locations)
     {
         $cacheKey = md5("getTryHackMeScoreboard");
@@ -61,6 +71,8 @@ class ThmService extends Component
             "contries" => array(),
             "scoreboard" => array()
         ];
+
+        Craft::$app->cache->set(md5("getTryHackMeScoreboardUpdated"), $returnArray['updated'], $this->thmCacheDuration);
 
         foreach ($locations as $location) {
             array_push($returnArray["contries"], $location);
@@ -86,9 +98,6 @@ class ThmService extends Component
             return $item2['points'] <=> $item1['points'];
         });
         
-        // if(sizeof($returnArray["scoreboard"]) >= 100){
-        //     $returnArray["scoreboard"] = array_slice($returnArray["scoreboard"],0,100,true);
-        // }
         Craft::$app->cache->set($cacheKey, $returnArray, $this->thmCacheDuration);
         return $returnArray;
     }
