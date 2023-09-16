@@ -1,4 +1,4 @@
-dateModified: 1694861530
+dateModified: 1694864271
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -84,6 +84,7 @@ meta:
     049ddb67-9315-429c-9494-0cf452f8cb73: Stack # Stack
     52f10b73-e1ae-4ada-8d03-81ceafab228c: Guides # Guides
     57a8d48f-2781-4975-b7ff-b3b5efd7c470: Text # Text
+    058e2f74-bbca-46da-9d7b-161bcaae9844: 'Article thumbnail' # Article thumbnail
     62b88f4a-25d3-4a89-831f-24f78c24f85b: Subtitle # Subtitle
     71ac9a76-cabc-44c7-8470-bae1c0d43ed0: Entry # Entry
     72a349c8-b7c8-4301-81a5-7301f5cc1058: 'Article Image' # Article Image

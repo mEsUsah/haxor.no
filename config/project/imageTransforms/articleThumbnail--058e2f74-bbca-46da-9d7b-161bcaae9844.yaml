@@ -1,0 +1,11 @@
+fill: null
+format: webp
+handle: articleThumbnail
+height: 210
+interlace: none
+mode: crop
+name: 'Article thumbnail'
+position: center-center
+quality: 80
+upscale: true
+width: 310
