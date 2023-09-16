@@ -1,5 +1,5 @@
 
-# [<img src="web/resources/svg/haxor-logo-only-black.svg" width="40" style="display:inline-block"/>](web/resources/svg/haxor-logo-only-black.svg) Haxor.no #
+# [<img src="web/resources/svg/haxor-logo-only-white.svg" width="55" style="display:inline-block"/>](web/resources/svg/haxor-logo-only-white.svg) Haxor.no #
 My personal tech blog that act as an ongoing experiment where i write to learn, test out web technology, and show of personal projects.
 
 - Built with Craft CMS 4.x.
