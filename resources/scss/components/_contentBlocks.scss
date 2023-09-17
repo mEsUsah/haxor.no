@@ -342,16 +342,24 @@
             background-color: #cccccc;
             border-radius: 6px;
             padding: 20px;
+            @media only screen and (max-width: 450px){
+                margin: 30px 20px;
+                width: calc(100% - 80px);
+            }
             
             
         }
         &-headline{
+            img{
+                max-width: 410px;
+                width: 100%;
+            }
             p{
                 margin: 4px 10px 0 0;
                 width: 100%;
                 a{
                     text-decoration: none;
-                    padding: 0px 5px 4px;
+                    padding: 1px 5px 4px;
                     border-radius: 6px;
                     background-color: #ea5252;
                     color: white;
