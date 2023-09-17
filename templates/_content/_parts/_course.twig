@@ -8,10 +8,7 @@
                 {% set theme = "default" %}
             {% endif %}
             {% set thumb = {
-                mode: "crop",
-                width: 230,
-                quality: 75,
-                format: 'webp'
+                transform: 'articleThumbnail',
             } %}
             <img class="courseList__item--image" src="{{course.courseImage.one().getUrl(thumb)}}" alt="course logo" loading="lazy">
             <div class="courseList__item--categoryIcon">
