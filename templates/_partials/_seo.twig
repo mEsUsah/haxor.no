@@ -1,11 +1,4 @@
 {% if entry is defined %}
-	{% set thumb = {
-		mode: 'crop',
-		width: 200,
-		height: 200,
-		quality: 75,
-		position: 'top-center'
-	} %}
 
 	{# --- TITLE --- #}
 	{% if entry.section.handle is defined and entry.section.handle == 'homepage' %}
@@ -33,13 +26,13 @@
 
 	{# --- SEO Image --- #}
 	{% if entry.seoImage is defined and entry.seoImage|length %}
-		{% set seoImage = entry.seoImage.one.getUrl(thumb) %}
+		{% set seoImage = entry.seoImage.one.getUrl() %}
 	{% elseif entry.articleImage is defined and entry.articleImage|length %}
-		{% set seoImage = entry.articleImage.one.getUrl(thumb) %}
+		{% set seoImage = entry.articleImage.one.getUrl() %}
 	{% elseif entry.ctfPlatform is defined and entry.ctfPlatform|length %}
-		{% set seoImage = entry.ctfPlatform.one().articleImage.one().getUrl(thumb) %}
+		{% set seoImage = entry.ctfPlatform.one().articleImage.one().getUrl() %}
 	{% elseif globals.seoImage is defined and globals.seoImage|length %}
-		{% set seoImage = globals.seoImage.one.getUrl(thumb) %}
+		{% set seoImage = globals.seoImage.one.getUrl() %}
 	{% endif %}
 {% else %}
 	{% set title = "haxor.no" %}
