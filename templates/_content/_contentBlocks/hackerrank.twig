@@ -8,7 +8,7 @@
     </div>
 
     {% for score in hackerRankData.scores %}
-        {% if score.practice is defined and score.practice.score > 0 %}
+        {% if score.practice is defined and score.practice.score > 50 %}
             <div class="contentBlocks__hackerRank-item">
                 <div class="contentBlocks__hackerRank-iconWrapper">
                     <div class="contentBlocks__hackerRank-icon contentBlocks__hackerRank-icon--{{ score.slug }}"></div>
