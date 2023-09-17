@@ -3,61 +3,75 @@ fieldLayouts:
   237bf740-80eb-4f66-b362-4f05ec0604b6:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: b05c4334-9b2d-4f18-8916-c65a9c521861 # Image
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: cda61d34-fe1e-46b1-af9c-b13a8b16d3cb
+            userCondition: null
             warning: null
             width: 25
           -
+            elementCondition: null
             fieldUid: d6f9cc1f-1608-4ae7-a083-d0924ba71f47 # Image Is Figure
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 45112ee9-fbb2-40ec-b527-9bf94e72967f
+            userCondition: null
             warning: null
             width: 25
           -
+            elementCondition: null
             fieldUid: 5c01d860-2ec5-4205-936e-583524bb8264 # Image AltText
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 6052f06d-5029-4d14-9d03-6bcb57f66161
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 6a498afe-8881-4b4d-bd9e-f128e6d2ac6e # Image Caption
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: ab8e6f36-c550-4fbf-b879-ed46c4e103c7
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: e893ba10-7cce-47a3-aee8-7d335355be86
+        userCondition: null
 fields:
   5c01d860-2ec5-4205-936e-583524bb8264: # Image AltText
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: imageAlt
-    instructions: ''
+    instructions: null
     name: 'Image AltText'
     searchable: true
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -68,24 +82,23 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: imageCapt
-    instructions: ''
+    instructions: null
     name: 'Image Caption'
     searchable: true
     settings:
       availableTransforms: '*'
       availableVolumes: '*'
-      cleanupHtml: true
       columnType: text
       configSelectionMode: choose
       defaultTransform: ''
       manualConfig: ''
-      purifierConfig: ''
-      purifyHtml: '1'
-      redactorConfig: ''
-      removeEmptyTags: '1'
-      removeInlineStyles: '1'
-      removeNbsp: '1'
-      showHtmlButtonForNonAdmins: '1'
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: true
+      removeInlineStyles: true
+      removeNbsp: true
+      showHtmlButtonForNonAdmins: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       uiMode: enlarged
@@ -97,29 +110,44 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: image
-    instructions: ''
+    instructions: null
     name: Image
     searchable: true
     settings:
       allowSelfRelations: false
+      allowSubfolders: false
       allowUploads: true
       allowedKinds: null
+      branchLimit: null
       defaultUploadLocationSource: 'volume:3b363f5e-4ee5-4536-b78c-b514bf1a0c7a' # Images
-      defaultUploadLocationSubpath: ''
-      limit: '1'
+      defaultUploadLocationSubpath: null
       localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
       previewMode: full
-      restrictFiles: ''
-      selectionLabel: ''
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:3b363f5e-4ee5-4536-b78c-b514bf1a0c7a' # Images
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
       showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      singleUploadLocationSource: 'volume:3b363f5e-4ee5-4536-b78c-b514bf1a0c7a' # Images
-      singleUploadLocationSubpath: ''
-      source: null
       sources: '*'
       targetSiteId: null
-      useSingleFolder: false
       validateRelatedElements: false
       viewMode: large
     translationKeyFormat: null
@@ -130,7 +158,7 @@ fields:
     contentColumnType: boolean
     fieldGroup: null
     handle: imageIsFigure
-    instructions: ''
+    instructions: null
     name: 'Image Is Figure'
     searchable: true
     settings:

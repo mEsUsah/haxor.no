@@ -3,43 +3,54 @@ fieldLayouts:
   7e83945a-84c7-442f-a4f6-a62dac941a55:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: a2c9fa7f-4706-4b49-ad49-f09d9a9ebc10 # Courses
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: f0b42089-2efe-4452-bd12-42c6464c5fe9
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 2efca9b8-ea72-4fc4-9c51-20695e174ce7 # Three newest?
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 2695da21-0f20-4b7a-8ae5-5d36b8dc8c5d
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 1c99bad7-a4b3-483e-bf38-82c06d1f19a0 # Link to all courses?
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: fa2bcc71-6a3c-4d01-a23a-642559f7ac80
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 35392619-a098-42d0-bd46-7505311f4efb
+        userCondition: null
 fields:
   1c99bad7-a4b3-483e-bf38-82c06d1f19a0: # Link to all courses?
     columnSuffix: null
     contentColumnType: boolean
     fieldGroup: null
     handle: linkToAllCourses
-    instructions: ''
+    instructions: null
     name: 'Link to all courses?'
     searchable: false
     settings:
@@ -54,7 +65,7 @@ fields:
     contentColumnType: boolean
     fieldGroup: null
     handle: threeNewest
-    instructions: ''
+    instructions: null
     name: 'Three newest?'
     searchable: false
     settings:
@@ -69,16 +80,29 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: courses
-    instructions: ''
+    instructions: null
     name: Courses
     searchable: false
     settings:
       allowSelfRelations: false
-      limit: ''
+      branchLimit: null
       localizeRelations: false
-      selectionLabel: ''
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Entry
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\entries\EntryCondition
+      selectionLabel: null
       showSiteMenu: false
-      source: null
       sources:
         - 'section:b3979b7e-2d54-4b6f-89ec-5ef480431d82' # Courses
       targetSiteId: null
@@ -89,4 +113,4 @@ fields:
     type: craft\fields\Entries
 handle: courses
 name: Courses
-sortOrder: 10
+sortOrder: 9

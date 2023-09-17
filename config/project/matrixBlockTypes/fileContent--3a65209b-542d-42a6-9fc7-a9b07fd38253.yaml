@@ -3,61 +3,75 @@ fieldLayouts:
   eb82eaed-4b98-4191-b384-f755ca3fa0a2:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: dc63f038-3a87-428d-9230-20a288f905da # File type
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 81fdb2a2-6302-4b7f-966f-a3246fc428cd
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 5dd9f4f3-fb1c-4d81-b3fd-2309b56563f0 # Filname
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: f643cfcc-7a8b-43e3-b6cf-a4caab6e2f1a
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: ed101e61-62b0-40c5-a8d4-b5d30624f1d2 # File content
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: ad5fcaa7-cbfd-47e8-9808-0584a9c20d6f
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: f4121429-712b-4587-839a-e0a1db5d946a # Line Numbers
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: ac0952e5-12f9-409f-a311-27a3513a864f
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: e0526371-b5a0-4bb7-b04a-989a396b2bbd
+        userCondition: null
 fields:
   5dd9f4f3-fb1c-4d81-b3fd-2309b56563f0: # Filname
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: fileName
-    instructions: ''
+    instructions: null
     name: Filname
     searchable: true
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -68,11 +82,11 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: fileType
-    instructions: ''
+    instructions: null
     name: 'File type'
     searchable: true
     settings:
-      optgroups: true
+      columnType: string
       options:
         -
           __assoc__:
@@ -269,16 +283,16 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: fileContent
-    instructions: ''
+    instructions: null
     name: 'File content'
     searchable: true
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: '1'
+      initialRows: 4
+      multiline: true
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -289,7 +303,7 @@ fields:
     contentColumnType: boolean
     fieldGroup: null
     handle: lineNumbers
-    instructions: ''
+    instructions: null
     name: 'Line Numbers'
     searchable: true
     settings:

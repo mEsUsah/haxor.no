@@ -1,4 +1,4 @@
-dateModified: 1694864271
+dateModified: 1694939083
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -78,6 +78,7 @@ meta:
     16c673f1-c879-4707-98ac-84c6e5b5b807: Link # Link
     18efdf32-1b23-42db-a0ed-70252bb134fb: 'Terminal Dump' # Terminal Dump
     26a433d6-c7ff-4f42-8acb-7bcc035fc4d2: Course # Course
+    34ae23a4-8987-424f-a7af-fc651ee1f28c: HackerRank # HackerRank
     40df60cf-14a4-435a-83b3-643fc99abed3: 'Book Image' # Book Image
     43b06241-b021-46cc-8374-3f02e8a02699: Default # Default
     44f8fa56-23f3-4d1e-8231-4e7f46c9af46: 'Copletion Date' # Copletion Date

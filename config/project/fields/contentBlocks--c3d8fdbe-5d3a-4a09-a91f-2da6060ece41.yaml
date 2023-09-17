@@ -2,13 +2,13 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 8475e873-60f6-4868-8ab1-1c7c3b90c98e # Common
 handle: contentBlocks
-instructions: ''
+instructions: null
 name: ContentBlocks
 searchable: true
 settings:
   contentTable: '{{%matrixcontent_contentblocks}}'
-  maxBlocks: ''
-  minBlocks: ''
+  maxBlocks: null
+  minBlocks: null
   propagationKeyFormat: null
   propagationMethod: none
 translationKeyFormat: null
