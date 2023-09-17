@@ -335,4 +335,114 @@
 
     }
 
+    &__hackerRank{
+        &-wrapper{
+            margin: 0 auto;
+            width: fit-content;
+            background-color: #cccccc;
+            border-radius: 6px;
+            padding: 20px;
+            
+        }
+        &-headline{
+            p{
+                margin: 4px 10px 0 0;
+                width: 100%;
+                a{
+                    text-decoration: none;
+                    padding: 0px 5px 4px;
+                    border-radius: 6px;
+                    background-color: #ea5252;
+                    color: white;
+                    font-weight: 600;
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+        &-item{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-items: center;
+            margin: 10px 0;
+        }
+        &-name{
+            margin: 0;
+            font-family: "Oswald", sans-serif;
+            font-size: 18px;
+        }
+        &-dataWrapper{
+            margin-left: 10px;
+        }
+        &-rank{
+            margin: 0;
+            line-height: 12px;
+        }
+        &-score{
+            margin: 0;
+        }
+        &-iconWrapper{
+            height: 50px;
+            width: 50px;
+            background-image: url('/resources/svg/hackerrank-badge.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+            display: block;
+        }
+        &-icon{
+            height: 30px;
+            width: 30px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translateX(50%) translateY(-50%);
+            svg path{
+                fill: #39424e;
+            }
+            &--python{
+                background-image: url("/resources/svg/python.svg");
+                height: 36px;
+                width: 36px;
+            }
+            &--shell{
+                background-image: url("/resources/svg/terminal.svg");
+            }
+            &--c{
+                background-image: url("/resources/svg/c.svg");
+            }
+            &--cpp{
+                background-image: url("/resources/svg/cpp.svg");
+            }
+            &--java{
+                background-image: url("/resources/svg/java.svg");
+            }
+            &--databases{
+                background-image: url("/resources/svg/database.svg");
+            }
+            &--sql{
+                background-image: url("/resources/svg/database.svg");
+            }
+            &--regex{
+                background-image: url("/resources/svg/regex.svg");
+            }
+            &--mathematics{
+                background-image: url("/resources/svg/algorhythm.svg");
+            }
+            &--algorithms{
+                background-image: url("/resources/svg/algorhythm.svg");
+                top: 52%;
+                right: 46%;
+            }
+            &--data-structures{
+                background-image: url("/resources/svg/datastructures.svg");
+            }
+        }
+    }
+
 }

@@ -1,0 +1,24 @@
+{% set hackerRankUser = "mEsUsah" %}
+{% set hackerRankData = craft.hackerRank.getScores(hackerRankUser) %}
+
+<div class="contentBlocks__hackerRank-wrapper">
+    <div class="contentBlocks__hackerRank-headline">
+        <img src="/resources/png/hackerrank_logo.png" alt="hackerrank logo">
+        <p><a href="https://www.hackerrank.com/{{hackerRankUser}}">@{{hackerRankUser}}</a></p>
+    </div>
+
+    {% for score in hackerRankData.scores %}
+        {% if score.practice is defined and score.practice.score > 0 %}
+            <div class="contentBlocks__hackerRank-item">
+                <div class="contentBlocks__hackerRank-iconWrapper">
+                    <div class="contentBlocks__hackerRank-icon contentBlocks__hackerRank-icon--{{ score.slug }}"></div>
+                </div>
+                <div class="contentBlocks__hackerRank-dataWrapper">
+                    <p class="contentBlocks__hackerRank-name">{{ score.name }}</p>
+                    <p class="contentBlocks__hackerRank-rank">Rank: {{ score.practice.rank|number_format(0, '.', ' ') }} </p>
+                    <p class="contentBlocks__hackerRank-score">Score: {{ score.practice.score|number_format(0, '.', ' ') }}</p>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
