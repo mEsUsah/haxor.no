@@ -14,8 +14,10 @@ use skarshaugsolutions\haxor\services\HaxorService;
 use skarshaugsolutions\haxor\services\ArticlesService;
 use skarshaugsolutions\haxor\services\LessonsService;
 use skarshaugsolutions\haxor\services\ThmService;
+use skarshaugsolutions\haxor\services\HackerRankService;
 use skarshaugsolutions\haxor\variables\HaxorVariable;
 use skarshaugsolutions\haxor\variables\LessonVariable;
+use skarshaugsolutions\haxor\variables\HackerRankVariable;
 use skarshaugsolutions\haxor\fields\HaxorField;
 
 use Craft;
@@ -108,6 +110,7 @@ class Haxor extends Plugin
             'lessons' => LessonsService::class,
             'articles' => ArticlesService::class,
             'thm' => ThmService::class,
+            'hackerRank' => HackerRankService::class,
         ]);
 
         // Add in our console commands
@@ -151,6 +154,7 @@ class Haxor extends Plugin
                 $variable = $event->sender;
                 $variable->set('haxor', HaxorVariable::class);
                 $variable->set('haxorLesson', LessonVariable::class);
+                $variable->set('hackerRank', HackerRankVariable::class);
             }
         );
 
