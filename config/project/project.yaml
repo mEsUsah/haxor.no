@@ -1,9 +1,16 @@
-dateModified: 1694939083
+dateModified: 1697454542
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
   transportType: craft\mail\transportadapters\Sendmail
 fs:
+  iconsAndBadges:
+    hasUrls: true
+    name: 'Icons and Badges'
+    settings:
+      path: uploads/iconsAndBadges
+    type: craft\fs\Local
+    url: '@web/uploads/iconsAndBadges'
   images:
     hasUrls: true
     name: Images
@@ -108,8 +115,10 @@ meta:
     952b5bbe-a4d3-4785-9315-9c1a8b0b6dc1: 'Image Is Figure' # Image Is Figure
     1079ffac-f516-4c4f-a131-3a26fa26ac15: 'Image Is Figure' # Image Is Figure
     1123b472-8241-4d07-bd52-1eff0c59f1ef: 'About Blog' # About Blog
+    4660b070-063e-4eb7-b897-c5273ae300c3: 'Icons and Badges' # Icons and Badges
     5084e704-59ac-4ed3-bc26-1b3b96710a82: Answer # Answer
     5551a1b5-fa8d-41d6-b7c3-af16e2ea9981: 'CTF Writeups' # CTF Writeups
+    6288f6a3-5828-4e36-8407-4f1fbe59e057: 'Achievement Badge' # Achievement Badge
     6799dd35-5fb9-4623-b487-3aafaf92ec39: blog # blog
     7536d724-07df-42bd-b0fe-a872ad23ac5a: 'Above Content' # Above Content
     7648fab9-2bab-43df-adca-9f3d941c929e: Artikkeltype # Artikkeltype

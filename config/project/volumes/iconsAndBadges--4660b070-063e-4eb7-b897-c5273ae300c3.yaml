@@ -1,0 +1,43 @@
+fieldLayouts:
+  7416b87c-4434-462a-a83b-4b1e7621c6bf:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: d1547409-0b89-46d7-97db-c6cc4fd888c9
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f94310da-4853-4785-845c-ac1accf9cdec
+        userCondition: null
+fs: iconsAndBadges
+handle: iconsAndBadges
+name: 'Icons and Badges'
+sortOrder: 4
+titleTranslationKeyFormat: null
+titleTranslationMethod: none
+transformFs: ''
+transformSubpath: ''
