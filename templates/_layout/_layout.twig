@@ -33,9 +33,12 @@
             {% block body %}
             {% endblock body %}
         </main>
+        
         {% block footer %}
             {% include "_partials/_footer" %}
         {% endblock footer %}
+
+        <div data-modal-shadow class="modal__shadow"></div>
             
         <script src="/resources/js/site.min.js?v={{ cashebuster }}" async defer></script>
         <script src="/resources/js/prism.js?v={{ cashebuster }}"></script>
