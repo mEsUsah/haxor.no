@@ -20,9 +20,6 @@
             font-size: 21px;
             line-height: 21px;
         }
-        p{
-            margin: 0 0 16px 0;
-        }
     }
     &__items{
         display: flex;
@@ -33,6 +30,9 @@
         margin: 0;
         padding: 0;
         list-style: none;
+        &-description p{
+            margin-top: 0;
+        }
         &-icon{
             z-index: 1;
             position: absolute;
@@ -57,6 +57,53 @@
     }
     &__item{
         position: relative;
+        &-header{
+            display: flex;
+            flex-direction: column;
+            @include desktopOnly{
+                flex-direction: row;
+                margin-bottom: 12px;
+            }
+            h3{
+                margin: 8px 0;
+                font-size: 21px;
+                line-height: 21px;
+            }
+            picture{
+                height: 200px;
+                width: 100%;
+                display: flex;
+                margin-bottom: 20px;
+                @include desktopOnly{
+                    margin: unset;
+                    width: unset;
+                }
+                img{
+                    width: 200px;
+                    height: 200px;
+                    margin: 0 auto;
+                    @include desktopOnly{
+                        width: unset;
+                        height: unset;
+                        margin: unset;
+                    }
+                }
+            }
+        }
+        &-description{
+            @include desktopOnly{
+                margin-left: 20px;
+            }
+            h3{
+                margin: 0;
+            }
+            p{
+                margin: 16px 0 0 0;
+                &:nth-of-type(2){
+                    margin-top: 10px;
+                }
+            }
+        }
         &-icon{
             z-index: 1;
             position: absolute;
@@ -101,7 +148,9 @@
             }
         }
         &:hover .certList__item-modal-button{
-            display: block;
+            @include desktopOnly{
+                display: block;
+            }
         }
         picture{
             height: 78px;
@@ -117,42 +166,60 @@
         &-modal-button{
             color: white;
             cursor: pointer;
-            display: none;
+            @include desktopOnly{
+                display: none;
+            }
+            &-overlay{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                @include desktopOnly{
+                    display: none;
+                }
+            }
             
             &-text{
-                font-size: 16px;
-                line-height: 16px;
-                font-weight: 600;
-                position: absolute;
-                background-color: #ea5252;
-                bottom: 30px;
-                left: 5px;
-                transform: translateY(50%);
-                width: 170px;
-                border-bottom-left-radius: 12px;
-                border-top-left-radius: 12px;
-                padding: 3px 20px 3px 10px;
-                font-family: Arial;
-                text-align: center;
+                display: none;
+                @include desktopOnly{
+                    display: block;
+                    font-size: 16px;
+                    line-height: 16px;
+                    font-weight: 600;
+                    position: absolute;
+                    background-color: #ea5252;
+                    bottom: 30px;
+                    left: 5px;
+                    transform: translateY(50%);
+                    width: 170px;
+                    border-bottom-left-radius: 12px;
+                    border-top-left-radius: 12px;
+                    padding: 3px 20px 3px 10px;
+                    font-family: Arial;
+                    text-align: center;
+                }
             }
             &-icon{
-                display: block;
-                position: absolute;
-                height: 30px;
-                width: 30px;
-                border-radius: 50%;
-                bottom: 30px;
-                left: 180px;
-                transform: translateY(50%);
-                background-color: white;
-                border: 2px solid #ea5252;
-                background-image: url(/resources/svg/plus.svg);
-                background-position: center;
-                background-size: 80%;
-                background-repeat: no-repeat;
-                
+                display: none;
+                @include desktopOnly{
+                    display: block;
+                    position: absolute;
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 50%;
+                    bottom: 30px;
+                    left: 180px;
+                    transform: translateY(50%);
+                    background-color: white;
+                    border: 2px solid #ea5252;
+                    background-image: url(/resources/svg/plus.svg);
+                    background-position: center;
+                    background-size: 80%;
+                    background-repeat: no-repeat;
+                }
             }
-            
         }
         &-modal{
             &-wrapper{
@@ -222,6 +289,15 @@
                 @include desktopOnly{
                     padding: 0 20px 0 0;
                 }
+            }
+        }
+        &-reviewScoreQuote{
+            font-style: italic;
+            font-weight: 600;
+
+            margin: 16px 0;
+            @include desktopOnly{
+                margin: 0 0 16px 0;
             }
         }
     }

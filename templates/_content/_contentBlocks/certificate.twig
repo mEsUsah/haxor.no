@@ -4,7 +4,9 @@
 <div class="certList__wrapper">
     <div class="certList__items-icon"></div>
     <h3>{{ block.headline }}</h3>
-    {{ block.description }}
+    <div class="certList__items-description">
+        {{ block.description }}
+    </div>
     <div class="certList__items">
         {% for certificate in certificates %}
             {% include "_content/_parts/_certificate.twig" with {
