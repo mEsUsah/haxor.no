@@ -1,4 +1,39 @@
-.certList{    
+.certList{
+    &__wrapper{
+        background-color: #cccccc;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 40px auto;
+        max-width: 720px;
+        border-radius: 6px;
+        border: 2px solid #cccccc;
+        padding: 20px 20px 5px 20px;
+
+        h3{
+            margin: 0 0 8px;
+            font-size: 21px;
+            line-height: 21px;
+        }
+        p{
+            margin: 0 0 16px 0;
+        }
+    }
+    &__items{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        @include phoneOnly {    
+            flex-direction: column;
+        }
+        
+    }
     &__item{
         &--icon{
             z-index: 1;
@@ -19,6 +54,19 @@
                 height: 30px;
                 width: 30px;
             }
+        }
+        &:nth-of-type(3n){
+            picture{
+                margin-right: unset;
+            }
+        }
+        picture{
+            height: 215px;
+            width: 215px;
+            display: flex;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            
         }
     }
 }
