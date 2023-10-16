@@ -44,18 +44,6 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 93d39a6a-48eb-4f78-afb1-8fd74053ce15 # Course Image
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 8a1d2025-1e23-47f7-ad4f-42616faf696f
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            elementCondition: null
             fieldUid: 12c8b9da-5b5a-4bd7-a51e-4116181081ad # Course Description
             instructions: null
             label: null
