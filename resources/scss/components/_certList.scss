@@ -33,9 +33,6 @@
         margin: 0;
         padding: 0;
         list-style: none;
-        @include phoneOnly {    
-            flex-direction: column;
-        }
         &-icon{
             z-index: 1;
             position: absolute;
@@ -98,6 +95,7 @@
 
 
         &:nth-of-type(5n){
+
             picture{
                 margin-right: unset;
             }
@@ -106,11 +104,15 @@
             display: block;
         }
         picture{
-            height: 215px;
-            width: 215px;
+            height: 78px;
+            width: 78px;
             display: flex;
             margin-right: 15px;
-            margin-bottom: 15px;   
+            margin-bottom: 15px;
+            @include desktopOnly{
+                height: 215px;
+                width: 215px;
+            }
         }
         &-modal-button{
             color: white;
