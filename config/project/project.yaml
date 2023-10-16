@@ -1,4 +1,4 @@
-dateModified: 1697454542
+dateModified: 1697457743
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -58,6 +58,7 @@ meta:
     4f7986b9-315c-4c92-8575-387ebd59b8ec: Homepage # Homepage
     4fa3f654-1283-406b-9656-22b48a6c818e: 'Course Certificate URL' # Course Certificate URL
     5c01d860-2ec5-4205-936e-583524bb8264: 'Image AltText' # Image AltText
+    5d2b6ceb-3b09-44f2-ab53-25f33e506025: 'Achievement Badge' # Achievement Badge
     5dd9f4f3-fb1c-4d81-b3fd-2309b56563f0: Filname # Filname
     5f92318f-a48c-4fb9-9b08-f04c9a691e87: 'CTF Writeup' # CTF Writeup
     6a498afe-8881-4b4d-bd9e-f128e6d2ac6e: 'Image Caption' # Image Caption
@@ -156,6 +157,7 @@ meta:
     b5a5e8a4-7781-466d-b7c8-b084e1de354e: 'Chapter Headline' # Chapter Headline
     b5a3273e-575f-489d-a09a-c407248dc831: 'CTF Writeups' # CTF Writeups
     b7b92d43-ba38-4a42-8cdb-d7b4989964bc: 'Image AltText' # Image AltText
+    b47d1535-bf95-4240-8817-43e15b459bc1: Headline # Headline
     b92f222e-e35a-4a5a-bb11-3b5ea3deda0c: Quote # Quote
     b3979b7e-2d54-4b6f-89ec-5ef480431d82: Courses # Courses
     b4763ae9-35a9-4af6-bd45-59e869963a55: 'Internal link' # Internal link
@@ -196,6 +198,7 @@ meta:
     f73c4dce-8cb4-431f-adb5-a9be1f4059cb: Language # Language
     f96fb1c8-21d9-45ec-bc75-5792dd3b3c5b: Quote # Quote
     f147e4fb-5b9b-40b9-9b58-51fa33d89e32: 'Article Teaser' # Article Teaser
+    f490c527-58d9-4ac9-bbba-4b4b537e6e0b: description # description
     f733eaac-e1d6-428e-a5e6-5e9c1b8450df: 'Course Review Quote' # Course Review Quote
     f9145c5e-c78a-4a33-950f-a91359723426: Selfcontained # Selfcontained
     f598728f-d688-4b98-8aab-cf4447b3af95: Entry # Entry
