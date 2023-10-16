@@ -17,45 +17,47 @@
 {% endif %}
 
 
-<div class="certList__item-modal-content" data-target-modal="{{blockIndex}}-{{loop.index0}}">
+<div class="certList__item-modal-wrapper" data-target-modal="{{blockIndex}}-{{loop.index0}}">
     <div class="certList__item--icon"></div>
-    <div class="certList__item-modal-content-close" data-close-modal="{{blockIndex}}-{{loop.index0}}"></div>
-    <div class="courseList__item--header">
-        <div class="courseList__item--illustration">
-            {% if certificate.courseTheme|length %}
-                {% set theme = certificate.courseTheme.one().slug %}
-            {% else %}
-                {% set theme = "default" %}
-            {% endif %}
-            {% set thumb = {
-                transform: 'articleThumbnail',
-            } %}
-            <img class="courseList__item--image" src="{{certificate.courseImage.one().getUrl(thumb)}}" alt="cert logo" loading="lazy">
-            <div class="courseList__item--categoryIcon">
-                <div class="category__icon category__icon--{{ theme }}"></div>
+    <div class="certList__item-modal-wrapper-close" data-close-modal="{{blockIndex}}-{{loop.index0}}"></div>
+    <div class="certList__item-modal-content">
+        <div class="courseList__item--header">
+            <div class="courseList__item--illustration">
+                {% if certificate.courseTheme|length %}
+                    {% set theme = certificate.courseTheme.one().slug %}
+                {% else %}
+                    {% set theme = "default" %}
+                {% endif %}
+                {% set thumb = {
+                    transform: 'articleThumbnail',
+                } %}
+                <img class="courseList__item--image" src="{{certificate.courseImage.one().getUrl(thumb)}}" alt="cert logo" loading="lazy">
+                <div class="courseList__item--categoryIcon">
+                    <div class="category__icon category__icon--{{ theme }}"></div>
+                </div>
+                
             </div>
-            
+            <div class="courseList__item--description">
+                <h3>{{certificate.title}}</h3>
+                {{certificate.courseDescription}}
+            </div>
         </div>
-        <div class="courseList__item--description">
-            <h3>{{certificate.title}}</h3>
-            {{certificate.courseDescription}}
+
+        <div class="courseList__item--review">
+            <p>
+                <span class="courseList__item--reviewScoreQuote">"{{certificate.courseReviewQuote}}"</span>
+            </p>
         </div>
-    </div>
 
-    <div class="courseList__item--review">
-        <p>
-            <span class="courseList__item--reviewScoreQuote">"{{certificate.courseReviewQuote}}"</span>
-        </p>
-    </div>
-
-    <div class="certList__item-cert-review">
-        {{certificate.courseReview}}
-        <p>
-            {% if certificate.courseCertificateUrl is defined and certificate.courseCertificateUrl|length %}
-                <a href="{{certificate.courseCertificateUrl}}" target="_blank" class="courseList__item--courseDiploma"></a>
-            {% endif %}
-            <span>{{certificate.courseCompletedDate|date("j. F Y")}}</span>
-            <span> - {{certificate.courseLengthHours >= 0 ? certificate.courseLengthHours ~ "t"}}</span>
-        </p>
+        <div class="certList__item-cert-review">
+            {{certificate.courseReview}}
+            <p>
+                {% if certificate.courseCertificateUrl is defined and certificate.courseCertificateUrl|length %}
+                    <a href="{{certificate.courseCertificateUrl}}" target="_blank" class="courseList__item--courseDiploma"></a>
+                {% endif %}
+                <span>{{certificate.courseCompletedDate|date("j. F Y")}}</span>
+                <span> - {{certificate.courseLengthHours >= 0 ? certificate.courseLengthHours ~ "t"}}</span>
+            </p>
+        </div>
     </div>
 </div>
