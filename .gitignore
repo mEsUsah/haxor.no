@@ -6,3 +6,4 @@
 npm-debug.log
 web/resources/css/site.min.css.map
 *.sql
+plugins/tryhackme
