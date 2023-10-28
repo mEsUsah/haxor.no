@@ -1,8 +1,8 @@
 {
-    "name": "mesusah/haxor",
+    "name": "mesusah/craft-haxor",
     "description": "Plugin for haxor.no",
     "type": "craft-plugin",
-    "version": "1.0.2",
+    "version": "2.0.0",
     "keywords": [
         "craft",
         "cms",
@@ -17,33 +17,33 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Stanley Skarshaug",
-            "homepage": "haxor.no"
+            "name": "mEsUsah",
+            "homepage": "https://www.haxor.no"
         }
     ],
     "require": {
         "craftcms/cms": "^4.0.0"
     },
     "require-dev": {
-      "craftcms/cms": "^3.2.0",
+      "craftcms/cms": "^4.0.0",
       "codeception/codeception": "^3.0",
       "vlucas/phpdotenv": "^3.0"
     },
     "autoload": {
         "psr-4": {
-          "skarshaugsolutions\\haxor\\": "src/"
+          "mesusah\\crafthaxor\\": "src/"
         }
     },
     "extra": {
         "name": "Haxor.no",
         "handle": "haxor",
-        "developer": "Stanley Skarshaug",
+        "developer": "mEsUsah",
         "developerUrl": "https://www.haxor.no",
         "documentationUrl": "https://github.com/mEsUsah/haxor.no/blob/master/plugins/haxor/README.md",
         "changelogUrl": "https://raw.githubusercontent.com/mEsUsah/haxor/master/CHANGELOG.md",
         "components": {
-            "haxorService": "skarshaugsolutions\\haxor\\services\\HaxorService"
+            "haxorService": "mesusah\\crafthaxor\\services\\HaxorService"
         },
-        "class": "skarshaugsolutions\\haxor\\Haxor"
+        "class": "mesusah\\crafthaxor\\Haxor"
     }
 }

@@ -8,12 +8,12 @@
  * @copyright Copyright (c) 2021 Stanley Skarshaug
  */
 
-namespace skarshaugsolutions\haxortests\unit;
+namespace mesusah\crafthaxortests\unit;
 
 use Codeception\Test\Unit;
 use UnitTester;
 use Craft;
-use skarshaugsolutions\haxor\Haxor;
+use mesusah\crafthaxor\Haxor;
 
 /**
  * ExampleUnitTest

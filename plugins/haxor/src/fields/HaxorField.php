@@ -8,10 +8,10 @@
  * @copyright Copyright (c) 2021 Stanley Skarshaug
  */
 
-namespace skarshaugsolutions\haxor\fields;
+namespace mesusah\crafthaxor\fields;
 
-use skarshaugsolutions\haxor\Haxor;
-use skarshaugsolutions\haxor\assetbundles\haxorfieldfield\HaxorFieldFieldAsset;
+use mesusah\crafthaxor\Haxor;
+use mesusah\crafthaxor\assetbundles\haxorfieldfield\HaxorFieldFieldAsset;
 
 use Craft;
 use craft\base\ElementInterface;

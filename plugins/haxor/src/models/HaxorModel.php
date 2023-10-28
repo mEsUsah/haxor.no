@@ -8,9 +8,9 @@
  * @copyright Copyright (c) 2021 Stanley Skarshaug
  */
 
-namespace skarshaugsolutions\haxor\models;
+namespace mesusah\crafthaxor\models;
 
-use skarshaugsolutions\haxor\Haxor;
+use mesusah\crafthaxor\Haxor;
 
 use Craft;
 use craft\base\Model;

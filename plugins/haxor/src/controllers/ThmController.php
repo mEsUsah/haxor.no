@@ -8,9 +8,9 @@
  * @copyright Copyright (c) 2022 Stanley Skarshaug
  */
 
-namespace skarshaugsolutions\haxor\controllers;
+namespace mesusah\crafthaxor\controllers;
 
-use skarshaugsolutions\haxor\Haxor;
+use mesusah\crafthaxor\Haxor;
 
 use Craft;
 use craft\web\Controller;

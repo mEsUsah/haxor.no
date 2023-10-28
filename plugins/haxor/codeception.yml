@@ -32,7 +32,7 @@ modules:
       migrations: []
       plugins:
         haxor:
-          class: '\skarshaugsolutions\haxor\Haxor'
+          class: '\mesusah\crafthaxor\Haxor'
           handle: haxor
       cleanup: true
       transaction: true

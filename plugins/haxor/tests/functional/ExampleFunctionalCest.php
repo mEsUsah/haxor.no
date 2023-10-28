@@ -1,6 +1,6 @@
 <?php
 
-namespace skarshaugsolutions\haxortests\acceptance;
+namespace mesusah\crafthaxortests\acceptance;
 
 use Craft;
 use FunctionalTester;

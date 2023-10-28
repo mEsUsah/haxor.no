@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2021 Stanley Skarshaug
  */
 
-namespace skarshaugsolutions\haxor\assetbundles\haxorfieldfield;
+namespace mesusah\crafthaxor\assetbundles\haxorfieldfield;
 
 use Craft;
 use craft\web\AssetBundle;

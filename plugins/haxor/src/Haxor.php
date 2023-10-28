@@ -8,17 +8,17 @@
  * @copyright Copyright (c) 2021 Stanley Skarshaug
  */
 
-namespace skarshaugsolutions\haxor;
+namespace mesusah\crafthaxor;
 
-use skarshaugsolutions\haxor\services\HaxorService;
-use skarshaugsolutions\haxor\services\ArticlesService;
-use skarshaugsolutions\haxor\services\LessonsService;
-use skarshaugsolutions\haxor\services\ThmService;
-use skarshaugsolutions\haxor\services\HackerRankService;
-use skarshaugsolutions\haxor\variables\HaxorVariable;
-use skarshaugsolutions\haxor\variables\LessonVariable;
-use skarshaugsolutions\haxor\variables\HackerRankVariable;
-use skarshaugsolutions\haxor\fields\HaxorField;
+use mesusah\crafthaxor\services\HaxorService;
+use mesusah\crafthaxor\services\ArticlesService;
+use mesusah\crafthaxor\services\LessonsService;
+use mesusah\crafthaxor\services\ThmService;
+use mesusah\crafthaxor\services\HackerRankService;
+use mesusah\crafthaxor\variables\HaxorVariable;
+use mesusah\crafthaxor\variables\LessonVariable;
+use mesusah\crafthaxor\variables\HackerRankVariable;
+use mesusah\crafthaxor\fields\HaxorField;
 
 use Craft;
 use craft\base\Plugin;
@@ -115,7 +115,7 @@ class Haxor extends Plugin
 
         // Add in our console commands
         if (Craft::$app instanceof ConsoleApplication) {
-            $this->controllerNamespace = 'skarshaugsolutions\haxor\console\controllers';
+            $this->controllerNamespace = 'mesusah\crafthaxor\console\controllers';
         }
 
         // Register our site routes

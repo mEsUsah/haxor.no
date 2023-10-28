@@ -8,9 +8,9 @@
  * @copyright Copyright (c) 2021 Stanley Skarshaug
  */
 
-namespace skarshaugsolutions\haxor\services;
+namespace mesusah\crafthaxor\services;
 
-use skarshaugsolutions\haxor\Haxor;
+use mesusah\crafthaxor\Haxor;
 
 use Craft;
 use craft\base\Component;

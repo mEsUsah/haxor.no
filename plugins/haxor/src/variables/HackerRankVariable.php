@@ -8,9 +8,9 @@
  * @copyright Copyright (c) 2021 Stanley Skarshaug
  */
 
-namespace skarshaugsolutions\haxor\variables;
+namespace mesusah\crafthaxor\variables;
 
-use skarshaugsolutions\haxor\Haxor;
+use mesusah\crafthaxor\Haxor;
 
 use Craft;
 

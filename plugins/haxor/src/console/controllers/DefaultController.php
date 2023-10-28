@@ -8,9 +8,9 @@
  * @copyright Copyright (c) 2021 Stanley Skarshaug
  */
 
-namespace skarshaugsolutions\haxor\console\controllers;
+namespace mesusah\crafthaxor\console\controllers;
 
-use skarshaugsolutions\haxor\Haxor;
+use mesusah\crafthaxor\Haxor;
 
 use Craft;
 use yii\console\Controller;

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4a8163f13faf39517406c3fa7c68eb5f",
+    "content-hash": "88a7a2f6eb3345df0c7560b94837b14e",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -1556,37 +1556,37 @@
             "time": "2023-09-26T02:20:38+00:00"
         },
         {
-            "name": "mesusah/haxor",
-            "version": "1.0.2",
+            "name": "mesusah/craft-haxor",
+            "version": "2.0.0",
             "dist": {
                 "type": "path",
                 "url": "plugins/haxor",
-                "reference": "7b060c3ceda262da081d08f02969e14d1dd3c5a2"
+                "reference": "074da9a48b38cd4e8a1884554da685ecc37f8aa8"
             },
             "require": {
                 "craftcms/cms": "^4.0.0"
             },
             "require-dev": {
                 "codeception/codeception": "^3.0",
-                "craftcms/cms": "^3.2.0",
+                "craftcms/cms": "^4.0.0",
                 "vlucas/phpdotenv": "^3.0"
             },
             "type": "craft-plugin",
             "extra": {
                 "name": "Haxor.no",
                 "handle": "haxor",
-                "developer": "Stanley Skarshaug",
+                "developer": "mEsUsah",
                 "developerUrl": "https://www.haxor.no",
                 "documentationUrl": "https://github.com/mEsUsah/haxor.no/blob/master/plugins/haxor/README.md",
                 "changelogUrl": "https://raw.githubusercontent.com/mEsUsah/haxor/master/CHANGELOG.md",
                 "components": {
-                    "haxorService": "skarshaugsolutions\\haxor\\services\\HaxorService"
+                    "haxorService": "mesusah\\crafthaxor\\services\\HaxorService"
                 },
-                "class": "skarshaugsolutions\\haxor\\Haxor"
+                "class": "mesusah\\crafthaxor\\Haxor"
             },
             "autoload": {
                 "psr-4": {
-                    "skarshaugsolutions\\haxor\\": "src/"
+                    "mesusah\\crafthaxor\\": "src/"
                 }
             },
             "license": [
@@ -1594,8 +1594,8 @@
             ],
             "authors": [
                 {
-                    "name": "Stanley Skarshaug",
-                    "homepage": "haxor.no"
+                    "name": "mEsUsah",
+                    "homepage": "https://www.haxor.no"
                 }
             ],
             "description": "Plugin for haxor.no",
