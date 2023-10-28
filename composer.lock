@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3350ecf11d4fc18fdb6ed4477a263743",
+    "content-hash": "4a8163f13faf39517406c3fa7c68eb5f",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -587,15 +587,14 @@
         },
         {
             "name": "craftcms/html-field",
-            "version": "2.0.6",
+            "version": "2.0.8",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/html-field/zipball/3030f7878335b8c7163b1db354fdc22c083d131c",
-                "reference": "3030f7878335b8c7163b1db354fdc22c083d131c",
+                "url": "https://api.github.com/repos/craftcms/html-field/zipball/4797c9cb0397e6d69d25d9716a75f7b47c69fd3a",
+                "reference": "4797c9cb0397e6d69d25d9716a75f7b47c69fd3a",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^4.0.0-alpha.1",
                 "php": "^8.0.2"
             },
             "type": "library",
@@ -621,7 +620,7 @@
                 "docs": "https://github.com/craftcms/html-field/blob/main/README.md",
                 "rss": "https://github.com/craftcms/html-field/commits/main.atom"
             },
-            "time": "2022-11-16T11:13:37+00:00"
+            "time": "2023-09-17T11:24:51+00:00"
         },
         {
             "name": "craftcms/plugin-installer",
@@ -1557,6 +1556,65 @@
             "time": "2023-09-26T02:20:38+00:00"
         },
         {
+            "name": "mesusah/haxor",
+            "version": "1.0.2",
+            "dist": {
+                "type": "path",
+                "url": "plugins/haxor",
+                "reference": "7b060c3ceda262da081d08f02969e14d1dd3c5a2"
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0"
+            },
+            "require-dev": {
+                "codeception/codeception": "^3.0",
+                "craftcms/cms": "^3.2.0",
+                "vlucas/phpdotenv": "^3.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Haxor.no",
+                "handle": "haxor",
+                "developer": "Stanley Skarshaug",
+                "developerUrl": "https://www.haxor.no",
+                "documentationUrl": "https://github.com/mEsUsah/haxor.no/blob/master/plugins/haxor/README.md",
+                "changelogUrl": "https://raw.githubusercontent.com/mEsUsah/haxor/master/CHANGELOG.md",
+                "components": {
+                    "haxorService": "skarshaugsolutions\\haxor\\services\\HaxorService"
+                },
+                "class": "skarshaugsolutions\\haxor\\Haxor"
+            },
+            "autoload": {
+                "psr-4": {
+                    "skarshaugsolutions\\haxor\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stanley Skarshaug",
+                    "homepage": "haxor.no"
+                }
+            ],
+            "description": "Plugin for haxor.no",
+            "keywords": [
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "haxor"
+            ],
+            "support": {
+                "docs": "https://github.com/mEsUsah/haxor.no/blob/master/plugins/haxor/README.md",
+                "issues": "https://github.com/mEsUsah/haxor/issues"
+            },
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "mikehaertl/php-shellcommand",
             "version": "1.7.0",
             "dist": {
@@ -1651,11 +1709,11 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "2.9.1",
+            "version": "2.9.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/f259e2b15fb95494c83f52d3caad003bbf5ffaa1",
-                "reference": "f259e2b15fb95494c83f52d3caad003bbf5ffaa1",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/437cb3628f4cf6042cc10ae97fc2b8472e48ca1f",
+                "reference": "437cb3628f4cf6042cc10ae97fc2b8472e48ca1f",
                 "shasum": ""
             },
             "require": {
@@ -1709,7 +1767,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2023-02-06T13:44:46+00:00"
+            "time": "2023-10-27T15:25:26+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -1872,24 +1930,15 @@
         },
         {
             "name": "phpoption/phpoption",
-            "version": "1.9.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "dc5ff11e274a90cc1c743f66c9ad700ce50db9ab"
-            },
+            "version": "1.9.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/dc5ff11e274a90cc1c743f66c9ad700ce50db9ab",
-                "reference": "dc5ff11e274a90cc1c743f66c9ad700ce50db9ab",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/dd3a383e599f49777d8b628dadbb90cae435b87e",
+                "reference": "dd3a383e599f49777d8b628dadbb90cae435b87e",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2.5 || ^8.0"
-            },
-            "require-dev": {
-                "bamarni/composer-bin-plugin": "^1.8",
-                "phpunit/phpunit": "^8.5.28 || ^9.5.21"
             },
             "type": "library",
             "extra": {
@@ -1906,7 +1955,6 @@
                     "PhpOption\\": "src/PhpOption/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "Apache-2.0"
             ],
@@ -1929,21 +1977,7 @@
                 "php",
                 "type"
             ],
-            "support": {
-                "issues": "https://github.com/schmittjoh/php-option/issues",
-                "source": "https://github.com/schmittjoh/php-option/tree/1.9.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/GrahamCampbell",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/phpoption/phpoption",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2022-07-30T15:51:26+00:00"
+            "time": "2023-02-25T19:38:58+00:00"
         },
         {
             "name": "phpstan/phpdoc-parser",
@@ -2603,65 +2637,6 @@
                 "unix"
             ],
             "time": "2023-09-03T09:24:00+00:00"
-        },
-        {
-            "name": "skarshaugsolutions/haxor",
-            "version": "1.0.2",
-            "dist": {
-                "type": "path",
-                "url": "plugins/haxor",
-                "reference": "5f0ea35bdd3bc04c8e17454a0eb5a3642c61fc42"
-            },
-            "require": {
-                "craftcms/cms": "^4.0.0"
-            },
-            "require-dev": {
-                "codeception/codeception": "^3.0",
-                "craftcms/cms": "^3.2.0",
-                "vlucas/phpdotenv": "^3.0"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Haxor.no",
-                "handle": "haxor",
-                "developer": "Stanley Skarshaug",
-                "developerUrl": "https://www.haxor.no",
-                "documentationUrl": "https://github.com/mEsUsah/haxor.no/blob/master/plugins/haxor/README.md",
-                "changelogUrl": "https://raw.githubusercontent.com/mEsUsah/haxor/master/CHANGELOG.md",
-                "components": {
-                    "haxorService": "skarshaugsolutions\\haxor\\services\\HaxorService"
-                },
-                "class": "skarshaugsolutions\\haxor\\Haxor"
-            },
-            "autoload": {
-                "psr-4": {
-                    "skarshaugsolutions\\haxor\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Stanley Skarshaug",
-                    "homepage": "haxor.no"
-                }
-            ],
-            "description": "Plugin for haxor.no",
-            "keywords": [
-                "cms",
-                "craft",
-                "craft-plugin",
-                "craftcms",
-                "haxor"
-            ],
-            "support": {
-                "docs": "https://github.com/mEsUsah/haxor.no/blob/master/plugins/haxor/README.md",
-                "issues": "https://github.com/mEsUsah/haxor/issues"
-            },
-            "transport-options": {
-                "relative": true
-            }
         },
         {
             "name": "symfony/console",
@@ -4174,11 +4149,6 @@
         {
             "name": "vlucas/phpdotenv",
             "version": "v3.6.10",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "5b547cdb25825f10251370f57ba5d9d924e6f68e"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/5b547cdb25825f10251370f57ba5d9d924e6f68e",
@@ -4189,11 +4159,6 @@
                 "php": "^5.4 || ^7.0 || ^8.0",
                 "phpoption/phpoption": "^1.5.2",
                 "symfony/polyfill-ctype": "^1.17"
-            },
-            "require-dev": {
-                "ext-filter": "*",
-                "ext-pcre": "*",
-                "phpunit/phpunit": "^4.8.36 || ^5.7.27 || ^6.5.14 || ^7.5.20 || ^8.5.21"
             },
             "suggest": {
                 "ext-filter": "Required to use the boolean validator.",
@@ -4210,7 +4175,6 @@
                     "Dotenv\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -4231,20 +4195,6 @@
                 "dotenv",
                 "env",
                 "environment"
-            ],
-            "support": {
-                "issues": "https://github.com/vlucas/phpdotenv/issues",
-                "source": "https://github.com/vlucas/phpdotenv/tree/v3.6.10"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/GrahamCampbell",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/vlucas/phpdotenv",
-                    "type": "tidelift"
-                }
             ],
             "time": "2021-12-12T23:02:06+00:00"
         },
@@ -5044,25 +4994,16 @@
     "packages-dev": [
         {
             "name": "nikic/php-parser",
-            "version": "v4.15.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "570e980a201d8ed0236b0a62ddf2c9cbb2034039"
-            },
+            "version": "v4.17.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/570e980a201d8ed0236b0a62ddf2c9cbb2034039",
-                "reference": "570e980a201d8ed0236b0a62ddf2c9cbb2034039",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/a6303e50c90c355c7eeee2c4a8b27fe8dc8fef1d",
+                "reference": "a6303e50c90c355c7eeee2c4a8b27fe8dc8fef1d",
                 "shasum": ""
             },
             "require": {
                 "ext-tokenizer": "*",
                 "php": ">=7.0"
-            },
-            "require-dev": {
-                "ircmaxell/php-yacc": "^0.0.7",
-                "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0 || ^9.0"
             },
             "bin": [
                 "bin/php-parse"
@@ -5078,7 +5019,6 @@
                     "PhpParser\\": "lib/PhpParser"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -5092,24 +5032,15 @@
                 "parser",
                 "php"
             ],
-            "support": {
-                "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v4.15.3"
-            },
-            "time": "2023-01-16T22:05:37+00:00"
+            "time": "2023-08-13T19:53:39+00:00"
         },
         {
             "name": "psy/psysh",
-            "version": "v0.11.12",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "52cb7c47d403c31c0adc9bf7710fc355f93c20f7"
-            },
+            "version": "v0.11.22",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/52cb7c47d403c31c0adc9bf7710fc355f93c20f7",
-                "reference": "52cb7c47d403c31c0adc9bf7710fc355f93c20f7",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/128fa1b608be651999ed9789c95e6e2a31b5802b",
+                "reference": "128fa1b608be651999ed9789c95e6e2a31b5802b",
                 "shasum": ""
             },
             "require": {
@@ -5123,9 +5054,6 @@
             "conflict": {
                 "symfony/console": "4.4.37 || 5.3.14 || 5.3.15 || 5.4.3 || 5.4.4 || 6.0.3 || 6.0.4"
             },
-            "require-dev": {
-                "bamarni/composer-bin-plugin": "^1.2"
-            },
             "suggest": {
                 "ext-pcntl": "Enabling the PCNTL extension makes PsySH a lot happier :)",
                 "ext-pdo-sqlite": "The doc command requires SQLite to work.",
@@ -5138,7 +5066,11 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "0.11.x-dev"
+                    "dev-0.11": "0.11.x-dev"
+                },
+                "bamarni-bin": {
+                    "bin-links": false,
+                    "forward-command": false
                 }
             },
             "autoload": {
@@ -5149,7 +5081,6 @@
                     "Psy\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5168,20 +5099,11 @@
                 "interactive",
                 "shell"
             ],
-            "support": {
-                "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.11.12"
-            },
-            "time": "2023-01-29T21:24:40+00:00"
+            "time": "2023-10-14T21:56:36+00:00"
         },
         {
             "name": "yiisoft/yii2-shell",
             "version": "2.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yiisoft/yii2-shell.git",
-                "reference": "358d4651ce1f54db0f1add026c202ac2e47db06b"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/yiisoft/yii2-shell/zipball/358d4651ce1f54db0f1add026c202ac2e47db06b",
@@ -5205,7 +5127,6 @@
                     "yii\\shell\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -5223,19 +5144,6 @@
             "keywords": [
                 "shell",
                 "yii2"
-            ],
-            "support": {
-                "forum": "http://www.yiiframework.com/forum/",
-                "irc": "irc://irc.freenode.net/yii",
-                "issues": "https://github.com/yiisoft/yii2-shell/issues",
-                "source": "https://github.com/yiisoft/yii2-shell",
-                "wiki": "http://www.yiiframework.com/wiki/"
-            },
-            "funding": [
-                {
-                    "url": "https://opencollective.com/yiisoft",
-                    "type": "open_collective"
-                }
             ],
             "time": "2022-09-04T10:37:52+00:00"
         }
