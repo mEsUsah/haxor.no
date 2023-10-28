@@ -26,7 +26,8 @@
         "mesusah/craft-haxor": "^2.0.0"
     },
     "require-dev": {
-        "yiisoft/yii2-shell": "^2.0.3"
+        "yiisoft/yii2-shell": "^2.0.3",
+        "craftcms/generator": "^1.6"
     },
     "autoload": {
         "psr-4": {
