@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "580cc36778adf74255e770e919f16d3a",
+    "content-hash": "29271e387a43e2e76727996006db3570",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -1610,6 +1610,61 @@
                 "docs": "https://github.com/mEsUsah/haxor.no/blob/master/plugins/haxor/README.md",
                 "issues": "https://github.com/mEsUsah/haxor/issues"
             },
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "mesusah/craft-tryhackme",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "plugins/tryhackme",
+                "reference": "7fc3998943146faccf9df7e2e3ee1f7ecac7672f"
+            },
+            "require": {
+                "craftcms/cms": "^4.5.0",
+                "php": ">=8.0.2"
+            },
+            "require-dev": {
+                "craftcms/ecs": "dev-main",
+                "craftcms/phpstan": "dev-main"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "handle": "tryhackme",
+                "name": "TryHackMe",
+                "developer": "mEsUsah",
+                "developerUrl": "https://www.haxor.no",
+                "documentationUrl": "https://github.com/mEsUsah/craft-tryhackme",
+                "class": "mesusah\\crafttryhackme\\TryHackMe"
+            },
+            "autoload": {
+                "psr-4": {
+                    "mesusah\\crafttryhackme\\": "src/"
+                }
+            },
+            "scripts": {
+                "check-cs": [
+                    "ecs check --ansi"
+                ],
+                "fix-cs": [
+                    "ecs check --ansi --fix"
+                ],
+                "phpstan": [
+                    "phpstan --memory-limit=1G"
+                ]
+            },
+            "license": [
+                "mit"
+            ],
+            "authors": [
+                {
+                    "name": "mEsUsah",
+                    "homepage": "https://www.haxor.no"
+                }
+            ],
+            "description": "TryHackMe ranking and score tracker for Craft CMS",
             "transport-options": {
                 "relative": true
             }
@@ -5319,9 +5374,11 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
-    "prefer-stable": false,
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "mesusah/craft-tryhackme": 20
+    },
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],

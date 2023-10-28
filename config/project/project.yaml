@@ -1,4 +1,4 @@
-dateModified: 1698484223
+dateModified: 1698491221
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -217,6 +217,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.0.0
+  tryhackme:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
 system:
   edition: solo
   live: true

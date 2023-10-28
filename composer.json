@@ -1,4 +1,6 @@
 {
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "name": "craftcms/craft",
     "description": "Craft CMS",
     "keywords": [
@@ -23,7 +25,8 @@
         "vlucas/phpdotenv": "^3.4.0",
         "craftcms/redactor": "3.0.4",
         "verbb/super-table": "3.0.12",
-        "mesusah/craft-haxor": "^2.0.0"
+        "mesusah/craft-haxor": "^2.0.0",
+        "mesusah/craft-tryhackme": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-shell": "^2.0.3",
@@ -64,6 +67,10 @@
             "type": "composer",
             "url": "https://composer.craftcms.com",
             "canonical": false
+        },
+        {
+            "type": "path",
+            "url": "plugins/tryhackme"
         }
     ]
 }
