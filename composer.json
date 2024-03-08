@@ -21,7 +21,7 @@
         "rss": "https://craftcms.com/changelog.rss"
     },
     "require": {
-        "craftcms/cms": "4.5.6.1",
+        "craftcms/cms": "4.8.1",
         "vlucas/phpdotenv": "^3.4.0",
         "craftcms/redactor": "3.0.4",
         "verbb/super-table": "3.0.12",
@@ -67,10 +67,6 @@
             "type": "composer",
             "url": "https://composer.craftcms.com",
             "canonical": false
-        },
-        {
-            "type": "path",
-            "url": "plugins/tryhackme"
         }
     ]
 }

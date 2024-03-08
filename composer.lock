@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cde7843bcd204792c7abc8f2082c7d5f",
+    "content-hash": "8e80a8e36ce8cf8210c9cd25a5182f1f",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -587,14 +587,15 @@
         },
         {
             "name": "craftcms/html-field",
-            "version": "2.0.8",
+            "version": "2.1.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/html-field/zipball/4797c9cb0397e6d69d25d9716a75f7b47c69fd3a",
-                "reference": "4797c9cb0397e6d69d25d9716a75f7b47c69fd3a",
+                "url": "https://api.github.com/repos/craftcms/html-field/zipball/80c232ef92960748553afd27c87f2c0ef4bd4d93",
+                "reference": "80c232ef92960748553afd27c87f2c0ef4bd4d93",
                 "shasum": ""
             },
             "require": {
+                "craftcms/cms": "^4.2.0",
                 "php": "^8.0.2"
             },
             "type": "library",
@@ -620,7 +621,7 @@
                 "docs": "https://github.com/craftcms/html-field/blob/main/README.md",
                 "rss": "https://github.com/craftcms/html-field/commits/main.atom"
             },
-            "time": "2023-09-17T11:24:51+00:00"
+            "time": "2024-03-06T18:13:29+00:00"
         },
         {
             "name": "craftcms/plugin-installer",
@@ -1617,10 +1618,16 @@
         {
             "name": "mesusah/craft-tryhackme",
             "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mEsUsah/craft-tryhackme.git",
+                "reference": "e580df9257dd898f92822083120bb4e0918736c6"
+            },
             "dist": {
-                "type": "path",
-                "url": "plugins/tryhackme",
-                "reference": "06d9f97e4ae560d395ad46ee238fc40c3e0078c0"
+                "type": "zip",
+                "url": "https://api.github.com/repos/mEsUsah/craft-tryhackme/zipball/e580df9257dd898f92822083120bb4e0918736c6",
+                "reference": "e580df9257dd898f92822083120bb4e0918736c6",
+                "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^4.5.0",
@@ -1630,6 +1637,7 @@
                 "craftcms/ecs": "dev-main",
                 "craftcms/phpstan": "dev-main"
             },
+            "default-branch": true,
             "type": "craft-plugin",
             "extra": {
                 "handle": "tryhackme",
@@ -1644,17 +1652,7 @@
                     "mesusah\\crafttryhackme\\": "src/"
                 }
             },
-            "scripts": {
-                "check-cs": [
-                    "ecs check --ansi"
-                ],
-                "fix-cs": [
-                    "ecs check --ansi --fix"
-                ],
-                "phpstan": [
-                    "phpstan --memory-limit=1G"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "mit"
             ],
@@ -1665,9 +1663,11 @@
                 }
             ],
             "description": "TryHackMe ranking and score tracker for Craft CMS",
-            "transport-options": {
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/mEsUsah/craft-tryhackme/issues",
+                "source": "https://github.com/mEsUsah/craft-tryhackme/tree/master"
+            },
+            "time": "2023-10-29T19:35:44+00:00"
         },
         {
             "name": "mikehaertl/php-shellcommand",
@@ -1985,11 +1985,11 @@
         },
         {
             "name": "phpoption/phpoption",
-            "version": "1.9.1",
+            "version": "1.9.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/dd3a383e599f49777d8b628dadbb90cae435b87e",
-                "reference": "dd3a383e599f49777d8b628dadbb90cae435b87e",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/80735db690fe4fc5c76dfa7f9b770634285fa820",
+                "reference": "80735db690fe4fc5c76dfa7f9b770634285fa820",
                 "shasum": ""
             },
             "require": {
@@ -2032,7 +2032,7 @@
                 "php",
                 "type"
             ],
-            "time": "2023-02-25T19:38:58+00:00"
+            "time": "2023-11-12T21:59:55+00:00"
         },
         {
             "name": "phpstan/phpdoc-parser",
@@ -4084,11 +4084,11 @@
         },
         {
             "name": "verbb/base",
-            "version": "2.0.3",
+            "version": "2.0.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/verbb-base/zipball/fb33550d8bc1c879f3e114ce00ee70d624014b9e",
-                "reference": "fb33550d8bc1c879f3e114ce00ee70d624014b9e",
+                "url": "https://api.github.com/repos/verbb/verbb-base/zipball/1cd36eeea2448793d0e77b652801c27272c803c5",
+                "reference": "1cd36eeea2448793d0e77b652801c27272c803c5",
                 "shasum": ""
             },
             "require": {
@@ -4111,7 +4111,7 @@
                 }
             ],
             "description": "Common utilities and building-blocks for Verbb plugins for Craft CMS.",
-            "time": "2023-09-19T22:50:02+00:00"
+            "time": "2024-03-03T04:45:09+00:00"
         },
         {
             "name": "verbb/super-table",
@@ -5015,11 +5015,11 @@
     "packages-dev": [
         {
             "name": "craftcms/generator",
-            "version": "1.6.1",
+            "version": "1.7.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/generator/zipball/8f3ac6ce89ad7760b2f2881549b73b437bc0ca59",
-                "reference": "8f3ac6ce89ad7760b2f2881549b73b437bc0ca59",
+                "url": "https://api.github.com/repos/craftcms/generator/zipball/ef136309da97acc98a178c88b466c6d7dade1a32",
+                "reference": "ef136309da97acc98a178c88b466c6d7dade1a32",
                 "shasum": ""
             },
             "require": {
@@ -5059,15 +5059,15 @@
                 "source": "https://github.com/craftcms/generator",
                 "rss": "https://github.com/craftcms/generator/releases.atom"
             },
-            "time": "2023-08-11T01:27:27+00:00"
+            "time": "2024-03-06T12:13:24+00:00"
         },
         {
             "name": "nette/php-generator",
-            "version": "v4.1.1",
+            "version": "v4.1.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/php-generator/zipball/d915b7fa643cd0cf6ffe306c25ac5c3db24914a4",
-                "reference": "d915b7fa643cd0cf6ffe306c25ac5c3db24914a4",
+                "url": "https://api.github.com/repos/nette/php-generator/zipball/b135071d8da108445e4df2fc6a75522b23c0237d",
+                "reference": "b135071d8da108445e4df2fc6a75522b23c0237d",
                 "shasum": ""
             },
             "require": {
@@ -5111,15 +5111,15 @@
                 "php",
                 "scaffolding"
             ],
-            "time": "2023-10-17T08:36:10+00:00"
+            "time": "2024-03-07T23:06:26+00:00"
         },
         {
             "name": "nette/utils",
-            "version": "v4.0.2",
+            "version": "v4.0.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/cead6637226456b35e1175cc53797dd585d85545",
-                "reference": "cead6637226456b35e1175cc53797dd585d85545",
+                "url": "https://api.github.com/repos/nette/utils/zipball/d3ad0aa3b9f934602cb3e3902ebccf10be34d218",
+                "reference": "d3ad0aa3b9f934602cb3e3902ebccf10be34d218",
                 "shasum": ""
             },
             "require": {
@@ -5181,15 +5181,15 @@
                 "utility",
                 "validation"
             ],
-            "time": "2023-09-19T11:58:07+00:00"
+            "time": "2024-01-17T16:50:36+00:00"
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.17.1",
+            "version": "v4.18.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/a6303e50c90c355c7eeee2c4a8b27fe8dc8fef1d",
-                "reference": "a6303e50c90c355c7eeee2c4a8b27fe8dc8fef1d",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/1bcbb2179f97633e98bbbc87044ee2611c7d7999",
+                "reference": "1bcbb2179f97633e98bbbc87044ee2611c7d7999",
                 "shasum": ""
             },
             "require": {
@@ -5223,7 +5223,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2023-08-13T19:53:39+00:00"
+            "time": "2023-12-10T21:03:43+00:00"
         },
         {
             "name": "psy/psysh",
