@@ -191,8 +191,123 @@
         }
     }
     &__tryhackme{
-        width: fit-content;
-        margin: 0 auto;
+        &-wrapper{
+            margin: 20px auto;
+            background-color: #cccccc;
+            border-radius: 6px;
+            padding: 20px;
+            @media only screen and (max-width: 450px){
+                margin: 30px 20px;
+                width: calc(100% - 80px);
+            }
+        }
+        &-headline{
+            img{
+                max-height: 80px;
+            }
+            p{
+                margin: 4px 10px 0 0;
+                width: 100%;
+                a{
+                    text-decoration: none;
+                    padding: 1px 5px 4px;
+                    border-radius: 6px;
+                    background-color: #ea5252;
+                    color: white;
+                    font-weight: 600;
+                    display: block;
+                }
+            }
+        }
+        &-info{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            @media only screen and (max-width: 450px){
+                flex-direction: column;
+            }
+
+        }
+        &-info-col{
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+        }
+        &-items{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-items: space-between;
+            margin: 10px 0;
+        }
+        &-item{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-items: center;
+            margin: 10px 30px 0 0;
+        }
+        &-name{
+            margin: 0;
+            font-family: "Oswald", sans-serif;
+            font-size: 18px;
+        }
+        &-dataWrapper{
+            margin-left: 10px;
+        }
+        &-rank{
+            margin: 0;
+            line-height: 12px;
+        }
+        &-score{
+            margin: 0;
+        }
+        &-iconWrapper{
+            height: 50px;
+            width: 50px;
+            background: linear-gradient(180deg, #f9d641, #f8bc36);
+            border-radius: 50%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+            display: block;
+        }
+        &-icon{
+            height: 30px;
+            width: 30px;
+            
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translateX(50%) translateY(-50%);
+            svg path{
+                fill: #39424e;
+            }
+            &--rank{
+                background-image: url("/resources/svg/trophy.svg");
+                height: 34px;
+                width: 34px;
+            }
+            &--badges{
+                background-image: url("/resources/svg/badge.svg");
+                height: 40px;
+                width: 40px;
+            }
+            &--rooms{
+                background-image: url("/resources/svg/completed.svg");
+                height: 36px;
+                width: 36px;
+            }
+            &--score{
+                background-image: url("/resources/svg/flag.svg");
+                height: 40px;
+                width: 40px;
+            }
+        }
     }
     &__chart{
         margin-bottom: 36px;

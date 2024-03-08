@@ -1,3 +1,56 @@
-<div  class="contentBlocks__tryhackme">
-    <script src="https://tryhackme.com/badge/80416"></script>
+{% set userData = craft.tryhackme.userData %}
+{% set badgesCompleted = 0 %}
+{% for badge in userData.badges %}
+    {% if badge.earned %}
+        {% set badgesCompleted = badgesCompleted + 1 %}
+    {% endif %}
+{% endfor %}
+
+<div class="contentBlocks__tryhackme-wrapper">
+    <div class="contentBlocks__tryhackme-headline">
+        <img src="/resources/svg/tryhackme.svg" alt="tryhackme logo">
+        <p><a href="https://tryhackme.com/p/{{userData.userName}}">@{{userData.userName}}</a></p>
+    </div>
+    <div class="contentBlocks__tryhackme-info">
+        <div class="contentBlocks__tryhackme-info-col">
+            <div class="contentBlocks__tryhackme-item">
+                <div class="contentBlocks__tryhackme-iconWrapper">
+                    <div class="contentBlocks__tryhackme-icon contentBlocks__tryhackme-icon--rank"></div>
+                </div>
+                <div class="contentBlocks__tryhackme-dataWrapper">
+                    <p class="contentBlocks__tryhackme-name">Rank:</p>
+                    <p class="contentBlocks__tryhackme-rank">World: {{ userData.userRank }} </p>
+                </div>
+            </div>
+            <div class="contentBlocks__tryhackme-item">
+                <div class="contentBlocks__tryhackme-iconWrapper">
+                    <div class="contentBlocks__tryhackme-icon contentBlocks__tryhackme-icon--score"></div>
+                </div>
+                <div class="contentBlocks__tryhackme-dataWrapper">
+                    <p class="contentBlocks__tryhackme-name">Score:</p>
+                    <p class="contentBlocks__tryhackme-rank">{{ userData.points|number_format(0, '.', ' ') }} </p>
+                </div>
+            </div>
+        </div>
+        <div class="contentBlocks__tryhackme-info-col">
+            <div class="contentBlocks__tryhackme-item">
+                <div class="contentBlocks__tryhackme-iconWrapper">
+                    <div class="contentBlocks__tryhackme-icon contentBlocks__tryhackme-icon--badges"></div>
+                </div>
+                <div class="contentBlocks__tryhackme-dataWrapper">
+                    <p class="contentBlocks__tryhackme-name">Badges:</p>
+                    <p class="contentBlocks__tryhackme-rank">{{ badgesCompleted|number_format(0, '.', ' ') }} </p>
+                </div>
+            </div>
+            <div class="contentBlocks__tryhackme-item">
+                <div class="contentBlocks__tryhackme-iconWrapper">
+                    <div class="contentBlocks__tryhackme-icon contentBlocks__tryhackme-icon--rooms"></div>
+                </div>
+                <div class="contentBlocks__tryhackme-dataWrapper">
+                    <p class="contentBlocks__tryhackme-name">Completed rooms:</p>
+                    <p class="contentBlocks__tryhackme-rank">{{ userData.completedRooms|length|number_format(0, '.', ' ') }} </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
