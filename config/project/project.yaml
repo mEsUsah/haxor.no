@@ -1,4 +1,4 @@
-dateModified: 1698493234
+dateModified: 1698575866
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -222,6 +222,13 @@ plugins:
     enabled: true
     schemaVersion: 1.0.0
     settings:
+      country: '164'
+      countryCompetition:
+        - '59'
+        - '73'
+        - '100'
+        - '164'
+        - '211'
       username: mEsUsah
 system:
   edition: solo
