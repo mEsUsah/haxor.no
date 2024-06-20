@@ -1,20 +1,19 @@
 columnSuffix: null
-contentColumnType: string
 handle: coursePlatform
-instructions: ''
+instructions: null
 name: 'Course Platform'
 searchable: false
 settings:
-  allowLimit: false
-  allowMultipleSources: false
   allowSelfRelations: false
-  branchLimit: '1'
-  limit: null
+  branchLimit: 1
   localizeRelations: false
-  selectionLabel: ''
+  maintainHierarchy: true
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
+  showCardsInGrid: false
   showSiteMenu: false
   source: 'group:6f1a1285-4249-4f2a-9773-1b8a2cb33fd9' # Kursplatform
-  sources: '*'
   targetSiteId: null
   validateRelatedElements: false
   viewMode: null

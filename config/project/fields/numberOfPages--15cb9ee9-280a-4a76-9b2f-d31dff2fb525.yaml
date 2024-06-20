@@ -1,15 +1,15 @@
-contentColumnType: integer(10)
+columnSuffix: null
 handle: numberOfPages
-instructions: ''
+instructions: null
 name: 'Number of Pages'
 searchable: false
 settings:
   decimals: 0
   defaultValue: null
   max: null
-  min: '0'
+  min: 0
   prefix: null
-  previewCurrency: ''
+  previewCurrency: null
   previewFormat: decimal
   size: null
   suffix: null

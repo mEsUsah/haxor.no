@@ -1,11 +1,9 @@
 columnSuffix: null
-contentColumnType: string
 handle: courseGrade
-instructions: ''
+instructions: null
 name: 'Course Grade'
 searchable: false
 settings:
-  optgroups: true
   options:
     -
       __assoc__:

@@ -1,7 +1,9 @@
+color: null
 fieldLayouts:
   f7756e71-1db5-4959-901d-7531d3028c9c:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +11,10 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            includeInCards: false
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -17,6 +22,7 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -24,23 +30,36 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: fa21f6e0-a0f9-4191-adbb-42b480ff08f2
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: c3d8fdbe-5d3a-4a09-a91f-2da6060ece41 # ContentBlocks
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: b74ee9c5-29df-4dfc-bd2e-2a8ce37b7d39
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 4502cd59-0cec-4a9d-89ce-158edf3167e8
+        userCondition: null
 handle: bookReviews
 hasTitleField: true
+icon: null
 name: 'Book Reviews'
-sortOrder: 1
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

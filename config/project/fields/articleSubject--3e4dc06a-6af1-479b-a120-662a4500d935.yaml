@@ -1,19 +1,21 @@
-contentColumnType: string
+columnSuffix: null
 handle: articleSubject
-instructions: ''
+instructions: null
 name: 'Artikkel tema'
 searchable: true
 settings:
-  allowLimit: false
-  allowMultipleSources: false
-  branchLimit: '1'
-  limit: null
-  localizeRelations: ''
-  selectionLabel: ''
+  allowSelfRelations: false
+  branchLimit: 1
+  localizeRelations: false
+  maintainHierarchy: true
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: true
   source: 'group:7755a334-0698-4415-ab30-b1fddb17b7a7' # Tema
-  sources: '*'
   targetSiteId: null
-  validateRelatedElements: ''
+  validateRelatedElements: false
   viewMode: null
 translationKeyFormat: null
 translationMethod: site

@@ -1,19 +1,21 @@
-contentColumnType: string
+columnSuffix: null
 handle: articleType
-instructions: ''
+instructions: null
 name: 'Artikkel type'
 searchable: true
 settings:
-  allowLimit: false
-  allowMultipleSources: false
-  branchLimit: '1'
-  limit: null
-  localizeRelations: ''
-  selectionLabel: ''
+  allowSelfRelations: false
+  branchLimit: 1
+  localizeRelations: false
+  maintainHierarchy: true
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: true
   source: 'group:7648fab9-2bab-43df-adca-9f3d941c929e' # Artikkeltype
-  sources: '*'
   targetSiteId: null
-  validateRelatedElements: ''
+  validateRelatedElements: false
   viewMode: null
 translationKeyFormat: null
 translationMethod: site

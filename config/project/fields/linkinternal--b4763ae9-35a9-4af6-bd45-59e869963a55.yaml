@@ -1,16 +1,18 @@
 columnSuffix: null
-contentColumnType: string
 handle: linkinternal
-instructions: ''
+instructions: null
 name: 'Internal link'
 searchable: true
 settings:
   allowSelfRelations: false
-  limit: ''
+  branchLimit: null
   localizeRelations: false
-  selectionLabel: ''
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
+  showCardsInGrid: false
   showSiteMenu: true
-  source: null
   sources: '*'
   targetSiteId: null
   validateRelatedElements: false

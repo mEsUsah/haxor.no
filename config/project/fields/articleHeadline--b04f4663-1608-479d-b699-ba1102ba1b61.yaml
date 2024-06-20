@@ -1,16 +1,15 @@
-contentColumnType: text
+columnSuffix: null
 handle: articleHeadline
-instructions: ''
+instructions: null
 name: 'Article Headline'
 searchable: false
 settings:
   byteLimit: null
   charLimit: null
-  code: ''
-  columnType: null
-  initialRows: '4'
-  multiline: ''
-  placeholder: ''
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: null
   uiMode: normal
 translationKeyFormat: null
 translationMethod: language

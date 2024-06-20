@@ -1,12 +1,10 @@
 columnSuffix: mujwcccw
-contentColumnType: string(255)
 handle: courseCertificateUrl
-instructions: ''
+instructions: null
 name: 'Course Certificate URL'
 searchable: false
 settings:
-  maxLength: '255'
-  placeholder: null
+  maxLength: 255
   types:
     - url
 translationKeyFormat: null

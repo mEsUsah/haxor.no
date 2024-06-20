@@ -1,7 +1,6 @@
 columnSuffix: null
-contentColumnType: smallint(2)
 handle: courseLengthMinutes
-instructions: ''
+instructions: null
 name: 'Course Length (min)'
 searchable: false
 settings:
@@ -10,7 +9,7 @@ settings:
   max: 59
   min: 0
   prefix: null
-  previewCurrency: ''
+  previewCurrency: null
   previewFormat: decimal
   size: null
   suffix: null

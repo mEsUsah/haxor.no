@@ -6,8 +6,37 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
             elementCondition: null
-            fieldUid: e75f8e08-e499-444e-b646-97309e1abb2b
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 60423017-b5de-4a27-83ca-da36a495c75d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e75f8e08-e499-444e-b646-97309e1abb2b # ContentBlocks - Books - Books
             handle: null
             includeInCards: true
             instructions: null
@@ -22,7 +51,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 9b49d5b9-d21a-4e64-b799-37fe5db4ada8
+            fieldUid: 9b49d5b9-d21a-4e64-b799-37fe5db4ada8 # ContentBlocks - Books - Three newest?
             handle: null
             includeInCards: false
             instructions: null
@@ -37,7 +66,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: af5a6f2d-4fdf-4cfe-b5e8-900a1ae088c5
+            fieldUid: af5a6f2d-4fdf-4cfe-b5e8-900a1ae088c5 # ContentBlocks - Books - Link to all courses?
             handle: null
             includeInCards: false
             instructions: null

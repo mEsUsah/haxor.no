@@ -1,7 +1,9 @@
+defaultPlacement: end
 fieldLayouts:
   d1f0de43-8c2c-4598-b872-4a4a29919c29:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +11,10 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            includeInCards: false
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -17,6 +22,7 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -24,10 +30,13 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\TitleField
+            uid: 2dd9d56f-9728-4f09-a218-535ba1bd41c0
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 25775f64-f9d9-4946-8276-c00f0a0430a8
+        userCondition: null
 handle: coursePlatform
 name: Kursplatform
 siteSettings:

@@ -1,21 +1,24 @@
-contentColumnType: text
+columnSuffix: null
 handle: articleImageCaption
-instructions: ''
+instructions: null
 name: 'Article Image Caption'
 searchable: true
 settings:
   availableTransforms: '*'
   availableVolumes: '*'
-  cleanupHtml: true
-  columnType: text
-  purifierConfig: ''
-  purifyHtml: '1'
-  redactorConfig: ''
-  removeEmptyTags: '1'
-  removeInlineStyles: '1'
-  removeNbsp: '1'
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: null
+  removeEmptyTags: true
+  removeInlineStyles: true
+  removeNbsp: true
+  showHtmlButtonForNonAdmins: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
+  uiMode: enlarged
 translationKeyFormat: null
 translationMethod: language
 type: craft\redactor\Field

@@ -1,7 +1,9 @@
+color: null
 fieldLayouts:
   de7aa5f8-e01f-47b2-a6da-f831e5c177b6:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +11,10 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            includeInCards: false
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -17,6 +22,7 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -24,85 +30,138 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 26a8b76a-486e-4dc8-87f3-95817170eeea
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 72a349c8-b7c8-4301-81a5-7301f5cc1058 # Article Image
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e96f9f1b-c1b6-4c00-b187-8a275d1a1bf1
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: baf14ed6-b329-41e7-b9b5-4ff5d8ed2cdf # Article Image Caption
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: f198dfc8-849b-445c-857b-cf8c9164b8de
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: f147e4fb-5b9b-40b9-9b58-51fa33d89e32 # Article Teaser
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: c285a209-952d-4a22-8bca-dc0d18250d1b
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: c3d8fdbe-5d3a-4a09-a91f-2da6060ece41 # ContentBlocks
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 3a246369-34e9-4b9f-b2eb-14d8b768eec0
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 810de80b-eace-4948-b0cc-1f05d4728410
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 3e4dc06a-6af1-479b-a120-662a4500d935 # Artikkel tema
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 079990fd-63ba-41c0-8b73-4efe582b12de
+            userCondition: null
             warning: null
             width: 100
         name: Metadata
-        sortOrder: 2
+        uid: c0aac613-19bf-4bc6-b046-ccb03406c108
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 7701d10a-74fb-40fb-a7aa-7e184bb97f05 # SEO Image
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: c847e0e2-2ee6-43d3-b043-1c7e655f095b
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: c1769912-6758-4fbd-9f12-d37a9fa32253 # SEO Description
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 5299a10e-8ce5-418d-9d69-adbf29089666
+            userCondition: null
             warning: null
             width: 100
         name: SEO
-        sortOrder: 3
+        uid: bc2eadb1-171d-463a-bfbe-7e5aa8069a8f
+        userCondition: null
 handle: ctfWriteups
 hasTitleField: false
+icon: null
 name: 'CTF Writeups'
-sortOrder: 1
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

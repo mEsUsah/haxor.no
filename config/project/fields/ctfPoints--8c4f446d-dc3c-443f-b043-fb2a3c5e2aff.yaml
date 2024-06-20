@@ -1,7 +1,6 @@
 columnSuffix: baxtmxqs
-contentColumnType: integer(10)
 handle: ctfPoints
-instructions: ''
+instructions: null
 name: 'CTF Points'
 searchable: false
 settings:
@@ -10,7 +9,7 @@ settings:
   max: null
   min: 0
   prefix: null
-  previewCurrency: ''
+  previewCurrency: null
   previewFormat: none
   size: null
   suffix: null

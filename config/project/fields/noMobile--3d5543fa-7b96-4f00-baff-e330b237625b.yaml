@@ -1,5 +1,4 @@
 columnSuffix: null
-contentColumnType: boolean
 handle: noMobile
 instructions: 'Show article image as blurred overlay on mobile'
 name: 'Not mobile friendly'

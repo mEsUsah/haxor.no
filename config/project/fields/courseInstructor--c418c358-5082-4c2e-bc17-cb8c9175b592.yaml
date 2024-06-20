@@ -1,16 +1,14 @@
 columnSuffix: null
-contentColumnType: text
 handle: courseInstructor
-instructions: ''
+instructions: null
 name: Instructor
 searchable: false
 settings:
   byteLimit: null
   charLimit: null
-  code: ''
-  columnType: null
-  initialRows: '4'
-  multiline: ''
+  code: false
+  initialRows: 4
+  multiline: false
   placeholder: null
   uiMode: normal
 translationKeyFormat: null

@@ -6,8 +6,37 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
             elementCondition: null
-            fieldUid: ac148d8c-048e-40df-921a-e1f850f675b1
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 8b73f7c3-64ce-43d4-90a0-b86e9010f198
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ac148d8c-048e-40df-921a-e1f850f675b1 # Lesson Blocks - Image - Image
             handle: image
             includeInCards: false
             instructions: null
@@ -22,7 +51,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: b7b92d43-ba38-4a42-8cdb-d7b4989964bc
+            fieldUid: b7b92d43-ba38-4a42-8cdb-d7b4989964bc # Lesson Blocks - Image - Image AltText
             handle: imageAlt
             includeInCards: true
             instructions: null
@@ -37,7 +66,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 922f9488-fac0-4f97-88a1-f12f6b41c77d
+            fieldUid: 922f9488-fac0-4f97-88a1-f12f6b41c77d # Lesson Blocks - Image - Image Caption
             handle: imageCapt
             includeInCards: false
             instructions: null
@@ -52,7 +81,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 952b5bbe-a4d3-4785-9315-9c1a8b0b6dc1
+            fieldUid: 952b5bbe-a4d3-4785-9315-9c1a8b0b6dc1 # Lesson Blocks - Image - Image Is Figure
             handle: imageIsFigure
             includeInCards: false
             instructions: null

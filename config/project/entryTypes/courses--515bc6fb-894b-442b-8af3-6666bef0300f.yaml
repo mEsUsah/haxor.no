@@ -1,7 +1,9 @@
+color: null
 fieldLayouts:
   0e30a4bc-8661-41f6-b10a-467d7d27b98e:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +11,10 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            includeInCards: false
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -17,6 +22,7 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -24,135 +30,222 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: b7b01474-9457-4cd7-9b72-0d9360fec627
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 93d39a6a-48eb-4f78-afb1-8fd74053ce15 # Course Image
-            instructions: ''
-            label: ''
-            required: '1'
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: c418c358-5082-4c2e-bc17-cb8c9175b592 # Instructor
-            instructions: ''
-            label: ''
-            required: '1'
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 12c8b9da-5b5a-4bd7-a51e-4116181081ad # Course Description
-            instructions: ''
-            label: ''
-            required: '1'
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 6f5f5cbf-7ead-4f94-9ed2-42c81ae3a3d3 # Course Review Score
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 96128773-ed88-4ce5-956c-189038f6691f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c418c358-5082-4c2e-bc17-cb8c9175b592 # Instructor
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: aa2ecbae-b1da-4ef0-abe0-89399c6c0ddc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 12c8b9da-5b5a-4bd7-a51e-4116181081ad # Course Description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 97ab72b8-6f40-4784-9b60-e1640e49f20e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6f5f5cbf-7ead-4f94-9ed2-42c81ae3a3d3 # Course Review Score
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 2518cef4-bb03-4d41-a9d5-c13fc4808547
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: f733eaac-e1d6-428e-a5e6-5e9c1b8450df # Course Review Quote
-            instructions: ''
-            label: ''
-            required: '1'
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: b495cf10-e2be-4162-a800-cb2670c4c79d
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 6ed30be3-319a-4469-a458-a70309e3e179 # Course Review
-            instructions: ''
-            label: ''
-            required: '1'
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 58b7431e-f20d-4444-90bc-62ddc4158e70
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 88075084-be48-4920-b8ef-d77abbc5544f
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 4a837336-d09a-492d-aa97-3c29b176ecc7 # Course Platform
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: f1db5d1a-ecd7-4031-8bc7-41270a6763c6
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 0e2235ec-098b-4add-9c16-2a51cb50b5e3 # Course Grade
-            instructions: ''
-            label: ''
-            required: '1'
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: c5c83632-bc2d-4429-80cf-975fda04adf7
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: c2cadeae-b406-4376-a7bb-822c8d077ca2 # Course Theme
-            instructions: ''
-            label: ''
-            required: '1'
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 2e4eeabe-a387-4778-a810-50873d5a9cb5
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 44f8fa56-23f3-4d1e-8231-4e7f46c9af46 # Copletion Date
-            instructions: ''
-            label: ''
-            required: '1'
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: a61b9089-f722-4e11-a0c6-fd96b1147240
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 9096bb19-2f4d-4b40-91f7-7f0d84ee7b01 # Course Length (hours)
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 323d0971-4fd2-4442-bebb-437d5dac480f
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: ac49e4c4-d11a-4bbe-9a08-04c06268ba93 # Course Length (min)
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: da11d908-47fd-4034-b7ae-0d67dba085bf
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: d9a0abe6-89dd-4688-a0ac-6d584524c3c2 # Course Certificate
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 02ee648f-537c-4f24-8e57-e03e53759d8d
+            userCondition: null
             warning: null
             width: 100
         name: Metadata
-        sortOrder: 2
+        uid: 84d4b5f8-8196-4e2e-8e40-0dc37347faaa
+        userCondition: null
 handle: courses
 hasTitleField: true
+icon: null
 name: Kurs
-sortOrder: 1
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

@@ -1,13 +1,52 @@
+defaultPlacement: end
+fieldLayouts:
+  5e5f8f47-dbdf-4984-8e23-3ae027a5b29f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: d6bd2701-8c2d-4404-99c4-f266692fe4ed
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 7c66d6a7-0855-4735-9123-e66b0e6c14b7
+        userCondition: null
 handle: theme
 name: Tema
 siteSettings:
   2fc7f7b8-2f9d-43dd-977b-8c7b29763e54: # haxor.no/en
     hasUrls: true
-    template: ''
+    template: null
     uriFormat: 'theme/{slug}'
   d81b7a18-6d93-471a-ba57-99544b0c585b: # haxor.no/no
     hasUrls: true
-    template: ''
+    template: null
     uriFormat: 'tema/{slug}'
 structure:
   maxLevels: null

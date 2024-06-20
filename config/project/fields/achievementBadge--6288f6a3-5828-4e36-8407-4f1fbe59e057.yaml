@@ -1,5 +1,4 @@
 columnSuffix: null
-contentColumnType: string
 handle: achievementBadge
 instructions: null
 name: 'Achievement Badge'
@@ -23,18 +22,8 @@ settings:
   restrictedDefaultUploadSubpath: null
   restrictedLocationSource: 'volume:4660b070-063e-4eb7-b897-c5273ae300c3' # Icons and Badges
   restrictedLocationSubpath: null
-  selectionCondition:
-    __assoc__:
-      -
-        - elementType
-        - craft\elements\Asset
-      -
-        - fieldContext
-        - global
-      -
-        - class
-        - craft\elements\conditions\assets\AssetCondition
   selectionLabel: null
+  showCardsInGrid: false
   showSiteMenu: false
   showUnpermittedFiles: false
   showUnpermittedVolumes: false

@@ -1,7 +1,10 @@
+altTranslationKeyFormat: null
+altTranslationMethod: site
 fieldLayouts:
   c0cfb397-da13-4c67-b7cd-8f76b4b1bebd:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +12,10 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            includeInCards: false
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -17,6 +23,7 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -24,15 +31,19 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 1876fd70-a8ee-4bb1-b3f7-cb6348090c73
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 0d806eae-3ccc-44ef-9c66-1b2f926f6bdd
+        userCondition: null
 fs: thumbnails
 handle: thumbnails
-hasUrls: true
 name: Thumbnails
 sortOrder: 3
+subpath: ''
 titleTranslationKeyFormat: null
 titleTranslationMethod: none
-url: '@web/uploads/thumbnails'
+transformFs: null
+transformSubpath: ''

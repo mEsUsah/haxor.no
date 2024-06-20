@@ -1,31 +1,35 @@
 columnSuffix: null
-contentColumnType: string
 handle: courseCertificate
-instructions: ''
+instructions: null
 name: 'Course Certificate'
 searchable: false
 settings:
   allowSelfRelations: false
+  allowSubfolders: false
   allowUploads: true
   allowedKinds:
     - pdf
+  branchLimit: null
   defaultUploadLocationSource: 'volume:dc32cdca-de36-4628-af9c-221eb639a9ab' # PDF's
-  defaultUploadLocationSubpath: ''
-  limit: '1'
+  defaultUploadLocationSubpath: null
   localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
   previewMode: full
-  restrictFiles: '1'
-  selectionLabel: ''
+  restrictFiles: true
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:3b363f5e-4ee5-4536-b78c-b514bf1a0c7a' # Images
+  restrictedLocationSubpath: null
+  selectionLabel: null
+  showCardsInGrid: false
   showSiteMenu: false
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  singleUploadLocationSource: 'volume:3b363f5e-4ee5-4536-b78c-b514bf1a0c7a' # Images
-  singleUploadLocationSubpath: ''
-  source: null
   sources:
     - 'volume:dc32cdca-de36-4628-af9c-221eb639a9ab' # PDF's
   targetSiteId: null
-  useSingleFolder: false
   validateRelatedElements: false
   viewMode: large
 translationKeyFormat: null

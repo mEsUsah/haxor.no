@@ -1,7 +1,9 @@
+color: null
 fieldLayouts:
   7ac5bf04-13ac-47e3-8e9c-423e79a6528b:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +11,10 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            includeInCards: false
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -17,6 +22,7 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -24,23 +30,36 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 238a6457-2403-4b6c-94a5-6d3b97072163
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: b04f4663-1608-479d-b699-ba1102ba1b61 # Article Headline
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 25c74d1d-d00b-4b4f-b986-17001492eb87
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 13f1f6e7-95d0-4dae-af45-7080c6b13e47
+        userCondition: null
 handle: home
 hasTitleField: true
+icon: null
 name: Home
-sortOrder: 1
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

@@ -6,8 +6,37 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
             elementCondition: null
-            fieldUid: b05c4334-9b2d-4f18-8916-c65a9c521861
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: fb21a855-7f70-4a6f-a125-220140ecdbc0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b05c4334-9b2d-4f18-8916-c65a9c521861 # ContentBlocks - Image - Image
             handle: null
             includeInCards: false
             instructions: null
@@ -22,7 +51,7 @@ fieldLayouts:
             width: 25
           -
             elementCondition: null
-            fieldUid: d6f9cc1f-1608-4ae7-a083-d0924ba71f47
+            fieldUid: d6f9cc1f-1608-4ae7-a083-d0924ba71f47 # ContentBlocks - Image - Image Is Figure
             handle: null
             includeInCards: true
             instructions: null
@@ -37,7 +66,7 @@ fieldLayouts:
             width: 25
           -
             elementCondition: null
-            fieldUid: 5c01d860-2ec5-4205-936e-583524bb8264
+            fieldUid: 5c01d860-2ec5-4205-936e-583524bb8264 # ContentBlocks - Image - Image AltText
             handle: null
             includeInCards: false
             instructions: null
@@ -52,7 +81,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 6a498afe-8881-4b4d-bd9e-f128e6d2ac6e
+            fieldUid: 6a498afe-8881-4b4d-bd9e-f128e6d2ac6e # ContentBlocks - Image - Image Caption
             handle: null
             includeInCards: false
             instructions: null

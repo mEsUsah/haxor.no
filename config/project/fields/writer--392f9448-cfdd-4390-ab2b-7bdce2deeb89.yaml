@@ -1,15 +1,14 @@
-contentColumnType: text
+columnSuffix: null
 handle: writer
-instructions: ''
+instructions: null
 name: Writer
 searchable: false
 settings:
   byteLimit: null
   charLimit: null
-  code: ''
-  columnType: null
-  initialRows: '4'
-  multiline: ''
+  code: false
+  initialRows: 4
+  multiline: false
   placeholder: null
   uiMode: normal
 translationKeyFormat: null

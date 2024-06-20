@@ -6,8 +6,37 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
             elementCondition: null
-            fieldUid: dc63f038-3a87-428d-9230-20a288f905da
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 36b4d50f-4f82-4925-88aa-5c75defedb82
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: dc63f038-3a87-428d-9230-20a288f905da # ContentBlocks - File Content - File type
             handle: null
             includeInCards: true
             instructions: null
@@ -22,7 +51,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 5dd9f4f3-fb1c-4d81-b3fd-2309b56563f0
+            fieldUid: 5dd9f4f3-fb1c-4d81-b3fd-2309b56563f0 # ContentBlocks - File Content - Filname
             handle: null
             includeInCards: false
             instructions: null
@@ -37,7 +66,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: ed101e61-62b0-40c5-a8d4-b5d30624f1d2
+            fieldUid: ed101e61-62b0-40c5-a8d4-b5d30624f1d2 # ContentBlocks - File Content - File content
             handle: null
             includeInCards: false
             instructions: null
@@ -52,7 +81,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: f4121429-712b-4587-839a-e0a1db5d946a
+            fieldUid: f4121429-712b-4587-839a-e0a1db5d946a # ContentBlocks - File Content - Line Numbers
             handle: null
             includeInCards: false
             instructions: null

@@ -1,20 +1,19 @@
 columnSuffix: null
-contentColumnType: string
 handle: ctfPlatform
-instructions: ''
+instructions: null
 name: 'CTF Platfom'
 searchable: false
 settings:
-  allowLimit: false
-  allowMultipleSources: false
   allowSelfRelations: false
-  branchLimit: '1'
-  limit: null
+  branchLimit: 1
   localizeRelations: false
-  selectionLabel: ''
+  maintainHierarchy: true
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
+  showCardsInGrid: false
   showSiteMenu: false
   source: 'group:3bbcac38-b6d8-4918-9863-bcff6b8f60d2' # CTF Platform
-  sources: '*'
   targetSiteId: null
   validateRelatedElements: false
   viewMode: null

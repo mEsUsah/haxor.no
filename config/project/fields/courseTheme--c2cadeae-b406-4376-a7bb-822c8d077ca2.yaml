@@ -1,20 +1,19 @@
 columnSuffix: null
-contentColumnType: string
 handle: courseTheme
-instructions: ''
+instructions: null
 name: 'Course Theme'
 searchable: false
 settings:
-  allowLimit: false
-  allowMultipleSources: false
   allowSelfRelations: false
-  branchLimit: '1'
-  limit: null
+  branchLimit: 1
   localizeRelations: false
-  selectionLabel: ''
+  maintainHierarchy: true
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
+  showCardsInGrid: false
   showSiteMenu: false
   source: 'group:7755a334-0698-4415-ab30-b1fddb17b7a7' # Tema
-  sources: '*'
   targetSiteId: null
   validateRelatedElements: false
   viewMode: null

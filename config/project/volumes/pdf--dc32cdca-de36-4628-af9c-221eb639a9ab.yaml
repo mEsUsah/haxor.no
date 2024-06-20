@@ -1,7 +1,10 @@
+altTranslationKeyFormat: null
+altTranslationMethod: site
 fieldLayouts:
   6a72de79-d330-4881-8bd6-ac4fb0f00726:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +12,10 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            includeInCards: false
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -17,6 +23,7 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -24,15 +31,19 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 56e412c4-8d14-4150-b287-11cca7165f76
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 68af9669-9470-49bb-95b8-906a292f2760
+        userCondition: null
 fs: pdf
 handle: pdf
-hasUrls: true
 name: 'PDF''s'
 sortOrder: 2
+subpath: ''
 titleTranslationKeyFormat: null
 titleTranslationMethod: none
-url: '@web/uploads/pdf'
+transformFs: null
+transformSubpath: ''

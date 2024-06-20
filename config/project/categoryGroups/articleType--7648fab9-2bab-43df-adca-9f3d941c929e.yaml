@@ -1,13 +1,52 @@
+defaultPlacement: end
+fieldLayouts:
+  f233e5bb-0fcc-4d3a-adc5-4fe3620a54a1:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: b3013f43-534a-4942-88d5-e7d215f2ae1b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c4534d17-670f-4be0-a553-fbdaea0ec355
+        userCondition: null
 handle: articleType
 name: Artikkeltype
 siteSettings:
   2fc7f7b8-2f9d-43dd-977b-8c7b29763e54: # haxor.no/en
     hasUrls: true
-    template: ''
+    template: null
     uriFormat: 'articletype/{slug}'
   d81b7a18-6d93-471a-ba57-99544b0c585b: # haxor.no/no
     hasUrls: true
-    template: ''
+    template: null
     uriFormat: 'artikkeltype/{slug}'
 structure:
   maxLevels: null

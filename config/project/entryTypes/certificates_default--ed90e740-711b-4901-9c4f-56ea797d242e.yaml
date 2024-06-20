@@ -1,3 +1,4 @@
+color: null
 fieldLayouts:
   853f38b5-43c9-41ee-8b87-9981eccc8003:
     tabs:
@@ -12,6 +13,8 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
+            includeInCards: false
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -19,6 +22,7 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -33,8 +37,11 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: 6288f6a3-5828-4e36-8407-4f1fbe59e057 # Achievement Badge
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -45,8 +52,11 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: 12c8b9da-5b5a-4bd7-a51e-4116181081ad # Course Description
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -57,8 +67,11 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: f733eaac-e1d6-428e-a5e6-5e9c1b8450df # Course Review Quote
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -69,8 +82,11 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: 6ed30be3-319a-4469-a458-a70309e3e179 # Course Review
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -87,8 +103,11 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: c2cadeae-b406-4376-a7bb-822c8d077ca2 # Course Theme
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -99,8 +118,11 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: 44f8fa56-23f3-4d1e-8231-4e7f46c9af46 # Copletion Date
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -111,8 +133,11 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: 9096bb19-2f4d-4b40-91f7-7f0d84ee7b01 # Course Length (hours)
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -123,8 +148,11 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: ac49e4c4-d11a-4bbe-9a08-04c06268ba93 # Course Length (min)
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -135,8 +163,11 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: 4fa3f654-1283-406b-9656-22b48a6c818e # Course Certificate URL
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -149,11 +180,12 @@ fieldLayouts:
         userCondition: null
 handle: certificates_default
 hasTitleField: true
+icon: null
 name: 'Certificates - Default'
+showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

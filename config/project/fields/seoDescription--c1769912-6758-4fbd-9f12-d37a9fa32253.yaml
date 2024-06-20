@@ -1,15 +1,14 @@
-contentColumnType: text
+columnSuffix: null
 handle: seoDescription
-instructions: ''
+instructions: null
 name: 'SEO Description'
 searchable: false
 settings:
   byteLimit: null
   charLimit: null
-  code: ''
-  columnType: null
-  initialRows: '4'
-  multiline: ''
+  code: false
+  initialRows: 4
+  multiline: false
   placeholder: null
   uiMode: normal
 translationKeyFormat: null

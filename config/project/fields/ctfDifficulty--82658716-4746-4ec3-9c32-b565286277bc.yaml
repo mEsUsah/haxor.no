@@ -1,11 +1,9 @@
 columnSuffix: vsuljzdb
-contentColumnType: string
 handle: ctfDifficulty
-instructions: ''
+instructions: null
 name: 'CTF Difficulty'
 searchable: false
 settings:
-  optgroups: true
   options:
     -
       __assoc__:

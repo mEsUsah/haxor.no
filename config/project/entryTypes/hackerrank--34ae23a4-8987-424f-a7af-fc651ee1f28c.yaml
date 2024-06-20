@@ -4,6 +4,36 @@ fieldLayouts:
     tabs:
       -
         elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 4d5fc4d4-2833-457e-af9a-910628178de1
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: b6f090b5-cc79-491c-83d9-8c16475598b9
         userCondition: null

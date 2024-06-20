@@ -1,13 +1,12 @@
 columnSuffix: null
-contentColumnType: datetime
 handle: courseCompletedDate
-instructions: ''
+instructions: null
 name: 'Copletion Date'
 searchable: false
 settings:
   max: null
   min: null
-  minuteIncrement: '30'
+  minuteIncrement: 30
   showDate: true
   showTime: false
   showTimeZone: false

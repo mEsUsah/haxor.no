@@ -1,7 +1,9 @@
+color: null
 fieldLayouts:
   9aaa336f-ae76-4b6c-ba5d-266dca4bbb6f:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +11,10 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            includeInCards: false
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -17,6 +22,7 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -24,99 +30,162 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c0f18289-e8ef-4e88-a412-7737fbb4897e
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 40df60cf-14a4-435a-83b3-643fc99abed3 # Book Image
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 6084e68a-7eba-4bd3-9021-9edb616ec8af
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 392f9448-cfdd-4390-ab2b-7bdce2deeb89 # Writer
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e3b29309-63a0-4e39-90d4-b19a1e033a14
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 12c8b9da-5b5a-4bd7-a51e-4116181081ad # Course Description
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: b27c75c7-8500-4306-89e8-08787eabbdf4
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 6f5f5cbf-7ead-4f94-9ed2-42c81ae3a3d3 # Course Review Score
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 1a0b41e6-bd25-4156-b344-5115c53ac301
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: f733eaac-e1d6-428e-a5e6-5e9c1b8450df # Course Review Quote
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 106d9011-68e5-487b-ac33-543359c3f4c1
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 6ed30be3-319a-4469-a458-a70309e3e179 # Course Review
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: baab0f01-bc48-4c38-b6d8-467e39654ca8
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: b7c4c813-1906-4382-900c-2dabba4c2d4c
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 704a8478-65c0-4619-87e8-0b570ccd42f4 # Publisher
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: f020dbcf-ff29-4196-b38f-21ef668151ae
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: c2cadeae-b406-4376-a7bb-822c8d077ca2 # Course Theme
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 58541f16-d26b-49c4-a6f7-ecc064949a59
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 15cb9ee9-280a-4a76-9b2f-d31dff2fb525 # Number of Pages
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: c3c5fbde-b2c8-49c3-8467-fc008a179ad5
+            userCondition: null
             warning: null
             width: 100
         name: Metadata
-        sortOrder: 2
+        uid: 55d99e8d-b7ab-4f60-b73c-c7d6367f75cc
+        userCondition: null
 handle: books
 hasTitleField: true
+icon: null
 name: Books
-sortOrder: 1
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
