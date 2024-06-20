@@ -1,4 +1,4 @@
-dateModified: 1718914731
+dateModified: 1718917702
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -46,6 +46,7 @@ meta:
     2caebe53-52a0-4509-b4f6-865b55837d5f: 'Chart - Bar (Stacked)' # Chart - Bar (Stacked)
     2ec41ca2-210b-47c8-97d3-306955a39abb: Articles # Articles
     2efca9b8-ea72-4fc4-9c51-20695e174ce7: 'ContentBlocks - Courses - Three newest?' # ContentBlocks - Courses - Three newest?
+    2f01f6e6-88e1-41da-9241-1b49ae9a9012: Simple # Simple
     2f773f4a-97cc-41d5-9fb6-2016426d4da5: 'Lesson Blocks - Text - Text' # Lesson Blocks - Text - Text
     2fc7f7b8-2f9d-43dd-977b-8c7b29763e54: haxor.no/en # haxor.no/en
     3a65209b-542d-42a6-9fc7-a9b07fd38253: 'File Content' # File Content
@@ -137,6 +138,7 @@ meta:
     aad6c628-7e5f-4c95-9383-e39426be72f7: 'CTF Image' # CTF Image
     ac49e4c4-d11a-4bbe-9a08-04c06268ba93: 'Course Length (min)' # Course Length (min)
     ac148d8c-048e-40df-921a-e1f850f675b1: 'Lesson Blocks - Image - Image' # Lesson Blocks - Image - Image
+    aebd25a6-0dc4-4348-a7dd-cf11b6168ef5: 'Simple 2' # Simple 2
     af5a6f2d-4fdf-4cfe-b5e8-900a1ae088c5: 'ContentBlocks - Books - Link to all courses?' # ContentBlocks - Books - Link to all courses?
     b04f4663-1608-479d-b699-ba1102ba1b61: 'Article Headline' # Article Headline
     b05c4334-9b2d-4f18-8916-c65a9c521861: 'ContentBlocks - Image - Image' # ContentBlocks - Image - Image
@@ -150,6 +152,7 @@ meta:
     b25947e8-fbe4-4dbb-a968-90f7659c7d7f: Home # Home
     baecef3d-6c25-40bf-8e85-eeedf43dec57: 'Rich text' # Rich text
     baf14ed6-b329-41e7-b9b5-4ff5d8ed2cdf: 'Article Image Caption' # Article Image Caption
+    bcea5606-ec0b-4bea-b4ab-b4c0eebb7851: Default # Default
     c2cadeae-b406-4376-a7bb-822c8d077ca2: 'Course Theme' # Course Theme
     c3d8fdbe-5d3a-4a09-a91f-2da6060ece41: ContentBlocks # ContentBlocks
     c6f23113-dc98-46d8-8a58-8837396917aa: 'CTF Platfom' # CTF Platfom
@@ -189,14 +192,14 @@ meta:
     f4121429-712b-4587-839a-e0a1db5d946a: 'ContentBlocks - File Content - Line Numbers' # ContentBlocks - File Content - Line Numbers
     fe6324d5-2558-4ab4-99f2-f424b8051892: 'About Blog' # About Blog
 plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
   haxor:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  redactor:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.3.0
   super-table:
     edition: standard
     enabled: true

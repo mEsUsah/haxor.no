@@ -6,19 +6,13 @@ searchable: true
 settings:
   availableTransforms: '*'
   availableVolumes: '*'
-  configSelectionMode: choose
+  ckeConfig: bcea5606-ec0b-4bea-b4ab-b4c0eebb7851 # Default
   defaultTransform: ''
-  manualConfig: ''
+  enableSourceEditingForNonAdmins: true
   purifierConfig: null
   purifyHtml: true
-  redactorConfig: null
-  removeEmptyTags: true
-  removeInlineStyles: true
-  removeNbsp: true
-  showHtmlButtonForNonAdmins: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  uiMode: enlarged
 translationKeyFormat: null
 translationMethod: language
-type: craft\redactor\Field
+type: craft\ckeditor\Field
