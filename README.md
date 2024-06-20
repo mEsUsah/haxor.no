@@ -1,4 +1,5 @@
 [<img src="web\resources\svg\haxor_no-white.svg" width="250" style="display:inline-block"/>](web\resources\svg\haxor_no-white.svg)
+
 This is my personal tech blog, where I write to learn, test out web technology, and show off personal projects.
 
 - Built with Craft CMS 5
