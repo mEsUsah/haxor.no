@@ -1,7 +1,19 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - 43b06241-b021-46cc-8374-3f02e8a02699 # Default
 handle: lesson
+maxAuthors: 1
 name: Lessons
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
 propagationMethod: custom
 siteSettings:
   2fc7f7b8-2f9d-43dd-977b-8c7b29763e54: # haxor.no/en

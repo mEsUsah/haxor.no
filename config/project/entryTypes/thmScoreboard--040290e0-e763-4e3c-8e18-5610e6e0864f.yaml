@@ -102,7 +102,6 @@ fieldLayouts:
 handle: thmScoreboard
 hasTitleField: true
 name: 'THM scoreboard'
-section: 433733b6-53ef-4e88-b871-7518468484e7 # Portfolio
 sortOrder: 2
 titleFormat: null
 titleTranslationKeyFormat: null

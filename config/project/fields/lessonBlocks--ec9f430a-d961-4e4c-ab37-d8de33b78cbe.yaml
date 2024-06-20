@@ -1,16 +1,22 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: acdcb75a-569c-4ec7-b2ab-9de3e91d8604 # Lessons
 handle: lessonBlocks
 instructions: ''
 name: 'Lesson Blocks'
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_lessonblocks}}'
-  maxBlocks: ''
-  minBlocks: ''
+  entryTypes:
+    - 13e06e3a-25c9-4b11-aa21-6b5b768d5fea
+    - 14fc49ec-a2e2-4953-a06d-e4c93142cc99
+    - 9352e030-3a6d-4f5f-add4-74e01d270e43
+    - a227fe85-29a0-403f-b510-659257b8c521
+    - a568129a-e9d4-406e-bafe-4dae8e4b19e8
+    - eac3ade5-8f69-4ee2-b1df-4cc1b1e1b9b7
+  maxEntries: ''
+  minEntries: ''
   propagationKeyFormat: null
   propagationMethod: all
+  viewMode: blocks
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

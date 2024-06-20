@@ -152,7 +152,6 @@ fieldLayouts:
 handle: courses
 hasTitleField: true
 name: Kurs
-section: b3979b7e-2d54-4b6f-89ec-5ef480431d82 # Courses
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

@@ -1,0 +1,51 @@
+color: null
+fieldLayouts:
+  b5f4b836-5044-4a92-bb2e-904863abd7ff:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 268e169b-dff4-4e90-ad5a-8618c54e799e
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: Question
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3d59b4b6-094f-491f-90f0-6591f3349f51
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5084e704-59ac-4ed3-bc26-1b3b96710a82
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Answer
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c6a94da5-abcf-4a47-9347-2535613d8685
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 56fa9faa-9de3-47d8-8da4-9396c2f56904
+        userCondition: null
+handle: sendInAnswer
+hasTitleField: false
+icon: null
+name: 'Send in answer'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

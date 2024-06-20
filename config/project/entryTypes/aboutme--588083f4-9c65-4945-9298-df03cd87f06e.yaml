@@ -98,7 +98,6 @@ fieldLayouts:
 handle: aboutme
 hasTitleField: true
 name: 'About Me'
-section: 315547ae-9f46-441e-831a-f2979d046b94 # About Me
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

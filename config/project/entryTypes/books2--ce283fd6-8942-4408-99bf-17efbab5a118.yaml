@@ -1,0 +1,66 @@
+color: null
+fieldLayouts:
+  48fac4d8-f125-4fba-a9ef-29a072d8f257:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: e75f8e08-e499-444e-b646-97309e1abb2b
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: Books
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3f77be0a-8ee9-4eb6-a99e-a3fa6cf9e6d5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9b49d5b9-d21a-4e64-b799-37fe5db4ada8
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Three newest?'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3e2b8f59-c652-435e-b407-421aea35a5f4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: af5a6f2d-4fdf-4cfe-b5e8-900a1ae088c5
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Link to all courses?'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 09bb20a6-940a-4343-b43a-4c4f2e85a298
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 86ab666a-b032-4e32-8f8a-8fa8c46064c5
+        userCondition: null
+handle: books2
+hasTitleField: false
+icon: null
+name: 'Books 2'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

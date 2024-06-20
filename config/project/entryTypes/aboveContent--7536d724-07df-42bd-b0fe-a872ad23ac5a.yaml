@@ -120,7 +120,6 @@ fieldLayouts:
 handle: aboveContent
 hasTitleField: true
 name: 'Above Content'
-section: 433733b6-53ef-4e88-b871-7518468484e7 # Portfolio
 sortOrder: 3
 titleFormat: null
 titleTranslationKeyFormat: null

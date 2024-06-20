@@ -1,0 +1,20 @@
+color: null
+fieldLayouts:
+  3d2cd129-2a56-4ac2-9542-8cfc3a2067e4:
+    tabs:
+      -
+        elementCondition: null
+        name: Content
+        uid: b6f090b5-cc79-491c-83d9-8c16475598b9
+        userCondition: null
+handle: hackerrank
+hasTitleField: false
+icon: null
+name: HackerRank
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

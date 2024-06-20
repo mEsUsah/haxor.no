@@ -1,6 +1,5 @@
 columnSuffix: baxtmxqs
 contentColumnType: integer(10)
-fieldGroup: d871d9c2-8428-4d67-bd62-062ff0fb8e4f # CTF
 handle: ctfPoints
 instructions: ''
 name: 'CTF Points'

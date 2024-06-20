@@ -1,7 +1,19 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - 515bc6fb-894b-442b-8af3-6666bef0300f # Kurs
 handle: courses
+maxAuthors: 1
 name: Courses
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
 propagationMethod: all
 siteSettings:
   2fc7f7b8-2f9d-43dd-977b-8c7b29763e54: # haxor.no/en

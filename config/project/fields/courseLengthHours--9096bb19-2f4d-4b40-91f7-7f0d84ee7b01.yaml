@@ -1,6 +1,5 @@
 columnSuffix: null
 contentColumnType: integer(10)
-fieldGroup: 26a433d6-c7ff-4f42-8acb-7bcc035fc4d2 # Course
 handle: courseLengthHours
 instructions: ''
 name: 'Course Length (hours)'

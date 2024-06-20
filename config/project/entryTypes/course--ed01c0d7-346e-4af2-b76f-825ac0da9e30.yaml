@@ -40,7 +40,6 @@ fieldLayouts:
 handle: course
 hasTitleField: true
 name: 'My courses'
-section: d2ea4108-edc5-4f74-9794-214619a9f0c8 # My courses
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

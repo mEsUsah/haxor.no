@@ -102,7 +102,6 @@ fieldLayouts:
 handle: ctfWriteups
 hasTitleField: false
 name: 'CTF Writeups'
-section: 5551a1b5-fa8d-41d6-b7c3-af16e2ea9981 # CTF Writeups
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

@@ -1,0 +1,75 @@
+columnSuffix: null
+handle: data
+instructions: null
+name: 'ContentBlocks - Chart - Bar (Stacked) - Data'
+searchable: false
+settings:
+  addRowLabel: 'Add a row'
+  columns:
+    __assoc__:
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - Label
+            -
+              - handle
+              - label
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+      -
+        - col2
+        -
+          __assoc__:
+            -
+              - heading
+              - Lowest
+            -
+              - handle
+              - lowest
+            -
+              - width
+              - ''
+            -
+              - type
+              - number
+      -
+        - col3
+        -
+          __assoc__:
+            -
+              - heading
+              - Highest
+            -
+              - handle
+              - highest
+            -
+              - width
+              - ''
+            -
+              - type
+              - number
+  defaults:
+    -
+      __assoc__:
+        -
+          - col1
+          - ''
+        -
+          - col2
+          - ''
+        -
+          - col3
+          - ''
+  maxRows: null
+  minRows: 1
+  staticRows: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Table

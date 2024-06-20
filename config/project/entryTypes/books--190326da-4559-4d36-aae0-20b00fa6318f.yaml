@@ -116,7 +116,6 @@ fieldLayouts:
 handle: books
 hasTitleField: true
 name: Books
-section: c4023ed4-c787-4f58-bb1f-1d51b48518c2 # Books
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

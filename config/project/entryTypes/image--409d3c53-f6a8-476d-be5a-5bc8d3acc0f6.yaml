@@ -1,0 +1,81 @@
+color: null
+fieldLayouts:
+  237bf740-80eb-4f66-b362-4f05ec0604b6:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: b05c4334-9b2d-4f18-8916-c65a9c521861
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Image
+            providesThumbs: true
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cda61d34-fe1e-46b1-af9c-b13a8b16d3cb
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: d6f9cc1f-1608-4ae7-a083-d0924ba71f47
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: 'Image Is Figure'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 45112ee9-fbb2-40ec-b527-9bf94e72967f
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 5c01d860-2ec5-4205-936e-583524bb8264
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Image AltText'
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6052f06d-5029-4d14-9d03-6bcb57f66161
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6a498afe-8881-4b4d-bd9e-f128e6d2ac6e
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Image Caption'
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ab8e6f36-c550-4fbf-b879-ed46c4e103c7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e893ba10-7cce-47a3-aee8-7d335355be86
+        userCondition: null
+handle: image
+hasTitleField: false
+icon: null
+name: Image
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

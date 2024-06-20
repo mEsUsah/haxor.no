@@ -1,0 +1,66 @@
+color: null
+fieldLayouts:
+  7e83945a-84c7-442f-a4f6-a62dac941a55:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: a2c9fa7f-4706-4b49-ad49-f09d9a9ebc10
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: Courses
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f0b42089-2efe-4452-bd12-42c6464c5fe9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2efca9b8-ea72-4fc4-9c51-20695e174ce7
+            handle: threeNewest
+            includeInCards: false
+            instructions: null
+            label: 'Three newest?'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2695da21-0f20-4b7a-8ae5-5d36b8dc8c5d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1c99bad7-a4b3-483e-bf38-82c06d1f19a0
+            handle: linkToAllCourses
+            includeInCards: false
+            instructions: null
+            label: 'Link to all courses?'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fa2bcc71-6a3c-4d01-a23a-642559f7ac80
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 35392619-a098-42d0-bd46-7505311f4efb
+        userCondition: null
+handle: courses2
+hasTitleField: false
+icon: null
+name: Courses
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

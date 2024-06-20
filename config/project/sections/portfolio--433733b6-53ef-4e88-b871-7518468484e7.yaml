@@ -1,6 +1,20 @@
+defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - 7536d724-07df-42bd-b0fe-a872ad23ac5a # Above Content
+  - 040290e0-e763-4e3c-8e18-5610e6e0864f # THM scoreboard
 handle: portfolio
+maxAuthors: 1
 name: Portfolio
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
 propagationMethod: all
 siteSettings:
   2fc7f7b8-2f9d-43dd-977b-8c7b29763e54: # haxor.no/en

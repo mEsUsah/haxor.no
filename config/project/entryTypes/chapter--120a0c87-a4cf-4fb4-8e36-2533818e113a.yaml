@@ -1,0 +1,51 @@
+color: null
+fieldLayouts:
+  4d87809c-8769-4d0c-b64a-97cc4ba5b7e8:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 6a70457e-a328-490d-8e43-da01bd0fb461
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: 'Chapter Headline'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c3b90766-9ac9-4e27-9d89-c3154cad5616
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 62b88f4a-25d3-4a89-831f-24f78c24f85b
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Subtitle
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5adb01f7-8ca2-4746-af4b-308073f51ac7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: eaae67db-1946-4fea-92a2-5d8bd0b23f33
+        userCondition: null
+handle: chapter
+hasTitleField: false
+icon: null
+name: Chapter
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

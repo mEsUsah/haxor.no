@@ -1,6 +1,19 @@
+defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - 190326da-4559-4d36-aae0-20b00fa6318f # Books
 handle: books
+maxAuthors: 1
 name: Books
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
 propagationMethod: custom
 siteSettings:
   2fc7f7b8-2f9d-43dd-977b-8c7b29763e54: # haxor.no/en

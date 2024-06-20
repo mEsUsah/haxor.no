@@ -1,0 +1,54 @@
+columnSuffix: null
+handle: terminalColor
+instructions: null
+name: 'ContentBlocks - Terminal Dump - Color'
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Default (black)'
+        -
+          - value
+          - default
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Attacker
+        -
+          - value
+          - attacker
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Victim
+        -
+          - value
+          - victim
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Neutral
+        -
+          - value
+          - neutral
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

@@ -89,7 +89,6 @@ fieldLayouts:
 handle: aboutblog
 hasTitleField: true
 name: 'About Blog'
-section: 1123b472-8241-4d07-bd52-1eff0c59f1ef # About Blog
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

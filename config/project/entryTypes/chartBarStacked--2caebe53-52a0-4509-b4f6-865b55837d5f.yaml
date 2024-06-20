@@ -1,0 +1,66 @@
+color: null
+fieldLayouts:
+  8e3130ee-c8d8-46a1-a367-1f0bbda49305:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 7dca122d-a470-466a-ae07-51758b1fc449
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: 'Chart Title'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 23bcc76f-092b-4fc9-a96e-5fd948d70be1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9dbc0bea-5f8c-4a42-a060-58a1e9baf36f
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Chart Subtitle'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 58c8c9d5-6274-414f-b61d-8cc75cb57fcd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d67ba21e-e565-441c-aafd-bee2a9f4d3f7
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Data
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3acc387a-ca7f-4e48-88cd-6014cd66a1e4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f3e64b6f-4e4b-4e64-aa49-220f63351a9b
+        userCondition: null
+handle: chartBarStacked
+hasTitleField: false
+icon: null
+name: 'Chart - Bar (Stacked)'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

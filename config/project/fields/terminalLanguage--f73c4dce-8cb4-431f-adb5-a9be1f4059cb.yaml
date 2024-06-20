@@ -1,0 +1,32 @@
+columnSuffix: null
+handle: terminalLanguage
+instructions: null
+name: 'ContentBlocks - Terminal Dump - Language'
+searchable: true
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - BASH
+        -
+          - value
+          - BASH
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - PowerShell
+        -
+          - value
+          - PowerShell
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

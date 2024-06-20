@@ -1,0 +1,159 @@
+fieldLayouts:
+  853f38b5-43c9-41ee-8b87-9981eccc8003:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: d69a3ec0-bd38-46ad-bc0b-41094592024e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6288f6a3-5828-4e36-8407-4f1fbe59e057 # Achievement Badge
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 660a53d2-3ed2-43bc-850b-8b508ab82ca4
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 12c8b9da-5b5a-4bd7-a51e-4116181081ad # Course Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fdb100e2-8f69-494e-9be1-ea7bf5694d7a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f733eaac-e1d6-428e-a5e6-5e9c1b8450df # Course Review Quote
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7facf5ee-e103-48ab-a9fc-4caab47d09f7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6ed30be3-319a-4469-a458-a70309e3e179 # Course Review
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9c25a267-0ddd-4ffa-890e-c50de5e15cdd
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 9a956541-1c09-4906-aecd-8ac0728e3eca
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: c2cadeae-b406-4376-a7bb-822c8d077ca2 # Course Theme
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2b22724f-5453-42f7-9cc5-31257c71b4ce
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 44f8fa56-23f3-4d1e-8231-4e7f46c9af46 # Copletion Date
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d7fb8308-0bd9-4580-bb78-a9dfdc1cef7d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9096bb19-2f4d-4b40-91f7-7f0d84ee7b01 # Course Length (hours)
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cb5ba71e-df92-482e-b01a-a3b8042a1c0d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ac49e4c4-d11a-4bbe-9a08-04c06268ba93 # Course Length (min)
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4795fc9c-c3e5-48e8-949d-94b620251c42
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4fa3f654-1283-406b-9656-22b48a6c818e # Course Certificate URL
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b1ff0ae1-77a1-4c41-8f18-85e53f28686e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Metadata
+        uid: ccd20093-8ae2-46c6-8915-dd082f6351d3
+        userCondition: null
+handle: certificates_default
+hasTitleField: true
+name: 'Certificates - Default'
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

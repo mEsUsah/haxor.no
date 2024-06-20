@@ -1,0 +1,24 @@
+columnSuffix: wcjavcbt
+handle: description
+instructions: null
+name: 'ContentBlocks - Certificate - description'
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: ''
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: Simple.json
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

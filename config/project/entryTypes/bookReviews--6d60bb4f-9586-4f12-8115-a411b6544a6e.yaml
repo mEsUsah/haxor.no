@@ -40,7 +40,6 @@ fieldLayouts:
 handle: bookReviews
 hasTitleField: true
 name: 'Book Reviews'
-section: 7dbe180d-e397-494f-bea8-61f7b3f5bf4d # Book Reviews
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

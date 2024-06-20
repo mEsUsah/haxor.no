@@ -1,0 +1,23 @@
+columnSuffix: null
+handle: certificates
+instructions: null
+name: 'ContentBlocks - Certificate - Certificates'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: false
+  sources:
+    - 'section:1e364dce-0242-4cfe-8565-03b39ef5bea6' # Certificates
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

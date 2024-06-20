@@ -1,0 +1,24 @@
+columnSuffix: null
+handle: imageCapt
+instructions: null
+name: 'ContentBlocks - Image - Image Caption'
+searchable: true
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: null
+  removeEmptyTags: true
+  removeInlineStyles: true
+  removeNbsp: true
+  showHtmlButtonForNonAdmins: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: language
+type: craft\redactor\Field

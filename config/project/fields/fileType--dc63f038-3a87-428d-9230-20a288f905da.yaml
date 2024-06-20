@@ -1,0 +1,197 @@
+columnSuffix: null
+handle: fileType
+instructions: null
+name: 'ContentBlocks - File Content - File type'
+searchable: true
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - None
+        -
+          - value
+          - none
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 'Markup (html, xml, svg, rss ++)'
+        -
+          - value
+          - markup
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Arduino
+        -
+          - value
+          - arduino
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'BASH + Shell'
+        -
+          - value
+          - bash
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - C
+        -
+          - value
+          - c
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - C-like
+        -
+          - value
+          - clike
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - C++
+        -
+          - value
+          - cpp
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'C# (.NET)'
+        -
+          - value
+          - csharp
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - EditorConfig
+        -
+          - value
+          - editorconfig
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - JavaScript
+        -
+          - value
+          - javascript
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - JSON
+        -
+          - value
+          - json
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Markup templating'
+        -
+          - value
+          - markup-templating
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - PHP
+        -
+          - value
+          - php
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - PowerShell
+        -
+          - value
+          - powershell
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Python
+        -
+          - value
+          - python
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - SQL
+        -
+          - value
+          - sql
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Twig
+        -
+          - value
+          - twig
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

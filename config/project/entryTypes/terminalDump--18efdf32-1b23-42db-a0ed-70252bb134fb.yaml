@@ -1,0 +1,111 @@
+color: null
+fieldLayouts:
+  639bbea6-94c0-45a9-be44-ffc374bd8307:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: f73c4dce-8cb4-431f-adb5-a9be1f4059cb
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: Language
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 02e843aa-eeee-4f0a-927c-c4cf6071e534
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 7ed843f8-2709-4ad0-b32d-e234ed22f289
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Color
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 60c93968-58dc-4e03-bc5a-bb9a31d7c566
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: cabe8fa0-a9ef-4a18-ab9d-4b3b69cd2f3a
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Terminal Input Only'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 630a090a-6aee-4a77-b016-02889b9dcbdb
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 3ebdee02-2eb1-48f4-8b4b-4f45f3bfbae9
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Username
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 734411f8-32c1-4434-9630-470e18013998
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 19285c32-e1f8-42c0-97ff-59f16dbb52af
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Hostname
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fc0d57db-0316-4ea6-a954-e60e12ce12c7
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 925133d6-79dc-4f13-9cbc-3752c2eff691
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Terminal Dump'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4f4ff289-738a-486b-a4bd-dcc8522b467f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 517002ca-d9e1-42d7-867b-e3d7ce622d45
+        userCondition: null
+handle: terminalDump
+hasTitleField: false
+icon: null
+name: 'Terminal Dump'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

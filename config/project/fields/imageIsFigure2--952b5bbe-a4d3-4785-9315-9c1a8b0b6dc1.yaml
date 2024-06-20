@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: imageIsFigure2
+instructions: null
+name: 'Lesson Blocks - Image - Image Is Figure'
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

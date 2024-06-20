@@ -1,7 +1,19 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - 88680ae0-eeb1-4709-b620-2e2a9f91b4a6 # CTF Writeup - Default
 handle: ctfWriteup
+maxAuthors: 1
 name: 'CTF Writeup'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
 propagationMethod: custom
 siteSettings:
   2fc7f7b8-2f9d-43dd-977b-8c7b29763e54: # haxor.no/en

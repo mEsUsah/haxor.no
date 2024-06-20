@@ -1,0 +1,36 @@
+color: null
+fieldLayouts:
+  5c45fdfa-cab4-43ab-908b-106c76c81ad8:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 9bfb520d-0d98-4906-9d30-74ca1c638982
+            handle: text
+            includeInCards: true
+            instructions: null
+            label: Text
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c70feb04-6360-4b37-96f1-dc85fa44e45b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 6310f987-fe4b-43bb-85f8-d49f99df1588
+        userCondition: null
+handle: infoBox2
+hasTitleField: false
+icon: null
+name: 'Info Box 2'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

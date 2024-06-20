@@ -1,0 +1,23 @@
+columnSuffix: null
+handle: courses
+instructions: null
+name: 'ContentBlocks - Courses - Courses'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: false
+  sources:
+    - 'section:b3979b7e-2d54-4b6f-89ec-5ef480431d82' # Courses
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

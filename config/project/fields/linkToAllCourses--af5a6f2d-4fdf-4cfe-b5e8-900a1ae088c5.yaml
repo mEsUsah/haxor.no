@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: linkToAllCourses
+instructions: null
+name: 'ContentBlocks - Books - Link to all courses?'
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

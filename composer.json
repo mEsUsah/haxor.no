@@ -21,16 +21,16 @@
         "rss": "https://craftcms.com/changelog.rss"
     },
     "require": {
-        "craftcms/cms": "4.8.1",
+        "craftcms/cms": "^5.0.0",
         "vlucas/phpdotenv": "^3.4.0",
-        "craftcms/redactor": "3.0.4",
-        "verbb/super-table": "3.0.12",
+        "craftcms/redactor": "4.1.0",
+        "verbb/super-table": "4.0.1",
         "mesusah/craft-haxor": "^2.0.0",
         "mesusah/craft-tryhackme": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-shell": "^2.0.3",
-        "craftcms/generator": "^1.6"
+        "craftcms/generator": "^2.1"
     },
     "autoload": {
         "psr-4": {
@@ -40,7 +40,7 @@
     "config": {
         "optimize-autoloader": true,
         "platform": {
-            "php": "8.0.12"
+            "php": "8.2"
         },
         "allow-plugins": {
             "craftcms/plugin-installer": true,
@@ -62,6 +62,10 @@
         {
             "type": "path",
             "url": "plugins/haxor/"
+        },
+        {
+            "type": "path",
+            "url": "plugins/tryhackme/"
         },
         {
             "type": "composer",

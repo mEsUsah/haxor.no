@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: chartSubtitle
+instructions: 'Explain what the data represent'
+name: 'ContentBlocks - Chart - Bar (Stacked) - Chart Subtitle'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

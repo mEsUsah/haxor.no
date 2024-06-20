@@ -1,0 +1,23 @@
+columnSuffix: null
+handle: books
+instructions: null
+name: 'ContentBlocks - Books - Books'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: false
+  sources:
+    - 'section:c4023ed4-c787-4f58-bb1f-1d51b48518c2' # Books
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

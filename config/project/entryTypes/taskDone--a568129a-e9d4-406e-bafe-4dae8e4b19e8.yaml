@@ -1,0 +1,36 @@
+color: null
+fieldLayouts:
+  744c3232-cab0-4672-889e-25efe2cb6cc8:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 023232ef-4d79-4571-896b-9146438b66bb
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: 'Task text'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5984aea5-b327-4037-9133-f3d31bcb2c6a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a2bbfbf5-cb81-464c-aea3-9529bfae211f
+        userCondition: null
+handle: taskDone
+hasTitleField: false
+icon: null
+name: 'Task Done'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

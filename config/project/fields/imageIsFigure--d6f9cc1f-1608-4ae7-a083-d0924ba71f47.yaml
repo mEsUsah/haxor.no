@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: imageIsFigure
+instructions: null
+name: 'ContentBlocks - Image - Image Is Figure'
+searchable: true
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

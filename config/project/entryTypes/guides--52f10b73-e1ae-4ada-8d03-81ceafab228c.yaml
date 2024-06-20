@@ -111,7 +111,6 @@ fieldLayouts:
 handle: guides
 hasTitleField: true
 name: Guides
-section: 2ec41ca2-210b-47c8-97d3-306955a39abb # Articles
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

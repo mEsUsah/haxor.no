@@ -102,7 +102,6 @@ fieldLayouts:
 handle: default
 hasTitleField: true
 name: Default
-section: 12f99a24-9d48-4fdd-8f1e-fec6cabf9cca # Lessons
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null
