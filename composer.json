@@ -64,10 +64,6 @@
             "url": "plugins/haxor/"
         },
         {
-            "type": "path",
-            "url": "plugins/tryhackme/"
-        },
-        {
             "type": "composer",
             "url": "https://composer.craftcms.com",
             "canonical": false

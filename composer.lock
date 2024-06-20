@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "12d48c6c8e72f0519f3dbf15d00b5da5",
+    "content-hash": "ee3750f5cf8dd1774ef882e5fec465e5",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1386,10 +1386,16 @@
         {
             "name": "mesusah/craft-tryhackme",
             "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mEsUsah/craft-tryhackme.git",
+                "reference": "5a7b6e29ca015cf2ff79290ee66e22186f1bfd3b"
+            },
             "dist": {
-                "type": "path",
-                "url": "plugins/tryhackme",
-                "reference": "aed3bebbcf7469a6c5829aae7d61e66f16cee7aa"
+                "type": "zip",
+                "url": "https://api.github.com/repos/mEsUsah/craft-tryhackme/zipball/5a7b6e29ca015cf2ff79290ee66e22186f1bfd3b",
+                "reference": "5a7b6e29ca015cf2ff79290ee66e22186f1bfd3b",
+                "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^5.0.0",
@@ -1399,6 +1405,7 @@
                 "craftcms/ecs": "dev-main",
                 "craftcms/phpstan": "dev-main"
             },
+            "default-branch": true,
             "type": "craft-plugin",
             "extra": {
                 "handle": "tryhackme",
@@ -1413,17 +1420,7 @@
                     "mesusah\\crafttryhackme\\": "src/"
                 }
             },
-            "scripts": {
-                "check-cs": [
-                    "ecs check --ansi"
-                ],
-                "fix-cs": [
-                    "ecs check --ansi --fix"
-                ],
-                "phpstan": [
-                    "phpstan --memory-limit=1G"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "mit"
             ],
@@ -1434,9 +1431,11 @@
                 }
             ],
             "description": "TryHackMe ranking and score tracker for Craft CMS",
-            "transport-options": {
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/mEsUsah/craft-tryhackme/issues",
+                "source": "https://github.com/mEsUsah/craft-tryhackme/tree/master"
+            },
+            "time": "2024-06-20T19:38:52+00:00"
         },
         {
             "name": "mikehaertl/php-shellcommand",
