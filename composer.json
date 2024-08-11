@@ -23,7 +23,7 @@
     "require": {
         "craftcms/cms": "^5.0.0",
         "vlucas/phpdotenv": "^3.4.0",
-        "verbb/super-table": "4.0.1",
+        "verbb/super-table": "4.0.2",
         "mesusah/craft-haxor": "^2.0.0",
         "mesusah/craft-tryhackme": "dev-master",
         "craftcms/ckeditor": "^4.1"
