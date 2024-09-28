@@ -53,7 +53,7 @@ class ArticlesController extends Controller
 
     /**
      * Handle a request going to our plugin's index action URL,
-     * e.g.: actions/haxor/article
+     * e.g.: actions/haxor/articles/all
      *
      * @return mixed
      */
