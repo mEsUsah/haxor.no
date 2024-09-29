@@ -1,13 +1,18 @@
 <?php
+namespace Tests\Feature;
+
 use PHPUnit\Framework\TestCase;
 use craft\elements\Entry;
 use craft\helpers\App;
 use GuzzleHttp\Client;
+use Tests\utils\ClearCache;
 
 final class EntriesTest extends TestCase
 {    
     public function test_can_view_all_published(): void
     {
+        ClearCache::run();
+        
         $client = new Client([
             'base_uri' =>  App::env('PRIMARY_SITE_URL'),
             'timeout'  => 4.0,
