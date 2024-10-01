@@ -65,6 +65,12 @@
             background-size: 120%;
             background-position-y: -6px;
         }
+        &--php{
+            background-image: $icon-php;
+            background-size: 78%;
+            background-position-y: 8px;
+            background-position-x: 8px;
+        }
     }
     &__color{
         &--linux{
@@ -99,6 +105,9 @@
         }
         &--microbit{
             background-color: #99c2f7;
+        }
+        &--php{
+            background-color: #5459c5;
         }
     }
 }
