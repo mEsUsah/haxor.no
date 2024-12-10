@@ -1,4 +1,4 @@
-dateModified: 1723364549
+dateModified: 1733827040
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -46,7 +46,6 @@ meta:
     2caebe53-52a0-4509-b4f6-865b55837d5f: 'Chart - Bar (Stacked)' # Chart - Bar (Stacked)
     2ec41ca2-210b-47c8-97d3-306955a39abb: Articles # Articles
     2efca9b8-ea72-4fc4-9c51-20695e174ce7: 'ContentBlocks - Courses - Three newest?' # ContentBlocks - Courses - Three newest?
-    2f01f6e6-88e1-41da-9241-1b49ae9a9012: Simple # Simple
     2f773f4a-97cc-41d5-9fb6-2016426d4da5: 'Lesson Blocks - Text - Text' # Lesson Blocks - Text - Text
     2fc7f7b8-2f9d-43dd-977b-8c7b29763e54: haxor.no/en # haxor.no/en
     3a65209b-542d-42a6-9fc7-a9b07fd38253: 'File Content' # File Content
@@ -57,6 +56,7 @@ meta:
     3ebdee02-2eb1-48f4-8b4b-4f45f3bfbae9: 'ContentBlocks - Terminal Dump - Username' # ContentBlocks - Terminal Dump - Username
     4a837336-d09a-492d-aa97-3c29b176ecc7: 'Course Platform' # Course Platform
     4fa3f654-1283-406b-9656-22b48a6c818e: 'Course Certificate URL' # Course Certificate URL
+    4ff4b6be-5f03-4236-a01d-2b5125c03d66: Simple # Simple
     5c01d860-2ec5-4205-936e-583524bb8264: 'ContentBlocks - Image - Image AltText' # ContentBlocks - Image - Image AltText
     5d2b6ceb-3b09-44f2-ab53-25f33e506025: 'Achievement Badge' # Achievement Badge
     5dd9f4f3-fb1c-4d81-b3fd-2309b56563f0: 'ContentBlocks - File Content - Filname' # ContentBlocks - File Content - Filname
@@ -136,9 +136,9 @@ meta:
     a227fe85-29a0-403f-b510-659257b8c521: 'Text 2' # Text 2
     a568129a-e9d4-406e-bafe-4dae8e4b19e8: 'Task Done' # Task Done
     aad6c628-7e5f-4c95-9383-e39426be72f7: 'CTF Image' # CTF Image
+    ab427603-a5f6-4996-858f-48231556f394: Default # Default
     ac49e4c4-d11a-4bbe-9a08-04c06268ba93: 'Course Length (min)' # Course Length (min)
     ac148d8c-048e-40df-921a-e1f850f675b1: 'Lesson Blocks - Image - Image' # Lesson Blocks - Image - Image
-    aebd25a6-0dc4-4348-a7dd-cf11b6168ef5: 'Simple 2' # Simple 2
     af5a6f2d-4fdf-4cfe-b5e8-900a1ae088c5: 'ContentBlocks - Books - Link to all courses?' # ContentBlocks - Books - Link to all courses?
     b04f4663-1608-479d-b699-ba1102ba1b61: 'Article Headline' # Article Headline
     b05c4334-9b2d-4f18-8916-c65a9c521861: 'ContentBlocks - Image - Image' # ContentBlocks - Image - Image
@@ -152,7 +152,6 @@ meta:
     b25947e8-fbe4-4dbb-a968-90f7659c7d7f: Home # Home
     baecef3d-6c25-40bf-8e85-eeedf43dec57: 'Rich text' # Rich text
     baf14ed6-b329-41e7-b9b5-4ff5d8ed2cdf: 'Article Image Caption' # Article Image Caption
-    bcea5606-ec0b-4bea-b4ab-b4c0eebb7851: Default # Default
     c2cadeae-b406-4376-a7bb-822c8d077ca2: 'Course Theme' # Course Theme
     c3d8fdbe-5d3a-4a09-a91f-2da6060ece41: ContentBlocks # ContentBlocks
     c6f23113-dc98-46d8-8a58-8837396917aa: 'CTF Platfom' # CTF Platfom
@@ -222,5 +221,5 @@ system:
   live: true
   name: haxor.no
   retryDuration: null
-  schemaVersion: 5.3.0.2
+  schemaVersion: 5.5.0.0
   timeZone: Europe/Oslo
