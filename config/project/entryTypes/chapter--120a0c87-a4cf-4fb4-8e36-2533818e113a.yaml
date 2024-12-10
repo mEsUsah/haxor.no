@@ -1,6 +1,8 @@
 color: null
 fieldLayouts:
   4d87809c-8769-4d0c-b64a-97cc4ba5b7e8:
+    cardView:
+      - 'layoutElement:c3b90766-9ac9-4e27-9d89-c3154cad5616'
     tabs:
       -
         elementCondition: null
@@ -10,7 +12,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2024-12-10T11:55:57+01:00'
+            dateAdded: '2024-12-10T10:55:57+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -36,7 +38,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2024-12-10T11:55:57+01:00'
+            dateAdded: '2024-12-10T10:55:57+00:00'
             elementCondition: null
             fieldUid: 6a70457e-a328-490d-8e43-da01bd0fb461 # ContentBlocks - Chapter - Chapter Headline
             handle: null
@@ -52,7 +54,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2024-12-10T11:55:57+01:00'
+            dateAdded: '2024-12-10T10:55:57+00:00'
             elementCondition: null
             fieldUid: 62b88f4a-25d3-4a89-831f-24f78c24f85b # ContentBlocks - Chapter - Subtitle
             handle: null
@@ -70,52 +72,14 @@ fieldLayouts:
         name: Content
         uid: eaae67db-1946-4fea-92a2-5d8bd0b23f33
         userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            dateAdded: '2024-12-10T11:55:57+01:00'
-            elementCondition: null
-            fieldUid: b5a5e8a4-7781-466d-b7c8-b084e1de354e # Lesson Blocks - Chapter - Chapter Headline
-            handle: chapterHeadline2
-            includeInCards: true
-            instructions: null
-            label: 'Chapter Headline'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 419651e2-1b92-4b4e-8a41-4ffb9a4a4944
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2024-12-10T11:55:57+01:00'
-            elementCondition: null
-            fieldUid: 0d67b800-888b-4a29-9351-b7da5f3b7cdb # Lesson Blocks - Chapter - Subtitle
-            handle: subtitle2
-            includeInCards: false
-            instructions: null
-            label: Subtitle
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 3a9e6f26-3eb1-4505-9810-31b93040ce0d
-            userCondition: null
-            warning: null
-            width: 100
-        name: 'Merged Fields'
-        uid: 5e12dc6c-a021-46c9-92c2-4f7885787ded
-        userCondition: null
 handle: chapter
 hasTitleField: true
-icon: null
+icon: ''
 name: Chapter
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
-titleFormat: null
-titleTranslationKeyFormat: null
+titleFormat: ''
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

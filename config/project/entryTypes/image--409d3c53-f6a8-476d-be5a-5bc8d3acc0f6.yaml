@@ -1,6 +1,8 @@
 color: null
 fieldLayouts:
   237bf740-80eb-4f66-b362-4f05ec0604b6:
+    cardView:
+      - 'layoutElement:45112ee9-fbb2-40ec-b527-9bf94e72967f'
     tabs:
       -
         elementCondition: null
@@ -10,6 +12,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: '2024-12-10T11:01:06+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -24,7 +27,7 @@ fieldLayouts:
             placeholder: null
             providesThumbs: false
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -35,6 +38,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-12-10T11:01:06+00:00'
             elementCondition: null
             fieldUid: b05c4334-9b2d-4f18-8916-c65a9c521861 # ContentBlocks - Image - Image
             handle: null
@@ -50,6 +54,7 @@ fieldLayouts:
             warning: null
             width: 25
           -
+            dateAdded: '2024-12-10T11:01:06+00:00'
             elementCondition: null
             fieldUid: d6f9cc1f-1608-4ae7-a083-d0924ba71f47 # ContentBlocks - Image - Image Is Figure
             handle: null
@@ -65,6 +70,7 @@ fieldLayouts:
             warning: null
             width: 25
           -
+            dateAdded: '2024-12-10T11:01:06+00:00'
             elementCondition: null
             fieldUid: 5c01d860-2ec5-4205-936e-583524bb8264 # ContentBlocks - Image - Image AltText
             handle: null
@@ -80,6 +86,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-12-10T11:01:06+00:00'
             elementCondition: null
             fieldUid: 6a498afe-8881-4b4d-bd9e-f128e6d2ac6e # ContentBlocks - Image - Image Caption
             handle: null
@@ -98,13 +105,13 @@ fieldLayouts:
         uid: e893ba10-7cce-47a3-aee8-7d335355be86
         userCondition: null
 handle: image
-hasTitleField: false
-icon: null
+hasTitleField: true
+icon: ''
 name: Image
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
-titleFormat: null
-titleTranslationKeyFormat: null
+titleFormat: ''
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

@@ -1,4 +1,4 @@
-dateModified: 1733828217
+dateModified: 1733828848
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -137,7 +137,6 @@ meta:
     aad6c628-7e5f-4c95-9383-e39426be72f7: 'CTF Image' # CTF Image
     ab427603-a5f6-4996-858f-48231556f394: Default # Default
     ac49e4c4-d11a-4bbe-9a08-04c06268ba93: 'Course Length (min)' # Course Length (min)
-    ac148d8c-048e-40df-921a-e1f850f675b1: 'Lesson Blocks - Image - Image' # Lesson Blocks - Image - Image
     af5a6f2d-4fdf-4cfe-b5e8-900a1ae088c5: 'ContentBlocks - Books - Link to all courses?' # ContentBlocks - Books - Link to all courses?
     b04f4663-1608-479d-b699-ba1102ba1b61: 'Article Headline' # Article Headline
     b05c4334-9b2d-4f18-8916-c65a9c521861: 'ContentBlocks - Image - Image' # ContentBlocks - Image - Image
@@ -172,7 +171,6 @@ meta:
     e6da2fad-eca4-4420-b3ee-ddb8e1fb8941: 'Menu link Block' # Menu link Block
     e75f8e08-e499-444e-b646-97309e1abb2b: 'ContentBlocks - Books - Books' # ContentBlocks - Books - Books
     ea9728b1-b326-481a-810f-1735e2b682cc: TryHackMe # TryHackMe
-    eac3ade5-8f69-4ee2-b1df-4cc1b1e1b9b7: 'Image 2' # Image 2
     ec8d0268-e294-4677-9a70-bf25ab9f87e7: 'Info Box' # Info Box
     ec9f430a-d961-4e4c-ab37-d8de33b78cbe: 'Lesson Blocks' # Lesson Blocks
     ed01c0d7-346e-4af2-b76f-825ac0da9e30: 'My courses' # My courses
