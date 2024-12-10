@@ -1,40 +1,14 @@
-color: null
+color: rose
 fieldLayouts:
   8e3130ee-c8d8-46a1-a367-1f0bbda49305:
+    cardView:
+      - 'layoutElement:23bcc76f-092b-4fc9-a96e-5fd948d70be1'
     tabs:
       -
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            disabled: false
-            elementCondition: null
-            id: null
-            includeInCards: false
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            providesThumbs: false
-            readonly: false
-            requirable: false
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: dbc3b275-4dea-4b7f-88ae-8ed31c6e6d6a
-            userCondition: null
-            warning: null
-            width: 100
-          -
+            dateAdded: '2024-12-10T15:42:01+00:00'
             elementCondition: null
             fieldUid: 7dca122d-a470-466a-ae07-51758b1fc449 # ContentBlocks - Chart - Bar (Stacked) - Chart Title
             handle: null
@@ -50,6 +24,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-12-10T15:42:01+00:00'
             elementCondition: null
             fieldUid: 9dbc0bea-5f8c-4a42-a060-58a1e9baf36f # ContentBlocks - Chart - Bar (Stacked) - Chart Subtitle
             handle: null
@@ -65,6 +40,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-12-10T15:42:01+00:00'
             elementCondition: null
             fieldUid: d67ba21e-e565-441c-aafd-bee2a9f4d3f7 # ContentBlocks - Chart - Bar (Stacked) - Data
             handle: null
@@ -84,12 +60,12 @@ fieldLayouts:
         userCondition: null
 handle: chartBarStacked
 hasTitleField: false
-icon: null
+icon: chart-simple
 name: 'Chart - Bar (Stacked)'
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
-titleFormat: null
-titleTranslationKeyFormat: null
+titleFormat: ''
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

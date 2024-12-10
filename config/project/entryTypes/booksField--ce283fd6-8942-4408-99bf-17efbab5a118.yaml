@@ -1,4 +1,4 @@
-color: null
+color: orange
 fieldLayouts:
   48fac4d8-f125-4fba-a9ef-29a072d8f257:
     cardView:
@@ -60,7 +60,7 @@ fieldLayouts:
         userCondition: null
 handle: booksField
 hasTitleField: false
-icon: ''
+icon: book
 name: Books
 showSlugField: true
 showStatusField: true

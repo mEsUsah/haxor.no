@@ -1,4 +1,4 @@
-color: null
+color: lime
 fieldLayouts:
   e805ccd1-3547-4bf0-8b3d-565578a887d1:
     cardView:
@@ -58,7 +58,7 @@ fieldLayouts:
         userCondition: null
 handle: infoBox
 hasTitleField: true
-icon: ''
+icon: circle-info
 name: 'Info Box'
 showSlugField: true
 showStatusField: true

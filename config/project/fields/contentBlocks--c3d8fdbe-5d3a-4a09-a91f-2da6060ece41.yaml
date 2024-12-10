@@ -5,22 +5,23 @@ name: ContentBlocks
 searchable: true
 settings:
   createButtonLabel: null
+  defaultIndexViewMode: cards
   entryTypes:
-    - 2caebe53-52a0-4509-b4f6-865b55837d5f # Chart - Bar (Stacked)
-    - 3a65209b-542d-42a6-9fc7-a9b07fd38253 # File Content
-    - 7d9ff56a-e0ad-49f6-810e-0b4601084749 # Certificate
-    - 18efdf32-1b23-42db-a0ed-70252bb134fb # Terminal Dump
-    - 34ae23a4-8987-424f-a7af-fc651ee1f28c # HackerRank
     - 120a0c87-a4cf-4fb4-8e36-2533818e113a # Chapter
-    - 409d3c53-f6a8-476d-be5a-5bc8d3acc0f6 # Image
     - 572f6109-c32e-4df3-8c66-7e5bba2756ea # Text
-    - 64860ba2-3393-423d-950c-d23a278d4d20 # Entry
+    - ec8d0268-e294-4677-9a70-bf25ab9f87e7 # Info Box
     - b92f222e-e35a-4a5a-bb11-3b5ea3deda0c # Quote
+    - 409d3c53-f6a8-476d-be5a-5bc8d3acc0f6 # Image
+    - 18efdf32-1b23-42db-a0ed-70252bb134fb # Terminal Dump
+    - 3a65209b-542d-42a6-9fc7-a9b07fd38253 # File Content
+    - ea9728b1-b326-481a-810f-1735e2b682cc # TryHackMe
+    - 34ae23a4-8987-424f-a7af-fc651ee1f28c # HackerRank
+    - f8f50449-6440-4878-a1c7-8da852defe91 # Chart - Line
+    - 2caebe53-52a0-4509-b4f6-865b55837d5f # Chart - Bar (Stacked)
+    - 64860ba2-3393-423d-950c-d23a278d4d20 # Entry
     - ce283fd6-8942-4408-99bf-17efbab5a118 # Books
     - dc9122fb-758f-42ae-a098-da603eb31a49 # Courses
-    - ea9728b1-b326-481a-810f-1735e2b682cc # TryHackMe
-    - ec8d0268-e294-4677-9a70-bf25ab9f87e7 # Info Box
-    - f8f50449-6440-4878-a1c7-8da852defe91 # Chart - Line
+    - 7d9ff56a-e0ad-49f6-810e-0b4601084749 # Certificate
   includeTableView: false
   maxEntries: null
   minEntries: null

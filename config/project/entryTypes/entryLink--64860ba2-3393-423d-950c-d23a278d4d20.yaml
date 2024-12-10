@@ -1,40 +1,12 @@
-color: null
+color: orange
 fieldLayouts:
   f9c6559e-bd2e-4d47-ab1a-6315e2a6d1ef:
+    cardView:
+      - 'layoutElement:bb2b0179-3ba1-47c4-9c82-a684af3b537e'
     tabs:
       -
         elementCondition: null
         elements:
-          -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            dateAdded: '2024-12-10T15:04:04+00:00'
-            disabled: false
-            elementCondition: null
-            id: null
-            includeInCards: false
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            providesThumbs: false
-            readonly: false
-            required: true
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: bef422a1-973f-4fc9-aea0-1d0e787fb6d2
-            userCondition: null
-            warning: null
-            width: 100
           -
             dateAdded: '2024-12-10T15:04:04+00:00'
             elementCondition: null
@@ -88,12 +60,12 @@ fieldLayouts:
         userCondition: null
 handle: entryLink
 hasTitleField: false
-icon: null
+icon: newspaper
 name: Entry
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
-titleFormat: null
-titleTranslationKeyFormat: null
+titleFormat: ''
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

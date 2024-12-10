@@ -1,40 +1,14 @@
-color: null
+color: rose
 fieldLayouts:
   2a00fe97-518d-4d8e-b26d-bb1eb355016b:
+    cardView:
+      - 'layoutElement:21455159-e771-4a90-9d96-3dcf08609e1b'
     tabs:
       -
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            disabled: false
-            elementCondition: null
-            id: null
-            includeInCards: false
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            providesThumbs: false
-            readonly: false
-            requirable: false
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 0b2a9246-7053-4014-9e9c-f1462b211876
-            userCondition: null
-            warning: null
-            width: 100
-          -
+            dateAdded: '2024-12-10T15:41:26+00:00'
             elementCondition: null
             fieldUid: c28731d1-d362-458e-8210-a901f3f0e4ab # ContentBlocks - Chart - Line - Chart Headline
             handle: null
@@ -54,12 +28,12 @@ fieldLayouts:
         userCondition: null
 handle: chartLine
 hasTitleField: false
-icon: null
+icon: chart-line
 name: 'Chart - Line'
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
-titleFormat: null
-titleTranslationKeyFormat: null
+titleFormat: ''
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

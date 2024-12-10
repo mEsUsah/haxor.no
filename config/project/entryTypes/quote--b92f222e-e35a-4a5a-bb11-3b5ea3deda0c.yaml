@@ -1,40 +1,14 @@
-color: null
+color: lime
 fieldLayouts:
   cdbb61ca-cfb0-41b0-ae6a-515ad8a5c8ed:
+    cardView:
+      - 'layoutElement:7f30f068-9acc-468e-86d6-75a30bad7f0d'
     tabs:
       -
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            disabled: false
-            elementCondition: null
-            id: null
-            includeInCards: false
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            providesThumbs: false
-            readonly: false
-            requirable: false
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 140547c2-d448-4661-a3b7-4ba7e82104f7
-            userCondition: null
-            warning: null
-            width: 100
-          -
+            dateAdded: '2024-12-10T15:42:39+00:00'
             elementCondition: null
             fieldUid: f96fb1c8-21d9-45ec-bc75-5792dd3b3c5b # ContentBlocks - Quote - Quote
             handle: null
@@ -54,12 +28,12 @@ fieldLayouts:
         userCondition: null
 handle: quote
 hasTitleField: false
-icon: null
+icon: quotes
 name: Quote
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
-titleFormat: null
-titleTranslationKeyFormat: null
+titleFormat: ''
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

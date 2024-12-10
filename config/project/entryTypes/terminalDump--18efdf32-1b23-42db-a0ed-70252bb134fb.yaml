@@ -1,40 +1,14 @@
-color: null
+color: purple
 fieldLayouts:
   639bbea6-94c0-45a9-be44-ffc374bd8307:
+    cardView:
+      - 'layoutElement:02e843aa-eeee-4f0a-927c-c4cf6071e534'
     tabs:
       -
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            disabled: false
-            elementCondition: null
-            id: null
-            includeInCards: false
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            providesThumbs: false
-            readonly: false
-            requirable: false
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 70d7f2ac-dcf5-4a29-b34b-2cf56cdf5876
-            userCondition: null
-            warning: null
-            width: 100
-          -
+            dateAdded: '2024-12-10T15:41:01+00:00'
             elementCondition: null
             fieldUid: f73c4dce-8cb4-431f-adb5-a9be1f4059cb # ContentBlocks - Terminal Dump - Language
             handle: null
@@ -50,6 +24,7 @@ fieldLayouts:
             warning: null
             width: 25
           -
+            dateAdded: '2024-12-10T15:41:01+00:00'
             elementCondition: null
             fieldUid: 7ed843f8-2709-4ad0-b32d-e234ed22f289 # ContentBlocks - Terminal Dump - Color
             handle: null
@@ -65,6 +40,7 @@ fieldLayouts:
             warning: null
             width: 25
           -
+            dateAdded: '2024-12-10T15:41:01+00:00'
             elementCondition: null
             fieldUid: cabe8fa0-a9ef-4a18-ab9d-4b3b69cd2f3a # ContentBlocks - Terminal Dump - Terminal Input Only
             handle: null
@@ -80,6 +56,7 @@ fieldLayouts:
             warning: null
             width: 25
           -
+            dateAdded: '2024-12-10T15:41:01+00:00'
             elementCondition: null
             fieldUid: 3ebdee02-2eb1-48f4-8b4b-4f45f3bfbae9 # ContentBlocks - Terminal Dump - Username
             handle: null
@@ -95,6 +72,7 @@ fieldLayouts:
             warning: null
             width: 50
           -
+            dateAdded: '2024-12-10T15:41:01+00:00'
             elementCondition: null
             fieldUid: 19285c32-e1f8-42c0-97ff-59f16dbb52af # ContentBlocks - Terminal Dump - Hostname
             handle: null
@@ -110,6 +88,7 @@ fieldLayouts:
             warning: null
             width: 50
           -
+            dateAdded: '2024-12-10T15:41:01+00:00'
             elementCondition: null
             fieldUid: 925133d6-79dc-4f13-9cbc-3752c2eff691 # ContentBlocks - Terminal Dump - Terminal Dump
             handle: null
@@ -129,12 +108,12 @@ fieldLayouts:
         userCondition: null
 handle: terminalDump
 hasTitleField: false
-icon: null
+icon: rectangle-terminal
 name: 'Terminal Dump'
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
-titleFormat: null
-titleTranslationKeyFormat: null
+titleFormat: ''
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

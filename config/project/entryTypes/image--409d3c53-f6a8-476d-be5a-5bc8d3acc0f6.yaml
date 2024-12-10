@@ -1,4 +1,4 @@
-color: null
+color: sky
 fieldLayouts:
   237bf740-80eb-4f66-b362-4f05ec0604b6:
     cardView:
@@ -106,7 +106,7 @@ fieldLayouts:
         userCondition: null
 handle: image
 hasTitleField: true
-icon: ''
+icon: image
 name: Image
 showSlugField: true
 showStatusField: true

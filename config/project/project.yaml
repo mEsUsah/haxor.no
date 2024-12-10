@@ -1,4 +1,4 @@
-dateModified: 1733843922
+dateModified: 1733845754
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -32,10 +32,6 @@ fs:
       path: uploads/thumbnails
     type: craft\fs\Local
     url: '@web/uploads/thumbnails'
-graphql:
-  publicToken:
-    enabled: false
-    expiryDate: null
 meta:
   __names__:
     0e2235ec-098b-4add-9c16-2a51cb50b5e3: 'Course Grade' # Course Grade
@@ -88,6 +84,7 @@ meta:
     62b88f4a-25d3-4a89-831f-24f78c24f85b: 'ContentBlocks - Chapter - Subtitle' # ContentBlocks - Chapter - Subtitle
     71ac9a76-cabc-44c7-8470-bae1c0d43ed0: 'ContentBlocks - Entry - Entry' # ContentBlocks - Entry - Entry
     72a349c8-b7c8-4301-81a5-7301f5cc1058: 'Article Image' # Article Image
+    77ba99a9-9415-421c-ae85-9f5452850a48: 'Public Schema' # Public Schema
     080d70ab-85ac-424a-9d06-3aedf3fd9889: Globals # Globals
     93d39a6a-48eb-4f78-afb1-8fd74053ce15: 'Course Image' # Course Image
     120a0c87-a4cf-4fb4-8e36-2533818e113a: Chapter # Chapter

@@ -1,4 +1,4 @@
-color: null
+color: orange
 fieldLayouts:
   4d87809c-8769-4d0c-b64a-97cc4ba5b7e8:
     cardView:
@@ -74,7 +74,7 @@ fieldLayouts:
         userCondition: null
 handle: chapter
 hasTitleField: true
-icon: ''
+icon: heading
 name: Chapter
 showSlugField: true
 showStatusField: true

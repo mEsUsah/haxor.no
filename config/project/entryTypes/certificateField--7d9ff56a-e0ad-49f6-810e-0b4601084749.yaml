@@ -1,4 +1,4 @@
-color: null
+color: orange
 fieldLayouts:
   89894aaf-856c-44f5-bbec-28684d44d4c5:
     cardView:
@@ -60,7 +60,7 @@ fieldLayouts:
         userCondition: null
 handle: certificateField
 hasTitleField: false
-icon: ''
+icon: certificate
 name: Certificate
 showSlugField: true
 showStatusField: true

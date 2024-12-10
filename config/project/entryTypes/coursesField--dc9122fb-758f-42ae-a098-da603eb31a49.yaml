@@ -1,4 +1,4 @@
-color: null
+color: orange
 fieldLayouts:
   7e83945a-84c7-442f-a4f6-a62dac941a55:
     cardView:
@@ -60,7 +60,7 @@ fieldLayouts:
         userCondition: null
 handle: coursesField
 hasTitleField: false
-icon: ''
+icon: graduation-cap
 name: Courses
 showSlugField: true
 showStatusField: true
