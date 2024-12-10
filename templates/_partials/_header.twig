@@ -51,7 +51,7 @@
                                     {% if block.type == "chapter" %}
                                         {% set chapterNr = chapterNr + 1 %}
                                         <li>
-                                            <a href="#ch_{{chapterNr}}" data-chapter-button-menu="{{chapterNr}}">{{ block.chapterHeadline }}</a>
+                                            <a href="#ch_{{chapterNr}}" data-chapter-button-menu="{{chapterNr}}">{{ block.headline }}</a>
                                         </li>
                                     {% endif %}
                                 {% endfor %} 

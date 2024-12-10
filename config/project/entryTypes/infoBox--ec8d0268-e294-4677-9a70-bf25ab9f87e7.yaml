@@ -8,36 +8,6 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            dateAdded: '2024-12-10T11:33:40+00:00'
-            disabled: false
-            elementCondition: null
-            id: null
-            includeInCards: false
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            providesThumbs: false
-            readonly: false
-            required: true
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 8c7cb1bb-1259-4ab9-867d-cf007b2cd04c
-            userCondition: null
-            warning: null
-            width: 100
-          -
             dateAdded: '2024-12-10T11:33:40+00:00'
             elementCondition: null
             fieldUid: 57a8d48f-2781-4975-b7ff-b3b5efd7c470 # ContentBlocks - Text - Text
@@ -57,7 +27,7 @@ fieldLayouts:
         uid: 925f30f1-9ac9-4d22-b2af-07e8f469336c
         userCondition: null
 handle: infoBox
-hasTitleField: true
+hasTitleField: false
 icon: circle-info
 name: 'Info Box'
 showSlugField: true

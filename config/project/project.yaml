@@ -1,4 +1,4 @@
-dateModified: 1733845754
+dateModified: 1733852295
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -54,7 +54,6 @@ meta:
     5dd9f4f3-fb1c-4d81-b3fd-2309b56563f0: 'ContentBlocks - File Content - Filname' # ContentBlocks - File Content - Filname
     5f92318f-a48c-4fb9-9b08-f04c9a691e87: 'CTF Writeup' # CTF Writeup
     6a498afe-8881-4b4d-bd9e-f128e6d2ac6e: 'ContentBlocks - Image - Image Caption' # ContentBlocks - Image - Image Caption
-    6a70457e-a328-490d-8e43-da01bd0fb461: 'ContentBlocks - Chapter - Chapter Headline' # ContentBlocks - Chapter - Chapter Headline
     6bcc3fb3-fa1a-42c3-b33b-5f61432e08ca: 'Artikkel type' # Artikkel type
     6d60bb4f-9586-4f12-8115-a411b6544a6e: 'Book Reviews' # Book Reviews
     6ed30be3-319a-4469-a458-a70309e3e179: 'Course Review' # Course Review
@@ -123,11 +122,11 @@ meta:
     aad6c628-7e5f-4c95-9383-e39426be72f7: 'CTF Image' # CTF Image
     ab427603-a5f6-4996-858f-48231556f394: Default # Default
     ac49e4c4-d11a-4bbe-9a08-04c06268ba93: 'Course Length (min)' # Course Length (min)
-    af5a6f2d-4fdf-4cfe-b5e8-900a1ae088c5: 'ContentBlocks - Books - Link to all courses?' # ContentBlocks - Books - Link to all courses?
+    af5a6f2d-4fdf-4cfe-b5e8-900a1ae088c5: 'ContentBlocks - Link to all?' # ContentBlocks - Link to all?
     b04f4663-1608-479d-b699-ba1102ba1b61: 'Article Headline' # Article Headline
     b05c4334-9b2d-4f18-8916-c65a9c521861: 'ContentBlocks - Image - Image' # ContentBlocks - Image - Image
     b5a3273e-575f-489d-a09a-c407248dc831: 'CTF Writeups' # CTF Writeups
-    b47d1535-bf95-4240-8817-43e15b459bc1: 'ContentBlocks - Certificate - Headline' # ContentBlocks - Certificate - Headline
+    b47d1535-bf95-4240-8817-43e15b459bc1: Headline # Headline
     b92f222e-e35a-4a5a-bb11-3b5ea3deda0c: Quote # Quote
     b3979b7e-2d54-4b6f-89ec-5ef480431d82: Courses # Courses
     b4763ae9-35a9-4af6-bd45-59e869963a55: 'Internal link' # Internal link
@@ -138,7 +137,6 @@ meta:
     c6f23113-dc98-46d8-8a58-8837396917aa: 'CTF Platfom' # CTF Platfom
     c418c358-5082-4c2e-bc17-cb8c9175b592: Instructor # Instructor
     c4023ed4-c787-4f58-bb1f-1d51b48518c2: Books # Books
-    c28731d1-d362-458e-8210-a901f3f0e4ab: 'ContentBlocks - Chart - Line - Chart Headline' # ContentBlocks - Chart - Line - Chart Headline
     c1769912-6758-4fbd-9f12-d37a9fa32253: 'SEO Description' # SEO Description
     cabe8fa0-a9ef-4a18-ab9d-4b3b69cd2f3a: 'ContentBlocks - Terminal Dump - Terminal Input Only' # ContentBlocks - Terminal Dump - Terminal Input Only
     ce283fd6-8942-4408-99bf-17efbab5a118: Books # Books

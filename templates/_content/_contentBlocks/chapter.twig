@@ -4,7 +4,7 @@
 
 <div class="chapter__wrapper {{ tasksInChapter > 0 ? "chapter__wrapper--lesson" }}" data-chapter-target="{{ chapter }}" id="ch_{{ chapter }}">
     <div class="chapter__start">
-        <h2 class="chapter__headline" data-bookmark>{{ block.chapterHeadline }} </h2>
+        <h2 class="chapter__headline" data-bookmark>{{ block.headline }} </h2>
         {% if block.subtitle|length or chapterTaskNr >= 0  %}
             <p class="chapter__subtitle">{{ block.subtitle }}</p>
         {% endif %}

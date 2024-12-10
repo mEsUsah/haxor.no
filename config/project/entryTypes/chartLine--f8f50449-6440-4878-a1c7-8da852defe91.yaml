@@ -10,11 +10,11 @@ fieldLayouts:
           -
             dateAdded: '2024-12-10T15:41:26+00:00'
             elementCondition: null
-            fieldUid: c28731d1-d362-458e-8210-a901f3f0e4ab # ContentBlocks - Chart - Line - Chart Headline
-            handle: null
+            fieldUid: b47d1535-bf95-4240-8817-43e15b459bc1 # Headline
+            handle: headline
             includeInCards: true
             instructions: null
-            label: 'Chart Headline'
+            label: Headline
             providesThumbs: false
             required: false
             tip: null

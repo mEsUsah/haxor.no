@@ -9,7 +9,7 @@
         {% include "_content/_parts/_book.twig" %}
     {% endfor %}
 
-    {% if block.linkToAllCourses %}
+    {% if block.linkToAll %}
         <a href="{{craft.entries().section('bookReviews').one().getUrl()}}" class="courseList__link">
             {{ 'List of all books I have reviewed'|t }}
         </a>

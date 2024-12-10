@@ -38,15 +38,15 @@ fieldLayouts:
             uid: 3e2b8f59-c652-435e-b407-421aea35a5f4
             userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
             dateAdded: '2024-12-10T10:37:58+00:00'
             elementCondition: null
-            fieldUid: af5a6f2d-4fdf-4cfe-b5e8-900a1ae088c5 # ContentBlocks - Books - Link to all courses?
+            fieldUid: af5a6f2d-4fdf-4cfe-b5e8-900a1ae088c5 # ContentBlocks - Link to all?
             handle: null
             includeInCards: false
             instructions: null
-            label: 'Link to all courses?'
+            label: 'Include link to overview?'
             providesThumbs: false
             required: false
             tip: null
@@ -54,7 +54,7 @@ fieldLayouts:
             uid: 09bb20a6-940a-4343-b43a-4c4f2e85a298
             userCondition: null
             warning: null
-            width: 100
+            width: 50
         name: Content
         uid: 86ab666a-b032-4e32-8f8a-8fa8c46064c5
         userCondition: null

@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: linkToAllCourses
+handle: linkToAll
 instructions: null
-name: 'ContentBlocks - Books - Link to all courses?'
+name: 'ContentBlocks - Link to all?'
 searchable: false
 settings:
   default: false

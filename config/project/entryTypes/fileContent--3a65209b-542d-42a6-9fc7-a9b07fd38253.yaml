@@ -22,7 +22,7 @@ fieldLayouts:
             uid: 81fdb2a2-6302-4b7f-966f-a3246fc428cd
             userCondition: null
             warning: null
-            width: 100
+            width: 25
           -
             dateAdded: '2024-12-10T15:40:22+00:00'
             elementCondition: null
@@ -30,7 +30,7 @@ fieldLayouts:
             handle: null
             includeInCards: false
             instructions: null
-            label: Filname
+            label: Filename
             providesThumbs: false
             required: true
             tip: null
@@ -38,23 +38,7 @@ fieldLayouts:
             uid: f643cfcc-7a8b-43e3-b6cf-a4caab6e2f1a
             userCondition: null
             warning: null
-            width: 100
-          -
-            dateAdded: '2024-12-10T15:40:22+00:00'
-            elementCondition: null
-            fieldUid: ed101e61-62b0-40c5-a8d4-b5d30624f1d2 # ContentBlocks - File Content - File content
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: 'File content'
-            providesThumbs: false
-            required: true
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: ad5fcaa7-cbfd-47e8-9808-0584a9c20d6f
-            userCondition: null
-            warning: null
-            width: 100
+            width: 50
           -
             dateAdded: '2024-12-10T15:40:22+00:00'
             elementCondition: null
@@ -68,6 +52,22 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: ac0952e5-12f9-409f-a311-27a3513a864f
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2024-12-10T15:40:22+00:00'
+            elementCondition: null
+            fieldUid: ed101e61-62b0-40c5-a8d4-b5d30624f1d2 # ContentBlocks - File Content - File content
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'File content'
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ad5fcaa7-cbfd-47e8-9808-0584a9c20d6f
             userCondition: null
             warning: null
             width: 100

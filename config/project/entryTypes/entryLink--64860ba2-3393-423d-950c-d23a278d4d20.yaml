@@ -26,7 +26,7 @@ fieldLayouts:
           -
             dateAdded: '2024-12-10T15:04:04+00:00'
             elementCondition: null
-            fieldUid: b47d1535-bf95-4240-8817-43e15b459bc1 # ContentBlocks - Certificate - Headline
+            fieldUid: b47d1535-bf95-4240-8817-43e15b459bc1 # Headline
             handle: null
             includeInCards: false
             instructions: null
