@@ -26,8 +26,8 @@ fieldLayouts:
           -
             dateAdded: '2024-12-10T11:25:48+00:00'
             elementCondition: null
-            fieldUid: 2efca9b8-ea72-4fc4-9c51-20695e174ce7 # ContentBlocks - Courses - Three newest?
-            handle: threeNewest
+            fieldUid: 9b49d5b9-d21a-4e64-b799-37fe5db4ada8 # ContentBlocks - Books - Three newest?
+            handle: null
             includeInCards: false
             instructions: null
             label: 'Three newest?'
@@ -42,8 +42,8 @@ fieldLayouts:
           -
             dateAdded: '2024-12-10T11:25:48+00:00'
             elementCondition: null
-            fieldUid: 1c99bad7-a4b3-483e-bf38-82c06d1f19a0 # ContentBlocks - Courses - Link to all courses?
-            handle: linkToAllCourses
+            fieldUid: af5a6f2d-4fdf-4cfe-b5e8-900a1ae088c5 # ContentBlocks - Books - Link to all courses?
+            handle: null
             includeInCards: false
             instructions: null
             label: 'Link to all courses?'

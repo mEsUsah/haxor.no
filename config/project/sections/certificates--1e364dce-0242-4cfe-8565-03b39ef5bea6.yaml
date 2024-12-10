@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - ed90e740-711b-4901-9c4f-56ea797d242e # Certificates - Default
+  - ed90e740-711b-4901-9c4f-56ea797d242e # Certificates
 handle: certificates
 maxAuthors: 1
 name: Certificates

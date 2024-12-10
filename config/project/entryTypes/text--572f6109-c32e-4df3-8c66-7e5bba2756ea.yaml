@@ -1,6 +1,8 @@
 color: null
 fieldLayouts:
   483d2033-0c96-427e-a49a-51c130ab618c:
+    cardView:
+      - 'layoutElement:41cc62c2-d561-4a83-8cbc-04218b20d000'
     tabs:
       -
         elementCondition: null
@@ -10,7 +12,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2024-12-10T12:17:17+01:00'
+            dateAdded: '2024-12-10T11:17:17+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -36,7 +38,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2024-12-10T12:17:17+01:00'
+            dateAdded: '2024-12-10T11:17:17+00:00'
             elementCondition: null
             fieldUid: 57a8d48f-2781-4975-b7ff-b3b5efd7c470 # ContentBlocks - Text - Text
             handle: null
@@ -54,36 +56,14 @@ fieldLayouts:
         name: Content
         uid: 3207cffd-c160-411e-bb3a-134248fb0d19
         userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            dateAdded: '2024-12-10T12:17:17+01:00'
-            elementCondition: null
-            fieldUid: 2f773f4a-97cc-41d5-9fb6-2016426d4da5 # Lesson Blocks - Text - Text
-            handle: text2
-            includeInCards: true
-            instructions: null
-            label: Text
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 58ed0df2-9ad7-46ea-8e70-51c74cf41fb7
-            userCondition: null
-            warning: null
-            width: 100
-        name: 'Merged Fields'
-        uid: 56e605a4-7e5d-4a6b-884f-1fc2d886e992
-        userCondition: null
 handle: text
 hasTitleField: true
-icon: null
+icon: ''
 name: Text
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
-titleFormat: null
-titleTranslationKeyFormat: null
+titleFormat: ''
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site
