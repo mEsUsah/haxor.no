@@ -67,7 +67,7 @@ class ArticlesService extends Component
         foreach ($articles as $article) {
             array_push($output, [
                 'title' => $article->title,
-                'articleTeaser' => $article->articleTeaser,
+                'teaser' => $article->teaser,
                 'subject' => $article->articleSubject
                     ->one()
                     ->slug,
