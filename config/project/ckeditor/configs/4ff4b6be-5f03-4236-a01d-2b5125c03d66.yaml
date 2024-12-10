@@ -6,3 +6,10 @@ options:
 toolbar:
   - bold
   - italic
+  - underline
+  - strikethrough
+  - '|'
+  - bulletedList
+  - numberedList
+  - '|'
+  - link
