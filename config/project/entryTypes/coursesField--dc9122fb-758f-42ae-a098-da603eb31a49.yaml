@@ -1,40 +1,14 @@
 color: null
 fieldLayouts:
   7e83945a-84c7-442f-a4f6-a62dac941a55:
+    cardView:
+      - 'layoutElement:f0b42089-2efe-4452-bd12-42c6464c5fe9'
     tabs:
       -
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            disabled: false
-            elementCondition: null
-            id: null
-            includeInCards: false
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            providesThumbs: false
-            readonly: false
-            requirable: false
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: e3c6985f-8559-48d6-9069-05ea382eeb28
-            userCondition: null
-            warning: null
-            width: 100
-          -
+            dateAdded: '2024-12-10T11:25:48+00:00'
             elementCondition: null
             fieldUid: a2c9fa7f-4706-4b49-ad49-f09d9a9ebc10 # ContentBlocks - Courses - Courses
             handle: null
@@ -50,6 +24,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-12-10T11:25:48+00:00'
             elementCondition: null
             fieldUid: 2efca9b8-ea72-4fc4-9c51-20695e174ce7 # ContentBlocks - Courses - Three newest?
             handle: threeNewest
@@ -65,6 +40,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-12-10T11:25:48+00:00'
             elementCondition: null
             fieldUid: 1c99bad7-a4b3-483e-bf38-82c06d1f19a0 # ContentBlocks - Courses - Link to all courses?
             handle: linkToAllCourses
@@ -82,14 +58,14 @@ fieldLayouts:
         name: Content
         uid: 35392619-a098-42d0-bd46-7505311f4efb
         userCondition: null
-handle: courses2
+handle: coursesField
 hasTitleField: false
-icon: null
+icon: ''
 name: Courses
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
-titleFormat: null
-titleTranslationKeyFormat: null
+titleFormat: ''
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site
