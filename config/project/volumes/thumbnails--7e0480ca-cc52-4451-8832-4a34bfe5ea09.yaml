@@ -11,6 +11,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: '2024-12-10T18:38:13+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -35,6 +36,32 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            attribute: alt
+            class: null
+            cols: null
+            dateAdded: '2024-12-10T18:39:19+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: true
+            required: false
+            rows: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AltField
+            uid: 07623741-4096-4856-8254-e8fdadd7bcf8
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: 0d806eae-3ccc-44ef-9c66-1b2f926f6bdd
         userCondition: null
@@ -45,5 +72,5 @@ sortOrder: 3
 subpath: ''
 titleTranslationKeyFormat: null
 titleTranslationMethod: none
-transformFs: null
+transformFs: ''
 transformSubpath: ''
