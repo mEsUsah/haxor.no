@@ -11,6 +11,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: '2024-12-10T18:38:44+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -35,6 +36,48 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            attribute: alt
+            class: null
+            cols: null
+            dateAdded: '2024-12-10T18:39:59+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: true
+            required: false
+            rows: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AltField
+            uid: fcf37028-4c24-442d-a17c-cc85495c6541
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-10T18:39:59+00:00'
+            elementCondition: null
+            fieldUid: 144bdcbe-f6e4-4f3f-bede-6f627cd7f0dd # Credits
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 97c30436-4c4a-4f94-acf9-1a7ee8eec0af
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: 68af9669-9470-49bb-95b8-906a292f2760
         userCondition: null
@@ -45,5 +88,5 @@ sortOrder: 2
 subpath: ''
 titleTranslationKeyFormat: null
 titleTranslationMethod: none
-transformFs: null
+transformFs: ''
 transformSubpath: ''
