@@ -10,7 +10,7 @@ fieldLayouts:
           -
             dateAdded: '2024-12-10T11:33:40+00:00'
             elementCondition: null
-            fieldUid: 57a8d48f-2781-4975-b7ff-b3b5efd7c470 # ContentBlocks - Text - Text
+            fieldUid: 57a8d48f-2781-4975-b7ff-b3b5efd7c470 # ContentBlocks - Text
             handle: null
             includeInCards: true
             instructions: null
