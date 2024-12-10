@@ -10,6 +10,8 @@ options:
   code:
     indentSequence: '  '
 toolbar:
+  - sourceEditing
+  - '|'
   - heading
   - '|'
   - blockQuote

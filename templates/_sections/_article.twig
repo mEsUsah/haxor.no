@@ -1,3 +1,4 @@
+{% cache %}
 <section class="articleBody">
     <div class="article__header">
         {% if entry.articleSubject|length %}
@@ -45,3 +46,4 @@
     {% include "_content/dateUpdated.twig" %}
     {% include "_content/contentBlocks.twig" %}
 </section> 
+{% endcache %}

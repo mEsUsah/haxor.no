@@ -39,7 +39,8 @@
             {% endif %}
         {% endif %}
     {% else %}
-        <div class="articleList__container">
+	{% cache %}
+	<div class="articleList__container">
             {% if currentSite.handle == "haxorNoKids" %}
                 {% set articles = craft.entries.site(["haxorNoKids"]).section("lesson").all() %}
             {% else %}
@@ -50,6 +51,6 @@
                 {% include "_content/_parts/_article.twig" with {article: article} %}
             {% endfor %}
         </div>
-        
+	{% endcache %}
     {% endif %}
 </section>

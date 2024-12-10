@@ -6,7 +6,7 @@ searchable: false
 settings:
   availableTransforms: ''
   availableVolumes: ''
-  ckeConfig: aebd25a6-0dc4-4348-a7dd-cf11b6168ef5 # Simple 2
+  ckeConfig: 4ff4b6be-5f03-4236-a01d-2b5125c03d66 # Simple
   defaultTransform: ''
   enableSourceEditingForNonAdmins: false
   purifierConfig: null

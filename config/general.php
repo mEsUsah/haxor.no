@@ -43,6 +43,7 @@ return [
 
     // Production environment settings
     'production' => [
-        'allowAdminChanges' => false,
+	'allowAdminChanges' => false,
+	'enableTemplateCaching' => true,
     ],
 ];
