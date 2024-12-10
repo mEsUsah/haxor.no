@@ -5,25 +5,16 @@ entryTypes:
 handle: books
 maxAuthors: 1
 name: Books
-previewTargets:
-  -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - urlFormat
-        - '{url}'
 propagationMethod: custom
 siteSettings:
   2fc7f7b8-2f9d-43dd-977b-8c7b29763e54: # haxor.no/en
     enabledByDefault: false
-    hasUrls: true
-    template: index
-    uriFormat: 'books/{slug}'
+    hasUrls: false
+    template: null
+    uriFormat: null
   d81b7a18-6d93-471a-ba57-99544b0c585b: # haxor.no/no
     enabledByDefault: false
-    hasUrls: true
-    template: index
-    uriFormat: 'books/{slug}'
+    hasUrls: false
+    template: null
+    uriFormat: null
 type: channel
