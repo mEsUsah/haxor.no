@@ -1,4 +1,4 @@
-dateModified: 1733827040
+dateModified: 1733827146
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -160,7 +160,7 @@ meta:
     c28731d1-d362-458e-8210-a901f3f0e4ab: 'ContentBlocks - Chart - Line - Chart Headline' # ContentBlocks - Chart - Line - Chart Headline
     c1769912-6758-4fbd-9f12-d37a9fa32253: 'SEO Description' # SEO Description
     cabe8fa0-a9ef-4a18-ab9d-4b3b69cd2f3a: 'ContentBlocks - Terminal Dump - Terminal Input Only' # ContentBlocks - Terminal Dump - Terminal Input Only
-    ce283fd6-8942-4408-99bf-17efbab5a118: 'Books 2' # Books 2
+    ce283fd6-8942-4408-99bf-17efbab5a118: Books # Books
     d2ea4108-edc5-4f74-9794-214619a9f0c8: 'My courses' # My courses
     d6f9cc1f-1608-4ae7-a083-d0924ba71f47: 'ContentBlocks - Image - Image Is Figure' # ContentBlocks - Image - Image Is Figure
     d9a0abe6-89dd-4688-a0ac-6d584524c3c2: 'Course Certificate' # Course Certificate
