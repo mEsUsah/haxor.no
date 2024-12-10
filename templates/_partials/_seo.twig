@@ -18,8 +18,8 @@
 	{# --- SEO Description --- #}
 	{% if entry.seoDescription is defined and entry.seoDescription|trim|length %}
 		{% set seoDescription = entry.seoDescription|trim %}
-	{% elseif entry.articleTeaser is defined and entry.articleTeaser|trim|length %}
-		{% set seoDescription = entry.articleTeaser|trim %}
+	{% elseif entry.teaser is defined and entry.teaser|trim|length %}
+		{% set seoDescription = entry.teaser|trim %}
 	{% else %}
 		{% set seoDescription = globals.seoDescription|trim %}
 	{% endif %}

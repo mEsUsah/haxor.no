@@ -66,7 +66,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: f147e4fb-5b9b-40b9-9b58-51fa33d89e32 # Article Teaser
+            fieldUid: f147e4fb-5b9b-40b9-9b58-51fa33d89e32 # Teaser
             handle: null
             includeInCards: false
             instructions: null

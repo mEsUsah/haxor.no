@@ -22,8 +22,8 @@
     <div class="articleList__item--headline">{{article.title}}</div>
     <i class="category__icon category__icon--{{ theme }} {{article.site.handle == "default" or article.site.handle == "haxorNoKids"  ? "entry__category--twoOfTwo" : "entry__category--single"}}" ></i>
 
-    {% if article.articleTeaser|length %}
-        <div class="articleList__item--teaser">{{article.articleTeaser}}</div>
+    {% if article.teaser|length %}
+        <div class="articleList__item--teaser">{{article.teaser}}</div>
     {% endif %}
 
     {% if article.site.handle == "default" or article.site.handle == "haxorNoKids" %}

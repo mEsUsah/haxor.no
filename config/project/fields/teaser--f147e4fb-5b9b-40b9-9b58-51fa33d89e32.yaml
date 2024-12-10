@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: articleTeaser
+handle: teaser
 instructions: null
-name: 'Article Teaser'
+name: Teaser
 searchable: true
 settings:
   byteLimit: null
