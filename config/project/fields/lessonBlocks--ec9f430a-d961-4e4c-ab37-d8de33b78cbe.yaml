@@ -10,7 +10,7 @@ settings:
     - 13e06e3a-25c9-4b11-aa21-6b5b768d5fea # Send in answer
     - 120a0c87-a4cf-4fb4-8e36-2533818e113a # Chapter
     - 9352e030-3a6d-4f5f-add4-74e01d270e43 # Info Box 2
-    - a227fe85-29a0-403f-b510-659257b8c521 # Text 2
+    - 572f6109-c32e-4df3-8c66-7e5bba2756ea # Text
     - a568129a-e9d4-406e-bafe-4dae8e4b19e8 # Task Done
     - 409d3c53-f6a8-476d-be5a-5bc8d3acc0f6 # Image
   includeTableView: false
