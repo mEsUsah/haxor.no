@@ -5,9 +5,10 @@ name: 'Lesson Blocks'
 searchable: false
 settings:
   createButtonLabel: null
+  defaultIndexViewMode: cards
   entryTypes:
     - 13e06e3a-25c9-4b11-aa21-6b5b768d5fea # Send in answer
-    - 14fc49ec-a2e2-4953-a06d-e4c93142cc99 # Chapter 2
+    - 120a0c87-a4cf-4fb4-8e36-2533818e113a # Chapter
     - 9352e030-3a6d-4f5f-add4-74e01d270e43 # Info Box 2
     - a227fe85-29a0-403f-b510-659257b8c521 # Text 2
     - a568129a-e9d4-406e-bafe-4dae8e4b19e8 # Task Done

@@ -1,4 +1,4 @@
-dateModified: 1733827691
+dateModified: 1733828217
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -81,7 +81,6 @@ meta:
     12c8b9da-5b5a-4bd7-a51e-4116181081ad: 'Course Description' # Course Description
     12f99a24-9d48-4fdd-8f1e-fec6cabf9cca: Lessons # Lessons
     13e06e3a-25c9-4b11-aa21-6b5b768d5fea: 'Send in answer' # Send in answer
-    14fc49ec-a2e2-4953-a06d-e4c93142cc99: 'Chapter 2' # Chapter 2
     15cb9ee9-280a-4a76-9b2f-d31dff2fb525: 'Number of Pages' # Number of Pages
     18efdf32-1b23-42db-a0ed-70252bb134fb: 'Terminal Dump' # Terminal Dump
     34ae23a4-8987-424f-a7af-fc651ee1f28c: HackerRank # HackerRank
