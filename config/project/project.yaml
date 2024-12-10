@@ -1,4 +1,4 @@
-dateModified: 1733855150
+dateModified: 1733855705
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -87,6 +87,7 @@ meta:
     080d70ab-85ac-424a-9d06-3aedf3fd9889: Globals # Globals
     93d39a6a-48eb-4f78-afb1-8fd74053ce15: 'Course Image' # Course Image
     120a0c87-a4cf-4fb4-8e36-2533818e113a: Chapter # Chapter
+    144bdcbe-f6e4-4f3f-bede-6f627cd7f0dd: Credits # Credits
     268e169b-dff4-4e90-ad5a-8618c54e799e: 'Lesson Blocks - Send in answer - Question' # Lesson Blocks - Send in answer - Question
     392f9448-cfdd-4390-ab2b-7bdce2deeb89: Writer # Writer
     409d3c53-f6a8-476d-be5a-5bc8d3acc0f6: Image # Image
