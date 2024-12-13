@@ -1,10 +1,10 @@
 {% set writeups = craft.entries.site(["haxorNoEn"]).section("ctfWriteup").all() %}
 {% set ctfImageThumb = {
     mode: 'crop',
-    position: imageFocalX ~ "," ~ imageFocalY,
     width: 50,
     height: 50,
     quality: 90,
+    format: 'webp'
 } %}
 
 <table class="ctfWriteups__table">
