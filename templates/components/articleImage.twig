@@ -1,13 +1,19 @@
 {% set entry = entry|default(null) %}
 {% set theme = theme|default("default") %}
 {% set showCategory = showCategory|default(false) %}
+{% set ctfWriteup = ctfWriteup|default(false) %}
 
 {% if entry.articleSubject|length %}
     {% set theme = entry.articleSubject.one().slug %}
 {% endif %}
 {% set themeClass = "category__icon--" ~ theme  %}
 
-{% set image = entry.articleImage.one() %}
+{% if ctfWriteup %}
+    {% set image = entry.ctfPlatform.one().articleImage.one() %}
+{% else %}
+    {% set image = entry.articleImage.one() %}
+{% endif %}
+
 {% set imageOptions = {
     mode: 'crop',
     position: image.focalPoint["x"] ~ "," ~ image.focalPoint["y"],
@@ -17,23 +23,45 @@
     format: 'webp'
 } %}
 
+{% set ctfImageOptions = {
+    mode: 'crop',
+    width: 200,
+    height: 200,
+    quality: 90,
+    format: 'webp'
+} %}
+
 {% if image %}
     <div class="articleImage__wrapper">
         <div class="articleImage__image" style="background-image: url('{{ image.getUrl(imageOptions) }}');" ></div>
-        {% if entry.title|length %}<div class="articleTitle">{{entry.title}}</div>
+        {% if entry.title|length %}
+            <div class="articleTitle">{{entry.title}}</div>
             <div class="article__imageBorder"></div>
             {% if showCategory %}
                 <div class="article__categoryIcon">
                     <div class="category__icon {{ themeClass }}"></div>
                 </div>
             {% endif %}
-            
+
+            {% if ctfWriteup %}
+                <div class="ctfWriteup__platform ctfWriteup__platform--{{ entry.ctfPlatform.one().slug }}"></div>
+                <div class="ctfWriteup__image ctfWriteup__image--{{ entry.ctfDifficulty }}" style="background-image: url('{{entry.ctfImage.one().getUrl(ctfImageOptions)}}');"></div>
+                <div class="ctfWriteup__metadata">
+                    <p>{{ entry.ctfPoints }} Points</p>
+                    <p class="ctfWriteup__difficulty ctfWriteup__difficulty--{{ entry.ctfDifficulty }}">{{ entry.ctfDifficulty|capitalize }}</p>
+                </div>
+            {% endif %}
         {% endif %}
-        {% if image.credits|length %}
+
+        {% if ctfWriteup and entry.ctfPlatform.one().articleImageCaption|length %}
+            <figcaption class="articleImage__caption--desktop">{{entry.ctfPlatform.one().articleImageCaption}}</figcaption>
+        {% endif %}
+
+        {% if not ctfWriteup and image.credits|length %}
             <figcaption class="articleImage__caption--desktop">{{image.credits}}</figcaption>
         {% endif %}
     </div>
-    {% if image.credits|length %}
+    {% if not ctfWriteup and image.credits|length %}
         <figcaption class="articleImage__caption--mobile">{{image.credits}}</figcaption>
     {% endif %}
 {% endif %}
