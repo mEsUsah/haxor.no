@@ -30,38 +30,39 @@
     quality: 90,
     format: 'webp'
 } %}
+<div class="article__header">
+    {% if image %}
+        <div class="articleImage__wrapper">
+            <div class="articleImage__image" style="background-image: url('{{ image.getUrl(imageOptions) }}');" ></div>
+            {% if entry.title|length %}
+                <div class="articleTitle">{{entry.title}}</div>
+                <div class="article__imageBorder"></div>
+                {% if showCategory %}
+                    <div class="article__categoryIcon">
+                        <div class="category__icon {{ themeClass }}"></div>
+                    </div>
+                {% endif %}
 
-{% if image %}
-    <div class="articleImage__wrapper">
-        <div class="articleImage__image" style="background-image: url('{{ image.getUrl(imageOptions) }}');" ></div>
-        {% if entry.title|length %}
-            <div class="articleTitle">{{entry.title}}</div>
-            <div class="article__imageBorder"></div>
-            {% if showCategory %}
-                <div class="article__categoryIcon">
-                    <div class="category__icon {{ themeClass }}"></div>
-                </div>
+                {% if ctfWriteup %}
+                    <div class="ctfWriteup__platform ctfWriteup__platform--{{ entry.ctfPlatform.one().slug }}"></div>
+                    <div class="ctfWriteup__image ctfWriteup__image--{{ entry.ctfDifficulty }}" style="background-image: url('{{entry.ctfImage.one().getUrl(ctfImageOptions)}}');"></div>
+                    <div class="ctfWriteup__metadata">
+                        <p>{{ entry.ctfPoints }} Points</p>
+                        <p class="ctfWriteup__difficulty ctfWriteup__difficulty--{{ entry.ctfDifficulty }}">{{ entry.ctfDifficulty|capitalize }}</p>
+                    </div>
+                {% endif %}
             {% endif %}
 
-            {% if ctfWriteup %}
-                <div class="ctfWriteup__platform ctfWriteup__platform--{{ entry.ctfPlatform.one().slug }}"></div>
-                <div class="ctfWriteup__image ctfWriteup__image--{{ entry.ctfDifficulty }}" style="background-image: url('{{entry.ctfImage.one().getUrl(ctfImageOptions)}}');"></div>
-                <div class="ctfWriteup__metadata">
-                    <p>{{ entry.ctfPoints }} Points</p>
-                    <p class="ctfWriteup__difficulty ctfWriteup__difficulty--{{ entry.ctfDifficulty }}">{{ entry.ctfDifficulty|capitalize }}</p>
-                </div>
+            {% if ctfWriteup and entry.ctfPlatform.one().articleImageCaption|length %}
+                <figcaption class="articleImage__caption--desktop">{{entry.ctfPlatform.one().articleImageCaption}}</figcaption>
             {% endif %}
-        {% endif %}
 
-        {% if ctfWriteup and entry.ctfPlatform.one().articleImageCaption|length %}
-            <figcaption class="articleImage__caption--desktop">{{entry.ctfPlatform.one().articleImageCaption}}</figcaption>
-        {% endif %}
-
+            {% if not ctfWriteup and image.credits|length %}
+                <figcaption class="articleImage__caption--desktop">{{image.credits}}</figcaption>
+            {% endif %}
+        </div>
         {% if not ctfWriteup and image.credits|length %}
-            <figcaption class="articleImage__caption--desktop">{{image.credits}}</figcaption>
+            <figcaption class="articleImage__caption--mobile">{{image.credits}}</figcaption>
         {% endif %}
-    </div>
-    {% if not ctfWriteup and image.credits|length %}
-        <figcaption class="articleImage__caption--mobile">{{image.credits}}</figcaption>
     {% endif %}
-{% endif %}
+</div>

@@ -1,11 +1,9 @@
 {% cache %}
 <section class="articleBody">
-    <div class="article__header">
-        {% include "components/articleImage.twig" with {
-            entry: entry,
-            showCategory: true
-        } %}
-    </div>
+    {% include "components/articleImage.twig" with {
+        entry: entry,
+        showCategory: true
+    } %}
     {% include "_content/teaser.twig" %}
     {% include "_content/dateUpdated.twig" %}
     {% include "_content/contentBlocks.twig" %}
