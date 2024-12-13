@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1014c2102c6629c92d82a568a64a0dbf",
+    "content-hash": "45920ea28ad1e575897650c47bc54284",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -4408,91 +4408,6 @@
                 "templating"
             ],
             "time": "2024-11-07T12:36:22+00:00"
-        },
-        {
-            "name": "verbb/base",
-            "version": "3.0.4",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/verbb/verbb-base/zipball/0d3798a795a83a3fdfbbe9e5c693aecffde3f004",
-                "reference": "0d3798a795a83a3fdfbbe9e5c693aecffde3f004",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^5.0.0",
-                "php": "^8.2"
-            },
-            "type": "yii-module",
-            "autoload": {
-                "psr-4": {
-                    "verbb\\base\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Verbb",
-                    "homepage": "https://verbb.io"
-                }
-            ],
-            "description": "Common utilities and building-blocks for Verbb plugins for Craft CMS.",
-            "time": "2024-09-13T23:33:05+00:00"
-        },
-        {
-            "name": "verbb/super-table",
-            "version": "4.0.2",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/verbb/super-table/zipball/2477e599820295cdedb491409328260cc94e31e0",
-                "reference": "2477e599820295cdedb491409328260cc94e31e0",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^5.0.0",
-                "php": "^8.2",
-                "verbb/base": "^3.0.0"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Super Table",
-                "handle": "super-table",
-                "description": "Super-charge your Craft workflow with Super Table. Use it to group fields together or build complex Matrix-in-Matrix solutions.",
-                "documentationUrl": "https://github.com/verbb/super-table",
-                "changelogUrl": "https://raw.githubusercontent.com/verbb/super-table/craft-5/CHANGELOG.md",
-                "class": "verbb\\supertable\\SuperTable"
-            },
-            "autoload": {
-                "psr-4": {
-                    "verbb\\supertable\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Verbb",
-                    "homepage": "https://verbb.io"
-                }
-            ],
-            "description": "Super-charge your content builders and create nested Matrix fields.",
-            "keywords": [
-                "cms",
-                "craft",
-                "craft-plugin",
-                "craftcms",
-                "super table"
-            ],
-            "support": {
-                "email": "support@verbb.io",
-                "issues": "https://github.com/verbb/super-table/issues?state=open",
-                "source": "https://github.com/verbb/super-table",
-                "docs": "https://github.com/verbb/super-table",
-                "rss": "https://github.com/verbb/super-table/commits/v2.atom"
-            },
-            "time": "2024-07-30T23:05:07+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
