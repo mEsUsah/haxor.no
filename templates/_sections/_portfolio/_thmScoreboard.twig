@@ -1,42 +1,9 @@
 <section class="articleBody">
     <div class="article__header">
-        {% if entry.articleSubject|length %}
-            {% set theme = entry.articleSubject.one().slug %}
-        {% else %}
-            {% set theme = "default" %}
-        {% endif %}
-
-        {% set image = entry.articleImage.one() %}
-        {% set imageFocalX = image.focalPoint["x"] %}
-        {% set imageFocalY = image.focalPoint["y"] %}
-
-        {% set imageOptions = {
-            mode: 'crop',
-            position: imageFocalX ~ "," ~ imageFocalY,
-            width: 1000,
-            height: 600,
-            quality: 100,
+        {% include "components/articleImage.twig" with {
+            entry: entry,
+            showCategory: true
         } %}
-        
-        {% set articleImage = entry.articleImage.one() %}
-        
-        {% if articleImage|length %}
-            <div class="articleImage__wrapper">
-                <div class="articleImage__image" style="background-image: url('{{articleImage.getUrl(imageOptions)}}');" ></div>
-                {% if entry.title|length %}<div class="articleTitle">{{entry.title}}</div>
-                    <div class="article__imageBorder"></div>
-                    <div class="article__categoryIcon">
-                        <div class="category__icon category__icon--{{ theme }}"></div>
-                    </div>
-                {% endif %}
-                {% if entry.articleImageCaption|length %}
-                    <figcaption class="articleImage__caption--desktop">{{entry.articleImageCaption}}</figcaption>
-                {% endif %}
-            </div>
-            {% if entry.articleImageCaption|length %}
-                    <figcaption class="articleImage__caption--mobile">{{entry.articleImageCaption}}</figcaption>
-                {% endif %}
-        {% endif %}
     </div>
     {% include "_content/teaser.twig" %}
     {% include "_content/dateUpdated.twig" with {cachebust: craft.haxor.getScoreBoardUpdate } %}

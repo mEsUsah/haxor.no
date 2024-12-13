@@ -1,0 +1,39 @@
+{% set entry = entry|default(null) %}
+{% set theme = theme|default("default") %}
+{% set showCategory = showCategory|default(false) %}
+
+{% if entry.articleSubject|length %}
+    {% set theme = entry.articleSubject.one().slug %}
+{% endif %}
+{% set themeClass = "category__icon--" ~ theme  %}
+
+{% set image = entry.articleImage.one() %}
+{% set imageOptions = {
+    mode: 'crop',
+    position: image.focalPoint["x"] ~ "," ~ image.focalPoint["y"],
+    width: 1000,
+    height: 600,
+    quality: 100,
+    format: 'webp'
+} %}
+
+{% if image %}
+    <div class="articleImage__wrapper">
+        <div class="articleImage__image" style="background-image: url('{{ image.getUrl(imageOptions) }}');" ></div>
+        {% if entry.title|length %}<div class="articleTitle">{{entry.title}}</div>
+            <div class="article__imageBorder"></div>
+            {% if showCategory %}
+                <div class="article__categoryIcon">
+                    <div class="category__icon {{ themeClass }}"></div>
+                </div>
+            {% endif %}
+            
+        {% endif %}
+        {% if image.credits|length %}
+            <figcaption class="articleImage__caption--desktop">{{image.credits}}</figcaption>
+        {% endif %}
+    </div>
+    {% if image.credits|length %}
+        <figcaption class="articleImage__caption--mobile">{{image.credits}}</figcaption>
+    {% endif %}
+{% endif %}
