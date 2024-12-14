@@ -4,29 +4,29 @@
     {% set section = entry.section.handle %}
     {% switch section %}
         {% case 'home' %}
-            {% include "_sections/_homepage.twig" %}
+            {% include "sections/homepage.twig" %}
         {% case 'aboutme' %}
-            {% include "_sections/_about.twig" %}
+            {% include "sections/about.twig" %}
         {% case 'ctfWriteups' %}
-            {% include "_sections/_ctfWriteups.twig" %}
+            {% include "sections/ctfWriteups.twig" %}
         {% case 'aboutblog' %}
-            {% include "_sections/_about.twig" %}
+            {% include "sections/about.twig" %}
         {% case 'articles' %}
-            {% include "_sections/_article.twig" %}   
+            {% include "sections/article.twig" %}   
         {% case 'lesson' %}
-            {% include "_sections/_article.twig" %}   
+            {% include "sections/article.twig" %}   
         {% case 'portfolio' %}
-            {% include "_sections/_portfolio/_" ~ entry.type.handle ~ ".twig" %}
+            {% include "sections/portfolio/" ~ entry.type.handle ~ ".twig" %}
         {% case 'course' %}
-            {% include "_sections/_course.twig" %}
+            {% include "sections/course.twig" %}
         {% case 'bookReviews' %}
-            {% include "_sections/_bookReviews.twig" %}
+            {% include "sections/bookReviews.twig" %}
         {% case 'bookReviews' %}
-            {% include "_sections/_bookReviews.twig" %}
+            {% include "sections/bookReviews.twig" %}
         {% case 'ctfWriteup' %}
-            {% include "_sections/_ctfWriteup.twig" %}
+            {% include "sections/ctfWriteup.twig" %}
         {% default %}
-            {% include "_sections/" ~ entry.section.handle ~ "/_index.twig" %}
+            {% include "sections/" ~ entry.section.handle ~ "/_index.twig" %}
     {% endswitch %}
 {% endblock body %}
     
