@@ -59,28 +59,7 @@
             }
         }
     }
-    &__imageBorder{
-        height: 498px;
-        position: absolute;
-        max-width: 1250px;
-        width: 100%;
-        border-bottom: 5px solid #e7e7e7;
-        @include ipadOrSmaller {
-            height: 199px;
-            border-bottom: 4px solid #e7e7e7;
-        }
-    }
-    &__categoryIcon{
-        height: 50px;
-        width: 50px;
-        position: absolute;
-        z-index: 1;
-        background-color: white;
-        border-radius: 50%;
-        opacity: 0.9;
-        right: 10px;
-        top: 10px;
-    }
+    
     &__published{
         &--wrapper{
             display: flex;
