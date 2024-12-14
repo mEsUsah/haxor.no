@@ -3,6 +3,9 @@ fieldLayouts:
   f9c6559e-bd2e-4d47-ab1a-6315e2a6d1ef:
     cardView:
       - 'layoutElement:bb2b0179-3ba1-47c4-9c82-a684af3b537e'
+      - dateUpdated
+      - 'layoutElement:e5ee8413-ec04-4976-892c-76cdfd6967a3'
+      - section
     tabs:
       -
         elementCondition: null
@@ -28,7 +31,7 @@ fieldLayouts:
             elementCondition: null
             fieldUid: b47d1535-bf95-4240-8817-43e15b459bc1 # Headline
             handle: null
-            includeInCards: false
+            includeInCards: true
             instructions: null
             label: Headline
             providesThumbs: false
@@ -64,8 +67,8 @@ icon: newspaper
 name: Entry
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: ''
+slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: ''
-titleTranslationKeyFormat: ''
+titleFormat: null
+titleTranslationKeyFormat: null
 titleTranslationMethod: site
