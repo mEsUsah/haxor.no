@@ -5,7 +5,7 @@ entryTypes:
 handle: courses
 maxAuthors: 1
 name: Courses
-propagationMethod: all
+propagationMethod: custom
 siteSettings:
   2fc7f7b8-2f9d-43dd-977b-8c7b29763e54: # haxor.no/en
     enabledByDefault: false

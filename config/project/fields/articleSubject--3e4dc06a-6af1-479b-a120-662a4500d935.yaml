@@ -5,8 +5,7 @@ name: 'Artikkel tema'
 searchable: true
 settings:
   allowSelfRelations: false
-  branchLimit: 1
-  localizeRelations: false
+  branchLimit: 0
   maintainHierarchy: true
   maxRelations: null
   minRelations: null
@@ -16,7 +15,7 @@ settings:
   source: 'group:7755a334-0698-4415-ab30-b1fddb17b7a7' # Tema
   targetSiteId: null
   validateRelatedElements: false
-  viewMode: null
+  viewMode: list
 translationKeyFormat: null
-translationMethod: site
+translationMethod: none
 type: craft\fields\Categories
