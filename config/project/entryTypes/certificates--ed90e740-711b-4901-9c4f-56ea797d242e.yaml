@@ -70,7 +70,7 @@ fieldLayouts:
           -
             dateAdded: '2024-12-10T15:08:51+00:00'
             elementCondition: null
-            fieldUid: f733eaac-e1d6-428e-a5e6-5e9c1b8450df # Course Review Quote
+            fieldUid: f733eaac-e1d6-428e-a5e6-5e9c1b8450df # Review Quote
             handle: null
             includeInCards: false
             instructions: null

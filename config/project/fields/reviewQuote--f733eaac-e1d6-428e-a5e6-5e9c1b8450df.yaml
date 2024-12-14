@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: courseReviewQuote
+handle: reviewQuote
 instructions: null
-name: 'Course Review Quote'
+name: 'Review Quote'
 searchable: false
 settings:
   byteLimit: null
