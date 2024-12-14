@@ -3,7 +3,7 @@
         entry: entry,
         showCategory: true
     } %}
-    {% include "_content/teaser.twig" %}
+    {% include "components/articleTeaser.twig" %}
     {% include "components/articleUpdated.twig" with {cachebust: craft.haxor.getScoreBoardUpdate } %}
     {% include "_content/contentBlocks.twig" with { 
         includedContentType: "thmScoreboard",
