@@ -54,7 +54,7 @@
                 {% if block.type == "taskDone" or block.type == "sendInAnswer" %}
                     {% set chapterTaskNr = chapterTaskNr + 1 %}
                 {% endif %}
-                {% include "_content/_contentBlocks/" ~ block.type with {
+                {% include "components/contentBlocks/" ~ block.type with {
                     "chapter": chapterNr,
                     "chapterTask": chapterTaskNr,
                     "chart": chartNr
