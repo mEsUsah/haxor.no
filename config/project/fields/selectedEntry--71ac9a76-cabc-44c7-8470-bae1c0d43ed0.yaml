@@ -15,7 +15,7 @@ settings:
   sources: '*'
   targetSiteId: null
   validateRelatedElements: false
-  viewMode: list
+  viewMode: cards
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Entries

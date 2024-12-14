@@ -19,7 +19,7 @@
         <div class="courseList__item--description">
             <h3>{{course.title}}</h3>
             <p><span class="courseList__item--platform courseList__item--platform-{{ course.coursePlatform.one().slug }}"></span> - {{course.courseInstructor}} - {{course.courseLengthHours >= 0 ? course.courseLengthHours ~ "t, "}}{{course.courseLengthMinutes}}m</p>
-            {{course.courseDescription}}
+            {{course.description}}
         </div>
     </div>
     <div class="courseList__item--review">

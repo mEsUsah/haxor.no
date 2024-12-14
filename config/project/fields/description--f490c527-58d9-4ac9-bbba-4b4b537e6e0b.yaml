@@ -1,18 +1,21 @@
 columnSuffix: wcjavcbt
 handle: description
 instructions: null
-name: 'ContentBlocks - Certificate - description'
+name: Description
 searchable: false
 settings:
   availableTransforms: ''
   availableVolumes: ''
   ckeConfig: 4ff4b6be-5f03-4236-a01d-2b5125c03d66 # Simple
-  defaultTransform: ''
+  createButtonLabel: null
+  defaultTransform: null
   enableSourceEditingForNonAdmins: false
   purifierConfig: null
   purifyHtml: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
 translationKeyFormat: null
 translationMethod: none
 type: craft\ckeditor\Field

@@ -54,11 +54,11 @@ fieldLayouts:
           -
             dateAdded: '2024-12-10T15:08:51+00:00'
             elementCondition: null
-            fieldUid: 12c8b9da-5b5a-4bd7-a51e-4116181081ad # Course Description
-            handle: null
+            fieldUid: f490c527-58d9-4ac9-bbba-4b4b537e6e0b # Description
+            handle: description
             includeInCards: false
             instructions: null
-            label: null
+            label: Description
             providesThumbs: false
             required: false
             tip: null
@@ -190,12 +190,12 @@ fieldLayouts:
         userCondition: null
 handle: certificates
 hasTitleField: true
-icon: ''
+icon: null
 name: Certificates
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: ''
+slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: ''
-titleTranslationKeyFormat: ''
+titleFormat: null
+titleTranslationKeyFormat: null
 titleTranslationMethod: site
