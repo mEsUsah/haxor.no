@@ -8,10 +8,10 @@
     background-color: #cccccc;
     border-radius: 8px;
     padding: 1px 10px 1px 20px;
-    //box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.35);
     width: fit-content;
     padding: 10px 20px;
     font-family: 'Oswald', sans-serif;
+    
     @include ipadOrSmaller {
         margin: 10px auto;
         padding: 5px 10px;
