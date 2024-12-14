@@ -33,7 +33,7 @@
         
     </div>
     <div class="courseList__item--expanded" data-target-accordian="{{chapter}}-{{loop.index0}}">
-        {{course.courseReview}}
+        {{course.review}}
         <p>
             <span class="courseList__item--courseGrade courseList__item--courseGrade-{{course.courseGrade}}"></span>
             {% if course.courseCertificate is defined and course.courseCertificate|length %}

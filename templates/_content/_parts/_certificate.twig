@@ -42,7 +42,7 @@
         </div>
         <p class="certList__item-reviewScoreQuote">"{{certificate.reviewQuote}}"</p>
         <div class="certList__item-cert-review">
-            {{certificate.courseReview}}
+            {{certificate.review}}
             <p>
                 {% if certificate.courseCertificateUrl is defined and certificate.courseCertificateUrl|length %}
                     <a href="{{certificate.courseCertificateUrl}}" target="_blank" class="courseList__item--courseDiploma"></a>
