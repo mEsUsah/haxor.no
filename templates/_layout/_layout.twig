@@ -7,26 +7,26 @@
 <html lang="{{currentSite.language }}">
     <head>
         <meta charset="UTF-8" name='viewport' content='initial-scale=1.0, maximum-scale=5.0, user-scalable=yes' >
-        {% include "_partials/_analyticsHead" with {
+        {% include "partials/analyticsHead" with {
             devMode: devMode,
             livePreview: livePreview,
             gtmId: gtmId
         } %}
-        {% include "_partials/_seo" %}
-        {% include "_partials/_favicon" %}
+        {% include "partials/seo" %}
+        {% include "partials/favicon" %}
         <link rel="stylesheet" href="/resources/css/site.min.css?v={{ cashebuster }}">
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     </head >
 
     <body data-site-language="{{ currentSite.language }}">
-        {% include "_partials/_analyticsHead" with {
+        {% include "partials/analyticsHead" with {
             devMode: devMode,
             livePreview: livePreview,
             gtmId: gtmId
         } %}
         
         {% block header %}
-            {% include "_partials/_header" %}
+            {% include "partials/header" %}
         {% endblock header %}
         
         <main>
@@ -35,7 +35,7 @@
         </main>
         
         {% block footer %}
-            {% include "_partials/_footer" %}
+            {% include "partials/footer" %}
         {% endblock footer %}
 
         <div data-modal-shadow class="modal__shadow"></div>
