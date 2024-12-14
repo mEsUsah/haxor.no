@@ -5,35 +5,39 @@
 @import "base/_general.scss";
 @import "base/_icons.scss";
 
+// Libraries
+@import "lib/prism.scss";
+
 // Spesific styles
 @import "components/article.scss";
 @import "components/articleBanner.scss";
 @import "components/articleUpdated.scss";
-@import "components/_articleList.scss";
-@import "components/_articleTeaser.scss";
+@import "components/articleTeaser.scss";
+@import "components/articleList.scss";
+@import "components/category.scss";
+@import "components/entryLink.scss";
+@import "components/error.scss";
+@import "components/footer.scss";
+@import "components/gameScreen.scss";
+@import "components/hamburger.scss";
+@import "components/infoBox.scss";
+@import "components/portfolio.scss";
+@import "components/thmScoreboard.scss";
 @import "components/_bookList.scss";
-@import "components/_category.scss";
 @import "components/_certList.scss";
 @import "components/_chapter.scss";
 @import "components/_contentBlocks.scss";
 @import "components/_courseList.scss";
 @import "components/_ctfWriteup.scss";
 @import "components/_ctfWriteups.scss";
-@import "components/_entryLink.scss";
-@import "components/_error.scss";
-@import "components/_footer.scss";
-@import "components/_gameScreen.scss";
-@import "components/_hamburger.scss";
 @import "components/_header.scss";
-@import "components/_infoBox.scss";
 @import "components/_lesson.scss";
 @import "components/_menu.scss";
 @import "components/_modal.scss";
-@import "components/_portfolio.scss";
-@import "components/_prism.scss";
-@import "components/_thmScoreboard.scss";
+
+
 
 // Portfolio
-@import "portfolio/_portfolioTask.scss";
-@import "portfolio/_prefix2netmask.scss";
-@import "portfolio/_service2port.scss";
+@import "portfolio/portfolioTask.scss";
+@import "portfolio/prefix2netmask.scss";
+@import "portfolio/service2port.scss";
