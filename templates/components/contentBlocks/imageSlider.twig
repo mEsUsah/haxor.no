@@ -1,0 +1,65 @@
+{% set imageBlocks = block.imageBlocks.all() %}
+{% set imageFormat = {
+    mode: 'crop', 
+    width: 1248, 
+    height: 700,
+    format: 'webp',
+    quality: 75,
+} %}
+{% set imageFormatBackground = {
+    mode: 'crop', 
+    width: 124, 
+    height: 70,
+    format: 'webp',
+    quality: 75,
+} %}
+{% set imageFormatPortrait = {
+    mode: 'scale',  
+    height: 700,
+    format: 'webp',
+    quality: 75,
+} %}
+
+{% if imageBlocks|length %}
+    <div class="content-width content-width--medium">
+        <div class="siema__wrapper">
+            <div class="siema">
+                {% for imageBlock in imageBlocks %}
+                    {% set image = imageBlock.image.one() %}
+                    {% set caption = imageBlock.caption %}
+                    {% set portrait = image.height > image.width %}
+                    <div class="siema__content">
+                        {% if portrait %}
+                            <img src="{{ image.getUrl(imageFormatBackground) }}" class="siema__background">
+                        {% endif %}
+
+                        <figure class="siema__figure {{portrait ? 'siema__figure--portrait' : 'siema__figure--landscape'}}">
+                            <picture>
+                                <img class="siema__image {{portrait ? 'siema__image--portrait' : ''}}"
+                                    src="{{ image.getUrl(portrait ? imageFormatPortrait : imageFormat) }}" 
+                                    alt="{{ image.altText }}"
+                                >
+                            </picture>
+    
+                            {% if caption|length or (image.photographer is defined and image.photographer|length) %}
+                                <figcaption class="image__caption image__caption--siema">
+                                    {% if caption|length %}
+                                        <span class="siema__figurecaption-text">
+                                            {{ caption }}
+                                            {% if image.photographer is defined and image.photographer|length %}
+                                                Â© {{ image.photographer }}
+                                            {% endif %}
+                                        </span>
+                                    {% endif %}
+                                </figcaption>
+                            {% endif %}
+                        </figure>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="siema__arrow siema__arrow-right" data-siema-right></div>
+            <div class="siema__arrow siema__arrow-left" data-siema-left></div>
+            <div class="siema__dots--wrapper" data-siema-dots></div>
+        </div>
+    </div>
+{% endif %}

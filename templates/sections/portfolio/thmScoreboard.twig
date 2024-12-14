@@ -4,7 +4,7 @@
         showCategory: true
     } %}
     {% include "_content/teaser.twig" %}
-    {% include "_content/dateUpdated.twig" with {cachebust: craft.haxor.getScoreBoardUpdate } %}
+    {% include "components/articleUpdated.twig" with {cachebust: craft.haxor.getScoreBoardUpdate } %}
     {% include "_content/contentBlocks.twig" with { 
         includedContentType: "thmScoreboard",
     } %}

@@ -1,0 +1,22 @@
+.articleUpdated{
+    &__wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    &__icon{
+        background-color: $color-success;
+        border-radius: 50%;
+        height: 11px;
+        width: 11px;
+        margin: auto 0;
+    }
+    
+    &__text{
+        margin-left: 9px;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 400;
+    }
+}

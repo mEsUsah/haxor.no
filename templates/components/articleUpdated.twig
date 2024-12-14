@@ -1,0 +1,10 @@
+<div class="articleUpdated__wrapper">
+    <div class="articleUpdated__icon"></div>
+    {% if cachebust is defined and cachebust is not null %}
+        <span class="articleUpdated__text">{{ 'Updated'|t }} {{ cachebust|date("j. F Y") ~ " - " ~ cachebust|date("H:i") ~ " (GMT+2)"}} </span>
+    {% elseif cachebust is defined and cachebust is null %}
+        <span class="articleUpdated__text">{{ 'Updated'|t }} {{"now"|date("j. F Y")  ~ " - " ~ "now"|date("H:i") ~ " (GMT+2)"}}</span>
+    {% else %}
+        <span class="articleUpdated__text">{{ 'Updated'|t }} {{entry.dateUpdated|date("j. F Y")}} </span>
+    {% endif %}
+</div>
