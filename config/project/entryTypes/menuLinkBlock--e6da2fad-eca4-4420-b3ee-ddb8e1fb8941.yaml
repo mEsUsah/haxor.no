@@ -10,8 +10,8 @@ fieldLayouts:
           -
             dateAdded: '2024-12-14T10:25:12+00:00'
             elementCondition: null
-            fieldUid: f598728f-d688-4b98-8aab-cf4447b3af95 # Menu link - Entry
-            handle: null
+            fieldUid: 71ac9a76-cabc-44c7-8470-bae1c0d43ed0 # Selected Entry
+            handle: linkEntry
             includeInCards: true
             instructions: null
             label: Entry

@@ -1,4 +1,4 @@
-dateModified: 1734172011
+dateModified: 1734172476
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -81,7 +81,7 @@ meta:
     57a8d48f-2781-4975-b7ff-b3b5efd7c470: 'ContentBlocks - Text' # ContentBlocks - Text
     058e2f74-bbca-46da-9d7b-161bcaae9844: 'Article thumbnail' # Article thumbnail
     62b88f4a-25d3-4a89-831f-24f78c24f85b: 'ContentBlocks - Chapter - Subtitle' # ContentBlocks - Chapter - Subtitle
-    71ac9a76-cabc-44c7-8470-bae1c0d43ed0: 'ContentBlocks - Entry - Entry' # ContentBlocks - Entry - Entry
+    71ac9a76-cabc-44c7-8470-bae1c0d43ed0: 'Selected Entry' # Selected Entry
     72a349c8-b7c8-4301-81a5-7301f5cc1058: 'Article Image' # Article Image
     77ba99a9-9415-421c-ae85-9f5452850a48: 'Public Schema' # Public Schema
     080d70ab-85ac-424a-9d06-3aedf3fd9889: Globals # Globals
@@ -164,7 +164,6 @@ meta:
     f490c527-58d9-4ac9-bbba-4b4b537e6e0b: 'ContentBlocks - Certificate - description' # ContentBlocks - Certificate - description
     f733eaac-e1d6-428e-a5e6-5e9c1b8450df: 'Course Review Quote' # Course Review Quote
     f9145c5e-c78a-4a33-950f-a91359723426: Selfcontained # Selfcontained
-    f598728f-d688-4b98-8aab-cf4447b3af95: 'Menu link - Entry' # Menu link - Entry
     f4121429-712b-4587-839a-e0a1db5d946a: 'ContentBlocks - File Content - Line Numbers' # ContentBlocks - File Content - Line Numbers
     fc40ce26-28fb-475a-b6b7-696c795f5f18: 'Simple text and link' # Simple text and link
     fe6324d5-2558-4ab4-99f2-f424b8051892: 'About Blog' # About Blog

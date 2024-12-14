@@ -10,7 +10,7 @@ fieldLayouts:
           -
             dateAdded: '2024-12-10T15:04:04+00:00'
             elementCondition: null
-            fieldUid: 71ac9a76-cabc-44c7-8470-bae1c0d43ed0 # ContentBlocks - Entry - Entry
+            fieldUid: 71ac9a76-cabc-44c7-8470-bae1c0d43ed0 # Selected Entry
             handle: null
             includeInCards: true
             instructions: null

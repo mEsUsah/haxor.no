@@ -1,12 +1,11 @@
 columnSuffix: null
 handle: selectedEntry
 instructions: null
-name: 'ContentBlocks - Entry - Entry'
+name: 'Selected Entry'
 searchable: false
 settings:
   allowSelfRelations: false
   branchLimit: null
-  localizeRelations: false
   maintainHierarchy: false
   maxRelations: 1
   minRelations: null
@@ -16,7 +15,7 @@ settings:
   sources: '*'
   targetSiteId: null
   validateRelatedElements: false
-  viewMode: null
+  viewMode: list
 translationKeyFormat: null
-translationMethod: site
+translationMethod: none
 type: craft\fields\Entries
