@@ -1,9 +1,10 @@
 columnSuffix: null
-handle: courseReviewScore
+handle: reviewScore
 instructions: null
-name: 'Course Review Score'
+name: 'Review Score'
 searchable: false
 settings:
+  customOptions: false
   options:
     -
       __assoc__:

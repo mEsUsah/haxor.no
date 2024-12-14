@@ -1,4 +1,4 @@
-dateModified: 1734176749
+dateModified: 1734176941
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -58,7 +58,7 @@ meta:
     6d60bb4f-9586-4f12-8115-a411b6544a6e: 'Book Reviews' # Book Reviews
     6ed30be3-319a-4469-a458-a70309e3e179: 'Course Review' # Course Review
     6f1a1285-4249-4f2a-9773-1b8a2cb33fd9: Kursplatform # Kursplatform
-    6f5f5cbf-7ead-4f94-9ed2-42c81ae3a3d3: 'Course Review Score' # Course Review Score
+    6f5f5cbf-7ead-4f94-9ed2-42c81ae3a3d3: 'Review Score' # Review Score
     7d9ff56a-e0ad-49f6-810e-0b4601084749: Certificate # Certificate
     7dbe180d-e397-494f-bea8-61f7b3f5bf4d: 'Book Reviews' # Book Reviews
     7dca122d-a470-466a-ae07-51758b1fc449: 'ContentBlocks - Chart - Bar (Stacked) - Chart Title' # ContentBlocks - Chart - Bar (Stacked) - Chart Title

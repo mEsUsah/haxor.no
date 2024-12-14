@@ -24,8 +24,8 @@
     </div>
     <div class="courseList__item--review">
         <p>
-            {% if course.courseReviewScore is defined and course.courseReviewScore|length %}
-                <span class="courseList__item--reviewScore courseList__item--reviewScore-{{course.courseReviewScore}}"></span>
+            {% if course.reviewScore is defined and course.reviewScore|length %}
+                <span class="courseList__item--reviewScore courseList__item--reviewScore-{{course.reviewScore}}"></span>
             {% endif %}
             <span class="courseList__item--reviewScoreQuote">"{{course.reviewQuote}}"</span>
 
