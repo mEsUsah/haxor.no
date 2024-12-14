@@ -1,40 +1,14 @@
 color: null
 fieldLayouts:
   b5f4b836-5044-4a92-bb2e-904863abd7ff:
+    cardView:
+      - 'layoutElement:3d59b4b6-094f-491f-90f0-6591f3349f51'
     tabs:
       -
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            disabled: false
-            elementCondition: null
-            id: null
-            includeInCards: false
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            providesThumbs: false
-            readonly: false
-            requirable: false
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: e467e8e4-b58e-4a4e-bc18-c32be6933d69
-            userCondition: null
-            warning: null
-            width: 100
-          -
+            dateAdded: '2024-12-14T13:16:12+00:00'
             elementCondition: null
             fieldUid: 268e169b-dff4-4e90-ad5a-8618c54e799e # Lesson Blocks - Send in answer - Question
             handle: null
@@ -50,6 +24,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-12-14T13:16:12+00:00'
             elementCondition: null
             fieldUid: 5084e704-59ac-4ed3-bc26-1b3b96710a82 # Lesson Blocks - Send in answer - Answer
             handle: null
@@ -69,7 +44,7 @@ fieldLayouts:
         userCondition: null
 handle: sendInAnswer
 hasTitleField: false
-icon: null
+icon: question
 name: 'Send in answer'
 showSlugField: true
 showStatusField: true

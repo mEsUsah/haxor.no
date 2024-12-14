@@ -42,29 +42,13 @@ fieldLayouts:
           -
             dateAdded: '2024-12-10T11:01:06+00:00'
             elementCondition: null
-            fieldUid: 5c01d860-2ec5-4205-936e-583524bb8264 # ContentBlocks - Image - Image AltText
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: 'Image AltText'
-            providesThumbs: false
-            required: true
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 6052f06d-5029-4d14-9d03-6bcb57f66161
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2024-12-10T11:01:06+00:00'
-            elementCondition: null
             fieldUid: 6a498afe-8881-4b4d-bd9e-f128e6d2ac6e # ContentBlocks - Image - Image Caption
             handle: null
             includeInCards: false
             instructions: null
             label: 'Image Caption'
             providesThumbs: false
-            required: true
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: ab8e6f36-c550-4fbf-b879-ed46c4e103c7
@@ -80,8 +64,8 @@ icon: image
 name: Image
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: ''
+slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: ''
-titleTranslationKeyFormat: ''
+titleFormat: null
+titleTranslationKeyFormat: null
 titleTranslationMethod: site

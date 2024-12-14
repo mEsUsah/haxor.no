@@ -1,40 +1,14 @@
 color: null
 fieldLayouts:
   744c3232-cab0-4672-889e-25efe2cb6cc8:
+    cardView:
+      - 'layoutElement:5984aea5-b327-4037-9133-f3d31bcb2c6a'
     tabs:
       -
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            disabled: false
-            elementCondition: null
-            id: null
-            includeInCards: false
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            providesThumbs: false
-            readonly: false
-            requirable: false
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 439cef56-e1d8-47f6-af9e-4d86df9eb365
-            userCondition: null
-            warning: null
-            width: 100
-          -
+            dateAdded: '2024-12-14T13:16:40+00:00'
             elementCondition: null
             fieldUid: 023232ef-4d79-4571-896b-9146438b66bb # Lesson Blocks - Task Done - Task text
             handle: null
@@ -54,7 +28,7 @@ fieldLayouts:
         userCondition: null
 handle: taskDone
 hasTitleField: false
-icon: null
+icon: question
 name: 'Task Done'
 showSlugField: true
 showStatusField: true
