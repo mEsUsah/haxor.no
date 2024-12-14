@@ -1,7 +1,7 @@
 {% set article = block.selectedEntry.one() %}
 
 <div class="entryLink__wrapper">
-    {% include "_content/_parts/_article.twig" with {article: article, modifier: "entryLink"} %}
+    {% include "components/parts/_article.twig" with {article: article, modifier: "entryLink"} %}
     <div class="entryLink__text">
         {% if block.headline and block.headline|length %}
             <h3>{{ block.headline }}</h3>

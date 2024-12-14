@@ -6,7 +6,7 @@
 
 <div class="courseList__container">
     {% for course in courses %}
-        {% include "_content/_parts/_course.twig" %}
+        {% include "components/parts/_course.twig" %}
     {% endfor %}
 
     {% if block.linkToAll %}

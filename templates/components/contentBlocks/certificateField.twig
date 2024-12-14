@@ -9,7 +9,7 @@
     </div>
     <div class="certList__items">
         {% for certificate in certificates %}
-            {% include "_content/_parts/_certificate.twig" with {
+            {% include "components/parts/_certificate.twig" with {
                 certificate: certificate,
                 blockIndex: blockIndex
             } %}

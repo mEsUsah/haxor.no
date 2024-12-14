@@ -28,7 +28,7 @@
 
             <div class="articleList__container">
                 {% for article in articles %}
-                    {% include "_content/_parts/_article.twig" %}
+                    {% include "components/parts/_article.twig" %}
                 {% endfor %}
             </div>
         {% else %}
@@ -49,7 +49,7 @@
             {% endif %}
             
             {% for article in articles %}
-                {% include "_content/_parts/_article.twig" with {article: article} %}
+                {% include "components/parts/_article.twig" with {article: article} %}
             {% endfor %}
         </div>
 	{% endcache %}
