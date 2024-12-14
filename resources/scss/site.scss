@@ -1,12 +1,12 @@
 // Main styles
 @import "base/_fonts.scss";
-@import "base/_general.scss";
-@import "base/_icons.scss";
 @import "base/_variables.scss";
 @import "base/_mixins.scss";
+@import "base/_general.scss";
+@import "base/_icons.scss";
 
-//Spesific styles
-@import "components/_articleBody.scss";
+// Spesific styles
+@import "components/article.scss";
 @import "components/articleBanner.scss";
 @import "components/_articleList.scss";
 @import "components/_articleTeaser.scss";

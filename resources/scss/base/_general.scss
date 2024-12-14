@@ -12,4 +12,10 @@ body{
 
 main{
     min-height: calc(100vh - 135px);
+    position: relative;
+    max-width: 1000px;
+    margin: 145px auto 30px auto;
+    @include ipadOrSmaller{
+        margin: 125px auto 70px auto;
+    }
 }

@@ -2,7 +2,7 @@ export default {
 	init() {
         let lastScrollTop = 0;
         let hamburgerButton = document.querySelector("[data-menu-button]");
-        let sidebar = document.querySelector(".article__content--sidebar");
+        let sidebar = document.querySelector(".article__sidebar");
         const header = document.querySelector("[data-header]");
         const menu = document.querySelector("[data-menu-content]");
 

@@ -17,8 +17,8 @@
 
 
 {% if contentBlocks|length %}
-    <div class="article__content--wrapper">
-        <div class="article__content--sidebar {{ entry.sectionId == 10 ? "lesson" }}">
+    <div class="article__wrapper">
+        <div class="article__sidebar {{ entry.sectionId == 10 ? "lesson" }}">
             <h3>{{ 'Content'|t }}:</h3>
             <a href="#" data-chapter-button="0" class="active">{{ firstChapter }}</a>
             {% set chapterNr = 0 %}
@@ -35,7 +35,7 @@
             {% endif %}
             
         </div>
-        <div class="article__content--main">
+        <div class="article__content">
             {% if includedContentType|length %}
                 {% include "_content/_includedContent/"~ includedContentType ~".twig" with {includedContent: includedContent|length ? includedContent : null} %}         
             {% endif %}
