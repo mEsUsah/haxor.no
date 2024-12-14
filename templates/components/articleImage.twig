@@ -33,7 +33,7 @@
 <div class="article__header">
     {% if image %}
         <div class="articleImage__wrapper">
-            <div class="articleImage__image" style="background-image: url('{{ image.getUrl(imageOptions) }}');" ></div>
+            <div class="articleImage__image" style="background-image: url('{{ image.getUrl(imageOptions) }}');"></div>
             {% if entry.title|length %}
                 <div class="articleTitle">{{entry.title}}</div>
                 <div class="article__imageBorder"></div>
@@ -53,15 +53,11 @@
                 {% endif %}
             {% endif %}
 
-            {% if ctfWriteup and entry.ctfPlatform.one().articleImageCaption|length %}
-                <figcaption class="articleImage__caption--desktop">{{entry.ctfPlatform.one().articleImageCaption}}</figcaption>
-            {% endif %}
-
-            {% if not ctfWriteup and image.credits|length %}
+            {% if image.credits|length %}
                 <figcaption class="articleImage__caption--desktop">{{image.credits}}</figcaption>
             {% endif %}
         </div>
-        {% if not ctfWriteup and image.credits|length %}
+        {% if image.credits|length %}
             <figcaption class="articleImage__caption--mobile">{{image.credits}}</figcaption>
         {% endif %}
     {% endif %}
