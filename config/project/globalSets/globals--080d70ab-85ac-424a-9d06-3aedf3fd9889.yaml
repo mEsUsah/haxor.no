@@ -5,6 +5,7 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2024-12-14T10:25:02+00:00'
             elementCondition: null
             fieldUid: 849ea203-a4f7-42a8-845c-45933a0ee48a # Menu link
             handle: null
@@ -26,6 +27,7 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2024-12-14T10:25:02+00:00'
             elementCondition: null
             fieldUid: 7701d10a-74fb-40fb-a7aa-7e184bb97f05 # SEO Image
             handle: null
@@ -41,6 +43,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-12-14T10:25:02+00:00'
             elementCondition: null
             fieldUid: c1769912-6758-4fbd-9f12-d37a9fa32253 # SEO Description
             handle: null

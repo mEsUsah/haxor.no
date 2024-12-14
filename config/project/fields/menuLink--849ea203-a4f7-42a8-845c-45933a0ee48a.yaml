@@ -7,7 +7,7 @@ settings:
   createButtonLabel: null
   defaultIndexViewMode: cards
   entryTypes:
-    - e6da2fad-eca4-4420-b3ee-ddb8e1fb8941 # Menu link Block
+    - e6da2fad-eca4-4420-b3ee-ddb8e1fb8941 # Menu link
   includeTableView: false
   maxEntries: null
   minEntries: null

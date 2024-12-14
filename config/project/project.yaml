@@ -1,4 +1,4 @@
-dateModified: 1734171230
+dateModified: 1734172011
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -148,7 +148,7 @@ meta:
     dc32cdca-de36-4628-af9c-221eb639a9ab: 'PDF''s' # PDF's
     dc63f038-3a87-428d-9230-20a288f905da: 'ContentBlocks - File Content - File type' # ContentBlocks - File Content - File type
     dc9122fb-758f-42ae-a098-da603eb31a49: Courses # Courses
-    e6da2fad-eca4-4420-b3ee-ddb8e1fb8941: 'Menu link Block' # Menu link Block
+    e6da2fad-eca4-4420-b3ee-ddb8e1fb8941: 'Menu link' # Menu link
     e75f8e08-e499-444e-b646-97309e1abb2b: 'ContentBlocks - Books - Books' # ContentBlocks - Books - Books
     ea9728b1-b326-481a-810f-1735e2b682cc: TryHackMe # TryHackMe
     ec8d0268-e294-4677-9a70-bf25ab9f87e7: 'Info Box' # Info Box

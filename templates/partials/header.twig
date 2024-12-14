@@ -96,7 +96,8 @@
                 <ul>
                     {% if menuItems and menuItems|length %}
                         {% for menuItem in menuItems %}
-                            <li><a href="{{menuItem.linkEntry.one().getUrl()}}">{{menuItem.linkText}}</a></li>
+                            {% set link = menuItem.linkEntry.one() %}
+                            <li><a href="{{link.getUrl()}}">{{menuItem.linkText|length ? menuItem.linkText : link.title }}</a></li>
                         {% endfor %}
                     {% endif %}  
                 </ul>
