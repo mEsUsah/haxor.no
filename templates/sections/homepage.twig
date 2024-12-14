@@ -41,10 +41,11 @@
     {% else %}
 	{% cache %}
 	<div class="articleList__container">
-            {% if currentSite.handle == "haxorNoKids" %}
-                {% set articles = craft.entries.site(["haxorNoKids"]).section("lesson").all() %}
+            {% set frontPageSections = "articles, portfolio, ctfWriteups" %}
+            {% if currentSite.handle == "haxorNoEn" %}
+                {% set articles = craft.entries.site(["haxorNoEn"]).section(frontPageSections).all() %}
             {% else %}
-                {% set articles = craft.entries.site(["default", "haxorNoEn","haxorNoKids"]).section("articles, portfolio, ctfWriteups").all() %}
+                {% set articles = craft.entries.site(["default"]).section(frontPageSections).all() %}
             {% endif %}
             
             {% for article in articles %}
