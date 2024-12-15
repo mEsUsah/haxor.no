@@ -13,7 +13,8 @@
     font-family: 'Oswald', sans-serif;
     
     @include ipadOrSmaller {
-        margin: 10px auto;
+        margin: 10px;
+        width: calc(100% - 40px);
         padding: 5px 10px;
         text-align: center;
     }
