@@ -71,6 +71,12 @@
             background-position-y: 60%;
             background-position-x: 50%;
         }
+        &--instrument{
+            background-image: $icon-tone;
+            background-size: 58%;
+            background-position-y: 48%;
+            background-position-x: 46%;
+        }
     }
     &__color{
         &--linux{
