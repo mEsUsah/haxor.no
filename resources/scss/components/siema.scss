@@ -1,0 +1,108 @@
+.siema{
+    &__wrapper{
+        position: relative;
+        padding-bottom: 16px;
+    }
+    &__arrow{
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        background-color: $color-main;
+        cursor: pointer;
+        background-image: $icon-arrow;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        background-size: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+
+        &-right{
+            right: 10px;
+            @include desktopOnly{
+                right: 10px;
+                transform: translateY(-50%) translateX(150%);
+            }
+        }
+        &-left{
+            left: 10px;
+            transform: rotate(180deg) translateY(50%);
+            @include desktopOnly{
+                left: 10px;
+                transform: rotate(180deg) translateY(50%) translateX(150%);
+            }
+        }
+    }
+    &__dot{
+        background-color: $color-main;
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+
+        margin: 0 3px;
+        cursor: pointer;
+
+        &--active{
+            background-color: white;
+            border: 2px solid $color-main;
+            height: 8px;
+            width: 8px;
+        }
+    }
+    &__dots--wrapper{
+        position: absolute;
+        bottom: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__content{
+        position: relative;
+        overflow: hidden;
+    }
+    &__figure {
+        margin: 0;
+        position: relative;
+        & picture{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        & figcaption{
+            text-align: right;
+            font-size: 12px;
+            line-height: 12px;
+            margin: 4px 4px 4px 4px;
+            p{
+                margin: 0;
+            }
+        }
+    }
+
+
+    &__background{
+        filter: blur(20px);
+        z-index: 0;
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        object-fit: cover;
+    }
+
+    &__image{
+        width: 100%;
+        height: auto;
+        // max-height: min-content;
+        // max-width: 720px;
+        &--portrait{
+            height: 0;
+        }
+    }
+
+    &__figurecaption-text {
+        // margin-right: 0.5rem;
+    }
+}

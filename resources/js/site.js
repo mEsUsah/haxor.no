@@ -7,6 +7,7 @@ import lessonTasks from "./components/lessonTasks";
 import menu from "./components/menu";
 import thmList from "./components/thmList";
 import modal from "./components/modal";
+import siema from "./components/siema";
 
 accordian.init();
 chapterHighlight.init();
@@ -15,3 +16,4 @@ lessonTasks.init();
 menu.init();
 thmList.init();
 modal.init();
+siema.init();

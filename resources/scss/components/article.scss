@@ -9,6 +9,9 @@
     &__content{
         max-width: 720px;
         width: 100%;
+        @include ipadOrSmaller {
+            max-width: unset;
+        }
     }
     &__sidebar{
         position: sticky;

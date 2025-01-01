@@ -1,8 +1,7 @@
-{% set imageBlocks = block.imageBlocks.all() %}
+{% set imageBlocks = block.images.all() %}
 {% set imageFormat = {
     mode: 'crop', 
-    width: 1248, 
-    height: 700,
+    width: 720, 
     format: 'webp',
     quality: 75,
 } %}
@@ -26,7 +25,7 @@
             <div class="siema">
                 {% for imageBlock in imageBlocks %}
                     {% set image = imageBlock.image.one() %}
-                    {% set caption = imageBlock.caption %}
+                    {% set caption = imageBlock.imageCapt %}
                     {% set portrait = image.height > image.width %}
                     <div class="siema__content">
                         {% if portrait %}
@@ -37,17 +36,17 @@
                             <picture>
                                 <img class="siema__image {{portrait ? 'siema__image--portrait' : ''}}"
                                     src="{{ image.getUrl(portrait ? imageFormatPortrait : imageFormat) }}" 
-                                    alt="{{ image.altText }}"
+                                    alt="{{ image.alt }}"
                                 >
                             </picture>
     
-                            {% if caption|length or (image.photographer is defined and image.photographer|length) %}
+                            {% if caption|length or (image.credits is defined and image.credits|length) %}
                                 <figcaption class="image__caption image__caption--siema">
                                     {% if caption|length %}
                                         <span class="siema__figurecaption-text">
                                             {{ caption }}
-                                            {% if image.photographer is defined and image.photographer|length %}
-                                                Â© {{ image.photographer }}
+                                            {% if image.credits is defined and image.credits|length %}
+                                                {{ image.credits  }}
                                             {% endif %}
                                         </span>
                                     {% endif %}
