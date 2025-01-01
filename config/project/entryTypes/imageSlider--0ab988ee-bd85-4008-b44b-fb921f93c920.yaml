@@ -1,0 +1,67 @@
+color: sky
+fieldLayouts:
+  d6d2e74e-592c-4da6-80bc-fd2ea30e625e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-01-01T14:52:32+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c087c4be-4622-4212-b810-6cce4f4c5ad4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-01T14:56:10+00:00'
+            elementCondition: null
+            fieldUid: 813fa446-1125-47b4-bd45-d0b0768c2d69 # Images
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9ae9414f-9c26-44d2-b2a1-30099253c78a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 2b6c16b7-3fe4-47b8-82f7-a49f24f6e3ce
+        userCondition: null
+handle: imageSlider
+hasTitleField: true
+icon: image-landscape
+name: 'Image Slider'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

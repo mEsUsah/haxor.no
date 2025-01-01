@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: images
+instructions: null
+name: Images
+searchable: false
+settings:
+  createButtonLabel: 'Add Image'
+  defaultIndexViewMode: cards
+  entryTypes:
+    - 409d3c53-f6a8-476d-be5a-5bc8d3acc0f6 # Image
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

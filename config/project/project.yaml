@@ -1,4 +1,4 @@
-dateModified: 1734182411
+dateModified: 1735743565
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -34,6 +34,7 @@ fs:
     url: '@web/uploads/thumbnails'
 meta:
   __names__:
+    0ab988ee-bd85-4008-b44b-fb921f93c920: 'Image Slider' # Image Slider
     0e2235ec-098b-4add-9c16-2a51cb50b5e3: 'Course Grade' # Course Grade
     0f03b5b8-d4f9-4e6c-bd6c-d8fa38c5329e: Home # Home
     1e364dce-0242-4cfe-8565-03b39ef5bea6: Certificates # Certificates
@@ -93,6 +94,7 @@ meta:
     515bc6fb-894b-442b-8af3-6666bef0300f: Kurs # Kurs
     572f6109-c32e-4df3-8c66-7e5bba2756ea: Text # Text
     704a8478-65c0-4619-87e8-0b570ccd42f4: Publisher # Publisher
+    813fa446-1125-47b4-bd45-d0b0768c2d69: Images # Images
     849ea203-a4f7-42a8-845c-45933a0ee48a: 'Menu link' # Menu link
     1123b472-8241-4d07-bd52-1eff0c59f1ef: 'About Blog' # About Blog
     4660b070-063e-4eb7-b897-c5273ae300c3: 'Icons and Badges' # Icons and Badges
