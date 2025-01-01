@@ -4,7 +4,7 @@ instructions: null
 name: ContentBlocks
 searchable: true
 settings:
-  createButtonLabel: null
+  createButtonLabel: 'Add block'
   defaultIndexViewMode: cards
   entryTypes:
     - 120a0c87-a4cf-4fb4-8e36-2533818e113a # Chapter
