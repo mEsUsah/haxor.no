@@ -16,7 +16,7 @@
         &--simulator{
             background-image: $icon-joystick;
         }
-        &--nettverk{
+        &--networking{
             background-image: $icon-network;
         }
         &--web{
@@ -27,18 +27,18 @@
             background-image: $icon-windows;
             background-size: 60%;
         }
-        &--barn{
+        &--kids{
             background-image: $icon-teddybear;
             background-position-y: 75%;
         }
         &--microbit{
             background-image: $icon-microbit;
         }
-        &--modifikasjon{
+        &--mods{
             background-image: $icon-screwdriver;
             background-size: 70%;
         }
-        &--datamaskiner{
+        &--computers{
             background-image: $icon-computer;
             background-size: 70%;
         }
@@ -53,14 +53,9 @@
         &--security{
             background-image: $icon-lock;
             background-size: 69%;
-            background-position-y: 3px;
+            background-position-y: 40%;
         }
-        &--sikkerhet{
-            background-image: $icon-lock;
-            background-size: 69%;
-            background-position-y: 3px;
-        }
-        &--kjoling{
+        &--cooling{
             background-image: $icon-cooling;
             background-size: 120%;
             background-position-y: -6px;
