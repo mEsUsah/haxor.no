@@ -77,6 +77,11 @@
             background-position-y: 48%;
             background-position-x: 46%;
         }
+        &--gaming{
+            background-image: $icon-gamepad;
+            background-size: 80%;
+            background-position-y: 40%;
+        }
     }
     &__color{
         &--linux{
