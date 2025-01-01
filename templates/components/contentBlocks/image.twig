@@ -55,7 +55,13 @@
                 </picture>
             {% endif %}
             {% if block.imageCapt|length %}
-                <figcaption class="contentBlocks__image--caption {{block.imageIsFigure ? "contentBlocks__image--caption--figure"}}">{{block.imageCapt}}</figcaption>
+                <figcaption class="contentBlocks__image--caption {{block.imageIsFigure ? "contentBlocks__image--caption--figure"}}">
+                    {{block.imageCapt}}
+                    {% if image.credits is defined and image.credits|length %}
+                        {{ image.credits  }}
+                    {% endif %}
+                    
+                </figcaption>
             {% endif %}
         {% endif %}
 </div>
