@@ -77,6 +77,11 @@
             background-size: 80%;
             background-position-y: 40%;
         }
+        &--devops{
+            background-image: $icon-devops;
+            background-size: 90%;
+            background-position-y: 50%;
+        }
     }
     &__color{
         &--linux{
