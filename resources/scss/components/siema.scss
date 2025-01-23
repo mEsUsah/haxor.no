@@ -17,6 +17,11 @@
         background-size: 50%;
         top: 50%;
         transform: translateY(-50%);
+        opacity: 0.6;
+        @include desktopOnly{
+            opacity: 1;
+        }
+
 
         &-right{
             right: 10px;
