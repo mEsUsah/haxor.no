@@ -1,36 +1,43 @@
 {% set figureMobile = {
     mode: 'fit',
     width: 500,
-    quality: 70,
+    quality: 75,
+    format: 'webp'
+    
 } %}
 {% set figureIpad = {
     mode: 'fit',
     width: 800,
-    quality: 70,
+    quality: 75,
+    format: 'webp'
 } %}
 {% set figureDesktop = {
     mode: 'fit',
     width: 1000,
-    quality: 70,
+    quality: 75,
+    format: 'webp'
 } %}
 
 {% set imageMobile = {
     mode: 'crop',
     width: 500,
     height: 282,
-    quality: 70,
+    quality: 75,
+    format: 'webp'
 } %}
 {% set imageIpad = {
     mode: 'crop',
     width: 800,
     height: 542,
-    quality: 70,
+    quality: 75,
+    format: 'webp'
 } %}
 {% set imageDesktop = {
     mode: 'crop',
     width: 1000,
     height: 655,
-    quality: 70,
+    quality: 75,
+    format: 'webp'
 } %}
 
 {% set image = block.image.one() %}
