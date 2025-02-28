@@ -4,6 +4,7 @@ instructions: null
 name: 'ContentBlocks - File Content - File type'
 searchable: true
 settings:
+  customOptions: false
   options:
     -
       __assoc__:
@@ -16,6 +17,28 @@ settings:
         -
           - default
           - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Ini
+        -
+          - value
+          - ini
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - EditorConfig
+        -
+          - value
+          - editorconfig
+        -
+          - default
+          - ''
     -
       __assoc__:
         -
@@ -97,10 +120,10 @@ settings:
       __assoc__:
         -
           - label
-          - EditorConfig
+          - JavaScript
         -
           - value
-          - editorconfig
+          - javascript
         -
           - default
           - ''
@@ -108,10 +131,10 @@ settings:
       __assoc__:
         -
           - label
-          - JavaScript
+          - TypeScript
         -
           - value
-          - javascript
+          - typescript
         -
           - default
           - ''
@@ -189,6 +212,39 @@ settings:
         -
           - value
           - twig
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Docker
+        -
+          - value
+          - docker
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Groovy
+        -
+          - value
+          - groovy
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - YAML
+        -
+          - value
+          - yaml
         -
           - default
           - ''
