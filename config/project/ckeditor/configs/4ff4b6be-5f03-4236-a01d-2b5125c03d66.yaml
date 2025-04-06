@@ -9,7 +9,12 @@ toolbar:
   - underline
   - strikethrough
   - '|'
+  - subscript
+  - superscript
+  - '|'
   - bulletedList
   - numberedList
+  - outdent
+  - indent
   - '|'
   - link
