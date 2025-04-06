@@ -82,6 +82,12 @@
             background-size: 90%;
             background-position-y: 50%;
         }
+        &--dsa{
+            background-image: $icon-dsa;
+            background-size: 80%;
+            background-position-y: 50%;
+            background-position-x: 60%;
+        }
     }
     &__color{
         &--linux{
