@@ -21,7 +21,7 @@
         "rss": "https://craftcms.com/changelog.rss"
     },
     "require": {
-        "craftcms/cms": "5.6.10.2",
+        "craftcms/cms": "5.6.15",
         "vlucas/phpdotenv": "^5",
         "mesusah/craft-haxor": "^2.0.0",
         "mesusah/craft-tryhackme": "dev-master",
