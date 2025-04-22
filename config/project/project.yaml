@@ -1,4 +1,4 @@
-dateModified: 1743942258
+dateModified: 1745345430
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -196,5 +196,5 @@ system:
   live: true
   name: haxor.no
   retryDuration: null
-  schemaVersion: 5.6.0.2
+  schemaVersion: 5.7.0.3
   timeZone: Europe/Oslo
