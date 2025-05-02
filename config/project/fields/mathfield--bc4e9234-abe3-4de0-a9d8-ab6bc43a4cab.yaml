@@ -1,0 +1,8 @@
+columnSuffix: null
+handle: mathfield
+instructions: null
+name: 'Math Field'
+searchable: false
+translationKeyFormat: null
+translationMethod: none
+type: mesusah\crafttext2mathml\fields\MathField
