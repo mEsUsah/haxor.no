@@ -27,7 +27,7 @@ export default ({ mode }) => {
                     css: './resources/scss/site.scss',
                 },
                 output: {
-                    entryFileNames: `js/site.js`,
+                    // entryFileNames: `js/site.js`,
                     // assetFileNames: `[ext]/site.[ext]`
                 },
             },
