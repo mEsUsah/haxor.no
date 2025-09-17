@@ -14,7 +14,7 @@
         } %}
         {% include "partials/seo" %}
         {% include "partials/favicon" %}
-        <link rel="stylesheet" href="/resources/css/site.min.css?v={{ cashebuster }}">
+        <link rel="stylesheet" href="{{ craft.vite.asset("resources/scss/site.scss") }}">
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     </head >
 
@@ -39,8 +39,13 @@
         {% endblock footer %}
 
         <div data-modal-shadow class="modal__shadow"></div>
-            
-        <script src="/resources/js/site.min.js?v={{ cashebuster }}" async defer></script>
+
+
+        {{ craft.vite.script("resources/js/site.js") }}
+        {% if devMode %}
+            <script type="module" src="https://haxor.no.ddev.site:3001/@vite/client"></script>
+        {% endif %}
+       
         <script src="/resources/js/prism.js?v={{ cashebuster }}"></script>
     </body>
 </html>

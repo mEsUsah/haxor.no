@@ -27,7 +27,8 @@
         "mesusah/craft-tryhackme": "dev-master",
         "mesusah/craft-text2mathml": "dev-master",
         "craftcms/ckeditor": "4.10.1",
-        "guzzlehttp/guzzle": "^7.9"
+        "guzzlehttp/guzzle": "^7.9",
+        "nystudio107/craft-vite": "5.0.1"
     },
     "require-dev": {
         "yiisoft/yii2-shell": "^2.0.3",

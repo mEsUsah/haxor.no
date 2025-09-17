@@ -13,6 +13,11 @@ use_dns_when_possible: true
 composer_version: "2"
 web_environment: []
 nodejs_version: "18"
+web_extra_exposed_ports:
+  - name: vite
+    container_port: 3000
+    http_port: 3000
+    https_port: 3001
 
 # Key features of ddev's config.yaml:
 
