@@ -6,5 +6,6 @@
 npm-debug.log
 web/resources/css/site.min.css.map
 *.sql
+*.sql.gz
 plugins/tryhackme
 .phpunit.cache
