@@ -10,4 +10,4 @@ plugins/tryhackme
 .phpunit.cache
 
 # Vite build files
-/web/dist/*
+#/web/dist/*

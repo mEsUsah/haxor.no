@@ -1,0 +1,13 @@
+{
+  "resources/js/site.js": {
+    "file": "assets/js-CIk4GNGP.js",
+    "name": "js",
+    "src": "resources/js/site.js",
+    "isEntry": true
+  },
+  "resources/scss/site.scss": {
+    "file": "assets/css-ZQn76NVd.css",
+    "src": "resources/scss/site.scss",
+    "isEntry": true
+  }
+}
