@@ -1,4 +1,4 @@
-dateModified: 1746203988
+dateModified: 1758113148
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -20,7 +20,7 @@ fs:
     url: '@web/uploads/images'
   pdf:
     hasUrls: true
-    name: 'PDF''s'
+    name: "PDF's"
     settings:
       path: uploads/pdf
     type: craft\fs\Local
@@ -149,7 +149,7 @@ meta:
     d9a0abe6-89dd-4688-a0ac-6d584524c3c2: 'Course Certificate' # Course Certificate
     d67ba21e-e565-441c-aafd-bee2a9f4d3f7: 'ContentBlocks - Chart - Bar (Stacked) - Data' # ContentBlocks - Chart - Bar (Stacked) - Data
     d81b7a18-6d93-471a-ba57-99544b0c585b: haxor.no/no # haxor.no/no
-    dc32cdca-de36-4628-af9c-221eb639a9ab: 'PDF''s' # PDF's
+    dc32cdca-de36-4628-af9c-221eb639a9ab: "PDF's" # PDF's
     dc63f038-3a87-428d-9230-20a288f905da: 'ContentBlocks - File Content - File type' # ContentBlocks - File Content - File type
     dc9122fb-758f-42ae-a098-da603eb31a49: Courses # Courses
     e6da2fad-eca4-4420-b3ee-ddb8e1fb8941: 'Menu link' # Menu link
@@ -202,5 +202,5 @@ system:
   live: true
   name: haxor.no
   retryDuration: null
-  schemaVersion: 5.7.0.3
+  schemaVersion: 5.8.0.3
   timeZone: Europe/Oslo

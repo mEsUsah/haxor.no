@@ -21,12 +21,12 @@
         "rss": "https://craftcms.com/changelog.rss"
     },
     "require": {
-        "craftcms/cms": "5.7.4",
+        "craftcms/cms": "5.8.17",
         "vlucas/phpdotenv": "^5",
         "mesusah/craft-haxor": "^2.0.0",
         "mesusah/craft-tryhackme": "dev-master",
         "mesusah/craft-text2mathml": "dev-master",
-        "craftcms/ckeditor": "4.8.0",
+        "craftcms/ckeditor": "4.10.1",
         "guzzlehttp/guzzle": "^7.9"
     },
     "require-dev": {
