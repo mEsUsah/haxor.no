@@ -65,9 +65,17 @@ class ArticlesService extends Component
 
         $output = [];
         foreach ($articles as $article) {
+            $intro = "";
+            $contentBlock = $article->contentBlocks->one();
+            if ($contentBlock->type->handle == "text" && $contentBlock->text) {
+                $intro = strip_tags($contentBlock->text->rawContent);
+            }
+            
             array_push($output, [
+                'language' => $article->site->language,
                 'title' => $article->title,
                 'teaser' => $article->teaser,
+                'intro' => $intro,
                 'subject' => $article->articleSubject
                     ->one()
                     ->slug,
