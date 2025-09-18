@@ -6,52 +6,23 @@
             {% set serchUrl = "/en" %}
         {% endif %}
         
-        <form action="{{ url(serchUrl) }}">
+        <form>
             <input type="search" name="q" aria-label="Søk" placeholder="{{ 'Search'|t }}" value="{{ craft.app.request.getParam('q')|length ? craft.app.request.getParam('q') }}">
             <button type="submit">Go</button>
         </form>
     </div>
-    {% if craft.app.request.getParam('q') %}
-            <h1 class="articleList__header">{{ 'Search Results'|t }}</h1>
 
-        {% set searchQuery = craft.app.request.getParam('q') %}
-        
-        {% if currentSite.handle == "default" %}
-            {% set serchUrl = "/" %}
-        {% else %}
-            {% set serchUrl = "/en" %}
-        {% endif %}
-        {% set articles = craft.entries().search(searchQuery).site(["default", "haxorNoEn", "haxorNoKids"]).section("articles, portfolio, lesson, ctfWriteups").orderBy('score').all() %}
-
-        {% if articles|length %}
-            <p class="articleList__subtitle">{{ articles|length }} {{ 'results on'|t }}: "{{ searchQuery }}"</p>
-
-            <div class="articleList__container">
-                {% for article in articles %}
-                    {% include "components/parts/_article.twig" %}
-                {% endfor %}
+    <div data-frontpage-filter-vue>
+        <section v-if="!loaded">
+            <div class="thmScoreboard__loading">
+                <div class="thmScoreboard__loading-spinner"></div>
             </div>
-        {% else %}
-            {% if currentSite.handle == "default" %}
-                <p class="articleList__subtitle">Beklager, ingen treff på "{{ searchQuery }}"</p>
-            {% else %}
-                <p class="articleList__subtitle">Your search for “{{ searchQuery }}” didn’t return any results.</p>
-            {% endif %}
-        {% endif %}
-    {% else %}
-	{% cache %}
-	<div class="articleList__container">
-            {% set frontPageSections = "articles, portfolio, ctfWriteups" %}
-            {% if currentSite.handle == "haxorNoEn" %}
-                {% set articles = craft.entries.site(["haxorNoEn"]).section(frontPageSections).all() %}
-            {% else %}
-                {% set articles = craft.entries.site(["default"]).section(frontPageSections).all() %}
-            {% endif %}
-            
-            {% for article in articles %}
-                {% include "components/parts/_article.twig" with {article: article} %}
-            {% endfor %}
-        </div>
-	{% endcache %}
-    {% endif %}
+        </section>
+        
+        <section v-else>
+            <div class="articleList__container" v-if="articles">
+                <article-item v-for="article in articles" :key="article.id" :article="article" />
+            </div>
+        </section>
+    </div>
 </section>
