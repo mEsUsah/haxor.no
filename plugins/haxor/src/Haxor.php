@@ -30,6 +30,9 @@ use craft\services\Fields;
 use craft\web\twig\variables\CraftVariable;
 use craft\events\RegisterComponentTypesEvent;
 use craft\events\RegisterUrlRulesEvent;
+use craft\elements\Entry;
+use craft\events\ModelEvent;
+use craft\helpers\ElementHelper;
 
 use yii\base\Event;
 
@@ -166,6 +169,19 @@ class Haxor extends Plugin
                 if ($event->plugin === $this) {
                     // We were just installed
                 }
+            }
+        );
+
+        // Clear cache when entries are saved
+        Event::on(
+            Entry::class,
+            Entry::EVENT_AFTER_SAVE, static function (ModelEvent $event) {
+                $entry = $event->sender;
+                if(ElementHelper::isDraftOrRevision($entry)){
+                    return;
+                }
+                
+                Craft::$app->getCache()->delete('articles_get_all');
             }
         );
 
