@@ -39,22 +39,18 @@ export default {
                 articleSubjects(){
                     let subjects = [];
                     this.articles.forEach(article => {
-                        article.subjects.forEach(subject => {
-                            if (!subjects.includes(subject)){
-                                subjects.push(subject);
-                            }
-                        });
+                        if (!subjects.includes(article.subject)){
+                            subjects.push(article.subject);
+                        }
                     });
                     return subjects;
                 },
                 articleLanguages(){
                     let languages = [];
                     this.articles.forEach(article => {
-                        article.languages.forEach(language => {
-                            if (!languages.includes(language)){
-                                languages.push(language);
-                            }
-                        });
+                        if (!languages.includes(article.language)){
+                            languages.push(article.language);
+                        }
                     });
                     return languages;
                 }
