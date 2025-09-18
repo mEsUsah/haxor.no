@@ -206,7 +206,7 @@
         @include ipadOrSmaller{
             margin-top: 134px;
         }
-        form{
+        &-form{
             display: flex;
             align-items: center;
             justify-content: center;

@@ -1,25 +1,19 @@
-<section class="articleBody">
+<section class="articleBody" data-frontpage-filter-vue>
     <div class="articleList__search">
-        {% if currentSite.handle == "default" %}
-            {% set serchUrl = "/" %}
-        {% else %}
-            {% set serchUrl = "/en" %}
-        {% endif %}
-        
-        <form>
+        <div class="articleList__search-form">
             <input type="search" name="q" aria-label="Søk" placeholder="{{ 'Search'|t }}" value="{{ craft.app.request.getParam('q')|length ? craft.app.request.getParam('q') }}">
-            <button type="submit">Go</button>
-        </form>
+            <button>Go</button>
+        </div>
     </div>
 
-    <div data-frontpage-filter-vue>
+    <div >
         <section v-if="!loaded">
             <div class="thmScoreboard__loading">
                 <div class="thmScoreboard__loading-spinner"></div>
             </div>
         </section>
         
-        <section v-else>
+        <section>
             <div class="articleList__container" v-if="articles">
                 <article-item v-for="article in articles" :key="article.id" :article="article" />
             </div>
