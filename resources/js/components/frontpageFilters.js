@@ -1,6 +1,7 @@
 import {createApp} from 'vue/dist/vue.esm-bundler.js';
 import axios from 'axios';
 import ArticleItem from '../veiws/ArticleItem.vue';
+import ArticleFilter from '../veiws/ArticleFilter.vue';
 
 export default {
     _mountpoint: document.querySelector('[data-frontpage-filter-vue]'),
@@ -12,12 +13,15 @@ export default {
         const app = createApp({
             delimiters: ['[[', ']]'],
             components: {
-                ArticleItem
+                ArticleItem,
+                ArticleFilter,
             },
             data() {
                 return {
                     articles: [],
                     loaded: false,
+                    searchQuery: '',
+                    filteredArticles: [],
                 }
             },
             mounted() {
@@ -33,8 +37,20 @@ export default {
                     .catch(e => {
                         console.log(e);
                     })
+                },
+                filterArticles() {
+                    if (this.searchQuery.length > 1) {
+                        this.filteredArticles = this.articles.filter(article => {
+                            return article.title.toLowerCase().includes(this.searchQuery.toLowerCase())
+                                   || (article.teaser && article.teaser.toLowerCase().includes(this.searchQuery.toLowerCase()))
+                                   || article.subject.toLowerCase().includes(this.searchQuery.toLowerCase())
+                                   || article.intro.toLowerCase().includes(this.searchQuery.toLowerCase());
+                        });
+                    } else {
+                        this.filteredArticles = this.articles;
+                    }
                 }
-            },
+            },  
             computed: {
                 articleSubjects(){
                     let subjects = [];
@@ -55,6 +71,10 @@ export default {
                     return languages;
                 }
             },
+            watch: {
+                searchQuery: 'filterArticles',
+                articles: 'filterArticles',
+            }
         });
 
         app.mount(this._mountpoint);

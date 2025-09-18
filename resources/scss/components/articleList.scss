@@ -202,29 +202,39 @@
             }
         }
     }
+    &__filters{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+        @include ipadOrSmaller{
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+    }
     &__search{
         @include ipadOrSmaller{
             margin-top: 134px;
         }
+        
         &-form{
             display: flex;
             align-items: center;
             justify-content: center;
             
             input{
-                width: calc(100% - 74px);
+                width: calc(100% - 28px);
                 font-size: 16px;
                 line-height: 20px;
                 padding: 6px 10px;
                 border: 2px solid black;
-                border-right: none;
-                border-bottom-left-radius: 3px;
-                border-top-left-radius: 3px;
+                border-radius: 3px;
                 box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
                 
-                @include ipadOrSmaller{
-                    width: calc(100% - 64px);
-                }
                 &:focus-visible{
                     outline: none;
                 }

@@ -1,9 +1,12 @@
 <section class="articleBody" data-frontpage-filter-vue>
     <div class="articleList__search">
         <div class="articleList__search-form">
-            <input type="search" name="q" aria-label="Søk" placeholder="{{ 'Search'|t }}" value="{{ craft.app.request.getParam('q')|length ? craft.app.request.getParam('q') }}">
-            <button>Go</button>
+            <input type="search" aria-label="search" placeholder="{{ 'Search'|t }}" v-model="searchQuery"/>
         </div>
+        {# <div class="articleList__filters">
+            <article-filter v-for="subject in articleSubjects" :key="subject" :type="subject" />
+            <article-filter v-for="language in articleLanguages" :key="language" :type="language" />
+        </div> #}
     </div>
 
     <div >
@@ -15,7 +18,7 @@
         
         <section>
             <div class="articleList__container" v-if="articles">
-                <article-item v-for="article in articles" :key="article.id" :article="article" />
+                <article-item v-for="article in filteredArticles" :key="article.id" :article="article" />
             </div>
         </section>
     </div>
