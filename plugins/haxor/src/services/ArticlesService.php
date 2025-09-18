@@ -51,6 +51,13 @@ class ArticlesService extends Component
 
     public function getAll()
     {
+        $cacheKey = 'articles_get_all';
+        $cache = Craft::$app->getCache();
+        $cachedData = $cache->get($cacheKey);
+        if ($cachedData) {
+            return $cachedData;
+        }
+        
         $articles = Entry::find()
             ->site([
                 'default', 
@@ -87,6 +94,9 @@ class ArticlesService extends Component
                     ->getUrl('articleThumbnail', true),
             ]);
         }
+
+        $cache->set($cacheKey, $output, false, null);
+
         return $output;
     }
 
