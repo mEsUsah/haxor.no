@@ -22,6 +22,8 @@ export default {
                     loaded: false,
                     searchQuery: '',
                     filteredArticles: [],
+                    selectedSubjects: [],
+                    selectedLanguages: [],
                 }
             },
             mounted() {
@@ -44,11 +46,38 @@ export default {
                             return article.title.toLowerCase().includes(this.searchQuery.toLowerCase())
                                    || (article.teaser && article.teaser.toLowerCase().includes(this.searchQuery.toLowerCase()))
                                    || article.subject.toLowerCase().includes(this.searchQuery.toLowerCase())
-                                   || article.intro.toLowerCase().includes(this.searchQuery.toLowerCase());
+                                   || article.intro.toLowerCase().includes(this.searchQuery.toLowerCase())
                         });
                     } else {
                         this.filteredArticles = this.articles;
                     }
+
+                    if (this.selectedLanguages.length > 0) {
+                        this.filteredArticles = this.filteredArticles.filter(article => {
+                            return this.selectedLanguages.includes(article.language);
+                        });
+                    }
+                    if (this.selectedSubjects.length > 0) {
+                        this.filteredArticles = this.filteredArticles.filter(article => {
+                            return this.selectedSubjects.includes(article.subject);
+                        });
+                    }
+                },
+                updateLanguageFilters(language) {
+                    if(this.selectedLanguages.includes(language)){
+                        this.selectedLanguages = this.selectedLanguages.filter(l => l !== language);
+                    } else {
+                        this.selectedLanguages.push(language);
+                    }
+                    this.filterArticles();
+                },
+                updateSubjectFilters(subject) {
+                    if(this.selectedSubjects.includes(subject)){
+                        this.selectedSubjects = this.selectedSubjects.filter(s => s !== subject);
+                    } else {
+                        this.selectedSubjects.push(subject);
+                    }
+                    this.filterArticles();
                 }
             },  
             computed: {

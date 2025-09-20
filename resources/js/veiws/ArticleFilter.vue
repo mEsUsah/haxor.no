@@ -1,10 +1,18 @@
 <template>
-    <input type="checkbox">{{type}}</input>
+    <input type="checkbox" :checked="selected" @change="$emit('change', name)">{{name}}</input>
 </template>
 <script>
 export default {
     props: {
-        type: {
+        subject: {
+            type: String,
+            required: false
+        },
+        language: {
+            type: String,
+            required: false
+        },
+        name: {
             type: String,
             required: true
         },
