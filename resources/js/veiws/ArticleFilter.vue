@@ -1,5 +1,10 @@
 <template>
-    <input type="checkbox" :checked="selected" @change="$emit('change', name)">{{name}}</input>
+    <input type="checkbox" 
+        class="article-filter"
+        :class="'article-filter--' + name"
+        :checked="selected" 
+        @change="$emit('change', name)"
+    ></input>
 </template>
 <script>
 export default {

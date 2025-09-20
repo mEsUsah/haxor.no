@@ -1,0 +1,153 @@
+.article-filter {
+    appearance: none;
+    background: none;
+    margin: 0;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 6px;
+        height: 6px;
+        margin: 0 auto;
+        border: 1px solid black;
+        border-radius: 50%;
+        background-color: transparent;
+        transition: background-color 0.3s, border-color 0.3s;
+    }
+    &:checked::after {
+        background-color: black;
+        border-color: black;
+    }
+
+    &::before {
+        content: '';
+        height: 30px;
+        width: 30px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 50%;
+        margin-bottom: 3px;
+        display: block;
+        color: black;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 80%;
+    }
+    &--linux{
+        &::before{
+            @extend .category__icon--linux;
+        }
+    }
+    &--python{
+        &::before{
+            @extend .category__icon--python;
+        }
+    }
+    &--arduino{
+        &::before{
+            @extend .category__icon--arduino;
+        }
+    }
+    &--simulator{
+        &::before{
+            @extend .category__icon--simulator;
+        }
+    }
+    &--networking{
+        &::before{
+            @extend .category__icon--networking;
+        }
+    }
+    &--web{
+        &::before{
+            @extend .category__icon--web;
+        }
+    }
+
+    &--windows{
+        &::before{
+            @extend .category__icon--windows;
+        }
+    }
+    &--kids{
+        &::before{
+            @extend .category__icon--kids;
+        }
+    }
+
+    &--microbit{
+        &::before{
+            @extend .category__icon--microbit;
+        }
+    }
+
+    &--mods{
+        &::before{
+            @extend .category__icon--mods;
+        }
+    }
+    &--computers{
+        &::before{
+            @extend .category__icon--computers;
+        }
+    }
+    &--thoughts{
+        &::before{
+            @extend .category__icon--thoughts;
+        }
+    }
+    &--prosjektledelse{
+        &::before{
+            @extend .category__icon--prosjektledelse;
+        }
+    }
+    &--security{
+        &::before{
+            @extend .category__icon--security;
+        }
+    }
+    &--cooling{
+        &::before{
+            @extend .category__icon--cooling;
+        }
+    }
+    &--php{
+        &::before{
+            @extend .category__icon--php;
+        }
+    }
+    &--instrument{
+        &::before{
+            @extend .category__icon--instrument;
+        }
+    }
+    &--gaming{
+        &::before{
+            @extend .category__icon--gaming;
+        }
+    }
+    &--devops{
+        &::before{
+            @extend .category__icon--devops;
+        }
+    }
+    &--dsa{
+        &::before{
+            @extend .category__icon--dsa;
+        }
+    }
+    &--nb{
+        &::before{
+            background-image: $icon-flag-no;
+            background-size: 150%;
+            background-position-x: 40%;
+        }
+    }
+    &--en{
+        &::before{
+            background-image: $icon-flag-uk;
+            background-size: 200%;
+            background-position-x: 60%;
+        }
+    }
+}
