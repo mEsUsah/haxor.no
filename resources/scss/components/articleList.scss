@@ -202,6 +202,13 @@
             }
         }
     }
+    &__filters-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: calc(100% - 28px);
+        margin: 0 auto;
+    }
     &__filters{
         display: flex;
         align-items: center;

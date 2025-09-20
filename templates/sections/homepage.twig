@@ -3,19 +3,23 @@
         <div class="articleList__search-form">
             <input type="search" aria-label="search" placeholder="{{ 'Search'|t }}" v-model="searchQuery"/>
         </div>
-        <div class="articleList__filters">
-            <article-filter v-for="subject in articleSubjects" :key="subject" 
-                :name="subject"
-                :subject="subject"
-                :selected="selectedSubjects.includes(subject)"
-                @change="updateSubjectFilters"
-            ></article-filter>
-            <article-filter v-for="language in articleLanguages" :key="language" 
-                :name="language"
-                :language="language"
-                :selected="selectedLanguages.includes(language)"
-                @change="updateLanguageFilters"
-            ></article-filter>
+        <div class="articleList__filters-wrapper">
+            <div class="articleList__filters">
+                <article-filter v-for="subject in articleSubjects" :key="subject" 
+                    :name="subject"
+                    :subject="subject"
+                    :selected="selectedSubjects.includes(subject)"
+                    @change="updateSubjectFilters"
+                ></article-filter>
+            </div>
+            <div class="articleList__filters">
+                <article-filter v-for="language in articleLanguages" :key="language" 
+                    :name="language"
+                    :language="language"
+                    :selected="selectedLanguages.includes(language)"
+                    @change="updateLanguageFilters"
+                ></article-filter>
+            </div>
         </div>
     </div>
 
