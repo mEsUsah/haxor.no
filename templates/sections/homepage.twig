@@ -3,7 +3,12 @@
         <div class="articleList__search-form">
             <input type="search" aria-label="search" placeholder="{{ 'Search'|t }}" v-model="searchQuery"/>
         </div>
-        <div class="articleList__filters-wrapper">
+        <button @click="showFilters = !showFilters" 
+            class="articleList__filters-button desktop--hidden"
+            :class="showFilters ? 'active' : ''"
+        >[[ showFilters ? 'Hide' : 'Show' ]] filters</button>
+        <div class="articleList__filters-wrapper" 
+            :class="showFilters ? 'active' : ''">
             <div class="articleList__filters">
                 <article-filter v-for="subject in articleSubjects" :key="subject" 
                     :name="subject"

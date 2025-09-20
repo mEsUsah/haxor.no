@@ -24,6 +24,7 @@ export default {
                     filteredArticles: [],
                     selectedSubjects: [],
                     selectedLanguages: [],
+                    showFilters: false,
                 }
             },
             mounted() {

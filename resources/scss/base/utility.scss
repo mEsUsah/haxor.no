@@ -1,0 +1,14 @@
+.mobile{
+    &--hidden {
+        @include ipadOrSmaller {
+            display: none !important;
+        }
+    }
+}
+.desktop {
+    &--hidden {
+        @include desktopOnly {
+            display: none !important;
+        }
+    }
+}
