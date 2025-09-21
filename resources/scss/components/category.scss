@@ -87,6 +87,10 @@
             background-position-y: 50%;
             background-position-x: 60%;
         }
+        &--info{
+            background-image: $icon-info;
+            background-size: 20%;
+        }
     }
     &__color{
         &--linux{

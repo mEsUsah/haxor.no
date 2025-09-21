@@ -67,6 +67,8 @@ class ArticlesService extends Component
                 'articles',
                 'portfolio', 
                 'ctfWriteups',
+                'aboutme',
+                'aboutblog'
             ])
             ->all();
 
@@ -83,15 +85,11 @@ class ArticlesService extends Component
                 'title' => $article->title,
                 'teaser' => $article->teaser,
                 'intro' => $intro,
-                'subject' => $article->articleSubject
-                    ->one()
-                    ->slug,
+                'subject' => $article->articleSubject->one()->slug ?? 'info',
                 'url' => $article->url,
                 'datePost' => $article->postDate->format('Y-m-d'),
                 'dateUpdate' => $article->dateUpdated->format('Y-m-d'),
-                'image' => $article->articleImage
-                    ->one()
-                    ->getUrl('articleThumbnail', true),
+                'image' => $article->articleImage?->one()?->getUrl('articleThumbnail', true),
             ]);
         }
 

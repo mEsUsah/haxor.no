@@ -136,6 +136,11 @@
             @extend .category__icon--dsa;
         }
     }
+    &--info{
+        &::before{
+            @extend .category__icon--info;
+        }
+    }
     &--nb{
         &::before{
             background-image: $icon-flag-no;
