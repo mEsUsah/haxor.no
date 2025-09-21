@@ -1,11 +1,4 @@
-<article 
-    itemscope 
-    itemtype="http://schema.org/Article" 
-    author="{{ craft.users.one().fullName }}"
-    datePublished="{{ entry.postDate|date('c') }}"
-    dateModified="{{ entry.dateUpdated|date('c') }}"
-    isFamilyFriendly="true">
-    
+<article>
     <div class="portfolio__container {{ entry.selfcontained ? "portfolio__container--selfcontained" }}">
         <div class="portfolio__wrapper {{ entry.selfcontained ? "portfolio__wrapper--selfcontained" }}">
             {% if not entry.selfcontained %}

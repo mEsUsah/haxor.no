@@ -1,10 +1,4 @@
-<article 
-    itemscope 
-    itemtype="http://schema.org/Article" 
-    author="{{ craft.users.one().fullName }}"
-    datePublished="{{ entry.postDate|date('c') }}"
-    dateModified="{{ entry.dateUpdated|date('c') }}"
-    isFamilyFriendly="true">
+<article>
     {% include "components/articleBanner.twig" with {
         entry: entry,
         showCategory: true

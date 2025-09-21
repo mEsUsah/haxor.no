@@ -1,0 +1,11 @@
+{% if entry is defined and entry.section.handle in [
+		'articles',
+		'portfolio', 
+		'ctfWriteups',
+		'aboutme',
+		'aboutblog'
+		] %}
+	<script type="application/ld+json">
+        {{ craft.haxor.getArticleJsonLd(entry) | raw }}
+	</script>
+{% endif %}

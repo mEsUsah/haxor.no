@@ -52,4 +52,9 @@ class HaxorVariable
     {
         return Haxor::getInstance()->thm->getScoreBoardUpdate();
     }
+
+    public function getArticleJsonLd($entry)
+    {
+        return Haxor::getInstance()->articles->getArticleJsonLd($entry);
+    }
 }

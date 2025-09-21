@@ -13,6 +13,7 @@ namespace mesusah\crafthaxor\services;
 use mesusah\crafthaxor\Haxor;
 
 use Craft;
+use craft\helpers\App;
 use craft\base\Component;
 use craft\elements\Entry;
 
@@ -33,14 +34,21 @@ class ArticlesService extends Component
 {
     // Private Properties
     // =========================================================================
-    //private $thmCacheDuration = 3600;
+    private $siteUrl;
+    private $publisherLogo;
     
     // Public Methods
     // =========================================================================
 
+    public function __construct()
+    {
+        $this->siteUrl = App::env('PRIMARY_SITE_URL');
+        $this->publisherLogo = $this->siteUrl . '/android-chrome-512x512.png';
+    }
+
+
     /**
-     * This function can literally be anything you want, and you can have as many service
-     * functions as you want
+     * Get all articles as an array that can be used in a JSON feed or sitemap.
      *
      * From any other plugin file, call it like this:
      *
@@ -98,5 +106,66 @@ class ArticlesService extends Component
         return $output;
     }
 
-    
+    function getArticleJsonLd(Entry $entry) : string
+    {
+        $image = $entry->articleImage?->one() ?? null;
+        $authorName = $entry->author?->fullName ? $entry->author->fullName : Craft::users()->one()->fullName;
+        $authorUrl = Craft::$app->getSites()->getPrimarySite()->getBaseUrl() . 'en/about-me';
+
+        $jsonLd = [
+            "@context" => "https://schema.org",
+            "@type" => "Article",
+            "mainEntityOfPage" => [
+                "@type" => "WebPage",
+                "@id" => ltrim($entry->url, '/'),
+            ],
+            "headline" => $entry->title,
+            "description" => $entry->teaser,
+            "datePublished" => $entry->postDate->format(DATE_ATOM),
+            "dateModified" => $entry->dateUpdated->format(DATE_ATOM),
+            "author" => [
+                "@type" => "Person",
+                "name" => $authorName,
+                "url" => $authorUrl,
+            ],
+            "copyrightHolder" => [
+                "@type" => "Person",
+                "name" => $authorName,
+                "url" => $authorUrl,
+            ],
+            "copyrightYear" => $entry->postDate->format('Y'),
+            "publisher" => [
+                "@type" => "Organization",
+                "name" => "haxor.no",
+                "logo" => [
+                    "@type" => "ImageObject",
+                    "url" => $this->publisherLogo,
+                ],
+            ],
+            "inLanguage" => $entry->site->language,
+            "isFamilyFriendly" => "True",
+        ];
+        if ($image) {
+            $imageTransform = [
+                'width' => 1000,
+                'height' => 600,
+                'quality' => 100,
+                'format' => 'webp',
+                'mode' => 'crop',
+                'position' => $image->focalPoint["x"] . "," . $image->focalPoint["y"],
+            ];
+            
+            $jsonLd["image"] = [
+                "@type" => "ImageObject",
+                "url" => $image->getUrl($imageTransform, true),
+                "width" => 1000,
+                "height" => 600,
+                "datePublished" => $image->dateCreated->format(DATE_ATOM),
+                "dateModified" => $image->dateCreated->format(DATE_ATOM),
+                "representativeOfPage" => "True",
+            ];
+        }
+
+        return json_encode($jsonLd, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+    }
 }
