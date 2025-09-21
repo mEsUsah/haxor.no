@@ -53,6 +53,11 @@ class HaxorVariable
         return Haxor::getInstance()->thm->getScoreBoardUpdate();
     }
 
+    public function getAllArticles()
+    {
+        return Haxor::getInstance()->articles->getAllArticles();
+    }
+
     public function getArticleJsonLd($entry)
     {
         $cacheKey = 'haxor_article_json_ld_' . $entry->id;
