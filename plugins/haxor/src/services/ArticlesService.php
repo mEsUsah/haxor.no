@@ -16,6 +16,7 @@ use Craft;
 use craft\helpers\App;
 use craft\base\Component;
 use craft\elements\Entry;
+use craft\elements\User;
 
 /**
  * HaxorService Service
@@ -109,7 +110,7 @@ class ArticlesService extends Component
     function getArticleJsonLd(Entry $entry) : string
     {
         $image = $entry->articleImage?->one() ?? null;
-        $authorName = $entry->author?->fullName ? $entry->author->fullName : Craft::users()->one()->fullName;
+        $authorName = $entry->author?->fullName ? $entry->author->fullName : User::find()->one()->fullName;
         $authorUrl = Craft::$app->getSites()->getPrimarySite()->getBaseUrl() . 'en/about-me';
 
         $jsonLd = [
