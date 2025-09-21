@@ -8,4 +8,8 @@
 	<script type="application/ld+json">
         {{ craft.haxor.getArticleJsonLd(entry) | raw }}
 	</script>
+{% elseif entry is defined and entry.section.handle == 'home' %}
+    <script type="application/ld+json">
+        {{ craft.haxor.getHomepageJsonLd() | raw }}
+    </script>
 {% endif %}

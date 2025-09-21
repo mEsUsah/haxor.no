@@ -55,6 +55,27 @@ class HaxorVariable
 
     public function getArticleJsonLd($entry)
     {
-        return Haxor::getInstance()->articles->getArticleJsonLd($entry);
+        $cacheKey = 'haxor_article_json_ld_' . $entry->id;
+        $cached = Craft::$app->getCache()->get($cacheKey);
+        if ($cached) {
+            return json_encode($cached, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+        }
+
+        $articleJsonLd = Haxor::getInstance()->articles->getArticleJsonLd($entry);
+        Craft::$app->getCache()->set($cacheKey, $articleJsonLd, null);
+        return json_encode($articleJsonLd, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+    }
+
+    public function getHomepageJsonLd()
+    {
+        $cacheKey = 'haxor_homepage_json_ld';
+        $cached = Craft::$app->getCache()->get($cacheKey);
+        if ($cached) {
+            return json_encode($cached, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+        }
+
+        $homepageJsonLd = Haxor::getInstance()->articles->getHomepageJsonLd();
+        Craft::$app->getCache()->set($cacheKey, $homepageJsonLd, null);
+        return json_encode($homepageJsonLd, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
     }
 }

@@ -182,6 +182,8 @@ class Haxor extends Plugin
                 }
                 
                 Craft::$app->getCache()->delete('articles_get_all');
+                Craft::$app->getCache()->delete('haxor_article_json_ld_' . $entry->id);
+                Craft::$app->getCache()->delete('haxor_homepage_json_ld');
             }
         );
 

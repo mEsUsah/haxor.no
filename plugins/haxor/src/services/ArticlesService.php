@@ -47,6 +47,33 @@ class ArticlesService extends Component
         $this->publisherLogo = $this->siteUrl . '/android-chrome-512x512.png';
     }
 
+    public function getArticleIntro($entry)
+    {
+        $intro = "";
+        $contentBlock = $entry->contentBlocks->one();
+        if ($contentBlock->type->handle == "text" && $contentBlock->text) {
+            $intro = strip_tags($contentBlock->text->rawContent);
+        }
+        return $intro;
+    }
+
+    public function getAllArticles()
+    {
+        return Entry::find()
+            ->site([
+                'default', 
+                'haxorNoEn',
+            ])
+            ->section([
+                'articles',
+                'portfolio', 
+                'ctfWriteups',
+                'aboutme',
+                'aboutblog'
+            ])
+            ->all();
+    }
+
 
     /**
      * Get all articles as an array that can be used in a JSON feed or sitemap.
@@ -67,33 +94,15 @@ class ArticlesService extends Component
             return $cachedData;
         }
         
-        $articles = Entry::find()
-            ->site([
-                'default', 
-                'haxorNoEn',
-            ])
-            ->section([
-                'articles',
-                'portfolio', 
-                'ctfWriteups',
-                'aboutme',
-                'aboutblog'
-            ])
-            ->all();
+        $articles = $this->getAllArticles();
 
         $output = [];
         foreach ($articles as $article) {
-            $intro = "";
-            $contentBlock = $article->contentBlocks->one();
-            if ($contentBlock->type->handle == "text" && $contentBlock->text) {
-                $intro = strip_tags($contentBlock->text->rawContent);
-            }
-            
             array_push($output, [
                 'language' => $article->site->language,
                 'title' => $article->title,
                 'teaser' => $article->teaser,
-                'intro' => $intro,
+                'intro' => $this->getArticleIntro($article),
                 'subject' => $article->articleSubject->one()->slug ?? 'info',
                 'url' => $article->url,
                 'datePost' => $article->postDate->format('Y-m-d'),
@@ -107,7 +116,7 @@ class ArticlesService extends Component
         return $output;
     }
 
-    function getArticleJsonLd(Entry $entry) : string
+    function getArticleJsonLd(Entry $entry) : array
     {
         $image = $entry->articleImage?->one() ?? null;
         $authorName = $entry->author?->fullName ? $entry->author->fullName : User::find()->one()->fullName;
@@ -122,6 +131,7 @@ class ArticlesService extends Component
             ],
             "headline" => $entry->title,
             "description" => $entry->teaser,
+            "backstory" => $this->getArticleIntro($entry),
             "datePublished" => $entry->postDate->format(DATE_ATOM),
             "dateModified" => $entry->dateUpdated->format(DATE_ATOM),
             "author" => [
@@ -146,6 +156,7 @@ class ArticlesService extends Component
             "inLanguage" => $entry->site->language,
             "isFamilyFriendly" => "True",
         ];
+
         if ($image) {
             $imageTransform = [
                 'width' => 1000,
@@ -167,6 +178,43 @@ class ArticlesService extends Component
             ];
         }
 
-        return json_encode($jsonLd, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+        return $jsonLd;
+    }
+
+    public function getHomepageJsonLd() : array
+    {
+        $jsonLd = [
+            "@context" => "https://schema.org",
+            "@type" => "CollectionPage",
+            "url" => $this->siteUrl,
+            "name" => "Haxor.no homepage",
+            "description" => "haxor.no is a blog about cybersecurity, hacking, CTFs, and programming. The site is run by Stanley Skarshaug, a Norwegian programmer and security enthusiast.",
+            "publisher" => [
+                "@type" => "Organization",
+                "name" => "haxor.no",
+                "logo" => [
+                    "@type" => "ImageObject",
+                    "url" => $this->publisherLogo,
+                ],
+            ],
+            "inLanguage" => "en",
+            "isFamilyFriendly" => "True",
+            "mainEntity" => [
+                "@type" => "ItemList",
+                "itemListElement" => [],
+            ]
+        ];
+
+        $articles = $this->getAllArticles();
+
+        foreach ($articles as $article) {
+            $jsonLd["mainEntity"]["itemListElement"][] = [
+                "@type" => "ListItem",
+                "position" => count($jsonLd["mainEntity"]["itemListElement"]) + 1,
+                "item" => $this->getArticleJsonLd($article),
+            ];
+        }
+
+        return $jsonLd;
     }
 }
