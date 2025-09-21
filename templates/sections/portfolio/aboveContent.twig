@@ -1,17 +1,19 @@
-<div class="portfolio__container {{ entry.selfcontained ? "portfolio__container--selfcontained" }}">
-    <div class="portfolio__wrapper {{ entry.selfcontained ? "portfolio__wrapper--selfcontained" }}">
-        {% if not entry.selfcontained %}
-            <div class="portfolio__title">{{ entry.title }}</div>
-            <div class="portfolio__titleBorder"></div>
-        {% endif %}
-        {% include "components/portfolio/" ~ entry.slug ~ ".twig" with {
-            noMobile: entry.noMobile,
-            noMobileImage: entry.articleImage.one()
-        } %}
+<article itemscope itemtype="http://schema.org/Article">
+    <div class="portfolio__container {{ entry.selfcontained ? "portfolio__container--selfcontained" }}">
+        <div class="portfolio__wrapper {{ entry.selfcontained ? "portfolio__wrapper--selfcontained" }}">
+            {% if not entry.selfcontained %}
+                <div class="portfolio__title">{{ entry.title }}</div>
+                <div class="portfolio__titleBorder"></div>
+            {% endif %}
+            {% include "components/portfolio/" ~ entry.slug ~ ".twig" with {
+                noMobile: entry.noMobile,
+                noMobileImage: entry.articleImage.one()
+            } %}
+        </div>
     </div>
-</div>
-<section class="articleBody">
-    {% include "components/articleTeaser.twig" %}
-    {% include "components/articleUpdated.twig" %}
-    {% include "components/contentBlocks.twig" %}
-</section>
+    <section class="articleBody">
+        {% include "components/articleTeaser.twig" %}
+        {% include "components/articleUpdated.twig" %}
+        {% include "components/contentBlocks.twig" %}
+    </section>
+</article>

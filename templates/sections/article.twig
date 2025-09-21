@@ -1,5 +1,4 @@
-{% cache %}
-
+<article itemscope itemtype="http://schema.org/Article">
     {% include "components/articleBanner.twig" with {
         entry: entry,
         showCategory: true
@@ -7,5 +6,4 @@
     {% include "components/articleTeaser.twig" %}
     {% include "components/articleUpdated.twig" %}
     {% include "components/contentBlocks.twig" %}
-
-{% endcache %}
+</article>

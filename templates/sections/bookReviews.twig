@@ -1,4 +1,4 @@
-<section class="articleBody">
+<article class="articleBody" itemscope itemtype="http://schema.org/Article">
     {% set books = craft.entries.section("books").orderBy("postDate  DESC").all() %}
     <h1 class="articleList__header">{{entry.title}}</h1>
     <div class="courseList__container">
@@ -6,4 +6,4 @@
         {% include "components/parts/_book.twig" with {"chapter": 1} %}
         {% endfor %}
     </div>
-</section>
+</article>
