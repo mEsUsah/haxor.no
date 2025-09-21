@@ -26,6 +26,12 @@ npm run prod
 ddev craft install
 ```
 
+## Testing
+To run all test i dev, run this command:
+```bash
+ddev php ./vendor/bin/phpunit
+```
+
 ## Credits
 - Design and code by me, Stanley Skarshaug <br>
 - Site logo © Skarshaug Solutions, designed by Erik Bersås <br>
@@ -39,5 +45,4 @@ ddev craft install
 ## TODO:
 - Track error pages
 - GDPR Compliance
-- Correct error page CSS
 - Fix BEM errors
