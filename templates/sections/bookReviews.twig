@@ -1,4 +1,11 @@
-<article class="articleBody" itemscope itemtype="http://schema.org/Article">
+<article class="articleBody" 
+    itemscope 
+    itemtype="http://schema.org/Article" 
+    author="{{ craft.users.one().fullName }}"
+    datePublished="{{ entry.postDate|date('c') }}"
+    dateModified="{{ entry.dateUpdated|date('c') }}"
+    isFamilyFriendly="true">
+    
     {% set books = craft.entries.section("books").orderBy("postDate  DESC").all() %}
     <h1 class="articleList__header">{{entry.title}}</h1>
     <div class="courseList__container">

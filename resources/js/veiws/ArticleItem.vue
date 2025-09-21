@@ -1,5 +1,9 @@
 <template>
-    <a :href="article.url" class="articleList__item" :class="'category__color--' + article.subject">
+    <a :href="article.url" class="articleList__item" :class="'category__color--' + article.subject"
+        itemscope
+        itemtype="http://schema.org/Article"
+        :itemid="article.url"
+        :inLanguage="article.language">
     <div class="articleList__item--image" :style="'background-image: url(' + article.image + ');'"></div>
     <div class="articleList__item--headline">{{article.title}}</div>
     <i class="category__icon" :class="'category__icon--' + article.subject + ' ' + (article.language == 'nb' ? 'entry__category--twoOfTwo' : 'entry__category--single')"></i>

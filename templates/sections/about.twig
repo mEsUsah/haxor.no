@@ -1,4 +1,12 @@
-<article class="articleBody" itemscope itemtype="http://schema.org/Article">
+<article class="articleBody" 
+    itemscope 
+    itemtype="http://schema.org/Article" 
+    author="{{ craft.users.one().fullName }}"
+    datePublished="{{ entry.postDate|date('c') }}"
+    dateModified="{{ entry.dateUpdated|date('c') }}"
+    isFamilyFriendly="true"
+    
+    >
     {% include "components/articleBanner.twig" with {entry: entry} %}
     {% include "components/articleTeaser.twig" %}
     {% include "components/articleUpdated.twig" %}

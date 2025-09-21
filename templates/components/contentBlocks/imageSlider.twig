@@ -29,7 +29,7 @@
                     {% set portrait = image.height > image.width %}
                     <div class="siema__content">
                         {% if portrait %}
-                            <img src="{{ image.getUrl(imageFormatBackground) }}" class="siema__background">
+                            <img src="{{ image.getUrl(imageFormatBackground) }}" class="siema__background" alt="blur background" aria-hidden="true">
                         {% endif %}
 
                         <figure class="siema__figure {{portrait ? 'siema__figure--portrait' : 'siema__figure--landscape'}}">
