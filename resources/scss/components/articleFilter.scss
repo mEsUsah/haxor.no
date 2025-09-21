@@ -2,6 +2,8 @@
     appearance: none;
     background: none;
     margin: 0;
+    width: fit-content;
+    height: fit-content;
 
     &::after {
         content: '';
