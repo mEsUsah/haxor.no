@@ -119,7 +119,7 @@ class ArticlesService extends Component
     function getArticleJsonLd(Entry $entry) : array
     {
         $image = $entry->articleImage?->one() ?? null;
-        $authorName = $entry->author?->fullName ? $entry->author->fullName : User::find()->one()->fullName;
+        $authorName = $entry->author ? $entry->author->fullName : User::find()->one()->fullName;
         $authorUrl = Craft::$app->getSites()->getPrimarySite()->getBaseUrl() . 'en/about-me';
 
         $jsonLd = [
