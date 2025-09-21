@@ -4,6 +4,7 @@
         :class="'article-filter--' + name"
         :checked="selected" 
         @change="$emit('change', name)"
+        :aria-label="(selected ? 'Deselect ' : 'Select ') + (subject ? subject : (language == 'nb' ? 'Norwegian' : 'English')) + ' filter'"
     ></input>
 </template>
 <script>
