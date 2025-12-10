@@ -19,6 +19,12 @@
         &--networking{
             background-image: $icon-network;
         }
+        &--android{
+            background-image: $icon-android;
+            background-size: 70%;
+            background-position-y: 45%;
+            background-position-x: 55%;
+        }
         &--web{
             background-image: $icon-web;
             background-size: 100%;

@@ -40,6 +40,11 @@
             @extend .category__icon--linux;
         }
     }
+    &--android{
+        &::before{
+            @extend .category__icon--android;
+        }
+    }
     &--python{
         &::before{
             @extend .category__icon--python;
