@@ -1,6 +1,8 @@
 color: purple
+description: null
 fieldLayouts:
   eb82eaed-4b98-4191-b384-f755ca3fa0a2:
+    cardThumbAlignment: end
     cardView:
       - 'layoutElement:81fdb2a2-6302-4b7f-966f-a3246fc428cd'
     tabs:
@@ -9,6 +11,7 @@ fieldLayouts:
         elements:
           -
             dateAdded: '2024-12-10T15:40:22+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: dc63f038-3a87-428d-9230-20a288f905da # ContentBlocks - File Content - File type
             handle: null
@@ -25,6 +28,7 @@ fieldLayouts:
             width: 25
           -
             dateAdded: '2024-12-10T15:40:22+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 5dd9f4f3-fb1c-4d81-b3fd-2309b56563f0 # ContentBlocks - File Content - Filname
             handle: null
@@ -41,6 +45,7 @@ fieldLayouts:
             width: 50
           -
             dateAdded: '2024-12-10T15:40:22+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: f4121429-712b-4587-839a-e0a1db5d946a # ContentBlocks - File Content - Line Numbers
             handle: null
@@ -57,6 +62,7 @@ fieldLayouts:
             width: 25
           -
             dateAdded: '2024-12-10T15:40:22+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: ed101e61-62b0-40c5-a8d4-b5d30624f1d2 # ContentBlocks - File Content - File content
             handle: null

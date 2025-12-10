@@ -15,6 +15,12 @@ settings:
           - value
           - none
         -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
           - default
           - '1'
     -
@@ -25,6 +31,29 @@ settings:
         -
           - value
           - arduino
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - BASIC
+        -
+          - value
+          - basic
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
         -
           - default
           - ''
@@ -37,6 +66,12 @@ settings:
           - value
           - bash
         -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
           - default
           - ''
     -
@@ -47,6 +82,12 @@ settings:
         -
           - value
           - c
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
         -
           - default
           - ''
@@ -59,6 +100,12 @@ settings:
           - value
           - clike
         -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
           - default
           - ''
     -
@@ -69,6 +116,12 @@ settings:
         -
           - value
           - cpp
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
         -
           - default
           - ''
@@ -81,6 +134,12 @@ settings:
           - value
           - csharp
         -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
           - default
           - ''
     -
@@ -91,6 +150,12 @@ settings:
         -
           - value
           - docker
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
         -
           - default
           - ''
@@ -103,6 +168,12 @@ settings:
           - value
           - editorconfig
         -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
           - default
           - ''
     -
@@ -113,6 +184,12 @@ settings:
         -
           - value
           - groovy
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
         -
           - default
           - ''
@@ -125,6 +202,12 @@ settings:
           - value
           - ini
         -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
           - default
           - ''
     -
@@ -135,6 +218,12 @@ settings:
         -
           - value
           - javascript
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
         -
           - default
           - ''
@@ -147,6 +236,12 @@ settings:
           - value
           - json
         -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
           - default
           - ''
     -
@@ -157,6 +252,12 @@ settings:
         -
           - value
           - typescript
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
         -
           - default
           - ''
@@ -169,6 +270,12 @@ settings:
           - value
           - markup
         -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
           - default
           - ''
     -
@@ -179,6 +286,12 @@ settings:
         -
           - value
           - markup-templating
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
         -
           - default
           - ''
@@ -191,6 +304,29 @@ settings:
           - value
           - nginx
         -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Kotlin
+        -
+          - value
+          - kotlin
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
           - default
           - ''
     -
@@ -201,6 +337,12 @@ settings:
         -
           - value
           - php
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
         -
           - default
           - ''
@@ -213,6 +355,12 @@ settings:
           - value
           - powershell
         -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
           - default
           - ''
     -
@@ -223,6 +371,12 @@ settings:
         -
           - value
           - python
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
         -
           - default
           - ''
@@ -235,6 +389,29 @@ settings:
           - value
           - sql
         -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - PL/SQL
+        -
+          - value
+          - plsql
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
           - default
           - ''
     -
@@ -246,6 +423,12 @@ settings:
           - value
           - twig
         -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
           - default
           - ''
     -
@@ -256,6 +439,12 @@ settings:
         -
           - value
           - yaml
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
         -
           - default
           - ''
