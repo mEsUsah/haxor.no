@@ -23,7 +23,7 @@ export default ({ mode }) => {
             outDir: 'web/dist/',
             rollupOptions: {
                 input: {
-                    js: './resources/js/site.js',
+                    js: ['./resources/js/site.js', './resources/js/portfolio/phonenticAlphabet/index.js'],
                     css: './resources/scss/site.scss',
                 },
                 output: {
