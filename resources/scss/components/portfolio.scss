@@ -1,6 +1,6 @@
 .portfolio{
     &__container{
-        margin: 135px auto -125px auto;
+        margin: 135px auto 0 auto;
         width: fit-content;
         width: 100%;
         max-width: 1020px;
@@ -36,6 +36,7 @@
             background-color: unset;
             margin: 0;
             padding-bottom: 0;
+            margin-bottom: 75px;
         }
     }
     &__title{
