@@ -12,10 +12,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: e75f8e08-e499-444e-b646-97309e1abb2b # ContentBlocks - Books - Books
             handle: null
-            includeInCards: true
             instructions: null
             label: Books
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -28,10 +26,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 9b49d5b9-d21a-4e64-b799-37fe5db4ada8 # ContentBlocks - Books - Three newest?
             handle: null
-            includeInCards: false
             instructions: null
             label: 'Three newest?'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -44,10 +40,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: af5a6f2d-4fdf-4cfe-b5e8-900a1ae088c5 # ContentBlocks - Link to all?
             handle: null
-            includeInCards: false
             instructions: null
             label: 'Include link to overview?'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

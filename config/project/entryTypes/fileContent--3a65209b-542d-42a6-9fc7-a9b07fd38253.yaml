@@ -15,10 +15,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: dc63f038-3a87-428d-9230-20a288f905da # ContentBlocks - File Content - File type
             handle: null
-            includeInCards: true
             instructions: null
             label: 'File type'
-            providesThumbs: false
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -32,10 +30,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 5dd9f4f3-fb1c-4d81-b3fd-2309b56563f0 # ContentBlocks - File Content - Filname
             handle: null
-            includeInCards: false
             instructions: null
             label: Filename
-            providesThumbs: false
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -49,10 +45,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: f4121429-712b-4587-839a-e0a1db5d946a # ContentBlocks - File Content - Line Numbers
             handle: null
-            includeInCards: false
             instructions: null
             label: 'Line Numbers'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -66,10 +60,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: ed101e61-62b0-40c5-a8d4-b5d30624f1d2 # ContentBlocks - File Content - File content
             handle: null
-            includeInCards: false
             instructions: null
             label: 'File content'
-            providesThumbs: false
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField

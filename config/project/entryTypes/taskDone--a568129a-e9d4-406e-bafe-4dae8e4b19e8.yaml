@@ -12,10 +12,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 023232ef-4d79-4571-896b-9146438b66bb # Lesson Blocks - Task Done - Task text
             handle: null
-            includeInCards: true
             instructions: null
             label: 'Task text'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

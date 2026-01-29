@@ -14,7 +14,6 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -23,7 +22,6 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             required: true
             size: null
@@ -40,10 +38,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 93d39a6a-48eb-4f78-afb1-8fd74053ce15 # Course Image
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -56,10 +52,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: c418c358-5082-4c2e-bc17-cb8c9175b592 # Instructor
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -72,10 +66,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: f490c527-58d9-4ac9-bbba-4b4b537e6e0b # Description
             handle: description
-            includeInCards: false
             instructions: null
             label: Description
-            providesThumbs: false
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -88,10 +80,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 6f5f5cbf-7ead-4f94-9ed2-42c81ae3a3d3 # Review Score
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -104,10 +94,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: f733eaac-e1d6-428e-a5e6-5e9c1b8450df # Review Quote
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -120,10 +108,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 6ed30be3-319a-4469-a458-a70309e3e179 # Review
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -142,10 +128,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 4a837336-d09a-492d-aa97-3c29b176ecc7 # Course Platform
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -158,10 +142,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 0e2235ec-098b-4add-9c16-2a51cb50b5e3 # Course Grade
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -174,10 +156,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: c2cadeae-b406-4376-a7bb-822c8d077ca2 # Course Theme
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -190,10 +170,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 44f8fa56-23f3-4d1e-8231-4e7f46c9af46 # Copletion Date
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -206,10 +184,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 9096bb19-2f4d-4b40-91f7-7f0d84ee7b01 # Course Length (hours)
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -222,10 +198,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: ac49e4c4-d11a-4bbe-9a08-04c06268ba93 # Course Length (min)
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -238,10 +212,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: d9a0abe6-89dd-4688-a0ac-6d584524c3c2 # Course Certificate
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

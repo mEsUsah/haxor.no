@@ -12,10 +12,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: b05c4334-9b2d-4f18-8916-c65a9c521861 # ContentBlocks - Image - Image
             handle: null
-            includeInCards: false
             instructions: null
             label: Image
-            providesThumbs: true
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -28,10 +26,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: d6f9cc1f-1608-4ae7-a083-d0924ba71f47 # ContentBlocks - Image - Image Is Figure
             handle: null
-            includeInCards: true
             instructions: null
             label: 'Image Is Figure'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -44,10 +40,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 6a498afe-8881-4b4d-bd9e-f128e6d2ac6e # ContentBlocks - Image - Image Caption
             handle: null
-            includeInCards: false
             instructions: null
             label: 'Image Caption'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -58,6 +52,7 @@ fieldLayouts:
         name: Content
         uid: e893ba10-7cce-47a3-aee8-7d335355be86
         userCondition: null
+    thumbFieldKey: 'layoutElement:cda61d34-fe1e-46b1-af9c-b13a8b16d3cb'
 handle: image
 hasTitleField: false
 icon: image

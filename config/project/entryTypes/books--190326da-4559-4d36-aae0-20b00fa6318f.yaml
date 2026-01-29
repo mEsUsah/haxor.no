@@ -14,7 +14,6 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -23,7 +22,6 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             required: true
             size: null
@@ -40,10 +38,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 40df60cf-14a4-435a-83b3-643fc99abed3 # Book Image
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -56,10 +52,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 392f9448-cfdd-4390-ab2b-7bdce2deeb89 # Writer
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -72,10 +66,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: f490c527-58d9-4ac9-bbba-4b4b537e6e0b # Description
             handle: description
-            includeInCards: false
             instructions: null
             label: Description
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -88,10 +80,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 6f5f5cbf-7ead-4f94-9ed2-42c81ae3a3d3 # Review Score
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -104,10 +94,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: f733eaac-e1d6-428e-a5e6-5e9c1b8450df # Review Quote
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -120,10 +108,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 6ed30be3-319a-4469-a458-a70309e3e179 # Review
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -142,10 +128,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 704a8478-65c0-4619-87e8-0b570ccd42f4 # Publisher
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -158,10 +142,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: c2cadeae-b406-4376-a7bb-822c8d077ca2 # Course Theme
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -174,10 +156,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 15cb9ee9-280a-4a76-9b2f-d31dff2fb525 # Number of Pages
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

@@ -12,10 +12,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 268e169b-dff4-4e90-ad5a-8618c54e799e # Lesson Blocks - Send in answer - Question
             handle: null
-            includeInCards: true
             instructions: null
             label: Question
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -28,10 +26,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 5084e704-59ac-4ed3-bc26-1b3b96710a82 # Lesson Blocks - Send in answer - Answer
             handle: null
-            includeInCards: false
             instructions: null
             label: Answer
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

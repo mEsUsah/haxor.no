@@ -12,10 +12,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 71ac9a76-cabc-44c7-8470-bae1c0d43ed0 # Selected Entry
             handle: linkEntry
-            includeInCards: true
             instructions: null
             label: Entry
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -28,10 +26,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: f2cc0c2d-6188-407c-b0f2-e9afc9ecdb23 # Menu link - Text
             handle: null
-            includeInCards: false
             instructions: null
             label: Text
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

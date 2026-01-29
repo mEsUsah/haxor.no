@@ -12,10 +12,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: f73c4dce-8cb4-431f-adb5-a9be1f4059cb # ContentBlocks - Terminal Dump - Language
             handle: null
-            includeInCards: true
             instructions: null
             label: Language
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -28,10 +26,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 7ed843f8-2709-4ad0-b32d-e234ed22f289 # ContentBlocks - Terminal Dump - Color
             handle: null
-            includeInCards: false
             instructions: null
             label: Color
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -44,10 +40,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: cabe8fa0-a9ef-4a18-ab9d-4b3b69cd2f3a # ContentBlocks - Terminal Dump - Terminal Input Only
             handle: null
-            includeInCards: false
             instructions: null
             label: 'Terminal Input Only'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -60,10 +54,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 3ebdee02-2eb1-48f4-8b4b-4f45f3bfbae9 # ContentBlocks - Terminal Dump - Username
             handle: null
-            includeInCards: false
             instructions: null
             label: Username
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -76,10 +68,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 19285c32-e1f8-42c0-97ff-59f16dbb52af # ContentBlocks - Terminal Dump - Hostname
             handle: null
-            includeInCards: false
             instructions: null
             label: Hostname
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -92,10 +82,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 925133d6-79dc-4f13-9cbc-3752c2eff691 # ContentBlocks - Terminal Dump - Terminal Dump
             handle: null
-            includeInCards: false
             instructions: null
             label: 'Terminal Dump'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

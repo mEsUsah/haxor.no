@@ -11,10 +11,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: bc4e9234-abe3-4de0-a9d8-ab6bc43a4cab # Math Field
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

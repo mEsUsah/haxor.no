@@ -12,10 +12,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: b47d1535-bf95-4240-8817-43e15b459bc1 # Headline
             handle: headline
-            includeInCards: true
             instructions: null
             label: Headline
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
