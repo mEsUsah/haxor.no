@@ -18,13 +18,21 @@ export default ({ mode }) => {
             ]),
         ],
 
+        resolve: {
+            extensions: ['.js', '.vue', '.json'],
+            alias: {
+                'vue': 'vue/dist/vue.esm-bundler.js',
+            },
+        },
+
         build: {
             manifest: "manifest.json",
             outDir: 'web/dist/',
             rollupOptions: {
                 input: {
-                    js: ['./resources/js/site.js', './resources/js/portfolio/phonenticAlphabet/index.js'],
-                    css: './resources/scss/site.scss',
+                    site: './resources/js/site.js',
+                    phoneticAlphabet: './resources/js/portfolio/phonenticAlphabet/index.js',
+                    styles: './resources/scss/site.scss',
                 },
                 output: {
                     // entryFileNames: `js/site.js`,

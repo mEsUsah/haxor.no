@@ -1,4 +1,4 @@
-import {createApp} from 'vue/dist/vue.esm-bundler.js';
+import {createApp} from 'vue';
 import axios from 'axios';
 
 export default {
