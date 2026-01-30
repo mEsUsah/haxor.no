@@ -5,11 +5,11 @@
         width: 100%;
         max-width: 1020px;
         @include ipadOrSmaller {
-            margin: 135px auto -105px auto;
+            margin: 135px auto 24px auto;
         }
         &--selfcontained{
             @include ipadOrSmaller {
-                margin: 125px auto -105px auto;
+                margin: 125px auto 24px auto;
             }
         }
         
@@ -44,10 +44,8 @@
         position: absolute;
         font-family: 'Oswald', sans-serif;
         color: #e7e7e7;
-        bottom: -102px;
+        bottom: -2px;
         left: 30px;
-        -webkit-transform: translateY(-100%);
-        transform: translateY(-100%);
         font-size: 110px;
         line-height: 100px;
         max-width: 1300px;
@@ -57,8 +55,6 @@
             line-height: 40px;
             left: 8px;
             max-width: 100%;
-            bottom: -100px;
-            bottom: -42px;
         }
     }
     &__titleBorder{
