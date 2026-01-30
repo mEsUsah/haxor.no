@@ -5,6 +5,18 @@
         </div>
         
         <template v-else>
+            <div class="mode-selector">
+                <label class="mode-switch">
+                    <input type="checkbox" v-model="showLetters" @change="onModeChange">
+                    <span class="switch-label">Letters</span>
+                </label>
+                <label class="mode-switch">
+                    <input type="checkbox" v-model="showNumbers" @change="onModeChange">
+                    <span class="switch-label">Numbers</span>
+                </label>
+            </div>
+            
+            
             <div class="score-board">
                 <span class="portfolioTask__score">{{ score }} / {{ attempts }}</span>
                 <span class="portfolioTask__score">Streak: {{ streak }}</span>
@@ -19,7 +31,7 @@
                 <button 
                     v-if="!showAnswer"
                     @click="startListening" 
-                    :disabled="isListening"
+                    :disabled="isListening || (!showLetters && !showNumbers)"
                     class="btn-start"
                 >
                     🎤 {{ isListening ? 'Listening...' : 'Start Speaking' }}
@@ -27,6 +39,7 @@
                 <button 
                     v-else
                     @click="showNewWord" 
+                    :disabled="!showLetters && !showNumbers"
                     class="btn-next"
                 >
                     Next Word
@@ -44,7 +57,9 @@
                     </template>
                 </div>
             </div>
-            <!-- <div v-else class="status">{{ statusMessage }}</div> -->
+            <div v-if="!showLetters && !showNumbers" class="warning-message">
+                ⚠️ Please select at least one mode
+            </div>
             
         </template>
     </div>
@@ -84,6 +99,20 @@ export default {
                 'Y': 'Yankee',
                 'Z': 'Zulu'
             },
+            phoneticNumbers: {
+                '0': 'Zero',
+                '1': 'One',
+                '2': 'Two',
+                '3': 'Three',
+                '4': 'Four',
+                '5': 'Five',
+                '6': 'Six',
+                '7': 'Seven',
+                '8': 'Eight',
+                '9': 'Niner'
+            },
+            showLetters: true,
+            showNumbers: false,
             currentLetter: null,
             currentWord: null,
             recognition: null,
@@ -118,12 +147,31 @@ export default {
     
     methods: {
         createNewCharacterSeries() {
-            const letters = Object.keys(this.phoneticAlphabet);
-            this.currentCharacterSeries = [];
-
-            // Shuffle all letters in the alphabet
-            const shuffledLetters = letters.sort(() => Math.random() - 0.5);
-            this.currentCharacterSeries = shuffledLetters;
+            let characters = [];
+            
+            if (this.showLetters) {
+                characters = characters.concat(Object.keys(this.phoneticAlphabet));
+            }
+            if (this.showNumbers) {
+                characters = characters.concat(Object.keys(this.phoneticNumbers));
+            }
+            
+            // Shuffle all characters
+            this.currentCharacterSeries = characters.sort(() => Math.random() - 0.5);
+        },
+        
+        onModeChange() {
+            if (!this.showLetters && !this.showNumbers) {
+                // At least one must be selected - do nothing, just show warning
+                return;
+            }
+            
+            this.score = 0;
+            this.attempts = 0;
+            this.streak = 0;
+            this.currentCharacterIndex = 0;
+            this.createNewCharacterSeries();
+            this.showNewWord();
         },
         
         initSpeechRecognition() {
@@ -148,7 +196,14 @@ export default {
         
         showNewWord() {
             this.currentLetter = this.currentCharacterSeries[this.currentCharacterIndex];
-            this.currentWord = this.phoneticAlphabet[this.currentLetter];
+            
+            // Check which dictionary to use
+            if (this.phoneticAlphabet[this.currentLetter]) {
+                this.currentWord = this.phoneticAlphabet[this.currentLetter];
+            } else {
+                this.currentWord = this.phoneticNumbers[this.currentLetter];
+            }
+            
             this.currentCharacterIndex++;
 
             if (this.currentCharacterIndex >= this.currentCharacterSeries.length) {
@@ -226,6 +281,67 @@ export default {
     margin: 0 auto;
     padding: 2rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.mode-selector {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.mode-switch {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    position: relative;
+}
+
+.mode-switch input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: 2px solid #4CAF50;
+    border-radius: 4px;
+    background: white;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.mode-switch input[type="checkbox"]:checked {
+    background: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.mode-switch input[type="checkbox"]:checked::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.switch-label {
+    user-select: none;
+}
+
+.warning-message {
+    text-align: center;
+    background: #fef3c7;
+    color: #92400e;
+    font-weight: 500;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 2px solid #92400e;
 }
 
 .score-board {
@@ -315,11 +431,10 @@ export default {
     min-height: 1.5rem;
 }
 
-.feedback {
+.feedback,.warning-message {
     text-align: center;
     border-radius: 8px;
     font-size: 1rem;
-    min-height: 2rem;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -328,7 +443,7 @@ export default {
     max-width: 300px;
 }
 @media only screen and (max-width: 800px) {
-    .feedback {
+    .feedback,.warning-message {
         bottom: 44px;
     }
 }
