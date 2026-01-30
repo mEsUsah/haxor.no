@@ -14,10 +14,6 @@
                     <input type="checkbox" v-model="showNumbers" @change="onModeChange">
                     <span class="switch-label">Numbers</span>
                 </label>
-                <label v-if="showNumbers" class="mode-switch">
-                    <input type="checkbox" v-model="useNiner">
-                    <span class="switch-label">Use "Niner" for 9</span>
-                </label>
             </div>
             
             
@@ -117,7 +113,6 @@ export default {
             },
             showLetters: true,
             showNumbers: false,
-            useNiner: true,
             currentLetter: null,
             currentWord: null,
             recognition: null,
@@ -206,12 +201,7 @@ export default {
             if (this.phoneticAlphabet[this.currentLetter]) {
                 this.currentWord = this.phoneticAlphabet[this.currentLetter];
             } else {
-                // For numbers, check if it's 9 and use Nine or Niner based on toggle
-                if (this.currentLetter === '9') {
-                    this.currentWord = this.useNiner ? 'Niner' : 'Nine';
-                } else {
-                    this.currentWord = this.phoneticNumbers[this.currentLetter];
-                }
+                this.currentWord = this.phoneticNumbers[this.currentLetter];
             }
             
             this.currentCharacterIndex++;
@@ -249,7 +239,33 @@ export default {
             this.attempts++;
             
             // Check if the spoken word matches
-            if (this.transcript === correctWord || this.transcript.includes(correctWord)) {
+            let isCorrect = this.transcript === correctWord || this.transcript.includes(correctWord);
+            
+            // For numbers, also accept the digit itself (e.g., "1" for "one", "2" for "two")
+            if (!isCorrect && this.phoneticNumbers[this.currentLetter]) {
+                const digitAlternatives = {
+                    'zero': ['0', 'zero'],
+                    'one': ['1', 'one', 'won'],
+                    'two': ['2', 'two', 'to', 'too'],
+                    'three': ['3', 'three'],
+                    'four': ['4', 'four', 'for', 'fore'],
+                    'five': ['5', 'five'],
+                    'six': ['6', 'six'],
+                    'seven': ['7', 'seven'],
+                    'eight': ['8', 'eight', 'ate'],
+                    'nine': ['9', 'nine'],
+                    'niner': ['9', 'nine', 'niner']
+                };
+                
+                const alternatives = digitAlternatives[correctWord] || [];
+                isCorrect = alternatives.some(alt => 
+                    this.transcript === alt || 
+                    this.transcript.includes(alt) ||
+                    this.transcript === this.currentLetter
+                );
+            }
+            
+            if (isCorrect) {
                 this.score++;
                 this.streak++;
                 this.showFeedback(true);
