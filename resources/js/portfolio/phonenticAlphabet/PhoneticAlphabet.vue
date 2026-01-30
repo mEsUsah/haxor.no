@@ -14,6 +14,10 @@
                     <input type="checkbox" v-model="showNumbers" @change="onModeChange">
                     <span class="switch-label">Numbers</span>
                 </label>
+                <label v-if="showNumbers" class="mode-switch">
+                    <input type="checkbox" v-model="useNiner">
+                    <span class="switch-label">Use "Niner" for 9</span>
+                </label>
             </div>
             
             
@@ -113,6 +117,7 @@ export default {
             },
             showLetters: true,
             showNumbers: false,
+            useNiner: true,
             currentLetter: null,
             currentWord: null,
             recognition: null,
@@ -201,7 +206,12 @@ export default {
             if (this.phoneticAlphabet[this.currentLetter]) {
                 this.currentWord = this.phoneticAlphabet[this.currentLetter];
             } else {
-                this.currentWord = this.phoneticNumbers[this.currentLetter];
+                // For numbers, check if it's 9 and use Nine or Niner based on toggle
+                if (this.currentLetter === '9') {
+                    this.currentWord = this.useNiner ? 'Niner' : 'Nine';
+                } else {
+                    this.currentWord = this.phoneticNumbers[this.currentLetter];
+                }
             }
             
             this.currentCharacterIndex++;
@@ -278,16 +288,19 @@ export default {
 <style scoped>
 .phonetic-checker {
     max-width: 600px;
-    margin: 0 auto;
     padding: 2rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .mode-selector {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     justify-content: center;
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 1.5rem; */
+    flex-wrap: wrap;
 }
 
 .mode-switch {
@@ -346,7 +359,7 @@ export default {
 
 .score-board {
     text-align: center;
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 1.5rem; */
     font-size: 1.1rem;
     color: #666;
 }
@@ -360,7 +373,7 @@ export default {
     height: 200px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     border-radius: 6px;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
