@@ -96,11 +96,14 @@ export default {
             feedbackType: '',
             transcript: '',
             showAnswer: false,
-            browserSupported: true
+            browserSupported: true,
+            currentCharacterSeries: [],
+            currentCharacterIndex: 0
         };
     },
     
     mounted() {
+        this.createNewCharacterSeries();
         this.initSpeechRecognition();
         if (this.browserSupported) {
             this.showNewWord();
@@ -114,6 +117,15 @@ export default {
     },
     
     methods: {
+        createNewCharacterSeries() {
+            const letters = Object.keys(this.phoneticAlphabet);
+            this.currentCharacterSeries = [];
+
+            // Shuffle all letters in the alphabet
+            const shuffledLetters = letters.sort(() => Math.random() - 0.5);
+            this.currentCharacterSeries = shuffledLetters;
+        },
+        
         initSpeechRecognition() {
             // Check for browser support
             if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
@@ -135,9 +147,13 @@ export default {
         },
         
         showNewWord() {
-            const letters = Object.keys(this.phoneticAlphabet);
-            this.currentLetter = letters[Math.floor(Math.random() * letters.length)];
+            this.currentLetter = this.currentCharacterSeries[this.currentCharacterIndex];
             this.currentWord = this.phoneticAlphabet[this.currentLetter];
+            this.currentCharacterIndex++;
+            if (this.currentCharacterIndex >= this.currentCharacterSeries.length) {
+                this.createNewCharacterSeries();
+                this.currentCharacterIndex = 0;
+            }
             
             this.feedback = false;
             this.feedbackType = '';
