@@ -150,6 +150,7 @@ export default {
             this.currentLetter = this.currentCharacterSeries[this.currentCharacterIndex];
             this.currentWord = this.phoneticAlphabet[this.currentLetter];
             this.currentCharacterIndex++;
+
             if (this.currentCharacterIndex >= this.currentCharacterSeries.length) {
                 this.createNewCharacterSeries();
                 this.currentCharacterIndex = 0;
@@ -239,10 +240,10 @@ export default {
 }
 
 .word-display {
-    width: 300px;
+    width: 260px;
     height: 200px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border-radius: 12px;
+    border-radius: 6px;
     margin-bottom: 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
