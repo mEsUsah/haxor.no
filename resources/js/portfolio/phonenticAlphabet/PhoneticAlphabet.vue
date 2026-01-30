@@ -293,13 +293,13 @@ export default {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
+    font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
 }
 
 .mode-selector {
     display: flex;
     gap: 1rem;
     justify-content: center;
-    /* margin-bottom: 1.5rem; */
     flex-wrap: wrap;
 }
 
@@ -335,7 +335,7 @@ export default {
 .mode-switch input[type="checkbox"]:checked::after {
     content: '✓';
     position: absolute;
-    top: 50%;
+    top: 44%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -357,23 +357,11 @@ export default {
     border: 2px solid #92400e;
 }
 
-.score-board {
-    text-align: center;
-    /* margin-bottom: 1.5rem; */
-    font-size: 1.1rem;
-    color: #666;
-}
-
-.score-board strong {
-    color: #333;
-}
-
 .word-display {
     width: 260px;
     height: 200px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     border-radius: 6px;
-    /* margin-bottom: 2rem; */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
