@@ -97,6 +97,10 @@
             background-image: $icon-info;
             background-size: 20%;
         }
+        &--radio{
+            background-image: $icon-radio;
+            background-size: 60%;
+        }
     }
     &__color{
         &--linux{

@@ -148,6 +148,11 @@
             @extend .category__icon--info;
         }
     }
+    &--radio{
+        &::before{
+            @extend .category__icon--radio;
+        }
+    }
     &--nb{
         &::before{
             background-image: $icon-flag-no;
