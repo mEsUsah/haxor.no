@@ -6,13 +6,34 @@ searchable: true
 settings:
   availableTransforms: '*'
   availableVolumes: ''
-  ckeConfig: 4ff4b6be-5f03-4236-a01d-2b5125c03d66 # Simple
+  css: null
+  cssFile: null
   defaultTransform: ''
   enableSourceEditingForNonAdmins: true
+  fullGraphqlData: false
+  headingLevels: false
+  js: null
+  jsFile: Simple.json
+  options: null
   purifierConfig: null
   purifyHtml: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
+  toolbar:
+    - bold
+    - italic
+    - underline
+    - strikethrough
+    - '|'
+    - subscript
+    - superscript
+    - '|'
+    - bulletedList
+    - numberedList
+    - outdent
+    - indent
+    - '|'
+    - link
 translationKeyFormat: null
 translationMethod: none
 type: craft\ckeditor\Field

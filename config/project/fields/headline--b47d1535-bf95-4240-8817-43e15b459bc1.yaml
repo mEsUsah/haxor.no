@@ -6,9 +6,14 @@ searchable: false
 settings:
   availableTransforms: '*'
   availableVolumes: '*'
-  ckeConfig: 12e90aa7-cbb6-4d63-b1d5-f35385429f7c # Headline
-  createButtonLabel: null
+  css: null
+  cssFile: null
   defaultTransform: null
+  fullGraphqlData: false
+  headingLevels: false
+  js: null
+  jsFile: null
+  options: null
   purifierConfig: null
   purifyHtml: true
   showUnpermittedFiles: false
@@ -16,6 +21,9 @@ settings:
   showWordCount: false
   sourceEditingGroups:
     - __ADMINS__
+  toolbar:
+    - subscript
+    - superscript
   wordLimit: null
 translationKeyFormat: null
 translationMethod: site

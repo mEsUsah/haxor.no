@@ -1,4 +1,4 @@
-dateModified: 1769714217
+dateModified: 1776679981
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -49,7 +49,6 @@ meta:
     3ebdee02-2eb1-48f4-8b4b-4f45f3bfbae9: 'ContentBlocks - Terminal Dump - Username' # ContentBlocks - Terminal Dump - Username
     4a837336-d09a-492d-aa97-3c29b176ecc7: 'Course Platform' # Course Platform
     4fa3f654-1283-406b-9656-22b48a6c818e: 'Course Certificate URL' # Course Certificate URL
-    4ff4b6be-5f03-4236-a01d-2b5125c03d66: Simple # Simple
     5c01d860-2ec5-4205-936e-583524bb8264: 'ContentBlocks - Image - Image AltText' # ContentBlocks - Image - Image AltText
     5d2b6ceb-3b09-44f2-ab53-25f33e506025: 'Achievement Badge' # Achievement Badge
     5dd9f4f3-fb1c-4d81-b3fd-2309b56563f0: 'ContentBlocks - File Content - Filname' # ContentBlocks - File Content - Filname
@@ -69,7 +68,6 @@ meta:
     9b49d5b9-d21a-4e64-b799-37fe5db4ada8: 'ContentBlocks - Books - Three newest?' # ContentBlocks - Books - Three newest?
     9dbc0bea-5f8c-4a42-a060-58a1e9baf36f: 'ContentBlocks - Chart - Bar (Stacked) - Chart Subtitle' # ContentBlocks - Chart - Bar (Stacked) - Chart Subtitle
     9dfaa653-4e36-4b09-a7a7-e25e81bafdf7: 'ContentBlocks - Certificate - Certificates' # ContentBlocks - Certificate - Certificates
-    12e90aa7-cbb6-4d63-b1d5-f35385429f7c: Headline # Headline
     12f99a24-9d48-4fdd-8f1e-fec6cabf9cca: Lessons # Lessons
     13e06e3a-25c9-4b11-aa21-6b5b768d5fea: 'Send in answer' # Send in answer
     15cb9ee9-280a-4a76-9b2f-d31dff2fb525: 'Number of Pages' # Number of Pages
@@ -123,7 +121,6 @@ meta:
     a2c9fa7f-4706-4b49-ad49-f09d9a9ebc10: 'ContentBlocks - Courses - Courses' # ContentBlocks - Courses - Courses
     a568129a-e9d4-406e-bafe-4dae8e4b19e8: 'Task Done' # Task Done
     aad6c628-7e5f-4c95-9383-e39426be72f7: 'CTF Image' # CTF Image
-    ab427603-a5f6-4996-858f-48231556f394: Default # Default
     ac49e4c4-d11a-4bbe-9a08-04c06268ba93: 'Course Length (min)' # Course Length (min)
     af5a6f2d-4fdf-4cfe-b5e8-900a1ae088c5: 'ContentBlocks - Link to all?' # ContentBlocks - Link to all?
     b04f4663-1608-479d-b699-ba1102ba1b61: 'Article Headline' # Article Headline
@@ -169,13 +166,12 @@ meta:
     f733eaac-e1d6-428e-a5e6-5e9c1b8450df: 'Review Quote' # Review Quote
     f9145c5e-c78a-4a33-950f-a91359723426: Selfcontained # Selfcontained
     f4121429-712b-4587-839a-e0a1db5d946a: 'ContentBlocks - File Content - Line Numbers' # ContentBlocks - File Content - Line Numbers
-    fc40ce26-28fb-475a-b6b7-696c795f5f18: 'Simple text and link' # Simple text and link
     fe6324d5-2558-4ab4-99f2-f424b8051892: 'About Blog' # About Blog
 plugins:
   ckeditor:
     edition: standard
     enabled: true
-    schemaVersion: 3.0.0.0
+    schemaVersion: 5.0.0.1
   haxor:
     edition: standard
     enabled: true
