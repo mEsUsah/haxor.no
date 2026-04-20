@@ -1,4 +1,10 @@
 {% set userData = craft.tryhackme.userData %}
+{% set countryRank = 0 %}
+{% for entry in craft.tryhackme.leaderboardCountry %}
+    {% if entry.username == userData.userName %}
+        {% set countryRank = loop.index %}
+    {% endif %}
+{% endfor %}
 
 <div class="contentBlocks__tryhackme-wrapper">
     <div class="contentBlocks__tryhackme-headline">
@@ -13,7 +19,8 @@
                 </div>
                 <div class="contentBlocks__tryhackme-dataWrapper">
                     <p class="contentBlocks__tryhackme-name">Rank:</p>
-                    <p class="contentBlocks__tryhackme-rank">World: {{ userData.userRank }} </p>
+                    <p class="contentBlocks__tryhackme-rank" style="color:#000; font-size:.85em;">World: {{ userData.userRank }}</p>
+                    {% if countryRank > 0 %}<p class="contentBlocks__tryhackme-rank" style="color:#000; font-size:.85em;">{{ userData.country|capitalize }}: {{ countryRank }}</p>{% endif %}
                 </div>
             </div>
             <div class="contentBlocks__tryhackme-item">
@@ -22,7 +29,7 @@
                 </div>
                 <div class="contentBlocks__tryhackme-dataWrapper">
                     <p class="contentBlocks__tryhackme-name">Score:</p>
-                    <p class="contentBlocks__tryhackme-rank">{{ userData.points|number_format(0, '.', ' ') }} </p>
+                    <p class="contentBlocks__tryhackme-rank" style="color:#000; font-size:.85em;">{{ userData.points|number_format(0, '.', ' ') }}</p>
                 </div>
             </div>
         </div>
@@ -33,7 +40,7 @@
                 </div>
                 <div class="contentBlocks__tryhackme-dataWrapper">
                     <p class="contentBlocks__tryhackme-name">Badges:</p>
-                    <p class="contentBlocks__tryhackme-rank">{{ userData.earnedBadges|number_format(0, '.', ' ') }} </p>
+                    <p class="contentBlocks__tryhackme-rank" style="color:#000; font-size:.85em;">{{ userData.earnedBadges|number_format(0, '.', ' ') }}</p>
                 </div>
             </div>
             <div class="contentBlocks__tryhackme-item">
@@ -42,7 +49,7 @@
                 </div>
                 <div class="contentBlocks__tryhackme-dataWrapper">
                     <p class="contentBlocks__tryhackme-name">Completed rooms:</p>
-                    <p class="contentBlocks__tryhackme-rank">{{ userData.completedRooms|number_format(0, '.', ' ') }} </p>
+                    <p class="contentBlocks__tryhackme-rank" style="color:#000; font-size:.85em;">{{ userData.completedRooms|number_format(0, '.', ' ') }}</p>
                 </div>
             </div>
         </div>
