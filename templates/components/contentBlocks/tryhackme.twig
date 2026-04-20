@@ -1,10 +1,4 @@
 {% set userData = craft.tryhackme.userData %}
-{% set badgesCompleted = 0 %}
-{% for badge in userData.badges %}
-    {% if badge.earned %}
-        {% set badgesCompleted = badgesCompleted + 1 %}
-    {% endif %}
-{% endfor %}
 
 <div class="contentBlocks__tryhackme-wrapper">
     <div class="contentBlocks__tryhackme-headline">
@@ -39,7 +33,7 @@
                 </div>
                 <div class="contentBlocks__tryhackme-dataWrapper">
                     <p class="contentBlocks__tryhackme-name">Badges:</p>
-                    <p class="contentBlocks__tryhackme-rank">{{ badgesCompleted|number_format(0, '.', ' ') }} </p>
+                    <p class="contentBlocks__tryhackme-rank">{{ userData.earnedBadges|number_format(0, '.', ' ') }} </p>
                 </div>
             </div>
             <div class="contentBlocks__tryhackme-item">
@@ -48,7 +42,7 @@
                 </div>
                 <div class="contentBlocks__tryhackme-dataWrapper">
                     <p class="contentBlocks__tryhackme-name">Completed rooms:</p>
-                    <p class="contentBlocks__tryhackme-rank">{{ userData.completedRooms|length|number_format(0, '.', ' ') }} </p>
+                    <p class="contentBlocks__tryhackme-rank">{{ userData.completedRooms|number_format(0, '.', ' ') }} </p>
                 </div>
             </div>
         </div>
