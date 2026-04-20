@@ -2547,12 +2547,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mEsUsah/craft-tryhackme.git",
-                "reference": "e7c1c1e0007262dd82b4fa058714872336c93ed3"
+                "reference": "9e3757ca330b082651e276c75a2f8a545fcf0eff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mEsUsah/craft-tryhackme/zipball/e7c1c1e0007262dd82b4fa058714872336c93ed3",
-                "reference": "e7c1c1e0007262dd82b4fa058714872336c93ed3",
+                "url": "https://api.github.com/repos/mEsUsah/craft-tryhackme/zipball/9e3757ca330b082651e276c75a2f8a545fcf0eff",
+                "reference": "9e3757ca330b082651e276c75a2f8a545fcf0eff",
                 "shasum": ""
             },
             "require": {
@@ -2593,7 +2593,7 @@
                 "issues": "https://github.com/mEsUsah/craft-tryhackme/issues",
                 "source": "https://github.com/mEsUsah/craft-tryhackme/tree/master"
             },
-            "time": "2025-05-01T14:18:17+00:00"
+            "time": "2026-04-20T11:11:12+00:00"
         },
         {
             "name": "mikehaertl/php-shellcommand",
@@ -9728,15 +9728,15 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "mesusah/craft-tryhackme": 20,
-        "mesusah/craft-text2mathml": 20
+        "mesusah/craft-text2mathml": 20,
+        "mesusah/craft-tryhackme": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
+    "platform": {},
+    "platform-dev": {},
     "platform-overrides": {
         "php": "8.2"
     },
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }
