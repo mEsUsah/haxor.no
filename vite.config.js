@@ -1,4 +1,4 @@
-import { defineConfig, loadEnv } from "vite";
+import { defineConfig } from "vite";
 import vue from '@vitejs/plugin-vue'
 import liveReload from 'vite-plugin-live-reload';
 import dotenv from 'dotenv';
@@ -7,8 +7,11 @@ import fs from 'fs';
 // https://vitejs.dev/config/
 export default ({ mode }) => {
     Object.assign(process.env, dotenv.parse(fs.readFileSync(`${__dirname}/.env`)));
-    const port = process.env.VITE_PORT_HTTP;
-    const origin = `${process.env.PRIMARY_SITE_URL}`;
+    const serverPort = Number(process.env.VITE_PORT_HTTP || 3000);
+    const publicPort = Number(process.env.VITE_PORT_HTTPS || 3001);
+    const primarySiteUrl = (process.env.PRIMARY_SITE_URL || 'https://localhost').replace(/\/$/, '');
+    const origin = `${primarySiteUrl}:${publicPort}`;
+    const allowedHost = new URL(primarySiteUrl).hostname;
 
     return defineConfig({
         plugins: [
@@ -42,10 +45,18 @@ export default ({ mode }) => {
         },
 
         server: {
-            cors: true,
+            cors: {
+                origin: primarySiteUrl,
+            },
+            allowedHosts: [allowedHost],
             host: '0.0.0.0',
-            port: port,
+            port: serverPort,
             strictPort: true, 
+            hmr: {
+                host: allowedHost,
+                clientPort: publicPort,
+                protocol: 'wss',
+            },
             
             // Defines the origin of the CSS asset URLs during development
             origin: origin,

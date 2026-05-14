@@ -42,9 +42,6 @@
 
 
         {{ craft.vite.script("resources/js/site.js") }}
-        {% if devMode %}
-            <script type="module" src="https://haxor.no.ddev.site:3001/@vite/client"></script>
-        {% endif %}
        
         <script src="/resources/js/prism.js?v={{ cashebuster }}"></script>
     </body>
