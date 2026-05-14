@@ -1,9 +1,11 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 190326da-4559-4d36-aae0-20b00fa6318f # Books
+  -
+    uid: 190326da-4559-4d36-aae0-20b00fa6318f # Books
 handle: books
 maxAuthors: 1
+minAuthors: 1
 name: Books
 propagationMethod: custom
 siteSettings:

@@ -1,9 +1,11 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 515bc6fb-894b-442b-8af3-6666bef0300f # Kurs
+  -
+    uid: 515bc6fb-894b-442b-8af3-6666bef0300f # Kurs
 handle: courses
 maxAuthors: 1
+minAuthors: 1
 name: Courses
 propagationMethod: custom
 siteSettings:

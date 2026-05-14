@@ -1,4 +1,4 @@
-dateModified: 1776679981
+dateModified: 1778790069
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -171,7 +171,7 @@ plugins:
   ckeditor:
     edition: standard
     enabled: true
-    schemaVersion: 5.0.0.1
+    schemaVersion: 5.6.0.0
   haxor:
     edition: standard
     enabled: true
@@ -202,5 +202,5 @@ system:
   live: true
   name: haxor.no
   retryDuration: null
-  schemaVersion: 5.9.0.8
+  schemaVersion: 5.10.0.0
   timeZone: Europe/Oslo
