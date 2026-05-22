@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "60e8274064a746b9dc69a6c9a959acb0",
+    "content-hash": "a5d564731910c8ad82353d6287036c70",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -2537,23 +2537,22 @@
         },
         {
             "name": "mesusah/craft-text2mathml",
-            "version": "dev-master",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mEsUsah/craft-text2mathml.git",
-                "reference": "113c6d661f29935687fade4004766c717fcd889a"
+                "reference": "5f92cee390a15afb05e2da70c8281114514d3d1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mEsUsah/craft-text2mathml/zipball/113c6d661f29935687fade4004766c717fcd889a",
-                "reference": "113c6d661f29935687fade4004766c717fcd889a",
+                "url": "https://api.github.com/repos/mEsUsah/craft-text2mathml/zipball/5f92cee390a15afb05e2da70c8281114514d3d1f",
+                "reference": "5f92cee390a15afb05e2da70c8281114514d3d1f",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^5.0.0",
                 "php": ">=8.0"
             },
-            "default-branch": true,
             "type": "craft-plugin",
             "extra": {
                 "name": "Text 2 MathML",
@@ -2580,7 +2579,7 @@
                 "rss": "https://github.com/mesusah/craft-text2mathml/releases.atom",
                 "source": "https://github.com/mesusah/craft-text2mathml"
             },
-            "time": "2026-05-22T14:53:11+00:00"
+            "time": "2026-05-22T15:56:39+00:00"
         },
         {
             "name": "mesusah/craft-tryhackme",
@@ -9951,7 +9950,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "mesusah/craft-text2mathml": 20,
         "mesusah/craft-tryhackme": 20
     },
     "prefer-stable": true,
