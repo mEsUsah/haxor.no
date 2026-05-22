@@ -132,8 +132,8 @@ class ArticlesService extends Component
             "headline" => $entry->title,
             "description" => $entry->teaser,
             "backstory" => $this->getArticleIntro($entry),
-            "datePublished" => $entry->postDate->format(DATE_ATOM),
-            "dateModified" => $entry->dateUpdated->format(DATE_ATOM),
+            "datePublished" => $entry->postDate ? $entry->postDate->format(DATE_ATOM) : null,
+            "dateModified" => $entry->dateUpdated ? $entry->dateUpdated->format(DATE_ATOM) : null,
             "author" => [
                 "@type" => "Person",
                 "name" => $authorName,
@@ -144,7 +144,7 @@ class ArticlesService extends Component
                 "name" => $authorName,
                 "url" => $authorUrl,
             ],
-            "copyrightYear" => $entry->postDate->format('Y'),
+            "copyrightYear" => $entry->postDate ? $entry->postDate->format('Y') : null,
             "publisher" => [
                 "@type" => "Organization",
                 "name" => "haxor.no",
