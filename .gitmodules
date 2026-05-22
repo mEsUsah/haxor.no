@@ -1,3 +1,0 @@
-[submodule "plugins/craft-text2mathml"]
-	path = plugins/craft-text2mathml
-	url = git@github.com:mEsUsah/craft-text2mathml.git
