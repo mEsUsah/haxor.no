@@ -21,14 +21,14 @@
         "rss": "https://craftcms.com/changelog.rss"
     },
     "require": {
-        "craftcms/cms": "^5.10.0",
+        "craftcms/cms": "^5.10.13.2",
         "vlucas/phpdotenv": "^5",
         "mesusah/craft-haxor": "^2.0.0",
         "mesusah/craft-tryhackme": "dev-master",
         "mesusah/craft-text2mathml": "^1.0.0",
         "craftcms/ckeditor": "^5.5.0",
         "guzzlehttp/guzzle": "^7.9",
-        "nystudio107/craft-vite": "5.0.1"
+        "nystudio107/craft-vite": "^5.0.2"
     },
     "require-dev": {
         "yiisoft/yii2-shell": "^2.0.3",
