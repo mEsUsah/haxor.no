@@ -2676,12 +2676,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mEsUsah/craft-tryhackme.git",
-                "reference": "2f8aeea1e49839e146531b6ce13bca1455c9b928"
+                "reference": "190771bdb98d25511f96e8cfb0d0c1562891bc1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mEsUsah/craft-tryhackme/zipball/2f8aeea1e49839e146531b6ce13bca1455c9b928",
-                "reference": "2f8aeea1e49839e146531b6ce13bca1455c9b928",
+                "url": "https://api.github.com/repos/mEsUsah/craft-tryhackme/zipball/190771bdb98d25511f96e8cfb0d0c1562891bc1d",
+                "reference": "190771bdb98d25511f96e8cfb0d0c1562891bc1d",
                 "shasum": ""
             },
             "require": {
@@ -2722,7 +2722,7 @@
                 "issues": "https://github.com/mEsUsah/craft-tryhackme/issues",
                 "source": "https://github.com/mEsUsah/craft-tryhackme/tree/master"
             },
-            "time": "2026-08-05T20:06:53+00:00"
+            "time": "2026-08-05T20:15:39+00:00"
         },
         {
             "name": "mikehaertl/php-shellcommand",
