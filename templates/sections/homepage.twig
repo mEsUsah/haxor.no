@@ -61,16 +61,19 @@
     </div>
 
     <div class="articleList__aiResult" v-if="aiSearchEnabled && (askLoading || askSubmitted)">
-        <section v-if="askLoading">
-            <div class="thmScoreboard__loading">
-                <div class="thmScoreboard__loading-spinner"></div>
-            </div>
-        </section>
-        <template v-else>
-            <p v-if="askError" class="articleList__aiResult-error">[[askError]]</p>
-            <div v-else-if="askAnswer" class="articleList__aiResult-answer" v-html="renderedAskAnswer"></div>
-            <p v-else class="articleList__aiResult-error">[[aiSearchNoResultsMessage]]</p>
-        </template>
+        <div class="articleList__aiResult-header">{{ 'AI Answer'|t }}</div>
+        <div class="articleList__aiResult-body">
+            <section v-if="askLoading">
+                <div class="thmScoreboard__loading">
+                    <div class="thmScoreboard__loading-spinner"></div>
+                </div>
+            </section>
+            <template v-else>
+                <p v-if="askError" class="articleList__aiResult-error">[[askError]]</p>
+                <div v-else-if="askAnswer" class="articleList__aiResult-answer" v-html="renderedAskAnswer"></div>
+                <p v-else class="articleList__aiResult-error">[[aiSearchNoResultsMessage]]</p>
+            </template>
+        </div>
     </div>
 
     <div class="articleList__container" v-if="aiSearchEnabled && askMatchedArticles.length">
