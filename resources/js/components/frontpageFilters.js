@@ -55,6 +55,8 @@ export default {
 
                     this.askLoading = true;
                     this.askError = null;
+                    this.askAnswer = null;
+                    this.askSources = [];
 
                     axios.get("/actions/ai-search/ask", { params: { query } })
                     .then(response => {
