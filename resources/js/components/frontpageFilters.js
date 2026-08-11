@@ -10,6 +10,8 @@ export default {
             return;
         }
 
+        const mountpoint = this._mountpoint;
+
         const app = createApp({
             delimiters: ['[[', ']]'],
             components: {
@@ -25,6 +27,10 @@ export default {
                     selectedSubjects: [],
                     selectedLanguages: [],
                     showFilters: false,
+                    aiSearchEnabled: false,
+                    aiSearchLabel: mountpoint.dataset.aiSearchLabel,
+                    searchLabel: mountpoint.dataset.searchPlaceholder,
+                    aiSearchPlaceholder: mountpoint.dataset.aiSearchPlaceholder,
                 }
             },
             mounted() {
@@ -99,6 +105,9 @@ export default {
                         }
                     });
                     return languages;
+                },
+                searchPlaceholder(){
+                    return this.aiSearchEnabled ? this.aiSearchPlaceholder : this.searchLabel;
                 }
             },
             watch: {
@@ -107,6 +116,6 @@ export default {
             }
         });
 
-        app.mount(this._mountpoint);
+        app.mount(mountpoint);
     }
 }

@@ -1,13 +1,43 @@
-<section class="articleBody" data-frontpage-filter-vue>
+<section class="articleBody" data-frontpage-filter-vue
+    data-search-placeholder="{{ 'Search'|t }}"
+    data-ai-search-placeholder="{{ 'Search using AI...'|t }}"
+    data-ai-search-label="{{ 'Enable AI search'|t }}"
+>
     <div class="articleList__search">
         <div class="articleList__search-form">
-            <input type="search" aria-label="search" placeholder="{{ 'Search'|t }}" v-model="searchQuery"/>
+            <input type="search" aria-label="search" :placeholder="searchPlaceholder" v-model="searchQuery"/>
+            <div class="articleList__search-toggle mobile--hidden">
+                <span class="articleList__search-toggle-label">{{ 'AI-search'|t }}</span>
+                <button type="button"
+                    class="lightswitch"
+                    :class="{ 'is-on': aiSearchEnabled }"
+                    role="switch"
+                    :aria-checked="aiSearchEnabled.toString()"
+                    :aria-label="aiSearchLabel"
+                    @click="aiSearchEnabled = !aiSearchEnabled"
+                >
+                    <span class="lightswitch__rail"><span class="lightswitch__handle"></span></span>
+                </button>
+            </div>
         </div>
-        <button @click="showFilters = !showFilters" 
+        <div class="articleList__search-toggle articleList__search-toggle--mobile desktop--hidden">
+            <button type="button"
+                class="lightswitch"
+                :class="{ 'is-on': aiSearchEnabled }"
+                role="switch"
+                :aria-checked="aiSearchEnabled.toString()"
+                :aria-label="aiSearchLabel"
+                @click="aiSearchEnabled = !aiSearchEnabled"
+            >
+                <span class="lightswitch__rail"><span class="lightswitch__handle"></span></span>
+            </button>
+            <span class="articleList__search-toggle-label">{{ 'AI-search'|t }}</span>
+        </div>
+        <button v-if="!aiSearchEnabled" @click="showFilters = !showFilters"
             class="articleList__filters-button desktop--hidden"
             :class="showFilters ? 'active' : ''"
         >Filter</button>
-        <div class="articleList__filters-wrapper" 
+        <div v-if="!aiSearchEnabled" class="articleList__filters-wrapper"
             :class="showFilters ? 'active' : ''">
             <div class="articleList__filters">
                 <article-filter v-for="subject in articleSubjects" :key="subject" 

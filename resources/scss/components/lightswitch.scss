@@ -1,0 +1,51 @@
+.lightswitch{
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    flex-shrink: 0;
+
+    &__rail{
+        display: block;
+        width: 40px;
+        height: 22px;
+        border: 2px solid black;
+        border-radius: 14px;
+        background-color: white;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+        position: relative;
+        transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+    }
+
+    &__handle{
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 3px;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: black;
+        transform: translateY(-50%);
+        transition: transform 0.2s ease-out, background-color 0.2s ease-out;
+    }
+
+    &.is-on{
+        .lightswitch__rail{
+            background-color: $color-success;
+            border-color: $color-success;
+        }
+        .lightswitch__handle{
+            background-color: white;
+            transform: translateX(16px) translateY(-50%);
+        }
+    }
+
+    &:focus-visible{
+        outline: none;
+        .lightswitch__rail{
+            box-shadow: 0 0 0 2px $color-accent-light;
+        }
+    }
+}
