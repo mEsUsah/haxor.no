@@ -349,9 +349,37 @@
 
         &-body{
             padding: 24px;
+            display: flex;
+            flex-direction: column;
+
+            // The loading spinner's wrapper is the only direct child that should stretch and
+            // center within whatever height the body currently has (see askResultMinHeight) —
+            // otherwise it sits at the top and any extra space collects below it instead of
+            // splitting evenly above and below.
+            > section{
+                display: flex;
+                flex: 1;
+                align-items: center;
+                justify-content: center;
+            }
+
+            // Scoped override — shrink the shared loading spinner just here, without touching
+            // the same markup used for the regular article grid or the thmScoreboard component.
+            .thmScoreboard__loading{
+                height: auto;
+                margin: 8px 0;
+
+                &-spinner{
+                    height: 32px;
+                    width: 32px;
+                }
+            }
         }
 
         &-answer{
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 1.2s ease;
             font-size: 17px;
             line-height: 1.6;
 
@@ -398,5 +426,14 @@
             margin: 0;
             color: $color-danger;
         }
+    }
+}
+
+.articleList__aiResult-article{
+    opacity: 0;
+    transition: opacity 0.4s ease;
+
+    &.is-revealed{
+        opacity: 1;
     }
 }

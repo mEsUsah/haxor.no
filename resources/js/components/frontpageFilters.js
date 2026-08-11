@@ -37,9 +37,15 @@ export default {
                     aiSearchNoResultsMessage: mountpoint.dataset.aiSearchNoResults,
                     askLoading: false,
                     askSubmitted: false,
+                    askAnswerPending: false,
                     askAnswer: null,
+                    askAnswerMaxHeight: '0px',
+                    askResultMinHeight: '0px',
                     askSources: [],
+                    askArticlesRevealed: false,
                     askError: null,
+                    _askAnswerRevealTimer: null,
+                    _askArticleRevealTimer: null,
                 }
             },
             mounted() {
@@ -54,31 +60,107 @@ export default {
                     }
 
                     this.askLoading = true;
+                    this.askAnswerPending = false;
                     this.askError = null;
                     this.askAnswer = null;
                     this.askSources = [];
+                    this.askArticlesRevealed = false;
+                    this.stopRevealingAnswer();
+                    this.stopRevealingArticles();
 
-                    axios.get("/actions/ai-search/ask", { params: { query } })
-                    .then(response => {
-                        this.askAnswer = response.data.answer || null;
-                        this.askSources = response.data.sources || [];
-                    })
-                    .catch(e => {
-                        console.log(e);
-                        this.askAnswer = null;
-                        this.askSources = [];
-                        this.askError = this.aiSearchErrorMessage;
-                    })
-                    .finally(() => {
-                        this.askLoading = false;
-                        this.askSubmitted = true;
+                    // Reset both before re-measuring below — otherwise the previous answer's
+                    // min-height is still in effect while we measure the new spinner's "natural"
+                    // height, inflating it to match the old box, which then only ever grows
+                    // larger across successive queries instead of resetting each time.
+                    this.askAnswerMaxHeight = '0px';
+                    this.askResultMinHeight = '0px';
+
+                    // Wait for the loading spinner to actually be on screen, then measure its
+                    // height — that's what the answer box should visually grow from, instead of
+                    // starting from fully closed. It also becomes a min-height floor on the body
+                    // wrapper, so swapping to a short error/no-results message never shrinks the
+                    // box below however tall the spinner made it.
+                    this.$nextTick(() => {
+                        const loadingHeight = (this.$refs.aiResultBody ? this.$refs.aiResultBody.offsetHeight : 0) + 'px';
+                        this.askAnswerMaxHeight = loadingHeight;
+                        this.askResultMinHeight = loadingHeight;
+
+                        axios.get("/actions/ai-search/ask", { params: { query } })
+                        .then(response => {
+                            const answer = response.data.answer || null;
+                            const sources = response.data.sources || [];
+
+                            // Remove the loading indicator right away, but hold off on showing
+                            // anything (the box just sits empty) for a beat before the text and
+                            // the box's resize both happen together.
+                            this.askLoading = false;
+                            this.askAnswerPending = true;
+
+                            this._askAnswerRevealTimer = setTimeout(() => {
+                                this.askAnswer = answer;
+                                this.askSources = sources;
+                                this.askAnswerPending = false;
+
+                                // Wait a frame after the (still-collapsed) answer box is in the
+                                // DOM before growing it, so the browser actually animates the
+                                // transition instead of snapping straight to the open height.
+                                // Target its real content height (scrollHeight ignores the
+                                // max-height clip) instead of an arbitrary cap, so the animation
+                                // takes the full duration regardless of answer length.
+                                this.$nextTick(() => {
+                                    const target = this.$refs.aiAnswerEl ? this.$refs.aiAnswerEl.scrollHeight : 2000;
+
+                                    requestAnimationFrame(() => {
+                                        this.askAnswerMaxHeight = target + 'px';
+                                    });
+                                });
+
+                                // All matched articles are already in the DOM (so the flex-wrap
+                                // layout never reflows) — this flag just triggers their opacity
+                                // transition; each one's own transition-delay (see the template)
+                                // staggers when it actually starts fading in.
+                                this.stopRevealingArticles();
+                                this._askArticleRevealTimer = setTimeout(() => {
+                                    this.askArticlesRevealed = true;
+                                }, 500);
+                            }, 500);
+                        })
+                        .catch(e => {
+                            console.log(e);
+                            this.askLoading = false;
+                            this.askAnswerPending = false;
+                            this.askAnswer = null;
+                            this.askSources = [];
+                            this.askError = this.aiSearchErrorMessage;
+                        })
+                        .finally(() => {
+                            this.askSubmitted = true;
+                        });
                     });
+                },
+                stopRevealingAnswer(){
+                    if (this._askAnswerRevealTimer) {
+                        clearTimeout(this._askAnswerRevealTimer);
+                        this._askAnswerRevealTimer = null;
+                    }
+                },
+                stopRevealingArticles(){
+                    if (this._askArticleRevealTimer) {
+                        clearTimeout(this._askArticleRevealTimer);
+                        this._askArticleRevealTimer = null;
+                    }
                 },
                 resetAskState(){
                     this.askLoading = false;
                     this.askSubmitted = false;
+                    this.askAnswerPending = false;
                     this.askAnswer = null;
+                    this.askAnswerMaxHeight = '0px';
+                    this.askResultMinHeight = '0px';
                     this.askSources = [];
+                    this.askArticlesRevealed = false;
+                    this.stopRevealingAnswer();
+                    this.stopRevealingArticles();
                     this.askError = null;
                 },
                 getArticles(){
