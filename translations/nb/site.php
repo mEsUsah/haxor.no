@@ -6,7 +6,7 @@ return [
     'Search Results'                        => 'Søkeresultat',
     'results on'                            => 'treff på',
     'Search'                                => 'Søk',
-    'Ask AI...'                             => 'Spør AI...',
+    'Search using AI...'                             => 'Søk ved hjelp av AI...',
     'Enable AI search'                      => 'Aktiver AI-søk',
     'AI-search'                             => 'AI-søk',
     'Completed'                             => 'Fullført',
