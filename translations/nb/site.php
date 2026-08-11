@@ -6,7 +6,7 @@ return [
     'Search Results'                        => 'Søkeresultat',
     'results on'                            => 'treff på',
     'Search'                                => 'Søk',
-    'Search using AI...'                             => 'Søk ved hjelp av AI...',
+    '✨ Search or ask using AI...'          => '✨Søk eller spør ved hjelp av KI...',
     'Enable AI search'                      => 'Aktiver KI-søk',
     'AI-search'                             => 'KI-søk',
     'AI search is temporarily unavailable. Please try again.' => 'KI-søk er ikke tilgjengelig for øyeblikket. Vennligst prøv igjen.',
