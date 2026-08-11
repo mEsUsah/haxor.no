@@ -298,6 +298,14 @@ export default {
                 aiSearchEnabled(enabled){
                     if (!enabled) {
                         this.resetAskState();
+
+                        // filteredArticles/articlesRevealed kept their values from before AI
+                        // search was switched on (the grid was only unmounted, not reset), so
+                        // simply remounting it would show everything already in its revealed
+                        // state with nothing to transition from. Re-run the filter (the search
+                        // query may have changed while in AI mode anyway) so it clears and
+                        // replays the one-by-one reveal instead.
+                        this.filterArticles();
                     }
                 },
             }
