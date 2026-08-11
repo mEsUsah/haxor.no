@@ -44,8 +44,11 @@ export default {
                     askSources: [],
                     askArticlesRevealed: false,
                     askError: null,
+                    articlesRevealed: false,
                     _askAnswerRevealTimer: null,
                     _askArticleRevealTimer: null,
+                    _searchDebounceTimer: null,
+                    _articlesRevealTimer: null,
                 }
             },
             mounted() {
@@ -111,7 +114,9 @@ export default {
                                     const target = this.$refs.aiAnswerEl ? this.$refs.aiAnswerEl.scrollHeight : 2000;
 
                                     requestAnimationFrame(() => {
-                                        this.askAnswerMaxHeight = target + 'px';
+                                        requestAnimationFrame(() => {
+                                            this.askAnswerMaxHeight = target + 'px';
+                                        });
                                     });
                                 });
 
@@ -168,33 +173,64 @@ export default {
                     .then(response => {
                         this.articles = response.data;
                         this.loaded = true;
+                        this.filterArticles();
                     })
                     .catch(e => {
                         console.log(e);
                     })
                 },
                 filterArticles() {
-                    if (this.searchQuery.length > 1) {
-                        this.filteredArticles = this.articles.filter(article => {
-                            return article.title.toLowerCase().includes(this.searchQuery.toLowerCase())
-                                   || (article.teaser && article.teaser.toLowerCase().includes(this.searchQuery.toLowerCase()))
-                                   || article.subject.toLowerCase().includes(this.searchQuery.toLowerCase())
-                                   || article.intro.toLowerCase().includes(this.searchQuery.toLowerCase())
-                        });
-                    } else {
-                        this.filteredArticles = this.articles;
-                    }
+                    // Clear immediately so the old results disappear before the new set fades
+                    // in, instead of the list just swapping content in place.
+                    this.filteredArticles = [];
+                    this.articlesRevealed = false;
+                    clearTimeout(this._articlesRevealTimer);
 
-                    if (this.selectedLanguages.length > 0) {
-                        this.filteredArticles = this.filteredArticles.filter(article => {
-                            return this.selectedLanguages.includes(article.language);
+                    this._articlesRevealTimer = setTimeout(() => {
+                        let filtered;
+
+                        if (this.searchQuery.length > 1) {
+                            filtered = this.articles.filter(article => {
+                                return article.title.toLowerCase().includes(this.searchQuery.toLowerCase())
+                                       || (article.teaser && article.teaser.toLowerCase().includes(this.searchQuery.toLowerCase()))
+                                       || article.subject.toLowerCase().includes(this.searchQuery.toLowerCase())
+                                       || article.intro.toLowerCase().includes(this.searchQuery.toLowerCase())
+                            });
+                        } else {
+                            filtered = this.articles;
+                        }
+
+                        if (this.selectedLanguages.length > 0) {
+                            filtered = filtered.filter(article => {
+                                return this.selectedLanguages.includes(article.language);
+                            });
+                        }
+                        if (this.selectedSubjects.length > 0) {
+                            filtered = filtered.filter(article => {
+                                return this.selectedSubjects.includes(article.subject);
+                            });
+                        }
+
+                        this.filteredArticles = filtered;
+                        this.revealFilteredArticles();
+                    }, 200);
+                },
+                revealFilteredArticles(){
+                    this.articlesRevealed = false;
+
+                    // A single requestAnimationFrame after $nextTick doesn't guarantee the
+                    // browser actually paints the "not revealed" state before we flip it —
+                    // depending on how busy the page is (very much the case during initial
+                    // load), both changes can land in the same paint and the transition never
+                    // plays, so the whole list just appears at once instead of staggering. The
+                    // nested rAF guarantees one full paint happens in between.
+                    this.$nextTick(() => {
+                        requestAnimationFrame(() => {
+                            requestAnimationFrame(() => {
+                                this.articlesRevealed = true;
+                            });
                         });
-                    }
-                    if (this.selectedSubjects.length > 0) {
-                        this.filteredArticles = this.filteredArticles.filter(article => {
-                            return this.selectedSubjects.includes(article.subject);
-                        });
-                    }
+                    });
                 },
                 updateLanguageFilters(language) {
                     if(this.selectedLanguages.includes(language)){
@@ -253,8 +289,12 @@ export default {
                 }
             },
             watch: {
-                searchQuery: 'filterArticles',
-                articles: 'filterArticles',
+                searchQuery(){
+                    clearTimeout(this._searchDebounceTimer);
+                    this._searchDebounceTimer = setTimeout(() => {
+                        this.filterArticles();
+                    }, 300);
+                },
                 aiSearchEnabled(enabled){
                     if (!enabled) {
                         this.resetAskState();

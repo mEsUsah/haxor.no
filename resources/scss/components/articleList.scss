@@ -429,7 +429,11 @@
     }
 }
 
-.articleList__aiResult-article{
+// Shared by both the AI-matched articles and the regular search/filter grid — see
+// askArticlesRevealed / articlesRevealed in frontpageFilters.js. Every item is already in
+// the DOM (so the flex-wrap layout never reflows); only opacity changes, staggered per item
+// via an inline transition-delay set in the template.
+.articleList__revealItem{
     opacity: 0;
     transition: opacity 0.4s ease;
 

@@ -81,7 +81,7 @@
             v-for="(article, index) in askMatchedArticles"
             :key="article.uuid"
             :article="article"
-            class="articleList__aiResult-article"
+            class="articleList__revealItem"
             :class="{ 'is-revealed': askArticlesRevealed }"
             :style="{ transitionDelay: (index * 150) + 'ms' }"
         />
@@ -96,7 +96,14 @@
 
         <section>
             <div class="articleList__container" v-if="articles">
-                <article-item v-for="article in filteredArticles" :key="article.id" :article="article" />
+                <article-item
+                    v-for="(article, index) in filteredArticles"
+                    :key="article.uuid"
+                    :article="article"
+                    class="articleList__revealItem"
+                    :class="{ 'is-revealed': articlesRevealed }"
+                    :style="{ transitionDelay: Math.min(index * 60, 900) + 'ms' }"
+                />
             </div>
         </section>
     </div>
