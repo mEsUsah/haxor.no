@@ -1,4 +1,4 @@
-dateModified: 1778790069
+dateModified: 1786475107
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -168,6 +168,10 @@ meta:
     f4121429-712b-4587-839a-e0a1db5d946a: 'ContentBlocks - File Content - Line Numbers' # ContentBlocks - File Content - Line Numbers
     fe6324d5-2558-4ab4-99f2-f424b8051892: 'About Blog' # About Blog
 plugins:
+  ai-search:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   ckeditor:
     edition: standard
     enabled: true

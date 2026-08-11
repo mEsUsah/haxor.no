@@ -25,7 +25,9 @@
     "vue-loader": "^16.8.3"
   },
   "dependencies": {
+    "dompurify": "^3.4.13",
     "dotenv": "^17.2.2",
+    "marked": "^15.0.12",
     "siema": "^1.5.1"
   }
 }

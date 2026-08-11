@@ -99,6 +99,7 @@ class ArticlesService extends Component
         $output = [];
         foreach ($articles as $article) {
             array_push($output, [
+                'uuid' => $article->uid,
                 'language' => $article->site->language,
                 'title' => $article->title,
                 'teaser' => $article->teaser,

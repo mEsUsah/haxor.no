@@ -324,4 +324,42 @@
             }
         }
     }
+    &__aiResult{
+        background-color: white;
+        border-radius: 3px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+        padding: 16px;
+        margin: 16px 14px 0 14px;
+        color: $color-font-content;
+
+        @include desktopOnly{
+            max-width: 1000px;
+            margin: 16px 14px;
+        }
+
+        &-answer{
+            line-height: 1.5;
+
+            > *:first-child{
+                margin-top: 0;
+            }
+            > *:last-child{
+                margin-bottom: 0;
+            }
+
+            ul, ol{
+                padding-left: 22px;
+            }
+
+            a{
+                color: $color-accent-dark;
+                text-decoration: underline;
+            }
+        }
+
+        &-error{
+            margin: 0;
+            color: $color-danger;
+        }
+    }
 }

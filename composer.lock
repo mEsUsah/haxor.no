@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "19101157d6f815604202a7150ba52c6c",
+    "content-hash": "3eeb6a268eba4930f3ac186820e9b8d8",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -2564,6 +2564,48 @@
                 "source": "https://github.com/Masterminds/html5-php/tree/2.10.1"
             },
             "time": "2026-06-23T18:43:15+00:00"
+        },
+        {
+            "name": "mesusah/craft-ai-search",
+            "version": "1.0.0",
+            "dist": {
+                "type": "path",
+                "url": "plugins/ai-search",
+                "reference": "38bdb70ef7dfd1d293b618679c58b9b708f1b5d3"
+            },
+            "require": {
+                "craftcms/cms": "^5.0.0",
+                "league/html-to-markdown": "^5.1",
+                "php": ">=8.2"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "handle": "ai-search",
+                "name": "AI Search",
+                "developer": "mEsUsah",
+                "developerUrl": "https://www.haxor.no",
+                "documentationUrl": "https://github.com/mesusah/craft-ai-search",
+                "class": "mesusah\\craftaisearch\\AiSearch"
+            },
+            "autoload": {
+                "psr-4": {
+                    "mesusah\\craftaisearch\\": "src/"
+                }
+            },
+            "license": [
+                "mit"
+            ],
+            "description": "Syncs entry content to an external AI search / RAG API on save and delete",
+            "support": {
+                "email": "stanley@haxor.no",
+                "issues": "https://github.com/mesusah/craft-ai-search/issues?state=open",
+                "source": "https://github.com/mesusah/craft-ai-search",
+                "docs": "https://github.com/mesusah/craft-ai-search",
+                "rss": "https://github.com/mesusah/craft-ai-search/releases.atom"
+            },
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "mesusah/craft-haxor",

@@ -9,6 +9,8 @@ return [
     'Search using AI...'                             => 'Søk ved hjelp av AI...',
     'Enable AI search'                      => 'Aktiver AI-søk',
     'AI-search'                             => 'AI-søk',
+    'AI search is temporarily unavailable. Please try again.' => 'AI-søk er ikke tilgjengelig for øyeblikket. Vennligst prøv igjen.',
+    'No answer found for that question.'    => 'Fant ikke noe svar på det spørsmålet.',
     'Completed'                             => 'Fullført',
     'Complete'                              => 'Fullfør',
     'Submit'                                => 'Send inn',

@@ -2,10 +2,12 @@
     data-search-placeholder="{{ 'Search'|t }}"
     data-ai-search-placeholder="{{ 'Search using AI...'|t }}"
     data-ai-search-label="{{ 'Enable AI search'|t }}"
+    data-ai-search-error="{{ 'AI search is temporarily unavailable. Please try again.'|t }}"
+    data-ai-search-no-results="{{ 'No answer found for that question.'|t }}"
 >
     <div class="articleList__search">
         <div class="articleList__search-form">
-            <input type="search" aria-label="search" :placeholder="searchPlaceholder" v-model="searchQuery"/>
+            <input type="search" aria-label="search" :placeholder="searchPlaceholder" v-model="searchQuery" @keyup.enter="askAi"/>
             <div class="articleList__search-toggle mobile--hidden">
                 <span class="articleList__search-toggle-label">{{ 'AI-search'|t }}</span>
                 <button type="button"
@@ -56,6 +58,23 @@
                 ></article-filter>
             </div>
         </div>
+    </div>
+
+    <div class="articleList__aiResult" v-if="aiSearchEnabled && (askLoading || askSubmitted)">
+        <section v-if="askLoading">
+            <div class="thmScoreboard__loading">
+                <div class="thmScoreboard__loading-spinner"></div>
+            </div>
+        </section>
+        <template v-else>
+            <p v-if="askError" class="articleList__aiResult-error">[[askError]]</p>
+            <div v-else-if="askAnswer" class="articleList__aiResult-answer" v-html="renderedAskAnswer"></div>
+            <p v-else class="articleList__aiResult-error">[[aiSearchNoResultsMessage]]</p>
+        </template>
+    </div>
+
+    <div class="articleList__container" v-if="aiSearchEnabled && askMatchedArticles.length">
+        <article-item v-for="article in askMatchedArticles" :key="article.uuid" :article="article" />
     </div>
 
     <div v-if="!aiSearchEnabled">

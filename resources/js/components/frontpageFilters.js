@@ -1,5 +1,7 @@
 import {createApp} from 'vue';
 import axios from 'axios';
+import {marked} from 'marked';
+import DOMPurify from 'dompurify';
 import ArticleItem from '../veiws/ArticleItem.vue';
 import ArticleFilter from '../veiws/ArticleFilter.vue';
 
@@ -31,12 +33,52 @@ export default {
                     aiSearchLabel: mountpoint.dataset.aiSearchLabel,
                     searchLabel: mountpoint.dataset.searchPlaceholder,
                     aiSearchPlaceholder: mountpoint.dataset.aiSearchPlaceholder,
+                    aiSearchErrorMessage: mountpoint.dataset.aiSearchError,
+                    aiSearchNoResultsMessage: mountpoint.dataset.aiSearchNoResults,
+                    askLoading: false,
+                    askSubmitted: false,
+                    askAnswer: null,
+                    askSources: [],
+                    askError: null,
                 }
             },
             mounted() {
                 this.getArticles();
             },
             methods: {
+                askAi(){
+                    const query = this.searchQuery.trim();
+
+                    if (!this.aiSearchEnabled || query.length < 2) {
+                        return;
+                    }
+
+                    this.askLoading = true;
+                    this.askError = null;
+
+                    axios.get("/actions/ai-search/ask", { params: { query } })
+                    .then(response => {
+                        this.askAnswer = response.data.answer || null;
+                        this.askSources = response.data.sources || [];
+                    })
+                    .catch(e => {
+                        console.log(e);
+                        this.askAnswer = null;
+                        this.askSources = [];
+                        this.askError = this.aiSearchErrorMessage;
+                    })
+                    .finally(() => {
+                        this.askLoading = false;
+                        this.askSubmitted = true;
+                    });
+                },
+                resetAskState(){
+                    this.askLoading = false;
+                    this.askSubmitted = false;
+                    this.askAnswer = null;
+                    this.askSources = [];
+                    this.askError = null;
+                },
                 getArticles(){
                     axios.get("/actions/haxor/articles/all")
                     .then(response => {
@@ -108,11 +150,32 @@ export default {
                 },
                 searchPlaceholder(){
                     return this.aiSearchEnabled ? this.aiSearchPlaceholder : this.searchLabel;
+                },
+                askMatchedArticles(){
+                    return this.askSources
+                        .map(source => this.articles.find(article => article.uuid === source.document_uid))
+                        .filter(Boolean);
+                },
+                renderedAskAnswer(){
+                    if (!this.askAnswer) {
+                        return '';
+                    }
+
+                    const html = marked.parse(this.askAnswer, { breaks: true, gfm: true });
+
+                    // Sanitize since this is rendered via v-html — the LLM's answer shouldn't be
+                    // able to smuggle in anything beyond the formatting marked itself produces.
+                    return DOMPurify.sanitize(html);
                 }
             },
             watch: {
                 searchQuery: 'filterArticles',
                 articles: 'filterArticles',
+                aiSearchEnabled(enabled){
+                    if (!enabled) {
+                        this.resetAskState();
+                    }
+                },
             }
         });
 

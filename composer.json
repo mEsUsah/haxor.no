@@ -26,6 +26,7 @@
         "mesusah/craft-haxor": "^2.0.0",
         "mesusah/craft-tryhackme": "dev-master",
         "mesusah/craft-text2mathml": "^1.0.0",
+        "mesusah/craft-ai-search": "^1.0.0",
         "craftcms/ckeditor": "^5.5.0",
         "guzzlehttp/guzzle": "^7.9",
         "nystudio107/craft-vite": "^5.0.2"
@@ -70,6 +71,10 @@
         {
             "type": "path",
             "url": "plugins/haxor/"
+        },
+        {
+            "type": "path",
+            "url": "plugins/ai-search/"
         },
         {
             "type": "composer",
