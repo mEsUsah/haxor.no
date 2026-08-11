@@ -58,13 +58,13 @@
         </div>
     </div>
 
-    <div >
+    <div v-if="!aiSearchEnabled">
         <section v-if="!loaded">
             <div class="thmScoreboard__loading">
                 <div class="thmScoreboard__loading-spinner"></div>
             </div>
         </section>
-        
+
         <section>
             <div class="articleList__container" v-if="articles">
                 <article-item v-for="article in filteredArticles" :key="article.id" :article="article" />
