@@ -16,7 +16,7 @@
     ]
   },
   "resources/js/site.js": {
-    "file": "assets/site-lzgT0ZPM.js",
+    "file": "assets/site-D1rwyd5Z.js",
     "name": "site",
     "src": "resources/js/site.js",
     "isEntry": true,
@@ -25,7 +25,7 @@
     ]
   },
   "resources/scss/site.scss": {
-    "file": "assets/styles-DH5ot4k6.css",
+    "file": "assets/styles-CEQZCZp4.css",
     "src": "resources/scss/site.scss",
     "isEntry": true
   }
