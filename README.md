@@ -32,6 +32,37 @@ To run all test i dev, run this command:
 ddev php ./vendor/bin/phpunit
 ```
 
+## Production
+
+### Queue worker
+Craft's default "run queue automatically" behavior triggers an internal HTTP request back to
+the site after each web response to process queued jobs — this is unreliable in production
+behind proxies/firewalls that restrict loopback requests, so it's disabled there
+(`runQueueAutomatically => false` in `config/general.php`). A persistent worker is required instead, or queued jobs (e.g. this plugin's AI search sync jobs) will just sit unprocessed.
+
+**Systemd service:** create `/etc/systemd/system/www-haxor-queue.service`:
+```ini
+[Unit]
+Description=Craft CMS queue listener for www.haxor.no
+After=network.target mysql.service
+
+[Service]
+User=www-data
+WorkingDirectory=/var/www/www.haxor.no
+ExecStart=/usr/bin/php8.2 craft queue/listen --verbose
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+```
+Then:
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable --now www-haxor-queue
+sudo systemctl status www-haxor-queue
+```
+
 ## Credits
 - Design and code by me, Stanley Skarshaug <br>
 - Site logo © Skarshaug Solutions, designed by Erik Bersås <br>
