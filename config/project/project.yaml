@@ -1,4 +1,4 @@
-dateModified: 1786475107
+dateModified: 1786631611
 email:
   fromEmail: stanley.skarshaug@gmail.com
   fromName: craft_test
@@ -172,6 +172,31 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+    settings:
+      baseUrl: 'http://ddev-ai.haxor.no-web'
+      contentSourceUuid: 168df2b7-0d45-4a81-9f6e-3bd231a07e4d
+      sections:
+        - aboutblog
+        - aboutme
+        - articles
+        - ctfWriteup
+        - lesson
+        - portfolio
+      syncedBlockTypes:
+        - chapter
+        - text
+        - infoBox
+        - quote
+        - image
+        - imageSlider
+        - terminalDump
+        - fileContent
+        - chartLine
+        - chartBarStacked
+        - entryLink
+        - booksField
+        - coursesField
+        - certificateField
   ckeditor:
     edition: standard
     enabled: true
