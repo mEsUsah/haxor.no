@@ -47,5 +47,10 @@ return [
     'production' => [
 	'allowAdminChanges' => false,
 	'enableTemplateCaching' => true,
+	// Craft's default self-triggered queue processing (an internal HTTP request fired after
+	// each web response) is unreliable behind proxies/firewalls that restrict loopback
+	// requests — run a persistent worker (systemd `queue/listen` or a cron `queue/run`)
+	// instead.
+	'runQueueAutomatically' => false,
     ],
 ];
