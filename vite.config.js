@@ -1,8 +1,21 @@
 import { defineConfig } from "vite";
 import vue from '@vitejs/plugin-vue'
-import liveReload from 'vite-plugin-live-reload';
 import dotenv from 'dotenv';
 import fs from 'fs';
+
+function liveReload(paths) {
+    return {
+        name: 'live-reload',
+        configureServer({ watcher, ws }) {
+            watcher.add(paths);
+            watcher.on('change', (file) => {
+                if (paths.some(p => file.endsWith(p.replace(/.*\*\*\/\*/, '')))) {
+                    ws.send({ type: 'full-reload', path: file });
+                }
+            });
+        }
+    };
+}
 
 // https://vitejs.dev/config/
 export default ({ mode }) => {
