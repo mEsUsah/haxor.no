@@ -695,6 +695,7 @@ export default {
 .feedback__scale {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 0.35rem 0.75rem;
     margin-top: 0.5rem;
     font-size: 0.8rem;
@@ -887,6 +888,49 @@ export default {
 
     .question-display--text {
         font-size: 1rem;
+    }
+
+    .modal-overlay {
+        align-items: flex-end;
+        padding: 0;
+    }
+
+    .modal {
+        border-radius: 16px 16px 0 0;
+        max-height: 90vh;
+        max-width: 100%;
+    }
+
+    .modal__header {
+        padding: 1rem 1.25rem;
+    }
+
+    .modal__entry {
+        padding: 0.6rem 1rem;
+        gap: 0.75rem;
+    }
+
+    .modal__code {
+        min-width: 2.8rem;
+        font-size: 1rem;
+    }
+
+    .modal__text {
+        font-size: 0.82rem;
+    }
+
+    .modal__example {
+        font-size: 0.75rem;
+    }
+
+    .modal__scale {
+        font-size: 0.72rem;
+        padding-left: 0;
+    }
+
+    .modal__explanation {
+        font-size: 0.74rem;
+        padding-left: 0;
     }
 }
 </style>
