@@ -48,6 +48,7 @@ export default ({ mode }) => {
                 input: {
                     site: './resources/js/site.js',
                     phoneticAlphabet: './resources/js/portfolio/phonenticAlphabet/index.js',
+                    qCodes: './resources/js/portfolio/qCodes/index.js',
                     styles: './resources/scss/site.scss',
                 },
                 output: {
