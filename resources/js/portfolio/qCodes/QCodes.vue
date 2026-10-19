@@ -92,6 +92,14 @@
                             <div class="modal__explanation">{{ q.explanation }}</div>
                         </div>
                     </div>
+                    <div class="modal__references">
+                        <h3 class="modal__references-title">Sources</h3>
+                        <ul class="modal__references-list">
+                            <li><a href="https://en.wikipedia.org/wiki/Q_code" target="_blank" rel="noopener">Wikipedia — Q code</a></li>
+                            <li><a href="https://en.wikipedia.org/wiki/Signal_strength_and_readability_report" target="_blank" rel="noopener">Wikipedia — Signal strength and readability report</a></li>
+                            <li><a href="https://www.qsl.net/g4wuh/qcode.html" target="_blank" rel="noopener">G4WUH Q-signal reference</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -160,7 +168,7 @@ export default {
                     answer: 'Your signal readability is (1–5)',
                     questionExample: 'QRK?',
                     answerExample: 'QRK 5',
-                    scale: ['Unintelligible', 'Hard to make out', 'Middling', 'Clear', 'Flawless'],
+                    scale: ['Bad', 'Poor', 'Fair', 'Good', 'Excellent'],
                     explanation: 'Refers to the R (readability) component of the RST system. Reflects how well the transmitted characters or speech can be understood, independent of signal strength.',
                 },
                 {
@@ -178,7 +186,7 @@ export default {
                     answer: 'Your interference level is (1–5)',
                     questionExample: 'QRM?',
                     answerExample: 'QRM 3',
-                    scale: ['None', 'Slight', 'Moderate', 'Severe', 'Extreme'],
+                    scale: ['Nil', 'Slightly', 'Moderately', 'Severely', 'Extremely'],
                     explanation: 'QRM specifically refers to man-made interference, such as signals from other stations. Distinct from QRN which is natural static.',
                 },
                 {
@@ -187,7 +195,7 @@ export default {
                     answer: 'Your static level is (1–5)',
                     questionExample: 'QRN?',
                     answerExample: 'QRN 4',
-                    scale: ['None', 'Slight', 'Moderate', 'Severe', 'Extreme'],
+                    scale: ['Nil', 'Slightly', 'Moderately', 'Severely', 'Extremely'],
                     explanation: 'QRN refers to natural atmospheric noise such as static from thunderstorms. Unlike QRM, it cannot be resolved by changing frequency.',
                 },
                 {
@@ -295,7 +303,7 @@ export default {
                     answer: 'Your signal strength is (1–5)',
                     questionExample: 'QSA?',
                     answerExample: 'QSA 4',
-                    scale: ['Barely detectable', 'Faint', 'Reasonably strong', 'Solid', 'Very strong'],
+                    scale: ['Scarcely perceptible', 'Weak', 'Fairly good', 'Good', 'Very good'],
                     explanation: 'Refers to the S (strength) component of the RST reporting system. In modern amateur radio the S-meter on the receiver provides this reading directly.',
                 },
                 {
@@ -892,6 +900,44 @@ export default {
     color: #6b7280;
     font-style: italic;
     line-height: 1.45;
+}
+
+.modal__references {
+    padding: 1rem 1.5rem 1.5rem;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 0.25rem;
+}
+
+.modal__references-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #9ca3af;
+    margin: 0 0 0.5rem;
+}
+
+.modal__references-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.modal__references-list li {
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
+.modal__references-list a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+.modal__references-list a:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 500px) {
