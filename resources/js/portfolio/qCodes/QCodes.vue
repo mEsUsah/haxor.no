@@ -604,9 +604,9 @@ export default {
 .mode-btn {
     padding: 0.4rem 1rem;
     border-radius: 999px;
-    border: 2px solid #667eea;
-    background: transparent;
-    color: #667eea;
+    border: 2px solid #4caf50;
+    background: #fff;
+    color: #4caf50;
     font-size: 0.875rem;
     font-weight: 600;
     cursor: pointer;
@@ -615,7 +615,7 @@ export default {
 
 .mode-btn.active,
 .mode-btn:hover {
-    background: #667eea;
+    background: #4caf50;
     color: #fff;
 }
 
