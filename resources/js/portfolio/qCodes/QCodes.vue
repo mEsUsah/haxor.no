@@ -23,7 +23,11 @@
                 {{ mode === 'codeToMeaning' ? 'What does this Q-code mean?' : 'Which Q-code matches this description?' }}
             </div>
             <div :class="['question-display', mode === 'meaningToCode' ? 'question-display--text' : '']">
-                {{ questionText }}
+                <template v-if="mode === 'meaningToCode' && currentQuestion">
+                    <span class="question-display__line">{{ currentQuestion.question }}</span>
+                    <span class="question-display__line question-display__answer">{{ currentQuestion.answer }}</span>
+                </template>
+                <template v-else>{{ questionText }}</template>
             </div>
         </div>
 
@@ -605,6 +609,19 @@ export default {
     font-weight: 600;
     letter-spacing: 0;
     line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.question-display__line {
+    display: block;
+}
+
+.question-display__answer {
+    opacity: 0.65;
+    font-weight: 500;
+    font-size: 1rem;
 }
 
 .answers-grid {
