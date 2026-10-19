@@ -74,7 +74,7 @@
                 </div>
                 <div class="modal__body">
                     <div v-for="q in qCodes" :key="q.code" class="modal__entry">
-                        <div class="modal__code">{{ q.code }}</div>
+                        <div class="modal__code">{{ q.code }}<span v-if="q.important" class="modal__important">*</span></div>
                         <div class="modal__desc">
                             <div class="modal__row">
                                 <span class="modal__text">{{ q.question }}</span>
@@ -91,6 +91,9 @@
                             </div>
                             <div class="modal__explanation">{{ q.explanation }}</div>
                         </div>
+                    </div>
+                    <div class="modal__note">
+                        <span class="modal__note-asterisk">*</span> Most commonly used Q-codes in amateur radio operation.
                     </div>
                     <div class="modal__references">
                         <h3 class="modal__references-title">Sources</h3>
@@ -128,6 +131,7 @@ export default {
             qCodes: [
                 {
                     code: 'QRA',
+                    important: false,
                     question: 'What is the call sign of your station?',
                     answer: 'My call sign is...',
                     questionExample: 'QRA?',
@@ -137,6 +141,7 @@ export default {
                 },
                 {
                     code: 'QRG',
+                    important: true,
                     question: 'What is the exact frequency?',
                     answer: 'The exact frequency is...',
                     questionExample: 'QRG?',
@@ -146,6 +151,7 @@ export default {
                 },
                 {
                     code: 'QRH',
+                    important: false,
                     question: 'Does my frequency vary?',
                     answer: 'Your frequency varies',
                     questionExample: 'QRH?',
@@ -155,6 +161,7 @@ export default {
                 },
                 {
                     code: 'QRI',
+                    important: false,
                     question: 'How is my transmitted tone?',
                     answer: 'Your transmitted tone is (1–3)',
                     questionExample: 'QRI?',
@@ -164,6 +171,7 @@ export default {
                 },
                 {
                     code: 'QRK',
+                    important: false,
                     question: 'What is the readability of signals?',
                     answer: 'Your signal readability is (1–5)',
                     questionExample: 'QRK?',
@@ -173,6 +181,7 @@ export default {
                 },
                 {
                     code: 'QRL',
+                    important: false,
                     question: 'Are you busy?',
                     answer: 'I am busy, do not disturb',
                     questionExample: 'QRL?',
@@ -182,6 +191,7 @@ export default {
                 },
                 {
                     code: 'QRM',
+                    important: true,
                     question: 'Is your transmission affected by interference?',
                     answer: 'Your interference level is (1–5)',
                     questionExample: 'QRM?',
@@ -191,6 +201,7 @@ export default {
                 },
                 {
                     code: 'QRN',
+                    important: true,
                     question: 'Are you troubled by static?',
                     answer: 'Your static level is (1–5)',
                     questionExample: 'QRN?',
@@ -200,6 +211,7 @@ export default {
                 },
                 {
                     code: 'QRO',
+                    important: true,
                     question: 'Should I increase transmitter power?',
                     answer: 'Increase transmitter power',
                     questionExample: 'QRO?',
@@ -209,6 +221,7 @@ export default {
                 },
                 {
                     code: 'QRP',
+                    important: true,
                     question: 'Should I decrease transmitter power?',
                     answer: 'Decrease transmitter power',
                     questionExample: 'QRP?',
@@ -218,6 +231,7 @@ export default {
                 },
                 {
                     code: 'QRQ',
+                    important: true,
                     question: 'Should I send faster?',
                     answer: 'Send faster (... words per minute)',
                     questionExample: 'QRQ?',
@@ -227,6 +241,7 @@ export default {
                 },
                 {
                     code: 'QRS',
+                    important: true,
                     question: 'Should I send slower?',
                     answer: 'Send slower (... words per minute)',
                     questionExample: 'QRS?',
@@ -236,6 +251,7 @@ export default {
                 },
                 {
                     code: 'QRT',
+                    important: true,
                     question: 'Should I stop transmitting?',
                     answer: 'Stop transmitting',
                     questionExample: 'QRT?',
@@ -245,6 +261,7 @@ export default {
                 },
                 {
                     code: 'QRU',
+                    important: false,
                     question: 'Do you have anything for me?',
                     answer: 'I have nothing for you',
                     questionExample: 'QRU?',
@@ -254,6 +271,7 @@ export default {
                 },
                 {
                     code: 'QRV',
+                    important: true,
                     question: 'Are you ready?',
                     answer: 'I am ready',
                     questionExample: 'QRV?',
@@ -263,6 +281,7 @@ export default {
                 },
                 {
                     code: 'QRW',
+                    important: false,
                     question: 'Should I inform ... that you are calling on ... kHz?',
                     answer: 'Tell ... I am calling on ... kHz',
                     questionExample: 'QRW LA3CD 14.250?',
@@ -272,6 +291,7 @@ export default {
                 },
                 {
                     code: 'QRX',
+                    important: true,
                     question: 'When will you call me again?',
                     answer: 'I will wait and call you again at...',
                     questionExample: 'QRX?',
@@ -281,6 +301,7 @@ export default {
                 },
                 {
                     code: 'QRY',
+                    important: false,
                     question: 'When is it my turn?',
                     answer: 'Your turn is number...',
                     questionExample: 'QRY?',
@@ -290,6 +311,7 @@ export default {
                 },
                 {
                     code: 'QRZ',
+                    important: true,
                     question: 'Who is calling me?',
                     answer: 'You are being called by...',
                     questionExample: 'QRZ?',
@@ -299,6 +321,7 @@ export default {
                 },
                 {
                     code: 'QSA',
+                    important: false,
                     question: 'How strong are my signals?',
                     answer: 'Your signal strength is (1–5)',
                     questionExample: 'QSA?',
@@ -308,6 +331,7 @@ export default {
                 },
                 {
                     code: 'QSB',
+                    important: true,
                     question: 'Do the signals vary in strength?',
                     answer: 'Signals vary in strength (fading)',
                     questionExample: 'QSB?',
@@ -317,6 +341,7 @@ export default {
                 },
                 {
                     code: 'QSD',
+                    important: false,
                     question: 'Is my keying defective?',
                     answer: 'Your keying is defective',
                     questionExample: 'QSD?',
@@ -326,6 +351,7 @@ export default {
                 },
                 {
                     code: 'QSK',
+                    important: true,
                     question: 'Can you hear me between your signals and break in if necessary?',
                     answer: 'I can hear you, break in if needed',
                     questionExample: 'QSK?',
@@ -335,6 +361,7 @@ export default {
                 },
                 {
                     code: 'QSL',
+                    important: true,
                     question: 'Can you acknowledge receipt?',
                     answer: 'I acknowledge receipt',
                     questionExample: 'QSL?',
@@ -344,6 +371,7 @@ export default {
                 },
                 {
                     code: 'QSO',
+                    important: true,
                     question: 'Can you establish contact with ... (call sign)?',
                     answer: 'I can establish contact',
                     questionExample: 'QSO LA4DE?',
@@ -353,6 +381,7 @@ export default {
                 },
                 {
                     code: 'QSP',
+                    important: false,
                     question: 'Can you relay to ... (call sign)?',
                     answer: 'I can relay to...',
                     questionExample: 'QSP LA5EF?',
@@ -362,6 +391,7 @@ export default {
                 },
                 {
                     code: 'QSS',
+                    important: false,
                     question: 'What working frequency will you use?',
                     answer: 'I will use working frequency...',
                     questionExample: 'QSS?',
@@ -371,6 +401,7 @@ export default {
                 },
                 {
                     code: 'QSV',
+                    important: false,
                     question: 'Should I send a series of Vs?',
                     answer: 'Send a series of Vs',
                     questionExample: 'QSV?',
@@ -380,6 +411,7 @@ export default {
                 },
                 {
                     code: 'QSW',
+                    important: false,
                     question: 'Will you transmit on ... kHz?',
                     answer: 'I will transmit on ... kHz',
                     questionExample: 'QSW 3.750?',
@@ -389,6 +421,7 @@ export default {
                 },
                 {
                     code: 'QSX',
+                    important: false,
                     question: 'Will you listen on frequency ...?',
                     answer: 'I will listen on frequency...',
                     questionExample: 'QSX 14.195?',
@@ -398,6 +431,7 @@ export default {
                 },
                 {
                     code: 'QSY',
+                    important: true,
                     question: 'Should I change frequency?',
                     answer: 'Change frequency to...',
                     questionExample: 'QSY?',
@@ -407,6 +441,7 @@ export default {
                 },
                 {
                     code: 'QSZ',
+                    important: false,
                     question: 'Should I send each word twice?',
                     answer: 'Send each word twice',
                     questionExample: 'QSZ?',
@@ -416,6 +451,7 @@ export default {
                 },
                 {
                     code: 'QTC',
+                    important: false,
                     question: 'How many messages do you have to send?',
                     answer: 'I have ... messages',
                     questionExample: 'QTC?',
@@ -425,6 +461,7 @@ export default {
                 },
                 {
                     code: 'QTH',
+                    important: false,
                     question: 'What is your position or location?',
                     answer: 'My position or location is...',
                     questionExample: 'QTH?',
@@ -434,6 +471,7 @@ export default {
                 },
                 {
                     code: 'QTR',
+                    important: false,
                     question: 'What is the correct time?',
                     answer: 'The correct time is...',
                     questionExample: 'QTR?',
@@ -443,6 +481,7 @@ export default {
                 },
                 {
                     code: 'QST',
+                    important: true,
                     question: 'Do you have a message for all stations?',
                     answer: 'I have a message for all stations (general call)',
                     questionExample: 'QST?',
@@ -855,6 +894,11 @@ export default {
     flex-shrink: 0;
 }
 
+.modal__important {
+    color: #ef4444;
+    margin-left: 2px;
+}
+
 .modal__desc {
     display: flex;
     flex-direction: column;
@@ -902,9 +946,20 @@ export default {
     line-height: 1.45;
 }
 
+.modal__note {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.78rem;
+    color: #6b7280;
+}
+
+.modal__note-asterisk {
+    color: #ef4444;
+    font-weight: 700;
+}
+
 .modal__references {
     padding: 1rem 1.5rem 1.5rem;
-    border-top: 1px solid #e5e7eb;
+    border-top: 1px solid #f3f4f6;
     margin-top: 0.25rem;
 }
 
