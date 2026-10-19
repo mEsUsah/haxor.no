@@ -16,6 +16,17 @@
                     @click="setMode('meaningToCode')"
                 >Meaning → Code</button>
             </div>
+
+            <div class="filter-selector">
+                <button
+                    :class="['filter-btn', { active: filter === 'all' }]"
+                    @click="setFilter('all')"
+                >All codes</button>
+                <button
+                    :class="['filter-btn', { active: filter === 'important' }]"
+                    @click="setFilter('important')"
+                >Most important codes <span class="filter-btn__asterisk">*</span></button>
+            </div>
         </div>
 
         <div class="question-card">
@@ -127,6 +138,7 @@ export default {
             questionPool: [],
             questionIndex: 0,
             showModal: false,
+            filter: 'all',
 
             qCodes: [
                 {
@@ -520,9 +532,18 @@ export default {
         },
 
         buildPool() {
-            const pool = [...this.qCodes].sort(() => Math.random() - 0.5);
+            const source = this.filter === 'important'
+                ? this.qCodes.filter(q => q.important)
+                : this.qCodes;
+            const pool = [...source].sort(() => Math.random() - 0.5);
             this.questionPool = pool;
             this.questionIndex = 0;
+        },
+
+        setFilter(f) {
+            this.filter = f;
+            this.buildPool();
+            this.nextQuestion();
         },
 
         nextQuestion() {
@@ -599,6 +620,36 @@ export default {
 .mode-selector {
     display: flex;
     gap: 0.5rem;
+}
+
+.filter-selector {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.filter-btn {
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    border: 1.5px solid #9ca3af;
+    background: #fff;
+    color: #6b7280;
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    border-color: #ef4444;
+    color: #ef4444;
+    background: #fff5f5;
+}
+
+.filter-btn__asterisk {
+    color: #ef4444;
 }
 
 .mode-btn {
